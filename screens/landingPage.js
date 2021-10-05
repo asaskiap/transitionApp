@@ -43,7 +43,7 @@ const LandingPage = (props) => {
   return (
     <ScrollView>
       <ImageBackground
-        source={require('./../assets/images/swan.jpg')}
+        source={require('./../assets/images/long3.jpg')}
         style={styles.backgroundImage}
       >
         <View style={textStyles.fullScreenContainer}>
@@ -104,17 +104,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     alignItems: 'center',
     //marginBottom: windowHeight < 600 ? 240 : 300,
-    marginBottom: windowHeight < 600 ? 140 : 200,
-    marginTop: 120
+    marginBottom: windowHeight < 600 ? 140 : 130
+    //marginTop: 5
   },
   backgroundImage: {
     flex: 1,
     resizeMode: 'contain'
   },
   headerText: {
-    fontSize: windowHeight < 600 ? 36 : 52,
+    fontSize: windowHeight < 600 ? 36 : 62,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
-    color: Colors.accentDark,
+    color: Colors.primaryDark,
     alignItems: 'center',
     letterSpacing: 3
   },

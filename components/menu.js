@@ -31,7 +31,12 @@ const menu = (props) => {
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.menuItem}>
-            <Text style={styles.menuItemText}>Entscheidungsbaum</Text>
+            <Text
+              style={styles.menuItemText}
+              onPress={() => navigateTo('Entscheidungsbaum')}
+            >
+              Entscheidungsbaum
+            </Text>
           </TouchableOpacity>
 
           <TouchableOpacity

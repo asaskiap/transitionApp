@@ -18,7 +18,7 @@ const WasMachenWir = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollView>
         <View style={textStyles.fullScreenContainer}>
-          <Text style={styles.header}>Was Machen Wir? </Text>
+          <Text style={textStyles.headerSecondary}>Was Machen Wir? </Text>
           <Text style={textStyles.paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

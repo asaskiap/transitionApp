@@ -11,7 +11,7 @@ const WomitHelfen = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <View style={textStyles.fullScreenContainer}>
         <ScrollView>
-          <Text style={[styles.header, {marginTop: 20}]}>
+          <Text style={[textStyles.headerSecondary, {marginTop: 20}]}>
             Womit Können Wir helfen?{' '}
           </Text>
           <Text style={textStyles.paragraph}>
@@ -47,10 +47,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 30
-  },
-  header: {
-    color: 'darkslategrey',
-    fontSize: 26,
-    padding: 20
   }
 });

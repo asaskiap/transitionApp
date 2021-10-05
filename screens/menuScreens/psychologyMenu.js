@@ -1,25 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {
   ImageBackground,
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
   Dimensions
 } from 'react-native';
 
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
-import Colors from '../../assets/colors';
 import textStyles from '../../styles/generalTextStyles';
 import imageStyles from './../../styles/imageStyles';
 
 import Menu from '../../components/menu';
-import MenuButton from '../../components/buttons/menuButton';
 import colors from '../../assets/colors';
 import MyHeaderButton from '../../components/buttons/headerButton';
+import MoreButton from '../../components/buttons/moreButton';
+import Article from '../../components/articleComponents/article';
+import ArticleHeader from '../../components/articleComponents/articleHeader';
+import Paragraph from '../../components/articleComponents/paragraph';
+import Card from '../../components/articleComponents/card';
 
 const windowHeight = Dimensions.get('window').height;
 
@@ -52,7 +54,6 @@ class psychologyMenuScreen extends React.Component {
   };
 
   toggleMenu = () => {
-    console.log(this.state.displayMenu);
     this.setState({
       displayMenu: true
     });
@@ -74,7 +75,7 @@ class psychologyMenuScreen extends React.Component {
             {...this.props}
           ></Menu>
           <ImageBackground
-            source={require('./../../assets/images/pyschologyImages/freeSwing.jpg')}
+            source={require('./../../assets/images/psychologyImages/freeSwing.jpg')}
             style={imageStyles.headerBackgroundImage}
           >
             <View style={textStyles.screenHeader}>
@@ -84,65 +85,50 @@ class psychologyMenuScreen extends React.Component {
             </View>
           </ImageBackground>
 
-          <View style={textStyles.card}>
-            <View style={textStyles.article}>
-              <View style={textStyles.articleHeader}>
-                <Text style={textStyles.articleHeaderText}>Aspekt 1</Text>
-              </View>
-              <Text style={textStyles.paragraph}>
+          <Card>
+            <Article>
+              <ArticleHeader>Aspekt 1</ArticleHeader>
+              <Paragraph>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
                 vitae dicta sunt explicabo
-              </Text>
-              <TouchableOpacity
-                style={textStyles.moreBtn}
-                onPress={() => this.props.navigation.navigate('ArticleScreen')}
-              >
-                <Text style={textStyles.moreTxt}>[ mehr...]</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
+              </Paragraph>
+              <MoreButton
+                onPress={() => this.props.navigation.navigate('Abschied')}
+              />
+            </Article>
+          </Card>
 
-          <View style={textStyles.card}>
-            <View style={textStyles.article}>
-              <View style={textStyles.articleHeader}>
-                <Text style={textStyles.articleHeaderText}>Aspekt 2</Text>
-              </View>
-              <Text style={textStyles.paragraph}>
+          <Card>
+            <Article>
+              <ArticleHeader>Aspekt 2</ArticleHeader>
+              <Paragraph>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
                 vitae dicta sunt explicabo...
-              </Text>
-              <TouchableOpacity
-                style={textStyles.moreBtn}
+              </Paragraph>
+              <MoreButton
                 onPress={() => this.props.navigation.navigate('ArticleScreen')}
-              >
-                <Text style={textStyles.moreTxt}>[ mehr...]</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
+              />
+            </Article>
+          </Card>
 
-          <View style={textStyles.card}>
-            <View style={textStyles.article}>
-              <View style={textStyles.articleHeader}>
-                <Text style={textStyles.articleHeaderText}>Aspekt 3</Text>
-              </View>
-              <Text style={textStyles.paragraph}>
+          <Card>
+            <Article>
+              <ArticleHeader>Aspekt 3</ArticleHeader>
+              <Paragraph>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
                 vitae dicta sunt explicabo...
-              </Text>
-              <TouchableOpacity
-                style={textStyles.moreBtn}
+              </Paragraph>
+              <MoreButton
                 onPress={() => this.props.navigation.navigate('ArticleScreen')}
-              >
-                <Text style={textStyles.moreTxt}>[ mehr...]</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
+              />
+            </Article>
+          </Card>
         </View>
       </ScrollView>
     );

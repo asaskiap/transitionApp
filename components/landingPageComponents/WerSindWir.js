@@ -17,7 +17,7 @@ const WerSindWir = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollView>
         <View style={textStyles.fullScreenContainer}>
-          <Text style={styles.header}>Wer sind Wir? </Text>
+          <Text style={textStyles.headerSecondary}>Wer sind Wir? </Text>
           <Text style={textStyles.paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

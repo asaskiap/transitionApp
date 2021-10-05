@@ -24,7 +24,7 @@ export default MenuButton;
 const styles = StyleSheet.create({
   menuButton: {
     position: 'absolute',
-    bottom: 10,
+    bottom: 20,
     right: 25
   },
   menuButtonIcon: {

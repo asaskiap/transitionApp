@@ -9,7 +9,10 @@ import germanyMenuScreen from '../screens/menuScreens/germanyMenu';
 import selfEmploymentMenuScreen from '../screens/menuScreens/selfEmploymentMenu';
 import {createAppContainer} from 'react-navigation';
 import ArticleScreen from '../screens/articleScreen';
+import Entscheidungsbaum from '../screens/entscheidungsbaum';
 import menu from '../components/menu';
+import Abschied from '../screens/psychologyScreens/abschied';
+import EntscheidungsbaumGoScreen from '../screens/entscheidungsbaumGoScreen';
 
 const mainNavigator = createStackNavigator({
   Home: LandingPage,
@@ -20,7 +23,10 @@ const mainNavigator = createStackNavigator({
   Insurance: insuranceMenuScreen,
   Germany: germanyMenuScreen,
   Selfemployment: selfEmploymentMenuScreen,
-  ArticleScreen: ArticleScreen
+  ArticleScreen: ArticleScreen,
+  Entscheidungsbaum: Entscheidungsbaum,
+  EntscheidungsbaumGo: EntscheidungsbaumGoScreen,
+  Abschied: Abschied
 });
 
 export default createAppContainer(mainNavigator);

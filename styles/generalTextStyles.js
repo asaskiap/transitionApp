@@ -37,6 +37,13 @@ const textStyles = StyleSheet.create({
     fontSize: windowHeight < 600 ? 28 : 36,
     color: Colors.textLight
   },
+  headerSecondary: {
+    color: Colors.primaryDark,
+    fontSize: 26,
+    fontWeight: 'bold',
+    padding: 20,
+    marginTop: 20
+  },
 
   articleHeader: {paddingVertical: 10},
   articleHeaderText: {fontSize: 20, color: Colors.primary},

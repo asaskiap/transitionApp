@@ -19,7 +19,7 @@ const ArticleScreen = (props) => {
     <ScrollView>
       <View style={textStyles.fullScreenContainer}>
         <ImageBackground
-          source={require('./../assets/images/pyschologyImages/insecure.jpg')}
+          source={require('./../assets/images/psychologyImages/insecure.jpg')}
           style={imageStyles.headerBackgroundImage}
         >
           <View style={textStyles.articleScreenHeader}>
@@ -53,7 +53,7 @@ const ArticleScreen = (props) => {
 
         <View style={imageStyles.articleImageContainer}>
           <ImageBackground
-            source={require('../assets/images/pyschologyImages/leanOnMe.jpg')}
+            source={require('../assets/images/psychologyImages/leanOnMe.jpg')}
             style={imageStyles.articleImage}
           ></ImageBackground>
         </View>
