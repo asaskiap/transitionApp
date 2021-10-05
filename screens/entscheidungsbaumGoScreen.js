@@ -1,4 +1,5 @@
 import React from 'react';
+import {Text} from 'react-native';
 
 import Colors from './../assets/colors';
 
@@ -8,6 +9,7 @@ import ScrollableScreenContainer from '../components/scrollableScreen';
 import {HeaderEB} from '../components/entscheidungsBaumComponents/headerEB';
 import ArticleImage from '../components/articleComponents/articleImage';
 import Paragraph from '../components/articleComponents/paragraph';
+import {CouncellingInvite1} from '../components/entscheidungsBaumComponents/councellingInvite';
 
 class EntscheidungsbaumGoScreen extends React.Component {
   state = {
@@ -96,7 +98,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
             >
               The answer to the first question was no
             </CardEB>
-            <Paragraph>This is the first councelling invite</Paragraph>
+            <CouncellingInvite1 {...this.props} />
           </>
         )}
 
@@ -130,7 +132,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
             >
               The answer to the second question was no
             </CardEB>
-            <Paragraph>This is the second councelling invite</Paragraph>
+            <CouncellingInvite1 {...this.props} />
           </>
         )}
 
@@ -151,7 +153,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
             >
               The answer to the third question was no
             </CardEB>
-            <Paragraph>This is the third councelling invite</Paragraph>
+            <CouncellingInvite1 {...this.props} />
           </>
         )}
       </ScrollableScreenContainer>
