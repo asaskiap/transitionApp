@@ -9,7 +9,12 @@ import ScrollableScreenContainer from '../components/scrollableScreen';
 import {HeaderEB} from '../components/entscheidungsBaumComponents/headerEB';
 import ArticleImage from '../components/articleComponents/articleImage';
 import Paragraph from '../components/articleComponents/paragraph';
-import {CouncellingInvite1} from '../components/entscheidungsBaumComponents/councellingInvite';
+import {
+  CouncellingInvite1,
+  CouncellingInvite2,
+  CouncellingInvite3,
+  FinalCouncellingInvite
+} from '../components/entscheidungsBaumComponents/councellingInvite';
 
 class EntscheidungsbaumGoScreen extends React.Component {
   state = {
@@ -74,7 +79,8 @@ class EntscheidungsbaumGoScreen extends React.Component {
               backgroundYes={Colors.secondary}
               backgroundNo={Colors.btnDeactivated}
             >
-              The answer to the first question was yes.
+              Ich denke über das Ende meiner Karriere nach und weiß schon was
+              ich machen möchte
             </CardEB>
             {!(this.state.q2 || this.state.displayCouncellingInvite2) && (
               <CardEB
@@ -83,8 +89,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
                 yes={() => this.set_q2(true)}
                 no={() => this.set_q2(false)}
               >
-                Displaying the second question: Ich denke über das Ende meiner
-                Karriere nach und weiß schon was ich machen möchte
+                Ich weiß auch wo und was ich studieren möchte
               </CardEB>
             )}
           </>
@@ -96,7 +101,8 @@ class EntscheidungsbaumGoScreen extends React.Component {
               backgroundYes={Colors.btnDeactivated}
               backgroundNo={Colors.accentDark}
             >
-              The answer to the first question was no
+              Ich denke über das Ende meiner Karriere nach und weiß schon was
+              ich machen möchte
             </CardEB>
             <CouncellingInvite1 {...this.props} />
           </>
@@ -108,7 +114,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
               backgroundYes={Colors.secondary}
               backgroundNo={Colors.btnDeactivated}
             >
-              The answer to the second question was yes.
+              Ich weiß auch wo und was ich studieren möchte
             </CardEB>
             {!(this.state.q3 || this.state.displayCouncellingInvite3) && (
               <CardEB
@@ -117,8 +123,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
                 yes={() => this.set_q3(true)}
                 no={() => this.set_q3(false)}
               >
-                Displaying the third question: Ich denke über das Ende meiner
-                Karriere nach und weiß schon was ich machen möchte
+                Ich habe bereits eine Finanzierungsmöglichkeit
               </CardEB>
             )}
           </>
@@ -130,9 +135,9 @@ class EntscheidungsbaumGoScreen extends React.Component {
               backgroundYes={Colors.btnDeactivated}
               backgroundNo={Colors.accentDark}
             >
-              The answer to the second question was no
+              Ich weiß auch wo und was ich studieren möchte
             </CardEB>
-            <CouncellingInvite1 {...this.props} />
+            <CouncellingInvite2 {...this.props} />
           </>
         )}
 
@@ -141,7 +146,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
             backgroundYes={Colors.secondary}
             backgroundNo={Colors.btnDeactivated}
           >
-            The answer to the third question was yes.
+            Ich habe bereits eine Finanzierungsmöglichkeit
           </CardEB>
         )}
 
@@ -151,10 +156,13 @@ class EntscheidungsbaumGoScreen extends React.Component {
               backgroundYes={Colors.btnDeactivated}
               backgroundNo={Colors.accentDark}
             >
-              The answer to the third question was no
+              Ich habe bereits eine Finanzierungsmöglichkeit
             </CardEB>
-            <CouncellingInvite1 {...this.props} />
+            <CouncellingInvite3 {...this.props} />
           </>
+        )}
+        {this.state.q1 && this.state.q2 && this.state.q3 && (
+          <FinalCouncellingInvite />
         )}
       </ScrollableScreenContainer>
     );

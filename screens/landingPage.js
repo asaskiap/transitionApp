@@ -43,7 +43,7 @@ const LandingPage = (props) => {
   return (
     <ScrollView>
       <ImageBackground
-        source={require('./../assets/images/long3.jpg')}
+        source={require('./../assets/images/cambre_1.jpg')}
         style={styles.backgroundImage}
       >
         <View style={textStyles.fullScreenContainer}>
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: windowHeight < 600 ? 36 : 62,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
-    color: Colors.primaryDark,
+    color: Colors.primary,
     alignItems: 'center',
     letterSpacing: 3
   },

@@ -1,7 +1,7 @@
 export default {
   primary: 'dodgerblue',
   primaryDark: '#006CA2',
-  secondary: '#92E111',
+  secondary: 'yellowgreen',
   secondaryLight: '#D9FD9F',
   backgroundLight: '#f7fcff',
   textLight: 'whitesmoke',

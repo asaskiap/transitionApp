@@ -12,7 +12,9 @@ import ArticleScreen from '../screens/articleScreen';
 import Entscheidungsbaum from '../screens/entscheidungsbaum';
 import menu from '../components/menu';
 import Abschied from '../screens/psychologyScreens/abschied';
+import Veraenderung from '../screens/psychologyScreens/veraenderung';
 import EntscheidungsbaumGoScreen from '../screens/entscheidungsbaumGoScreen';
+import StipendiumStiftung from '../screens/financialScreens/stipendiumStiftung';
 
 const mainNavigator = createStackNavigator({
   Home: LandingPage,
@@ -26,7 +28,9 @@ const mainNavigator = createStackNavigator({
   ArticleScreen: ArticleScreen,
   Entscheidungsbaum: Entscheidungsbaum,
   EntscheidungsbaumGo: EntscheidungsbaumGoScreen,
-  Abschied: Abschied
+  Abschied: Abschied,
+  StipendiumDerStiftung: StipendiumStiftung,
+  Veraenderung: Veraenderung
 });
 
 export default createAppContainer(mainNavigator);

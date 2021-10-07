@@ -19,16 +19,13 @@ const WerSindWir = (props) => {
         <View style={textStyles.fullScreenContainer}>
           <Text style={textStyles.headerSecondary}>Wer sind Wir? </Text>
           <Text style={textStyles.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.{' '}
-          </Text>
-          <Text style={textStyles.paragraph}>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum."
+            Stiftung TANZ wurde auf im Januar 2010 auf private Initiative von
+            Inka Atassi und Sabrina Sadowska gegründet und hat ihren Hauptsitz
+            in Berlin. Die Stiftung dient ausschließlich dem gemeinnützigen
+            Zweck, die materiellen und ideellen Bedürfnisse von professionellen
+            TänzerInnen zu fördern, insbesondere die während ihrer Ausbildung,
+            ihrer Karriere und ihres Übergangs in einen neuen Beruf nach dem
+            Ende ihrer aktiven Tanzkarriere.
           </Text>
 
           <CloseButton close={props.close}></CloseButton>

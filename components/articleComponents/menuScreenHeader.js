@@ -11,9 +11,9 @@ import {
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
 
-import Colors from './../../assets/colors';
+import Colors from '../../assets/colors';
 
-const ArticleScreenHeader = (props) => {
+const MenuScreenHeader = (props) => {
   return (
     <ImageBackground source={props.image} style={style.headerBackgroundImage}>
       <View style={style.articleScreenHeader}>
@@ -23,9 +23,9 @@ const ArticleScreenHeader = (props) => {
   );
 };
 
-export default ArticleScreenHeader;
+export default MenuScreenHeader;
 
-style = StyleSheet.create({
+const style = StyleSheet.create({
   headerBackgroundImage: {
     flex: 1,
     resizeMode: 'cover',
@@ -34,7 +34,7 @@ style = StyleSheet.create({
     marginBottom: 20
   },
   articleScreenHeader: {
-    marginTop: '20%',
+    marginTop: '40%',
     backgroundColor: Colors.secondary,
     paddingHorizontal: 10
   },

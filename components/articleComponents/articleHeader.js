@@ -1,20 +1,25 @@
 import React from 'react';
 
-import {StyleSheet, View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 import Colors from '../../assets/colors';
 
 const ArticleHeader = (props) => {
   return (
-    <View style={style.articleHeader}>
-      <Text style={style.articleHeaderText}>{props.children}</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>{props.children}</Text>
     </View>
   );
 };
 
 export default ArticleHeader;
 
-const style = StyleSheet.create({
-  articleHeader: {paddingVertical: 10},
-  articleHeaderText: {fontSize: 20, color: Colors.primary}
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    marginTop: 30,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  text: {fontSize: 26, fontWeight: 'bold', color: Colors.primaryDark}
 });

@@ -1,29 +1,21 @@
 import React from 'react';
 
-import {
-  ImageBackground,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  Dimensions
-} from 'react-native';
+import {View} from 'react-native';
 
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
-import textStyles from '../../styles/generalTextStyles';
-import imageStyles from './../../styles/imageStyles';
+import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 import Menu from '../../components/menu';
 import colors from '../../assets/colors';
 import MyHeaderButton from '../../components/buttons/headerButton';
 import MoreButton from '../../components/buttons/moreButton';
 import Article from '../../components/articleComponents/article';
-import ArticleHeader from '../../components/articleComponents/articleHeader';
+import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
 import Paragraph from '../../components/articleComponents/paragraph';
 import Card from '../../components/articleComponents/card';
-
-const windowHeight = Dimensions.get('window').height;
+import MenuScreenHeader from '../../components/articleComponents/menuScreenHeader';
+import MenuCard from '../../components/menuScreenComponents/menuCard';
 
 class psychologyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -67,74 +59,58 @@ class psychologyMenuScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView>
-        <View style={textStyles.fullScreenContainer}>
+      <ScrollableScreenContainer>
+        <View style={{alignItems: 'center'}}>
           <Menu
             isVisible={this.state.displayMenu}
             close={this.closeMenu}
             {...this.props}
           ></Menu>
-          <ImageBackground
-            source={require('./../../assets/images/psychologyImages/freeSwing.jpg')}
-            style={imageStyles.headerBackgroundImage}
+          <MenuScreenHeader
+            image={require('./../../assets/images/psychologyImages/freeSwing.jpg')}
           >
-            <View style={textStyles.screenHeader}>
-              <Text style={textStyles.screenHeaderText}>
-                Psychologische Aspekte
-              </Text>
-            </View>
-          </ImageBackground>
+            Psychologische Aspekte der Transition
+          </MenuScreenHeader>
 
-          <Card>
-            <Article>
-              <ArticleHeader>Aspekt 1</ArticleHeader>
-              <Paragraph>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo
-              </Paragraph>
-              <MoreButton
-                onPress={() => this.props.navigation.navigate('Abschied')}
-              />
-            </Article>
-          </Card>
+          <MenuCard
+            onPress={() => this.props.navigation.navigate('Abschied')}
+            textSample={
+              'Das Leben eines Menschen ist geprägt von einer Reihe an Veränderungen, Abschieden und Neuanfängen. Sich von wichtigen Dingen, Menschen, Orten, Gewohnheiten zu trennen ist nicht leicht und kann ein ähnlich intensives Gefühl mit sich bringen wie ein körperlicher Schmerz. ...'
+            }
+          >
+            Abschied
+          </MenuCard>
+          <MenuCard
+            onPress={() => this.props.navigation.navigate('Veraenderung')}
+            textSample={
+              'Transition bedeutet definitionsgemäß „Übergang“. Es handelt sich dabei um einen Übergang von einer Phase in eine andere und geht unweigerlich mit Veränderung einher...'
+            }
+          >
+            Veränderung
+          </MenuCard>
 
-          <Card>
-            <Article>
-              <ArticleHeader>Aspekt 2</ArticleHeader>
-              <Paragraph>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo...
-              </Paragraph>
-              <MoreButton
-                onPress={() => this.props.navigation.navigate('ArticleScreen')}
-              />
-            </Article>
-          </Card>
+          <MenuCard
+            textSample={
+              'Transition bedeutet Übergang, Wandel und Veränderung. Gerade im Kontext einer Tanzkarriere und deren Ende kann diese Veränderung sehr groß und weitreichend sein, da der Tanzberuf nicht nur einen Job darstellt, sondern vollkommene Leidenschaft und Hingabe bedeutet...'
+            }
+          >
+            Unsicherheiten
+          </MenuCard>
+          <MenuCard
+            textSample={
+              'Meist geht der Beginn des neuen Wegs gepaart mit aufkeimenden Zweifeln und Unsicherheiten; ob ich es schaffen werde und ob es wirklich der richtige Weg ist. Dies ist ein normaler, wenn nicht sogar notwendiger emotionaler Schritt bei einer großen Veränderung im Leben...'
+            }
+          >
+            Umgang mit Zweifeln
+          </MenuCard>
 
-          <Card>
-            <Article>
-              <ArticleHeader>Aspekt 3</ArticleHeader>
-              <Paragraph>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo...
-              </Paragraph>
-              <MoreButton
-                onPress={() => this.props.navigation.navigate('ArticleScreen')}
-              />
-            </Article>
-          </Card>
+          <MenuCard textSample={'Fragebogen mit individuellem Ergebnis..'}>
+            Wer Bin Ich?
+          </MenuCard>
         </View>
-      </ScrollView>
+      </ScrollableScreenContainer>
     );
   }
 }
 
 export default psychologyMenuScreen;
-
-const styles = StyleSheet.create({});
