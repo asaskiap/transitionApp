@@ -90,21 +90,18 @@ class psychologyMenuScreen extends React.Component {
           </MenuCard>
 
           <MenuCard
+            onPress={() => this.props.navigation.navigate('Unsicherheiten')}
             textSample={
               'Transition bedeutet Übergang, Wandel und Veränderung. Gerade im Kontext einer Tanzkarriere und deren Ende kann diese Veränderung sehr groß und weitreichend sein, da der Tanzberuf nicht nur einen Job darstellt, sondern vollkommene Leidenschaft und Hingabe bedeutet...'
             }
           >
             Unsicherheiten
           </MenuCard>
-          <MenuCard
-            textSample={
-              'Meist geht der Beginn des neuen Wegs gepaart mit aufkeimenden Zweifeln und Unsicherheiten; ob ich es schaffen werde und ob es wirklich der richtige Weg ist. Dies ist ein normaler, wenn nicht sogar notwendiger emotionaler Schritt bei einer großen Veränderung im Leben...'
-            }
-          >
-            Umgang mit Zweifeln
-          </MenuCard>
 
-          <MenuCard textSample={'Fragebogen mit individuellem Ergebnis..'}>
+          <MenuCard
+            onPress={() => this.props.navigation.navigate('WerBinIch')}
+            textSample={'Fragebogen mit individuellem Ergebnis..'}
+          >
             Wer Bin Ich?
           </MenuCard>
         </View>

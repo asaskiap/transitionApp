@@ -11,6 +11,7 @@ import MyHeaderButton from '../../components/buttons/headerButton';
 import Menu from '../../components/menu';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import MenuScreenHeader from '../../components/articleComponents/menuScreenHeader';
+import MenuCard from '../../components/menuScreenComponents/menuCard';
 class financialMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
@@ -62,12 +63,16 @@ class financialMenuScreen extends React.Component {
         <MenuScreenHeader image={require('../../assets/images/moneyJar.jpg')}>
           Finanzierung
         </MenuScreenHeader>
-        <Button
-          title={'Stipendium der Stiftung'}
+        <MenuCard
           onPress={() =>
             this.props.navigation.navigate('StipendiumDerStiftung')
           }
-        />
+          textSample={
+            'Die Stiftung TANZ vergibt Stipendien an Tanzschaffende im Übergang in einen neuen Beruf nach der aktiven Tanzkarriere. Jedes Jahr zum 30.3., 30.6. und 30.10. kann ein Antrag auf eine einmalige Förderung für z.B: Kurs- oder Studiengebühren, Fahrtkosten oder Kinderbetreuung während einer Ausbildung gestellt werden...'
+          }
+        >
+          Stipendium der Stiftung
+        </MenuCard>
       </ScrollableScreenContainer>
     );
   }

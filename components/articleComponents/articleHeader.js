@@ -21,5 +21,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  text: {fontSize: 26, fontWeight: 'bold', color: Colors.primaryDark}
+  text: {fontSize: 32, fontWeight: 'bold', color: Colors.primaryDark}
 });

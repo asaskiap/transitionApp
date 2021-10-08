@@ -12,8 +12,8 @@ export default Card;
 
 const styles = StyleSheet.create({
   card: {
-    padding: 10,
-    marginVertical: 20,
+    padding: 3,
+    marginVertical: 14,
     width: '90%',
     backgroundColor: 'white',
     shadowColor: Colors.text,

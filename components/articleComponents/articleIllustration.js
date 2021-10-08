@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {View, ImageBackground, StyleSheet, Dimensions} from 'react-native';
+import {View, Image, StyleSheet, Dimensions} from 'react-native';
 
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
@@ -8,10 +8,10 @@ const windowWidth = Dimensions.get('window').width;
 const ArticleIllustration = (props) => {
   return (
     <View style={[style.articleImageContainer, props.imageContainerStyle]}>
-      <ImageBackground
+      <Image
         source={props.image}
         style={[style.articleImage, props.imageStyle]}
-      ></ImageBackground>
+      ></Image>
     </View>
   );
 };
@@ -19,13 +19,13 @@ const ArticleIllustration = (props) => {
 const style = StyleSheet.create({
   articleImageContainer: {
     flex: 1,
-
-    height: windowHeight * 0.5,
+    height: windowHeight * 0.4,
     width: windowWidth * 0.9,
-    marginVertical: 20
+    marginBottom: 20,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   articleImage: {
-    flex: 1,
     resizeMode: 'contain'
   }
 });

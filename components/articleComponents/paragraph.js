@@ -5,7 +5,7 @@ import {Text, StyleSheet} from 'react-native';
 import Colors from '../../assets/colors';
 
 const Paragraph = (props) => {
-  return <Text style={style.paragraph}>{props.children}</Text>;
+  return <Text style={[style.paragraph, props.style]}>{props.children}</Text>;
 };
 
 export default Paragraph;
