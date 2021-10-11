@@ -13,8 +13,8 @@ const StipendiumStiftung = (props) => {
     <ScrollableScreenContainer>
       <ArticleHeader>Stipendium der Stiftung</ArticleHeader>
       <ArticleIllustration
-        image={require('../../assets/illustrations/Rain.png')}
-        imageContainerStyle={{marginVertical: 50, paddingBottom: 70}}
+        image={require('../../assets/illustrations/financialIllustrations/Message.png')}
+        imageContainerStyle={{marginVertical: 40, paddingBottom: 30}}
       ></ArticleIllustration>
       <Article>
         <ArticleSubHeader>
@@ -49,6 +49,7 @@ const StipendiumStiftung = (props) => {
             color: colors.primary,
             fontSize: 16,
             alignSelf: 'center',
+            marginTop: 10,
             backgroundColor: colors.secondaryLight,
             padding: 5
           }}

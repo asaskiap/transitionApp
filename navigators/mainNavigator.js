@@ -16,6 +16,7 @@ import Veraenderung from '../screens/psychologyScreens/veraenderung';
 import Unsicherheiten from '../screens/psychologyScreens/unsicherheiten';
 import EntscheidungsbaumGoScreen from '../screens/entscheidungsbaumGoScreen';
 import StipendiumStiftung from '../screens/financialScreens/stipendiumStiftung';
+import Bafoeg from '../screens/financialScreens/bafoeg';
 import WerBinIch from '../screens/psychologyScreens/werBinIch';
 
 const mainNavigator = createStackNavigator({
@@ -34,7 +35,8 @@ const mainNavigator = createStackNavigator({
   StipendiumDerStiftung: StipendiumStiftung,
   Veraenderung: Veraenderung,
   Unsicherheiten: Unsicherheiten,
-  WerBinIch: WerBinIch
+  WerBinIch: WerBinIch,
+  Bafoeg: Bafoeg
 });
 
 export default createAppContainer(mainNavigator);

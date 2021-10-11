@@ -9,7 +9,7 @@ export const CouncellingInvite1 = (props) => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../assets/illustrations/contact.png')}
+        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
         style={{
           height: 250,
           width: 250,
@@ -40,7 +40,7 @@ export const CouncellingInvite2 = (props) => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../assets/illustrations/contact.png')}
+        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
         style={{
           height: 250,
           width: 250,
@@ -70,7 +70,7 @@ export const CouncellingInvite3 = (props) => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../assets/illustrations/contact.png')}
+        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
         style={{
           height: 250,
           width: 250,
@@ -103,7 +103,7 @@ export const FinalCouncellingInvite = (props) => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../assets/illustrations/contact.png')}
+        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
         style={{
           height: 250,
           width: 250,

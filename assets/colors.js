@@ -1,6 +1,7 @@
 export default {
   primary: 'dodgerblue',
   primaryDark: '#006CA2',
+  primaryLight: '#BFEAFF',
   secondary: 'yellowgreen',
   secondaryLight: '#D9FD9F',
   backgroundLight: '#f7fcff',

@@ -16,5 +16,5 @@ export default ArticleSubHeader;
 
 const style = StyleSheet.create({
   articleHeader: {paddingVertical: 10},
-  articleHeaderText: {fontSize: 20, color: Colors.primary}
+  articleHeaderText: {fontSize: 22, color: Colors.primary}
 });

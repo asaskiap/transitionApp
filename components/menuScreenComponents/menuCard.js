@@ -8,7 +8,7 @@ import MoreButton from '../buttons/moreButton';
 
 const MenuCard = (props) => {
   return (
-    <Card>
+    <Card style={props.style}>
       <Article>
         <ArticleSubHeader>{props.children}</ArticleSubHeader>
         <Paragraph>{props.textSample}</Paragraph>

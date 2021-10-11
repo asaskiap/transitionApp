@@ -11,7 +11,7 @@ const Unsicherheiten = (props) => {
     <ScrollableScreenContainer>
       <ArticleHeader>Unsicherheiten</ArticleHeader>
       <ArticleIllustration
-        image={require('../../assets/illustrations/yoga.png')}
+        image={require('../../assets/illustrations/psychologyIllustrations/ladder.png')}
         imageContainerStyle={{marginVertical: 50, paddingBottom: 40}}
       />
       <Article>

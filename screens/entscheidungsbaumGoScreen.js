@@ -67,7 +67,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
               ich machen möchte
             </CardEB>
             <ArticleImage
-              image={require('./../assets/illustrations/mountain.png')}
+              image={require('../assets/illustrations/entscheidungsbaumIllustrations/mountain.png')}
               imageContainerStyle={{width: '90%', alignSelf: 'center'}}
             />
           </>

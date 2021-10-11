@@ -14,7 +14,7 @@ const Veraenderung = (props) => {
     <ScrollableScreenContainer>
       <ArticleHeader>Veränderung</ArticleHeader>
       <ArticleIllustration
-        image={require('../../assets/illustrations/earth.png')}
+        image={require('../../assets/illustrations/psychologyIllustrations/path.png')}
       />
       <Article>
         <Paragraph>
