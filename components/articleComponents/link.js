@@ -7,16 +7,18 @@ const Link = (props) => {
   return (
     <TouchableOpacity
       onPress={props.onPress}
-      style={[{padding: 10}, props.backgroundStyle]}
+      style={[{padding: 20}, props.backgroundStyle]}
     >
       <Text
-        style={
-          ([{fontSize: 16, fontWeight: 'bold', color: colors.primaryDark}],
-          props.textStyle)
-        }
+        style={[
+          {fontSize: 16, fontWeight: 'bold', color: colors.primaryDark},
+          props.textStyle
+        ]}
       >
         {props.children}
       </Text>
     </TouchableOpacity>
   );
 };
+
+export default Link;
