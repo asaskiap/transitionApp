@@ -10,5 +10,6 @@ export default {
   accentPale: '#FFD0C8',
   text: 'darkslategrey',
   psychology: '#7ebcd6',
-  btnDeactivated: '#D9D9DA'
+  btnDeactivated: '#D9D9DA',
+  ideas: '#0c4028'
 };

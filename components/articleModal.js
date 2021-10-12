@@ -59,21 +59,17 @@ const ArticleModal = (props) => {
             Die Bewerbung erfolgt in einem dreistufigen Auswahlverfahren. Mehr
             unter:
           </Paragraph>
-          <Paragraph style={{marginVertical: 10}}>
-            <Link> www.sbb-stipendien.de</Link>
-          </Paragraph>
+          <Link> www.sbb-stipendien.de</Link>
           <Paragraph>
             Weitere Möglichkeiten der Studienfinanzierung: Bildungskredit von
             der staatlich geförderten KfW-Bank  oder Stipendien von
             verschiedensten Stiftungen. Mehr unter:{' '}
           </Paragraph>
-          <Paragraph style={{marginVertical: 10}}>
-            <Link>www.studienfinanzierung.de</Link>
-          </Paragraph>
+          <Link>www.studienfinanzierung.de</Link>
         </Article>
         <Article>
-          <ArticleHeader>
-            Ab 1. August 2016: Aufstiegs-Bafög (statt Meister-Bafög)
+          <ArticleHeader textStyle={{fontSize: 24}}>
+            Ab 1.August 2016: Aufstiegs-Bafög (statt Meister-Bafög)
           </ArticleHeader>
           <Paragraph>Das AFBG soll in allen Berufsgruppen</Paragraph>
           <Quote>
@@ -129,9 +125,8 @@ const ArticleModal = (props) => {
             Aufstiegs-Bafög” an, die auf Nachfrage auch bei uns zu haben ist.
           </Paragraph>
           <Paragraph>Mehr Informationen:</Paragraph>
-          <Paragraph style={{marginVertical: 10}}>
-            <Link> https://www.aufstiegs-bafoeg.de</Link>
-          </Paragraph>
+
+          <Link> https://www.aufstiegs-bafoeg.de</Link>
         </Article>
       </ScrollableScreenContainer>
     </Modal>

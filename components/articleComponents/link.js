@@ -5,19 +5,23 @@ import colors from '../../assets/colors';
 
 const Link = (props) => {
   return (
-    <TouchableOpacity
-      onPress={props.onPress}
-      style={[{padding: 20}, props.backgroundStyle]}
+    <View
+      style={[
+        {padding: 10, alignSelf: 'center', maxWidth: '80%'},
+        props.backgroundStyle
+      ]}
     >
-      <Text
-        style={[
-          {fontSize: 16, fontWeight: 'bold', color: colors.primaryDark},
-          props.textStyle
-        ]}
-      >
-        {props.children}
-      </Text>
-    </TouchableOpacity>
+      <TouchableOpacity onPress={props.onPress}>
+        <Text
+          style={[
+            {fontSize: 16, fontWeight: 'bold', color: colors.primaryDark},
+            props.textStyle
+          ]}
+        >
+          {props.children}
+        </Text>
+      </TouchableOpacity>
+    </View>
   );
 };
 

@@ -6,8 +6,8 @@ import Colors from '../../assets/colors';
 
 const ArticleHeader = (props) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>{props.children}</Text>
+    <View style={[styles.container, props.containerStyle]}>
+      <Text style={[styles.text, props.textStyle]}>{props.children}</Text>
     </View>
   );
 };

@@ -9,11 +9,6 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 import Menu from '../../components/menu';
 import colors from '../../assets/colors';
 import MyHeaderButton from '../../components/buttons/headerButton';
-import MoreButton from '../../components/buttons/moreButton';
-import Article from '../../components/articleComponents/article';
-import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
-import Paragraph from '../../components/articleComponents/paragraph';
-import Card from '../../components/articleComponents/card';
 import MenuScreenHeader from '../../components/articleComponents/menuScreenHeader';
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 
