@@ -5,6 +5,7 @@ import {Slider} from 'react-native-elements';
 import colors from '../../assets/colors';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
+import ButtonPrimary from '../../components/buttons/buttonPrimary';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 const SliderComponent = (props) => {
@@ -60,71 +61,17 @@ class Question extends React.Component {
             {this.props.element2}
           </SliderComponent>
 
-          <Text>{this.props.element3}</Text>
-          <View
-            style={{
-              flex: 1,
-              alignItems: 'stretch',
-              justifyContent: 'center',
-              marginVertical: 20
-            }}
-          >
-            <Slider
-              value={this.props.c}
-              onValueChange={(value) => this.props.setC(value)}
-              minimumValue={0}
-              maximumValue={5}
-              step={1}
-              thumbStyle={{backgroundColor: colors.secondary}}
-            />
-            <Text style={{alignSelf: 'flex-end'}}>
-              Selected: {this.props.c}
-            </Text>
-          </View>
+          <SliderComponent val={this.props.c} setVal={this.props.setC}>
+            {this.props.element3}
+          </SliderComponent>
 
-          <Text>{this.props.element4}</Text>
-          <View
-            style={{
-              flex: 1,
-              alignItems: 'stretch',
-              justifyContent: 'center',
-              marginVertical: 20
-            }}
-          >
-            <Slider
-              value={this.props.d}
-              onValueChange={(value) => this.props.setD(value)}
-              minimumValue={0}
-              maximumValue={5}
-              step={1}
-              thumbStyle={{backgroundColor: colors.secondary}}
-            />
-            <Text style={{alignSelf: 'flex-end'}}>
-              Selected: {this.props.d}
-            </Text>
-          </View>
+          <SliderComponent val={this.props.d} setVal={this.props.setD}>
+            {this.props.element4}
+          </SliderComponent>
 
-          <Text>{this.props.element5}</Text>
-          <View
-            style={{
-              flex: 1,
-              alignItems: 'stretch',
-              justifyContent: 'center',
-              marginVertical: 20
-            }}
-          >
-            <Slider
-              value={this.props.e}
-              onValueChange={(value) => this.props.setE(value)}
-              minimumValue={0}
-              maximumValue={5}
-              step={1}
-              thumbStyle={{backgroundColor: colors.secondary}}
-            />
-            <Text style={{alignSelf: 'flex-end'}}>
-              Selected: {this.props.e}
-            </Text>
-          </View>
+          <SliderComponent val={this.props.e} setVal={this.props.setE}>
+            {this.props.element5}
+          </SliderComponent>
         </View>
       </View>
     );
@@ -146,13 +93,24 @@ class Berufsfragebogen extends React.Component {
     currE: 0
   };
 
+  handleSubmit = () => {
+    this.setState({
+      handwerklich: this.state.handwerklich + this.state.currA,
+      forschend: this.state.forschend + this.state.currB,
+      künstlerisch: this.state.künstlerisch + this.state.currC,
+      sozial: this.state.sozial + this.state.currD,
+      wirtschaftlich: this.state.wirtschaftlich + this.state.currE
+    });
+  };
+
   render() {
     return (
       <ScrollableScreenContainer>
         <ArticleHeader>Berufsfragebogen</ArticleHeader>
-        {/* <ArticleIllustration
+        <ArticleIllustration
           image={require('../../assets/illustrations/messy.png')}
-        /> */}
+          imageStyle={{width: '90%', height: 300}}
+        />
 
         <Question
           element1={'Aspect A'}
@@ -174,19 +132,14 @@ class Berufsfragebogen extends React.Component {
           Question 1
         </Question>
 
-        <TouchableOpacity
-          onPress={() =>
-            this.setState({
-              handwerklich: this.state.handwerklich + this.state.currA,
-              forschend: this.state.forschend + this.state.currB,
-              künstlerisch: this.state.künstlerisch + this.state.currC,
-              sozial: this.state.sozial + this.state.currD,
-              wirtschaftlich: this.state.wirtschaftlich + this.state.currE
-            })
-          }
+        <ButtonPrimary
+          onPress={this.handleSubmit}
+          backgroundStyle={{backgroundColor: colors.accentDark}}
+          textStyle={{color: colors.textLight}}
         >
-          <Text>SUBMIT</Text>
-        </TouchableOpacity>
+          WEITER
+        </ButtonPrimary>
+        <Text>{this.state.handwerklich}</Text>
       </ScrollableScreenContainer>
     );
   }
