@@ -11,7 +11,7 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 const SliderComponent = (props) => {
   return (
     <>
-      <Text>{props.children}</Text>
+      <Text style={{fontSize: 14, textAlign: 'center'}}>{props.children}</Text>
       <View
         style={{
           flex: 1,
@@ -32,7 +32,7 @@ const SliderComponent = (props) => {
             height: 22
           }}
         />
-        <Text style={{alignSelf: 'flex-end'}}>Selected: {props.val}</Text>
+        <Text style={{alignSelf: 'flex-end'}}>Ausgewählt: {props.val}</Text>
       </View>
     </>
   );
@@ -52,6 +52,25 @@ class Question extends React.Component {
         >
           {this.props.children}
         </Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            marginBottom: 32
+          }}
+        >
+          <Text
+            style={{fontSize: 14, fontWeight: 'bold', color: colors.primary}}
+          >
+            1: trifft gar nicht zu
+          </Text>
+          <Text
+            style={{fontSize: 14, fontWeight: 'bold', color: colors.primary}}
+          >
+            5: trifft voll und ganz zu
+          </Text>
+        </View>
+
         <View>
           <SliderComponent val={this.props.a} setVal={this.props.setA}>
             {this.props.element1}
@@ -78,6 +97,54 @@ class Question extends React.Component {
   }
 }
 
+const Question1 = (props) => {
+  return (
+    <Question
+      element1={'In einer Werkstatt arbeiten'}
+      element2={'Elektrische Geräte einbauen und bedienen'}
+      element3={'Computer einrichten'}
+      element4={'Im Garten arbeiten'}
+      element5={'Handwerklich arbeiten'}
+      a={props.a}
+      b={props.b}
+      c={props.c}
+      d={props.d}
+      e={props.e}
+      setA={props.setA}
+      setB={props.setB}
+      setC={props.setC}
+      setD={props.setD}
+      setE={props.setE}
+    >
+      Meine Interessen sind...
+    </Question>
+  );
+};
+
+const Question2 = (props) => {
+  return (
+    <Question
+      element1={'Wissenschaftliche Bücher und Artikel lesen'}
+      element2={'Ein Problem intensiv analysieren'}
+      element3={'In einem Forschungsinstitut arbeiten'}
+      element4={'Einen wissenschaftlichen Kongress besuchen'}
+      element5={'Experimente durchführen'}
+      a={props.a}
+      b={props.b}
+      c={props.c}
+      d={props.d}
+      e={props.e}
+      setA={props.setA}
+      setB={props.setB}
+      setC={props.setC}
+      setD={props.setD}
+      setE={props.setE}
+    >
+      Meine Interessen sind...
+    </Question>
+  );
+};
+
 class Berufsfragebogen extends React.Component {
   state = {
     handwerklich: 0,
@@ -90,7 +157,9 @@ class Berufsfragebogen extends React.Component {
     currB: 0,
     currC: 0,
     currD: 0,
-    currE: 0
+    currE: 0,
+    displayQ1: true,
+    displayQ2: false
   };
 
   handleSubmit = () => {
@@ -99,7 +168,9 @@ class Berufsfragebogen extends React.Component {
       forschend: this.state.forschend + this.state.currB,
       künstlerisch: this.state.künstlerisch + this.state.currC,
       sozial: this.state.sozial + this.state.currD,
-      wirtschaftlich: this.state.wirtschaftlich + this.state.currE
+      wirtschaftlich: this.state.wirtschaftlich + this.state.currE,
+      displayQ1: false,
+      displayQ2: true
     });
   };
 
@@ -111,26 +182,35 @@ class Berufsfragebogen extends React.Component {
           image={require('../../assets/illustrations/messy.png')}
           imageStyle={{width: '90%', height: 300}}
         />
+        {this.state.displayQ1 && (
+          <Question1
+            a={this.state.currA}
+            b={this.state.currB}
+            c={this.state.currC}
+            d={this.state.currD}
+            e={this.state.currE}
+            setA={(val) => this.setState({currA: val})}
+            setB={(val) => this.setState({currB: val})}
+            setC={(val) => this.setState({currC: val})}
+            setD={(val) => this.setState({currD: val})}
+            setE={(val) => this.setState({currE: val})}
+          />
+        )}
 
-        <Question
-          element1={'Aspect A'}
-          element2={'Aspect B'}
-          element3={'Aspect C'}
-          element4={'Aspect D'}
-          element5={'Aspect E'}
-          a={this.state.currA}
-          b={this.state.currB}
-          c={this.state.currC}
-          d={this.state.currD}
-          e={this.state.currE}
-          setA={(val) => this.setState({currA: val})}
-          setB={(val) => this.setState({currB: val})}
-          setC={(val) => this.setState({currC: val})}
-          setD={(val) => this.setState({currD: val})}
-          setE={(val) => this.setState({currE: val})}
-        >
-          Question 1
-        </Question>
+        {this.state.displayQ2 && (
+          <Question2
+            a={this.state.currA}
+            b={this.state.currB}
+            c={this.state.currC}
+            d={this.state.currD}
+            e={this.state.currE}
+            setA={(val) => this.setState({currA: val})}
+            setB={(val) => this.setState({currB: val})}
+            setC={(val) => this.setState({currC: val})}
+            setD={(val) => this.setState({currD: val})}
+            setE={(val) => this.setState({currE: val})}
+          />
+        )}
 
         <ButtonPrimary
           onPress={this.handleSubmit}
@@ -146,28 +226,3 @@ class Berufsfragebogen extends React.Component {
 }
 
 export default Berufsfragebogen;
-
-// component:
-
-// state:
-// - wekstatt: 0
-// - el. geräte: 0
-// - garten: 0
-// - hand: 0
-// - techn: 0
-
-// --> for each question:
-// sliders that alter each of
-// state properties + add current
-// value to final value (i.e. this.setState({ werkstatt += val});
-
-// --> the individual text per question can be
-// passed to processing component via props.children,
-// the update function underneath each slider can be the same
-// --> in order to switch the order: make each slider
-// a seperate component that updates one of the
-// state values
-
-// --> in the end trigger conditional rendering
-// of component by the highest score of a state
-// property
