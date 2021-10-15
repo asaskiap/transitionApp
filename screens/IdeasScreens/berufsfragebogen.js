@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {PieChart} from 'react-native-svg-charts';
 
 import colors from '../../assets/colors';
 
@@ -14,6 +15,7 @@ import ButtonPrimary from '../../components/buttons/buttonPrimary';
 
 class Berufsfragebogen extends React.Component {
   state = {
+    displayIllustration: true,
     handwerklich: 0,
     forschend: 0,
     künstlerisch: 0,
@@ -33,11 +35,26 @@ class Berufsfragebogen extends React.Component {
     displayQ5: false,
     displayQ6: false,
     displayResult: false,
-    result: -1
+    result: -1,
+    pieData: []
+  };
+
+  createPieData = () => {
+    this.setState({
+      pieData: [
+        {value: this.state.handwerklich, svg: {fill: 'blue'}, key: 0},
+        {value: this.state.forschend, svg: {fill: 'grey'}, key: 1},
+        {value: this.state.künstlerisch, svg: {fill: 'red'}, key: 2},
+        {value: this.state.sozial, svg: {fill: 'green'}, key: 3},
+        {value: this.state.wirtschaftlich, svg: {fill: 'black'}, key: 4},
+        {value: this.state.verwaltend, svg: {fill: 'yellow'}, key: 5}
+      ]
+    });
   };
 
   reset = () => {
     this.setState({
+      displayIllustration: true,
       handwerklich: 0,
       forschend: 0,
       künstlerisch: 0,
@@ -84,26 +101,6 @@ class Berufsfragebogen extends React.Component {
     this.resetCurrVariables();
   }
 
-  calculateResult = () => {
-    const arr = [
-      this.state.handwerklich,
-      this.state.forschend,
-      this.state.künstlerisch,
-      this.state.sozial,
-      this.state.wirtschaftlich,
-      this.state.verwaltend
-    ];
-    console.log(arr);
-
-    let max = Math.max(arr);
-    console.log(max);
-    let idx = arr.indexOf(max);
-    console.log(idx);
-    this.setState({
-      result: idx
-    });
-  };
-
   handleSubmit1 = () => {
     this.updateValues();
     this.setState({
@@ -114,9 +111,10 @@ class Berufsfragebogen extends React.Component {
 
   handleSubmit2 = () => {
     this.updateValues();
-    this.calculateResult();
+    this.createPieData();
     this.setState({
       displayQ2: false,
+      displayIllustration: false,
       displayResult: true
     });
   };
@@ -125,10 +123,13 @@ class Berufsfragebogen extends React.Component {
     return (
       <ScrollableScreenContainer>
         <ArticleHeader>Berufsfragebogen</ArticleHeader>
-        <ArticleIllustration
-          image={require('../../assets/illustrations/messy.png')}
-          imageStyle={{width: '90%', height: 300}}
-        />
+        {this.state.displayIllustration && (
+          <ArticleIllustration
+            image={require('../../assets/illustrations/messy.png')}
+            imageStyle={{width: '90%', height: 300}}
+          />
+        )}
+
         {this.state.displayQ1 && (
           <Question1
             a={this.state.currA}
@@ -167,13 +168,25 @@ class Berufsfragebogen extends React.Component {
 
         {this.state.displayResult && (
           <View>
-            <Text>{this.state.handwerklich}</Text>
-            <Text>{this.state.forschend}</Text>
-            <Text>{this.state.künstlerisch}</Text>
-            <Text>{this.state.sozial}</Text>
-            <Text>{this.state.wirtschaftlich}</Text>
-            <Text>{this.state.verwaltend}</Text>
-            <Text>{this.state.result}</Text>
+            {/* <ArticleIllustration
+              image={require('../../assets/illustrations/settings.png')}
+              imageStyle={{width: '90%', height: 100}}
+              imageContainerStyle={{height: 300}}
+            /> */}
+            <ArticleHeader
+              containerStyle={{
+                marginTop: 5
+              }}
+              textStyle={{
+                backgroundColor: colors.secondaryLight,
+                fontSize: 24
+              }}
+            >
+              Mein Ergebnis
+            </ArticleHeader>
+
+            <PieChart style={{height: 200}} data={this.state.pieData} />
+
             <ButtonPrimary
               onPress={this.reset}
               backgroundStyle={{backgroundColor: colors.accentDark}}
