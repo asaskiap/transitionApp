@@ -73,7 +73,11 @@ class ideasMenuScreen extends React.Component {
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/businessPlan.png')}
         />
-        <MenuCard textSample={'Test mit individuellem Ergebnis'}>
+
+        <MenuCard
+          textSample={'Test mit individuellem Ergebnis'}
+          onPress={() => this.props.navigation.navigate('Berufsfragebogen')}
+        >
           Berufsinteressen Fragebogen
         </MenuCard>
         <MenuCard

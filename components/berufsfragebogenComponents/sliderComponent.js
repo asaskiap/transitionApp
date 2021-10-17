@@ -19,7 +19,7 @@ const SliderComponent = (props) => {
         <Slider
           value={props.val}
           onValueChange={(value) => props.setVal(value)}
-          minimumValue={0}
+          minimumValue={1}
           maximumValue={5}
           step={1}
           thumbStyle={{

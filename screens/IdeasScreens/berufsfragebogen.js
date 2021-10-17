@@ -1,33 +1,43 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 import {PieChart} from 'react-native-svg-charts';
 
 import colors from '../../assets/colors';
 
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
+import Paragraph from '../../components/articleComponents/paragraph';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import {
   Question1,
   Question2
 } from '../../components/berufsfragebogenComponents/questionContent';
 import ButtonPrimary from '../../components/buttons/buttonPrimary';
+import PieLegende from '../../components/berufsfragebogenComponents/pieLegende';
+import {
+  Handwerklich,
+  Künstlerisch,
+  Forschend,
+  Verwaltend,
+  Sozial,
+  Wirtschaftlich
+} from '../../components/berufsfragebogenComponents/textAboutYou';
 
 class Berufsfragebogen extends React.Component {
   state = {
     displayIllustration: true,
-    handwerklich: 0,
-    forschend: 0,
-    künstlerisch: 0,
-    sozial: 0,
-    wirtschaftlich: 0,
-    verwaltend: 0,
-    currA: 0,
-    currB: 0,
-    currC: 0,
-    currD: 0,
-    currE: 0,
-    currF: 0,
+    handwerklich: 1,
+    forschend: 1,
+    künstlerisch: 1,
+    sozial: 1,
+    wirtschaftlich: 1,
+    verwaltend: 1,
+    currA: 1,
+    currB: 1,
+    currC: 1,
+    currD: 1,
+    currE: 1,
+    currF: 1,
     displayQ1: true,
     displayQ2: false,
     displayQ3: false,
@@ -42,12 +52,24 @@ class Berufsfragebogen extends React.Component {
   createPieData = () => {
     this.setState({
       pieData: [
-        {value: this.state.handwerklich, svg: {fill: 'blue'}, key: 0},
-        {value: this.state.forschend, svg: {fill: 'grey'}, key: 1},
-        {value: this.state.künstlerisch, svg: {fill: 'red'}, key: 2},
-        {value: this.state.sozial, svg: {fill: 'green'}, key: 3},
-        {value: this.state.wirtschaftlich, svg: {fill: 'black'}, key: 4},
-        {value: this.state.verwaltend, svg: {fill: 'yellow'}, key: 5}
+        {
+          value: this.state.handwerklich,
+          svg: {fill: colors.accentDark},
+          key: 0
+        },
+        {value: this.state.forschend, svg: {fill: colors.accentPale}, key: 1},
+        {
+          value: this.state.künstlerisch,
+          svg: {fill: colors.psychology},
+          key: 2
+        },
+        {value: this.state.sozial, svg: {fill: colors.secondary}, key: 3},
+        {value: this.state.wirtschaftlich, svg: {fill: colors.primary}, key: 4},
+        {
+          value: this.state.verwaltend,
+          svg: {fill: colors.secondaryLight},
+          key: 5
+        }
       ]
     });
   };
@@ -55,18 +77,18 @@ class Berufsfragebogen extends React.Component {
   reset = () => {
     this.setState({
       displayIllustration: true,
-      handwerklich: 0,
-      forschend: 0,
-      künstlerisch: 0,
-      sozial: 0,
-      wirtschaftlich: 0,
-      verwaltend: 0,
-      currA: 0,
-      currB: 0,
-      currC: 0,
-      currD: 0,
-      currE: 0,
-      currF: 0,
+      handwerklich: 1,
+      forschend: 1,
+      künstlerisch: 1,
+      sozial: 1,
+      wirtschaftlich: 1,
+      verwaltend: 1,
+      currA: 1,
+      currB: 1,
+      currC: 1,
+      currD: 1,
+      currE: 1,
+      currF: 1,
       displayQ1: true,
       displayQ2: false,
       displayQ3: false,
@@ -168,24 +190,65 @@ class Berufsfragebogen extends React.Component {
 
         {this.state.displayResult && (
           <View>
-            {/* <ArticleIllustration
-              image={require('../../assets/illustrations/settings.png')}
-              imageStyle={{width: '90%', height: 100}}
-              imageContainerStyle={{height: 300}}
-            /> */}
             <ArticleHeader
               containerStyle={{
                 marginTop: 5
               }}
               textStyle={{
                 backgroundColor: colors.secondaryLight,
-                fontSize: 24
+                fontSize: 24,
+                padding: 10
               }}
             >
               Mein Ergebnis
             </ArticleHeader>
 
             <PieChart style={{height: 200}} data={this.state.pieData} />
+            <PieLegende />
+
+            {this.state.handwerklich >= this.state.forschend &&
+              this.state.handwerklich >= this.state.künstlerisch &&
+              this.state.handwerklich >= this.state.sozial &&
+              this.state.handwerklich >= this.state.wirtschaftlich &&
+              this.state.handwerklich >= this.state.verwaltend && (
+                <Handwerklich />
+              )}
+
+            {this.state.forschend >= this.state.handwerklich &&
+              this.state.forschend >= this.state.künstlerisch &&
+              this.state.forschend >= this.state.sozial &&
+              this.state.forschend >= this.state.wirtschaftlich &&
+              this.state.forschend >= this.state.verwaltend && <Forschend />}
+
+            {this.state.künstlerisch >= this.state.handwerklich &&
+              this.state.künstlerisch >= this.state.forschend &&
+              this.state.künstlerisch >= this.state.sozial &&
+              this.state.künstlerisch >= this.state.wirtschaftlich &&
+              this.state.künstlerisch >= this.state.verwaltend && (
+                <Künstlerisch />
+              )}
+
+            {this.state.sozial >= this.state.handwerklich &&
+              this.state.sozial >= this.state.forschend &&
+              this.state.sozial >= this.state.künstlerisch &&
+              this.state.sozial >= this.state.wirtschaftlich &&
+              this.state.sozial >= this.state.verwaltend && <Sozial />}
+
+            {this.state.wirtschaftlich >= this.state.handwerklich &&
+              this.state.wirtschaftlich >= this.state.forschend &&
+              this.state.wirtschaftlich >= this.state.sozial &&
+              this.state.wirtschaftlich >= this.state.künstlerisch &&
+              this.state.wirtschaftlich >= this.state.verwaltend && (
+                <Wirtschaftlich />
+              )}
+
+            {this.state.verwaltend >= this.state.handwerklich &&
+              this.state.verwaltend >= this.state.forschend &&
+              this.state.verwaltend >= this.state.sozial &&
+              this.state.verwaltend >= this.state.wirtschaftlich &&
+              this.state.verwaltend >= this.state.künstlerisch && (
+                <Verwaltend />
+              )}
 
             <ButtonPrimary
               onPress={this.reset}
@@ -200,5 +263,10 @@ class Berufsfragebogen extends React.Component {
     );
   }
 }
+Berufsfragebogen.navigationOptions = {
+  headerStyle: {
+    backgroundColor: colors.accentPale
+  }
+};
 
 export default Berufsfragebogen;

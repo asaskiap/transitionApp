@@ -31,7 +31,7 @@ class Question extends React.Component {
           <Text
             style={{fontSize: 14, fontWeight: 'bold', color: colors.primary}}
           >
-            0: trifft gar nicht zu
+            1: trifft gar nicht zu
           </Text>
           <Text
             style={{fontSize: 14, fontWeight: 'bold', color: colors.primary}}
