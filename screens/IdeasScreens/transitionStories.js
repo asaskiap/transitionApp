@@ -5,11 +5,17 @@ import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 import SingleStory from '../../components/transitionStoriesComponents/singleStory';
-import {TransitionStoryLuisa} from './transitionStoryModal';
+import {
+  TransitionStoryLuisa,
+  TransitionStoryMichal,
+  TransitionStoryLenhart
+} from './transitionStoryModal';
 
 class TransitionStories extends React.Component {
   state = {
-    storyLuisa: false
+    storyLuisa: false,
+    storyMichal: false,
+    storyLenhart: false
   };
   render() {
     return (
@@ -18,6 +24,18 @@ class TransitionStories extends React.Component {
           isVisible={this.state.storyLuisa}
           close={() => {
             this.setState({storyLuisa: false});
+          }}
+        />
+        <TransitionStoryMichal
+          isVisible={this.state.storyMichal}
+          close={() => {
+            this.setState({storyMichal: false});
+          }}
+        />
+        <TransitionStoryLenhart
+          isVisible={this.state.storyLenhart}
+          close={() => {
+            this.setState({storyLenhart: false});
           }}
         />
         <ArticleHeader>Transition Stories</ArticleHeader>
@@ -53,7 +71,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait.jpg')}
           title={'Ich will in Berlin bleiben'}
           name={'Michael Fatura'}
-          onPress={() => console.log('pressed read more')}
+          onPress={() => this.setState({storyMichal: true})}
         />
         <SingleStory
           quote={
@@ -71,7 +89,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait2.jpg')}
           title={'Versuchung'}
           name={'Hans-Georg Lenhart'}
-          onPress={() => console.log('pressed read more')}
+          onPress={() => this.setState({storyLenhart: true})}
         />
       </ScrollableScreenContainer>
     );
