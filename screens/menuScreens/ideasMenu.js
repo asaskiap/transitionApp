@@ -87,6 +87,7 @@ class ideasMenuScreen extends React.Component {
           Berufsportraits
         </MenuCard>
         <MenuCard
+          onPress={() => this.props.navigation.navigate('TransitionStories')}
           textSample={'Wie haben andere Tänzer die Transition gemeistert?'}
         >
           Transition Stories

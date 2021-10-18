@@ -19,6 +19,7 @@ import StipendiumStiftung from '../screens/financialScreens/stipendiumStiftung';
 import Bafoeg from '../screens/financialScreens/bafoeg';
 import WerBinIch from '../screens/psychologyScreens/werBinIch';
 import Berufsfragebogen from '../screens/IdeasScreens/berufsfragebogen';
+import TransitionStories from '../screens/IdeasScreens/transitionStories';
 
 const mainNavigator = createStackNavigator({
   Home: LandingPage,
@@ -38,7 +39,8 @@ const mainNavigator = createStackNavigator({
   Unsicherheiten: Unsicherheiten,
   WerBinIch: WerBinIch,
   Bafoeg: Bafoeg,
-  Berufsfragebogen: Berufsfragebogen
+  Berufsfragebogen: Berufsfragebogen,
+  TransitionStories: TransitionStories
 });
 
 export default createAppContainer(mainNavigator);

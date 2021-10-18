@@ -1,80 +1,89 @@
 import React from 'react';
-import {ImageBackground, Text, View} from 'react-native';
+import {Text, Image, View} from 'react-native';
+import colors from '../../assets/colors';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
-import Paragraph from '../../components/articleComponents/paragraph';
-import MoreButton from '../../components/buttons/moreButton';
-import Quote from '../../components/articleComponents/quote';
-import colors from '../../assets/colors';
-const SingleStory = (props) => {
-  return (
-    <View>
-      <View>{props.quote}</View>
-      <View style={{flexDirection: 'row '}}>
-        <View>
-          <Text style={{fontWeight: 'bold'}}>{props.title}</Text>
-          <Paragraph
-            style={{borderColor: 'lightgrey', borderRadius: 20, padding: 20}}
-          >
-            {props.name}
-          </Paragraph>
-          <MoreButton />
-        </View>
-      </View>
-    </View>
-  );
-};
 
-const TransitionStories = (props) => {
-  return (
-    <ScrollableScreenContainer>
-      <ArticleHeader>Transition Stories</ArticleHeader>
-      <View style={{marginVertical: 20}}>
-        <Paragraph
-          style={{
-            borderColor: colors.textLight,
-            borderWidth: 1,
-            borderRadius: 20,
-            padding: 20,
-            shadowColor: colors.text,
-            backgroundColor: 'white',
-            shadowOpacity: 0.4,
-            shadowRadius: 5,
-            shadowOffset: {height: 2, width: -2},
-            elevation: 5
+import SingleStory from '../../components/transitionStoriesComponents/singleStory';
+import {TransitionStoryLuisa} from './transitionStoryModal';
+
+class TransitionStories extends React.Component {
+  state = {
+    storyLuisa: false
+  };
+  render() {
+    return (
+      <ScrollableScreenContainer>
+        <TransitionStoryLuisa
+          isVisible={this.state.storyLuisa}
+          close={() => {
+            this.setState({storyLuisa: false});
           }}
-        >
-          "Ich will in Berlin bleiben"
-        </Paragraph>
-
+        />
+        <ArticleHeader>Transition Stories</ArticleHeader>
         <View style={{flexDirection: 'row'}}>
-          <View
+          <Text
             style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
-              backgroundColor: 'lightgrey',
-              margin: 16
+              fontSize: 28,
+              fontWeight: 'bold',
+              color: colors.accentDark,
+              padding: 18,
+              marginLeft: -40,
+              marginTop: 150
             }}
-          ></View>
-          <View style={{alignItems: 'center'}}>
-            <Text
-              style={{
-                fontSize: 20,
-                fontWeight: 'bold',
-                padding: 10,
-                color: colors.text
-              }}
-            >
-              Immer auf der Suche
-            </Text>
-            <Text style={{color: colors.text}}>Michael Fatura</Text>
-            <MoreButton />
-          </View>
+          >
+            Tänzer berichten:
+          </Text>
+          <Image
+            style={{
+              width: 180,
+              height: 180,
+              borderRadius: 90,
+              margin: 16,
+              marginLeft: -100
+            }}
+            source={require('../../assets/illustrations/coffee.png')}
+          />
         </View>
-      </View>
-    </ScrollableScreenContainer>
-  );
+
+        <SingleStory
+          quote={
+            ' "In eine Rolle zu steigen, das hilft bei der Interpretation. Und bei der Kreativität" '
+          }
+          image={require('../../assets/images/portrait.jpg')}
+          title={'Ich will in Berlin bleiben'}
+          name={'Michael Fatura'}
+          onPress={() => console.log('pressed read more')}
+        />
+        <SingleStory
+          quote={
+            ' "Das hält einen am Leben, sich selber neuen Situationen auszusetzen" '
+          }
+          image={require('../../assets/images/portrait3.jpg')}
+          title={'Immer auf der Suche'}
+          name={'Luisa Sancho Escanero'}
+          onPress={() => this.setState({storyLuisa: true})}
+        />
+        <SingleStory
+          quote={
+            ' "Ein Osteopath ist nicht alleine, er hat immer ein Gegenüber" '
+          }
+          image={require('../../assets/images/portrait2.jpg')}
+          title={'Versuchung'}
+          name={'Hans-Georg Lenhart'}
+          onPress={() => console.log('pressed read more')}
+        />
+      </ScrollableScreenContainer>
+    );
+  }
+}
+
+TransitionStories.navigationOptions = {
+  headerStyle: {
+    backgroundColor: colors.psychology
+  },
+  headerTintColor: colors.text,
+  title: 'Transition Stories'
 };
 
 export default TransitionStories;
