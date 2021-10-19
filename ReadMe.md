@@ -44,6 +44,9 @@
 ## General
 
 - find a way that close button sticks on screen in scroll views?
+- rework navigator?
+- link up all links
+- create special kind of menu button that's just for links?
 
 # Financial
 

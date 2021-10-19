@@ -21,13 +21,13 @@ const menu = (props) => {
 
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
-      <View style={styles.menuScreen}>
-        <ScrollView>
+      <ScrollView>
+        <View style={styles.menuScreen}>
           <TouchableOpacity
             style={styles.menuItem}
             onPress={() => navigateTo('Home')}
           >
-            <Text style={styles.menuItemText}>Home</Text>
+            <Text style={styles.menuItemText}>Startseite</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.menuItem}>
@@ -88,12 +88,11 @@ const menu = (props) => {
           >
             <Text style={styles.menuItemText}>Selbstständigkeit</Text>
           </TouchableOpacity>
-        </ScrollView>
-
-        <TouchableOpacity style={styles.closeButton} onPress={props.close}>
-          <Text style={styles.closeButtonText}>⨉</Text>
-        </TouchableOpacity>
-      </View>
+        </View>
+      </ScrollView>
+      <TouchableOpacity style={styles.closeButton} onPress={props.close}>
+        <Text style={styles.closeButtonText}>⨉</Text>
+      </TouchableOpacity>
     </Modal>
   );
 };
@@ -104,8 +103,8 @@ const styles = StyleSheet.create({
   menuScreen: {
     flex: 1,
     justifyContent: 'center',
-
     backgroundColor: 'dodgerblue',
+    height: windowHeight,
     padding: 20
   },
   menuItem: {
