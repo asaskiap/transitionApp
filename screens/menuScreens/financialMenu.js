@@ -18,9 +18,9 @@ class financialMenuScreen extends React.Component {
     return {
       headerTitle: 'Finanzierung',
       headerStyle: {
-        backgroundColor: Colors.secondaryLight
+        backgroundColor: Colors.psychology
       },
-      headerTintColor: Colors.text,
+      headerTintColor: Colors.textLight,
       headerRight: () => (
         <HeaderButtons HeaderButtonComponent={MyHeaderButton}>
           <Item

@@ -100,23 +100,31 @@ export default LandingPage;
 
 const styles = StyleSheet.create({
   header: {
-    paddingVertical: 20,
-    paddingHorizontal: 20,
+    paddingTop: 20,
+    marginHorizontal: 20,
     alignItems: 'center',
     //marginBottom: windowHeight < 600 ? 240 : 300,
-    marginBottom: windowHeight < 600 ? 140 : 130
+    marginBottom: windowHeight < 600 ? 140 : 170,
     //marginTop: 5
+    borderBottomColor: Colors.accentDark,
+    borderBottomWidth: 5
   },
   backgroundImage: {
     flex: 1,
     resizeMode: 'contain'
   },
   headerText: {
-    fontSize: windowHeight < 600 ? 36 : 62,
+    fontSize: windowHeight < 600 ? 36 : 72,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
+
     color: Colors.primary,
-    alignItems: 'center',
-    letterSpacing: 3
+    //alignItems: 'center',
+    textAlign: 'right',
+    letterSpacing: 5,
+
+    textShadowColor: Colors.primaryLight,
+    textShadowOffset: {width: -2, height: -2},
+    textShadowRadius: 5
   },
   buttonContainer: {
     // alignItems: 'center',
@@ -126,16 +134,18 @@ const styles = StyleSheet.create({
   },
   subHeader: {
     padding: 10,
-    alignItems: 'flex-start'
+    alignItems: 'flex-end'
   },
   subHeaderText: {
-    fontSize: windowHeight < 600 ? 16 : 24,
-
-    color: Colors.textLight,
-
+    fontSize: windowHeight < 600 ? 16 : 22,
+    fontWeight: 'bold',
+    color: Colors.text,
     backgroundColor: Colors.secondary,
-    padding: 5,
+    padding: 3,
+    paddingHorizontal: 8,
     borderRadius: 15,
-    paddingLeft: 90
+    borderColor: Colors.secondaryLight,
+    borderWidth: 1
+    //paddingLeft: 90
   }
 });

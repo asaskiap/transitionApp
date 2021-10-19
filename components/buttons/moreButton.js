@@ -19,19 +19,19 @@ const styles = StyleSheet.create({
   moreTxt: {
     // fontSize: 16, lineHeight: 22, color: Colors.accentDark
     fontSize: 16,
-    fontWeight: 'bold',
+    //fontWeight: 'bold',
     lineHeight: 22,
-    color: colors.textLight
+    color: colors.text
   },
   moreBtn: {
     // padding: 5,
-    backgroundColor: colors.accentDark,
+    backgroundColor: colors.accentPale,
     paddingHorizontal: 8,
     paddingVertical: 5,
     borderRadius: 13,
     width: 100,
     alignItems: 'center',
     marginTop: 20,
-    alignSelf: 'center'
+    alignSelf: 'flex-end'
   }
 });

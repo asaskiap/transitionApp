@@ -20,15 +20,15 @@ class ideasMenuScreen extends React.Component {
     return {
       headerTitle: 'Ideen - Berufsfindung',
       headerStyle: {
-        backgroundColor: colors.primaryDark
+        backgroundColor: colors.psychology
       },
-      headerTintColor: colors.primaryLight,
+      headerTintColor: colors.textLight,
       headerRight: () => (
         <HeaderButtons HeaderButtonComponent={MyHeaderButton}>
           <Item
             title="Menu"
             iconName="menu"
-            color={colors.primaryLight}
+            //color={colors.primaryLight}
             onPress={navigation.getParam('toggleMenu')}
           />
         </HeaderButtons>
