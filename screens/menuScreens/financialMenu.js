@@ -1,18 +1,22 @@
 import React from 'react';
 
-import {StyleSheet, Text, View, Button} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-import textStyles from '../../styles/generalTextStyles';
 import Colors from '../../assets/colors';
 
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import MyHeaderButton from '../../components/buttons/headerButton';
-import Menu from '../../components/menu';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import MenuScreenHeader from '../../components/articleComponents/menuScreenHeader';
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 import ArticleModal from '../../components/articleModal';
+
+import Menu from '../../components/menu';
+import StipendiumStiftung from '../financialScreens/stipendiumStiftung';
+import Bafoeg from '../financialScreens/bafoeg';
+import Aufstiegsstipendium from '../financialScreens/aufgstieg';
+
 class financialMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
@@ -39,7 +43,9 @@ class financialMenuScreen extends React.Component {
 
   state = {
     displayMenu: false,
-    displayArticle: false
+    aufstiegsstipendium: false,
+    stipendiumStiftung: false,
+    bafoeg: false
   };
 
   toggleMenu = () => {
@@ -57,22 +63,29 @@ class financialMenuScreen extends React.Component {
   render() {
     return (
       <ScrollableScreenContainer>
-        <ArticleModal
-          isVisible={this.state.displayArticle}
-          close={() => this.setState({displayArticle: false})}
+        <Aufstiegsstipendium
+          isVisible={this.state.aufstiegsstipendium}
+          close={() => this.setState({aufstiegsstipendium: false})}
         />
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
           {...this.props}
         ></Menu>
+        <StipendiumStiftung
+          isVisible={this.state.stipendiumStiftung}
+          close={() => this.setState({stipendiumStiftung: false})}
+        />
+        <Bafoeg
+          isVisible={this.state.bafoeg}
+          close={() => this.setState({bafoeg: false})}
+        />
+
         <MenuScreenHeader image={require('../../assets/images/moneyJar.jpg')}>
           Finanzierung
         </MenuScreenHeader>
         <MenuCard
-          onPress={() =>
-            this.props.navigation.navigate('StipendiumDerStiftung')
-          }
+          onPress={() => this.setState({stipendiumStiftung: true})}
           textSample={
             'Die Stiftung TANZ vergibt Stipendien an Tanzschaffende im Übergang in einen neuen Beruf nach der aktiven Tanzkarriere. Jedes Jahr zum 30.3., 30.6. und 30.10. kann ein Antrag auf eine einmalige Förderung für z.B: Kurs- oder Studiengebühren, Fahrtkosten oder Kinderbetreuung während einer Ausbildung gestellt werden...'
           }
@@ -80,7 +93,7 @@ class financialMenuScreen extends React.Component {
           Stipendium der Stiftung
         </MenuCard>
         <MenuCard
-          onPress={() => this.props.navigation.navigate('Bafoeg')}
+          onPress={() => this.setState({bafoeg: true})}
           textSample={
             'Die staatliche Unterstützung für Studierende ist im Bundesausbildungs-Förderungsgesetz geregelt – besser bekannt unter dem Kürzel BAföG, womit auch die Förderung an sich bezeichnet wird...'
           }
@@ -88,7 +101,7 @@ class financialMenuScreen extends React.Component {
           Bafög
         </MenuCard>
         <MenuCard
-          onPress={() => this.setState({displayArticle: true})}
+          onPress={() => this.setState({aufstiegsstipendium: true})}
           textSample={
             'Das Aufstiegsstipendium unterstützt Berufserfahrene bei der Durchführung eines ersten akademischen Hochschulstudiums. Das Stipendium ist ein Programm der Begabtenförderung und unterstützt Menschen, die in Ausbildung und Beruf ihr besonderes Talent und Engagement bewiesen haben...'
           }

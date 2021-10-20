@@ -1,14 +1,11 @@
 import React from 'react';
-import {Text} from 'react-native';
 
 import Colors from './../assets/colors';
 
 import CardEB from '../components/entscheidungsBaumComponents/cardEB';
-
 import ScrollableScreenContainer from '../components/scrollableScreen';
 import {HeaderEB} from '../components/entscheidungsBaumComponents/headerEB';
 import ArticleImage from '../components/articleComponents/articleImage';
-import Paragraph from '../components/articleComponents/paragraph';
 import {
   CouncellingInvite1,
   CouncellingInvite2,
@@ -169,4 +166,10 @@ class EntscheidungsbaumGoScreen extends React.Component {
   }
 }
 
+EntscheidungsbaumGoScreen.navigationOptions = {
+  headerStyle: {
+    backgroundColor: Colors.accentPale
+  },
+  title: 'Entscheidungsbaum Test'
+};
 export default EntscheidungsbaumGoScreen;

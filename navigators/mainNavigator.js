@@ -11,13 +11,7 @@ import {createAppContainer} from 'react-navigation';
 import ArticleScreen from '../screens/articleScreen';
 import Entscheidungsbaum from '../screens/entscheidungsbaum';
 import menu from '../components/menu';
-import Abschied from '../screens/psychologyScreens/abschied';
-import Veraenderung from '../screens/psychologyScreens/veraenderung';
-import Unsicherheiten from '../screens/psychologyScreens/unsicherheiten';
 import EntscheidungsbaumGoScreen from '../screens/entscheidungsbaumGoScreen';
-import StipendiumStiftung from '../screens/financialScreens/stipendiumStiftung';
-import Bafoeg from '../screens/financialScreens/bafoeg';
-import WerBinIch from '../screens/psychologyScreens/werBinIch';
 import Berufsfragebogen from '../screens/IdeasScreens/berufsfragebogen';
 import TransitionStories from '../screens/IdeasScreens/transitionStories';
 
@@ -33,12 +27,6 @@ const mainNavigator = createStackNavigator({
   ArticleScreen: ArticleScreen,
   Entscheidungsbaum: Entscheidungsbaum,
   EntscheidungsbaumGo: EntscheidungsbaumGoScreen,
-  Abschied: Abschied,
-  StipendiumDerStiftung: StipendiumStiftung,
-  Veraenderung: Veraenderung,
-  Unsicherheiten: Unsicherheiten,
-  WerBinIch: WerBinIch,
-  Bafoeg: Bafoeg,
   Berufsfragebogen: Berufsfragebogen,
   TransitionStories: TransitionStories
 });

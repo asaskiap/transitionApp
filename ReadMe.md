@@ -14,14 +14,13 @@
 
 ## Entscheidungsbaum
 
-- rework component to class based and add menu button and styling to header bar
-- same for EntscheidungsbaumGO (screen needs another name too), maybe doesn't need a menu button? then different header background color?
+- rework component to class based and add menu button and styling to header bar ✅
+- same for EntscheidungsbaumGO (screen needs another name too), maybe doesn't need a menu button? then different header background color? ✅
 
 ## Psychology
 
 - styling? image and green header or illustration?
-- linked articles need to be reworked as modals
-- color of menu btn?
+- linked articles need to be reworked as modals ✅
 
 ## Ideen-Berufsfindung
 
@@ -38,7 +37,7 @@
 
 # Transition Stories
 
-- styling so that components not stuck at sides
+- styling so that components not stuck at sides ✅
 - different header background color if no menu btn in transition stories ?
 
 ## General
@@ -47,8 +46,9 @@
 - rework navigator?
 - link up all links
 - create special kind of menu button that's just for links?
+- color of menu btn in header?
 
 # Financial
 
-- header styling
-- rework (existing) articles to modals
+- header styling ✅
+- rework (existing) articles to modals ✅

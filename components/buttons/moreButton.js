@@ -3,11 +3,12 @@ import React from 'react';
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
 import colors from '../../assets/colors';
 
-import Colors from '../../assets/colors';
-
 const MoreButton = (props) => {
   return (
-    <TouchableOpacity style={styles.moreBtn} onPress={props.onPress}>
+    <TouchableOpacity
+      style={[styles.moreBtn, props.btnContainerStyle]}
+      onPress={props.onPress}
+    >
       <Text style={styles.moreTxt}>Mehr lesen</Text>
     </TouchableOpacity>
   );

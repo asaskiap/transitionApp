@@ -5,7 +5,7 @@ import colors from '../../assets/colors';
 
 const SingleStory = (props) => {
   return (
-    <View style={{marginVertical: 40}}>
+    <View style={{marginVertical: 40, marginHorizontal: 10}}>
       <View
         style={{
           borderColor: colors.secondary,
@@ -34,18 +34,19 @@ const SingleStory = (props) => {
         </Text>
       </View>
 
-      <View style={{flexDirection: 'row'}}>
+      <View style={{flexDirection: 'row', justifyContent: 'center'}}>
         <Image
           style={{
             width: 120,
             height: 120,
             borderRadius: 60,
             //backgroundColor: 'lightgrey',
-            margin: 16
+            margin: 16,
+            marginRight: 3
           }}
           source={props.image}
         />
-        <View style={{alignItems: 'center', marginRight: 20, width: '60%'}}>
+        <View style={{alignItems: 'center', marginRight: 20, width: '65%'}}>
           <Text
             style={{
               fontSize: 20,
@@ -57,7 +58,10 @@ const SingleStory = (props) => {
             {props.title}
           </Text>
           <Text style={{color: colors.text}}>{props.name}</Text>
-          <MoreButton onPress={props.onPress} />
+          <MoreButton
+            onPress={props.onPress}
+            btnContainerStyle={{alignSelf: 'center'}}
+          />
         </View>
       </View>
     </View>

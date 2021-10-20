@@ -1,12 +1,13 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Modal, View} from 'react-native';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import Paragraph from '../../components/articleComponents/paragraph';
 import Link from '../../components/articleComponents/link';
+
 const Berufsportraits = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
@@ -27,12 +28,16 @@ const Berufsportraits = (props) => {
           Eine Auflistung mit den verschiedensten Berufen gibt es auf folgenden
           Webseiten:
         </Paragraph>
-        <Link>https://www.aubi-plus.de/berufe/a-z/</Link>
-        <Link>https://www.einstieg.com/ausbildung/berufe-a-z.html</Link>
-        <Link>
-          https://planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
-        </Link>
-        <Link>https://www.xing.com/campus/de/job-search</Link>
+        <View style={{alignItems: 'flex-start'}}>
+          <Link backgroundStyle={{alignSelf: 'flex-start'}}>
+            https://www.aubi-plus.de/berufe/a-z/
+          </Link>
+          <Link>https://www.einstieg.com/ausbildung/berufe-a-z.html</Link>
+          <Link>
+            https://planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
+          </Link>
+          <Link>https://www.xing.com/campus/de/job-search</Link>
+        </View>
       </ScrollableScreenContainer>
     </Modal>
   );

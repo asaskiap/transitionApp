@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Image, View, Text} from 'react-native';
+import {Modal, Image, View, Text, StyleSheet} from 'react-native';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import colors from '../../assets/colors';
@@ -15,43 +15,14 @@ export const TransitionStoryLuisa = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Luisa Sansho</ArticleHeader>
 
-        <View style={{flexDirection: 'row', padding: 10}}>
+        <View style={styles.container}>
           <Image
-            style={{
-              width: 140,
-              height: 140,
-              borderRadius: 70,
-              margin: 16,
-              marginLeft: 20
-            }}
+            style={styles.image}
             source={require('../../assets/images/portrait3.jpg')}
           />
-          <View
-            style={{alignItems: 'flex-end', marginRight: 10, marginLeft: -40}}
-          >
-            <Text
-              style={{
-                fontSize: 28,
-                fontWeight: 'bold',
-                paddingVertical: 10,
-                color: colors.accentDark,
-                borderBottomColor: colors.accentDark,
-                borderBottomWidth: 2,
-                maxWidth: '90%'
-              }}
-            >
-              Immer Auf der Suche
-            </Text>
-            <Text
-              style={{
-                color: colors.text,
-                padding: 20,
-                fontSize: 16,
-                backgroundColor: colors.secondaryLight
-              }}
-            >
-              Luisa Sansho Escanero
-            </Text>
+          <View style={styles.header}>
+            <Text style={styles.headerText}>Immer Auf der Suche</Text>
+            <Text style={styles.name}>Luisa Sansho Escanero</Text>
           </View>
         </View>
         <Article>
@@ -181,43 +152,14 @@ export const TransitionStoryMichal = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Michal Fatura</ArticleHeader>
 
-        <View style={{flexDirection: 'row', padding: 10}}>
+        <View style={styles.container}>
           <Image
-            style={{
-              width: 140,
-              height: 140,
-              borderRadius: 70,
-              margin: 16,
-              marginLeft: 20
-            }}
+            style={styles.image}
             source={require('../../assets/images/portrait.jpg')}
           />
-          <View
-            style={{alignItems: 'flex-end', marginRight: 10, marginLeft: -40}}
-          >
-            <Text
-              style={{
-                fontSize: 28,
-                fontWeight: 'bold',
-                paddingVertical: 10,
-                color: colors.accentDark,
-                borderBottomColor: colors.accentDark,
-                borderBottomWidth: 2,
-                maxWidth: '90%'
-              }}
-            >
-              Ich will in Berlin bleiben
-            </Text>
-            <Text
-              style={{
-                color: colors.text,
-                padding: 20,
-                fontSize: 16,
-                backgroundColor: colors.secondaryLight
-              }}
-            >
-              Michal FaturaS
-            </Text>
+          <View style={styles.header}>
+            <Text style={styles.headerText}>Ich will in Berlin bleiben</Text>
+            <Text style={styles.name}>Michal Fatura</Text>
           </View>
         </View>
         <Article>
@@ -352,43 +294,14 @@ export const TransitionStoryLenhart = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Hans-Georg Lenhart</ArticleHeader>
 
-        <View style={{flexDirection: 'row', padding: 10}}>
+        <View style={styles.container}>
           <Image
-            style={{
-              width: 140,
-              height: 140,
-              borderRadius: 70,
-              margin: 16,
-              marginLeft: 20
-            }}
+            style={styles.image}
             source={require('../../assets/images/portrait2.jpg')}
           />
-          <View
-            style={{alignItems: 'flex-end', marginRight: 10, marginLeft: -40}}
-          >
-            <Text
-              style={{
-                fontSize: 28,
-                fontWeight: 'bold',
-                paddingVertical: 10,
-                color: colors.accentDark,
-                borderBottomColor: colors.accentDark,
-                borderBottomWidth: 2,
-                maxWidth: '90%'
-              }}
-            >
-              Versuchung
-            </Text>
-            <Text
-              style={{
-                color: colors.text,
-                padding: 20,
-                fontSize: 16,
-                backgroundColor: colors.secondaryLight
-              }}
-            >
-              Hans-Georg Lenhart
-            </Text>
+          <View style={styles.header}>
+            <Text style={styles.headerText}>Versuchung</Text>
+            <Text style={styles.name}>Hans-Georg Lenhart</Text>
           </View>
         </View>
         <Article>
@@ -500,3 +413,32 @@ export const TransitionStoryLenhart = (props) => {
     </Modal>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {flexDirection: 'row', padding: 10},
+  image: {
+    width: 140,
+    height: 140,
+    borderRadius: 70,
+    margin: 16,
+    marginLeft: 20
+  },
+  header: {marginRight: 20, maxWidth: '60%'},
+  headerText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    paddingVertical: 10,
+    color: colors.accentDark,
+    borderBottomColor: colors.accentDark,
+    borderBottomWidth: 2,
+    marginLeft: -20
+  },
+  name: {
+    color: colors.text,
+    maxWidth: '80%',
+    alignSelf: 'flex-end',
+    padding: 20,
+    fontSize: 16,
+    backgroundColor: colors.secondaryLight
+  }
+});
