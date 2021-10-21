@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import colors from '../../assets/colors';
-import textStyles from '../../styles/generalTextStyles';
 
 import Menu from '../../components/menu';
 import MyHeaderButton from '../../components/buttons/headerButton';
@@ -102,6 +101,13 @@ class insuranceMenuScreen extends React.Component {
           }
         >
           Arbeitslosigkeits- Versicherung
+        </MenuCard>
+        <MenuCard
+          textSample={
+            'Was tun bei Berufsaufgabe aus gesundheitlichen Gründen?Voraussetzungen für den Erhalt von Leistungen zur Teilhabe am Arbeitsleben (LTA) wie Umschulungen, Maßnahmen zur Weiterqualifizierung bzw. Integrationshilfen oder Gründungszuschuss über die Deutsche Rentenversicherung...'
+          }
+        >
+          Rerufsunfähigkeits- und Unfallversicherung
         </MenuCard>
       </ScrollableScreenContainer>
     );

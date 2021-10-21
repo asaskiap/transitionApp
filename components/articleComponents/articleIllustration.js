@@ -19,8 +19,9 @@ const ArticleIllustration = (props) => {
 const style = StyleSheet.create({
   articleImageContainer: {
     flex: 1,
-    height: windowHeight * 0.4,
-    width: windowWidth * 0.9,
+    minHeight: windowHeight * 0.5,
+    maxHeight: windowHeight * 0.6,
+    maxWidth: windowWidth,
     marginBottom: 20,
     justifyContent: 'center',
     alignItems: 'center'

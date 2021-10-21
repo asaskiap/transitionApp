@@ -144,14 +144,6 @@ class Berufsfragebogen extends React.Component {
   render() {
     return (
       <ScrollableScreenContainer>
-        <ArticleHeader>Berufsfragebogen</ArticleHeader>
-        {this.state.displayIllustration && (
-          <ArticleIllustration
-            image={require('../../assets/illustrations/messy.png')}
-            imageStyle={{width: '90%', height: 300}}
-          />
-        )}
-
         {this.state.displayQ1 && (
           <Question1
             a={this.state.currA}
@@ -266,7 +258,8 @@ class Berufsfragebogen extends React.Component {
 Berufsfragebogen.navigationOptions = {
   headerStyle: {
     backgroundColor: colors.accentPale
-  }
+  },
+  title: 'Berufsinteressen Fragebogen'
 };
 
 export default Berufsfragebogen;

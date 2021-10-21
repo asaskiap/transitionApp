@@ -1,26 +1,25 @@
 import React from 'react';
-
-import {StyleSheet, Dimensions} from 'react-native';
-
-import colors from '../../assets/colors';
+import {Text} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import Menu from '../../components/menu';
-
 import MyHeaderButton from '../../components/buttons/headerButton';
-
-import ScrollableScreenContainer from '../../components/scrollableScreen';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
+import ScrollableScreenContainer from '../../components/scrollableScreen';
+import {
+  HeaderEB,
+  SubheaderEB
+} from '../../components/entscheidungsBaumComponents/headerEB';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
-import MenuCard from '../../components/menuScreenComponents/menuCard';
+import ButtonSecondary from '../../components/buttons/buttonSecondary';
+import ButtonPrimary from '../../components/buttons/buttonPrimary';
+import colors from '../../assets/colors';
+import {color} from 'react-native-reanimated';
 
-const windowHeight = Dimensions.get('window').height;
-const windowWidth = Dimensions.get('window').width;
-
-class selfEmploymentMenuScreen extends React.Component {
+class BerufsfragebogenIntro extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Selbstständigkeit',
+      headerTitle: 'Berufsinteressen Fragebogen',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -65,27 +64,25 @@ class selfEmploymentMenuScreen extends React.Component {
           close={this.closeMenu}
           {...this.props}
         ></Menu>
-        <ArticleHeader>Selbstständigkeit</ArticleHeader>
+        <HeaderEB textStyle={{textAlign: 'center'}}>
+          Berufsinteressen Fragebogen
+        </HeaderEB>
+        <SubheaderEB>Fragebogen mit individuellem Ergebnis</SubheaderEB>
         <ArticleIllustration
-          imageStyle={{
-            resizeMode: 'contain',
-            maxHeight: windowHeight * 0.3,
-            maxWidth: windowWidth * 0.9
-          }}
-          image={require('../../assets/illustrations/levitate.png')}
+          imageContainerStyle={{marginVertical: -50}}
+          imageStyle={{height: '70%'}}
+          image={require('../../assets/illustrations/messy.png')}
         />
-        <MenuCard
-          textSample={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id metus velit. In vulputate venenatis iaculis. Vivamus et dictum dui, at auctor ex. Sed eget mauris quis lacus venenatis fringilla. Phasellus ac lorem eros. Sed condimentum est tellus, ut maximus nulla venenatis quis. Vestibulum porta sed eros id lacinia. '
-          }
+        <ButtonPrimary
+          backgroundStyle={{backgroundColor: colors.accentDark}}
+          textStyle={{color: colors.textLight}}
+          onPress={() => this.props.navigation.navigate('BerufsfragebogenGo')}
         >
-          Existenzgründung
-        </MenuCard>
+          Test Starten
+        </ButtonPrimary>
       </ScrollableScreenContainer>
     );
   }
 }
 
-export default selfEmploymentMenuScreen;
-
-const styles = StyleSheet.create({});
+export default BerufsfragebogenIntro;

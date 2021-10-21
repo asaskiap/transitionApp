@@ -38,7 +38,9 @@ class TransitionStories extends React.Component {
             this.setState({storyLenhart: false});
           }}
         />
-        <ArticleHeader>Transition Stories</ArticleHeader>
+        <ArticleHeader textStyle={{letterSpacing: 2}}>
+          Transition Stories
+        </ArticleHeader>
         <View style={{flexDirection: 'row'}}>
           <Text
             style={{
@@ -98,7 +100,7 @@ class TransitionStories extends React.Component {
 
 TransitionStories.navigationOptions = {
   headerStyle: {
-    backgroundColor: colors.psychology
+    backgroundColor: colors.accentPale
   },
   headerTintColor: colors.text,
   title: 'Transition Stories'

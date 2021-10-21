@@ -8,11 +8,11 @@ import insuranceMenuScreen from '../screens/menuScreens/insuranceMenu';
 import germanyMenuScreen from '../screens/menuScreens/germanyMenu';
 import selfEmploymentMenuScreen from '../screens/menuScreens/selfEmploymentMenu';
 import {createAppContainer} from 'react-navigation';
-import ArticleScreen from '../screens/articleScreen';
 import Entscheidungsbaum from '../screens/entscheidungsbaum';
 import menu from '../components/menu';
 import EntscheidungsbaumGoScreen from '../screens/entscheidungsbaumGoScreen';
-import Berufsfragebogen from '../screens/IdeasScreens/berufsfragebogen';
+import BerufsfragebogenIntro from '../screens/IdeasScreens/berufsfragebogenIntro';
+import BerufsfragebogenGo from '../screens/IdeasScreens/berufsfragebogen';
 import TransitionStories from '../screens/IdeasScreens/transitionStories';
 
 const mainNavigator = createStackNavigator({
@@ -24,10 +24,10 @@ const mainNavigator = createStackNavigator({
   Insurance: insuranceMenuScreen,
   Germany: germanyMenuScreen,
   Selfemployment: selfEmploymentMenuScreen,
-  ArticleScreen: ArticleScreen,
   Entscheidungsbaum: Entscheidungsbaum,
   EntscheidungsbaumGo: EntscheidungsbaumGoScreen,
-  Berufsfragebogen: Berufsfragebogen,
+  Berufsfragebogen: BerufsfragebogenIntro,
+  BerufsfragebogenGo: BerufsfragebogenGo,
   TransitionStories: TransitionStories
 });
 

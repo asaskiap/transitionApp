@@ -8,9 +8,10 @@ import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import MyHeaderButton from '../../components/buttons/headerButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
+import ArticleHeader from '../../components/articleComponents/articleHeader';
+import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import MenuScreenHeader from '../../components/articleComponents/menuScreenHeader';
 import MenuCard from '../../components/menuScreenComponents/menuCard';
-import ArticleModal from '../../components/articleModal';
 
 import Menu from '../../components/menu';
 import StipendiumStiftung from '../financialScreens/stipendiumStiftung';
@@ -81,9 +82,10 @@ class financialMenuScreen extends React.Component {
           close={() => this.setState({bafoeg: false})}
         />
 
-        <MenuScreenHeader image={require('../../assets/images/moneyJar.jpg')}>
-          Finanzierung
-        </MenuScreenHeader>
+        <ArticleHeader>Finanzierung</ArticleHeader>
+        <ArticleIllustration
+          image={require('../../assets/illustrations/financialIllustrations/Finance.png')}
+        />
         <MenuCard
           onPress={() => this.setState({stipendiumStiftung: true})}
           textSample={

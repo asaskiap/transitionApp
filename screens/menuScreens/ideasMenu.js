@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import colors from '../../assets/colors';
@@ -14,6 +14,9 @@ import MenuCard from '../../components/menuScreenComponents/menuCard';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 import Berufsportraits from '../IdeasScreens/berufsportraits';
+
+const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get('window').width;
 
 class ideasMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -69,8 +72,15 @@ class ideasMenuScreen extends React.Component {
           isVisible={this.state.berufsportraits}
           close={() => this.setState({berufsportraits: false})}
         />
-        <ArticleHeader>Ideen - Berufsfindung</ArticleHeader>
+        <ArticleHeader textStyle={{textAlign: 'center'}}>
+          Ideen - Berufsfindung
+        </ArticleHeader>
         <ArticleIllustration
+          imageStyle={{
+            width: windowWidth,
+            height: windowHeight * 0.45,
+            resizeMode: 'cover'
+          }}
           image={require('../../assets/illustrations/umsetzungIllustrations/businessPlan.png')}
         />
 

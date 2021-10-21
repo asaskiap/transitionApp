@@ -7,20 +7,11 @@
 - find good final position for menu button
 - header bar or no header bar?
 
-## Menu Modal
-
-- Names for screens?
-- background color?
-
 ## Entscheidungsbaum
-
-- rework component to class based and add menu button and styling to header bar ✅
-- same for EntscheidungsbaumGO (screen needs another name too), maybe doesn't need a menu button? then different header background color? ✅
 
 ## Psychology
 
 - styling? image and green header or illustration?
-- linked articles need to be reworked as modals ✅
 
 ## Ideen-Berufsfindung
 
@@ -33,15 +24,11 @@
 
 # Berufsportraits
 
-- rework styling so that links take up even space
-
 # Transition Stories
-
-- styling so that components not stuck at sides ✅
-- different header background color if no menu btn in transition stories ?
 
 ## General
 
+- different header background color if no menu btn in transition stories ?
 - find a way that close button sticks on screen in scroll views?
 - rework navigator?
 - link up all links
@@ -49,6 +36,3 @@
 - color of menu btn in header?
 
 # Financial
-
-- header styling ✅
-- rework (existing) articles to modals ✅

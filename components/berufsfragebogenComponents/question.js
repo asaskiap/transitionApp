@@ -13,10 +13,14 @@ class Question extends React.Component {
       <View style={{width: '90%'}}>
         <Text
           style={{
-            fontSize: 16,
+            fontSize: 24,
             fontWeight: 'bold',
-            margin: 18,
-            textAlign: 'center'
+            margin: 22,
+            marginTop: 32,
+            textAlign: 'center',
+            //backgroundColor: colors.secondaryLight,
+            color: colors.primaryDark,
+            padding: 10
           }}
         >
           {this.props.children}

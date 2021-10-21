@@ -5,8 +5,8 @@ import Colors from '../../assets/colors';
 
 export const HeaderEB = (props) => {
   return (
-    <View style={styles.headerContainer}>
-      <Text style={styles.headerText}>{props.children}</Text>
+    <View style={[styles.headerContainer, props.containerStyle]}>
+      <Text style={[styles.headerText, props.textStyle]}>{props.children}</Text>
     </View>
   );
 };

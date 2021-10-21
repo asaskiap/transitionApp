@@ -21,5 +21,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  text: {fontSize: 32, fontWeight: 'bold', color: Colors.primaryDark}
+  text: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: Colors.primaryDark,
+    letterSpacing: 4
+  }
 });
