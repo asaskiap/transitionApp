@@ -11,5 +11,11 @@ export default {
   text: 'darkslategrey',
   psychology: '#7ebcd6',
   btnDeactivated: '#D9D9DA',
-  ideas: '#0c4028'
+  ideas: '#0c4028',
+  pieGreen: '#06D6A0',
+  pieYellow: '#FFD166',
+  pieBlue: '#26F0F1',
+  piePink: '#EF476F',
+  pieDarkBlue: '#118AB2',
+  pieOrange: '#EF8354'
 };

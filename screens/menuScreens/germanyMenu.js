@@ -67,7 +67,7 @@ class germanyMenuScreen extends React.Component {
           Leben und Arbeiten in Deutschland
         </ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/germanyIllustrations/globe.png')}
+          image={require('../../assets/illustrations/globeColorful.png')}
         />
         <MenuCard
           textSample={

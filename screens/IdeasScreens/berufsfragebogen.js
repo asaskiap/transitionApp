@@ -54,20 +54,24 @@ class Berufsfragebogen extends React.Component {
       pieData: [
         {
           value: this.state.handwerklich,
-          svg: {fill: colors.accentDark},
+          svg: {fill: colors.pieBlue},
           key: 0
         },
-        {value: this.state.forschend, svg: {fill: colors.accentPale}, key: 1},
+        {value: this.state.forschend, svg: {fill: colors.pieGreen}, key: 1},
         {
           value: this.state.künstlerisch,
-          svg: {fill: colors.psychology},
+          svg: {fill: colors.pieDarkBlue},
           key: 2
         },
-        {value: this.state.sozial, svg: {fill: colors.secondary}, key: 3},
-        {value: this.state.wirtschaftlich, svg: {fill: colors.primary}, key: 4},
+        {value: this.state.sozial, svg: {fill: colors.pieOrange}, key: 3},
+        {
+          value: this.state.wirtschaftlich,
+          svg: {fill: colors.pieYellow},
+          key: 4
+        },
         {
           value: this.state.verwaltend,
-          svg: {fill: colors.secondaryLight},
+          svg: {fill: colors.piePink},
           key: 5
         }
       ]
