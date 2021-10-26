@@ -1,9 +1,11 @@
 import React from 'react';
 
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, Dimensions, View} from 'react-native';
 
 import Colors from '../../assets/colors';
 import CardBtn from './cardBtn';
+
+const windowHeight = Dimensions.get('window').height;
 
 const cardEB = (props) => {
   return (
@@ -31,8 +33,8 @@ export default cardEB;
 
 const styles = StyleSheet.create({
   card: {
-    width: 320,
-    height: 180,
+    width: windowHeight > 600 ? 320 : 280,
+    height: windowHeight > 600 ? 180 : 140,
     backgroundColor: 'white',
     shadowColor: Colors.text,
     borderColor: 'rgba(1, 1, 1, 0.1)',

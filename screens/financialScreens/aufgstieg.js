@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Modal, Dimensions} from 'react-native';
 
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -13,17 +13,33 @@ import Quote from '../../components/articleComponents/quote';
 
 import CloseButton from '../../components/buttons/closeButton';
 
+const windowHeight = Dimensions.get('window').height;
+
 const Aufstiegsstipendium = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader>Aufstiegsstipendium</ArticleHeader>
+        <ArticleHeader
+          textStyle={{
+            fontSize: windowHeight > 600 ? 32 : 26,
+            letterSpacing: windowHeight > 600 ? 2 : 1
+          }}
+        >
+          Aufstiegsstipendium
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/window.png')}
         />
         <Article>
-          <ArticleHeader>Aufstiegsstipendium der Bundesregierung</ArticleHeader>
+          <ArticleHeader
+            textStyle={{
+              fontSize: windowHeight > 600 ? 32 : 26,
+              letterSpacing: windowHeight > 600 ? 2 : 1
+            }}
+          >
+            Aufstiegs- stipendium der Bundesregierung
+          </ArticleHeader>
           <Paragraph>
             Das Aufstiegsstipendium unterstützt Berufserfahrene bei der
             Durchführung eines ersten akademischen Hochschulstudiums. Das

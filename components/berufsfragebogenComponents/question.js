@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Dimensions} from 'react-native';
 
 import colors from '../../assets/colors';
 
 import ButtonPrimary from '../../components/buttons/buttonPrimary';
 
 import SliderComponent from '../../components/berufsfragebogenComponents/sliderComponent';
+
+const windowHeight = Dimensions.get('window').height;
 
 class Question extends React.Component {
   render() {
@@ -33,12 +35,20 @@ class Question extends React.Component {
           }}
         >
           <Text
-            style={{fontSize: 14, fontWeight: 'bold', color: colors.primary}}
+            style={{
+              fontSize: windowHeight > 600 ? 14 : 12,
+              fontWeight: 'bold',
+              color: colors.primary
+            }}
           >
             1: trifft gar nicht zu
           </Text>
           <Text
-            style={{fontSize: 14, fontWeight: 'bold', color: colors.primary}}
+            style={{
+              fontSize: windowHeight > 600 ? 14 : 12,
+              fontWeight: 'bold',
+              color: colors.primary
+            }}
           >
             5: trifft voll und ganz zu
           </Text>

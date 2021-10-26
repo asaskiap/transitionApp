@@ -1,7 +1,9 @@
 import React from 'react';
 
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Dimensions} from 'react-native';
 import Colors from '../../assets/colors';
+
+const windowHeight = Dimensions.get('window').height;
 
 export const HeaderEB = (props) => {
   return (
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   headerText: {
-    fontSize: 36,
+    fontSize: windowHeight > 600 ? 36 : 30,
     fontWeight: 'bold',
     color: Colors.primaryDark
   },
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
   subHeaderText: {
     alignSelf: 'center',
     textAlign: 'center',
-    fontSize: 26,
+    fontSize: windowHeight > 600 ? 26 : 22,
     color: Colors.primaryDark
   }
 });

@@ -19,7 +19,7 @@
 
 - start screen with Tarah's illustration
 - finish and link all questions and recalculate result
-- put in Tarah's color scheme for result (maybe add corresponding color to title of result text)
+- put in Tarah's color scheme for result (maybe add corresponding color to title of result text)✅
 - give notice if 2 results equal?? how?
 
 # Berufsportraits
@@ -31,8 +31,10 @@
 - different header background color if no menu btn in transition stories ?
 - find a way that close button sticks on screen in scroll views?
 - rework navigator?
-- link up all links
+- link up all links ❗
 - create special kind of menu button that's just for links?
 - color of menu btn in header?
+- Implement automatic scrolling to top of screen on rerender ❗
+- bigger close button ❗
 
 # Financial

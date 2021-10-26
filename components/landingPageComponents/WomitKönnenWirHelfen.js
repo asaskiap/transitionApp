@@ -11,6 +11,7 @@ import {
 import colors from '../../assets/colors';
 
 import textStyles from '../../styles/generalTextStyles';
+import {List, ListItem} from '../articleComponents/list';
 import Paragraph from '../articleComponents/paragraph';
 
 import CloseButton from '../buttons/closeButton';
@@ -26,24 +27,24 @@ const WomitHelfen = (props) => {
           <Paragraph>
             Die Stiftung TANZ bietet professionellen Tänzern:{' '}
           </Paragraph>
-          <View style={styles.list}>
-            <Text style={styles.listItem}>
-              ⦁ Informationen (alle wichtigen Informationen rund um den
+          <List>
+            <ListItem>
+              Informationen (alle wichtigen Informationen rund um den
               Transitionprozess)
-            </Text>
-            <Text style={styles.listItem}>
-              ⦁ Bürokratische und praktische Unterstützung (beispielsweise in
-              der Form von Anschreiben an Institutionen wie dem Arbeitsamt)
-            </Text>
-            <Text style={styles.listItem}>
-              ⦁ Beratung (Coaching und psychologische Betreuung des
+            </ListItem>
+            <ListItem style={styles.listItem}>
+              Bürokratische und praktische Unterstützung (beispielsweise in der
+              Form von Anschreiben an Institutionen wie dem Arbeitsamt)
+            </ListItem>
+            <ListItem style={styles.listItem}>
+              Beratung (Coaching und psychologische Betreuung des
               Transitionprozess)
-            </Text>
-            <Text style={styles.listItem}>⦁ Workshops </Text>
-            <Text style={styles.listItem}>
-              ⦁ Stipendium für die Weiterbildung
-            </Text>
-          </View>
+            </ListItem>
+            <ListItem style={styles.listItem}>Workshops </ListItem>
+            <ListItem style={styles.listItem}>
+              Stipendium für die Weiterbildung
+            </ListItem>
+          </List>
         </ScrollView>
         <CloseButton close={props.close}></CloseButton>
       </View>

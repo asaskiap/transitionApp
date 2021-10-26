@@ -1,8 +1,11 @@
 import React from 'react';
 
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Dimensions} from 'react-native';
 
 import Colors from '../../assets/colors';
+
+const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get('window').width;
 
 const ArticleHeader = (props) => {
   return (
@@ -22,9 +25,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   text: {
-    fontSize: 36,
+    fontSize: windowHeight > 600 ? 36 : 30,
     fontWeight: 'bold',
     color: Colors.primaryDark,
-    letterSpacing: 4
+    letterSpacing: windowHeight > 600 ? 4 : 1
   }
 });

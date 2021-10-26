@@ -6,9 +6,14 @@ import colors from '../../assets/colors';
 export const ListItem = (props) => {
   return (
     <Text
-      style={{fontSize: 14, lineHeight: 22, color: colors.text, padding: 8}}
+      style={{
+        fontSize: 14,
+        lineHeight: 22,
+        color: colors.text,
+        padding: 8
+      }}
     >
-      ⨀ {props.children}
+      ◼ {props.children}
     </Text>
   );
 };

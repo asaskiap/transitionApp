@@ -1,11 +1,19 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Dimensions} from 'react-native';
 
 import colors from '../../assets/colors';
 
+const windowHeight = Dimensions.get('window').height;
+
 const PieLegende = (props) => {
   return (
-    <View style={{flexDirection: 'row', padding: 20, marginVertical: 40}}>
+    <View
+      style={{
+        flexDirection: 'row',
+        padding: windowHeight > 600 ? 20 : 10,
+        marginVertical: windowHeight > 600 ? 40 : 20
+      }}
+    >
       <View>
         <View style={styles.colorInfo}>
           <View
@@ -55,7 +63,7 @@ const styles = StyleSheet.create({
   colorBox: {
     width: 10,
     height: 10,
-    marginHorizontal: 20
+    marginHorizontal: windowHeight > 600 ? 20 : 10
   },
   colorInfo: {
     flexDirection: 'row',

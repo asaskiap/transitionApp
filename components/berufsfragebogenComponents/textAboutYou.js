@@ -6,7 +6,7 @@ import Paragraph from '../articleComponents/paragraph';
 
 export const Handwerklich = (props) => {
   return (
-    <Article>
+    <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein handwerklicher Typ</ArticleSubHeader>
       <Paragraph>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -25,7 +25,7 @@ export const Handwerklich = (props) => {
 
 export const Forschend = (props) => {
   return (
-    <Article>
+    <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein forschender Typ</ArticleSubHeader>
       <Paragraph>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -44,7 +44,7 @@ export const Forschend = (props) => {
 
 export const Künstlerisch = (props) => {
   return (
-    <Article>
+    <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein künstlerischer Typ</ArticleSubHeader>
       <Paragraph>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -63,7 +63,7 @@ export const Künstlerisch = (props) => {
 
 export const Sozial = (props) => {
   return (
-    <Article>
+    <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein sozialer Typ</ArticleSubHeader>
       <Paragraph>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -82,7 +82,7 @@ export const Sozial = (props) => {
 
 export const Wirtschaftlich = (props) => {
   return (
-    <Article>
+    <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein wirtschaftlicher Typ</ArticleSubHeader>
       <Paragraph>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -101,7 +101,7 @@ export const Wirtschaftlich = (props) => {
 
 export const Verwaltend = (props) => {
   return (
-    <Article>
+    <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein verwaltender Typ</ArticleSubHeader>
       <Paragraph>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem

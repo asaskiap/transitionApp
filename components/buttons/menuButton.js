@@ -1,10 +1,12 @@
 import React from 'react';
 
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Dimensions, TouchableOpacity, View} from 'react-native';
 
 import {Ionicons} from '@expo/vector-icons';
 
 import Colors from '../../assets/colors';
+
+const windowHeight = Dimensions.get('window').height;
 
 const MenuButton = (props) => {
   return (
@@ -13,7 +15,11 @@ const MenuButton = (props) => {
       onPress={() => props.setDisplayMenu(true)}
     >
       <View style={styles.menuButtonIcon}>
-        <Ionicons name="menu" size={48} color={Colors.textLight} />
+        <Ionicons
+          name="menu"
+          size={windowHeight > 600 ? 48 : 40}
+          color={Colors.textLight}
+        />
       </View>
     </TouchableOpacity>
   );
@@ -28,9 +34,8 @@ const styles = StyleSheet.create({
     right: 25
   },
   menuButtonIcon: {
-    fontSize: 70,
     backgroundColor: Colors.primary,
-    padding: 5,
+    padding: windowHeight > 600 ? 5 : 3,
     borderRadius: 40
   }
 });

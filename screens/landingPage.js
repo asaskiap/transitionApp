@@ -45,7 +45,7 @@ const LandingPage = (props) => {
   return (
     <ScrollView>
       <ImageBackground
-        source={require('./../assets/images/cambreSketch1.png')}
+        source={require('./../assets/images/cambre_1.jpg')}
         style={styles.backgroundImage}
       >
         <View style={textStyles.fullScreenContainer}>
@@ -64,7 +64,11 @@ const LandingPage = (props) => {
           <Image
             source={require('../assets/transitionLogoTransparent.png')}
             resizeMode={'cover'}
-            style={{marginTop: 120, width: 220, height: 220}}
+            style={{
+              marginTop: windowHeight > 600 ? 90 : 70,
+              width: windowHeight > 600 ? 160 : 100,
+              height: windowHeight > 600 ? 160 : 100
+            }}
           />
 
           <View style={styles.buttonContainer}>
@@ -108,8 +112,8 @@ export default LandingPage;
 
 const styles = StyleSheet.create({
   header: {
-    paddingTop: 40,
-    paddingBottom: 40,
+    paddingTop: windowHeight > 600 ? 40 : 30,
+    paddingBottom: windowHeight > 600 ? 40 : 10,
     alignItems: 'center',
     backgroundColor: Colors.primaryDark,
     position: 'absolute',
@@ -128,20 +132,21 @@ const styles = StyleSheet.create({
     letterSpacing: 5
   },
   buttonContainer: {
-    marginBottom: 50,
-    marginTop: 160
+    marginBottom: windowHeight > 600 ? 50 : 20,
+    marginTop: windowHeight > 600 ? 180 : 170
   },
   subHeader: {
-    padding: 10
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    backgroundColor: Colors.secondary,
+    borderRadius: 15,
+    marginVertical: 6
   },
   subHeaderText: {
     fontSize: windowHeight < 600 ? 16 : 22,
     fontWeight: 'bold',
     color: Colors.textLight,
-    backgroundColor: Colors.secondary,
-    padding: 3,
-    paddingHorizontal: 8,
-    borderRadius: 15,
+
     textAlign: 'center'
   }
 });
