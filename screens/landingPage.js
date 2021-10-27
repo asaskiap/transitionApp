@@ -59,17 +59,21 @@ const LandingPage = (props) => {
 
           <View style={styles.header}>
             <Text style={styles.headerText}>Stiftung Tanz</Text>
+            <Image
+              source={require('../assets/transitionLogoTransparent.png')}
+              resizeMode={'cover'}
+              style={{
+                // marginTop: windowHeight > 600 ? 90 : 70,
+                // width: windowHeight > 600 ? 160 : 100,
+                // height: windowHeight > 600 ? 160 : 100
+                width: 50,
+                height: 50,
+                position: 'absolute',
+                right: 10,
+                top: 25
+              }}
+            />
           </View>
-
-          <Image
-            source={require('../assets/transitionLogoTransparent.png')}
-            resizeMode={'cover'}
-            style={{
-              marginTop: windowHeight > 600 ? 90 : 70,
-              width: windowHeight > 600 ? 160 : 100,
-              height: windowHeight > 600 ? 160 : 100
-            }}
-          />
 
           <View style={styles.buttonContainer}>
             <TouchableOpacity
@@ -112,8 +116,11 @@ export default LandingPage;
 
 const styles = StyleSheet.create({
   header: {
-    paddingTop: windowHeight > 600 ? 40 : 30,
-    paddingBottom: windowHeight > 600 ? 40 : 10,
+    flexDirection: 'row',
+    paddingTop: 25,
+    paddingBottom: 10,
+    // paddingTop: windowHeight > 600 ? 40 : 30,
+    // paddingBottom: windowHeight > 600 ? 40 : 10,
     alignItems: 'center',
     backgroundColor: Colors.primaryDark,
     position: 'absolute',
@@ -125,15 +132,19 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   headerText: {
-    fontSize: windowHeight < 600 ? 36 : 46,
+    marginLeft: 10,
+    fontSize: 30,
+    //fontSize: windowHeight < 600 ? 36 : 46,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
     textAlign: 'center',
     color: Colors.secondaryLight,
     letterSpacing: 5
   },
   buttonContainer: {
-    marginBottom: windowHeight > 600 ? 50 : 20,
-    marginTop: windowHeight > 600 ? 180 : 170
+    marginTop: 450,
+
+    marginBottom: windowHeight > 600 ? 50 : 20
+    //marginTop: windowHeight > 600 ? 180 : 170
   },
   subHeader: {
     paddingHorizontal: 10,
