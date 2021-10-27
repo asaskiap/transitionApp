@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Text} from 'react-native';
+import {Modal, Text, Dimensions} from 'react-native';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import CloseButton from '../../components/buttons/closeButton';
@@ -12,13 +12,21 @@ import ArticleSubHeader from '../../components/articleComponents/articleSubHeade
 import {ListItem} from '../../components/articleComponents/list';
 import MyLink from '../../components/articleComponents/link';
 import colors from '../../assets/colors';
+
+const windowHeight = Dimensions.get('window').height;
 const Bayerische = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
 
-        <ArticleHeader>
+        <ArticleHeader
+          textStyle={{
+            fontSize: windowHeight > 600 ? 32 : 24,
+            letterSpacing: windowHeight > 600 ? 2 : 1,
+            textAlign: 'center'
+          }}
+        >
           Die Versorgungsanstalt der Deutschen Bühnenangehörigen
         </ArticleHeader>
         <ArticleIllustration

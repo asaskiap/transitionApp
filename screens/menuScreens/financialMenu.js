@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 import Colors from '../../assets/colors';
 
@@ -17,6 +17,8 @@ import Menu from '../../components/menu';
 import StipendiumStiftung from '../financialScreens/stipendiumStiftung';
 import Bafoeg from '../financialScreens/bafoeg';
 import Aufstiegsstipendium from '../financialScreens/aufgstieg';
+
+const windowHeight = Dimensions.get('window').height;
 
 class financialMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -84,7 +86,8 @@ class financialMenuScreen extends React.Component {
 
         <ArticleHeader>Finanzierung</ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/financialIllustrations/Finance.png')}
+          image={require('../../assets/images/financeColorful.png')}
+          imageContainerStyle={{marginBottom: windowHeight > 600 ? -20 : 20}}
         />
         <MenuCard
           onPress={() => this.setState({stipendiumStiftung: true})}

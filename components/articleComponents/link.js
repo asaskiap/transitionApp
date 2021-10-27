@@ -1,14 +1,19 @@
 import React from 'react';
 
 import {Entypo} from '@expo/vector-icons';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, Linking} from 'react-native';
 import colors from '../../assets/colors';
 
 const Link = (props) => {
   return (
     <View
       style={[
-        {padding: 10, alignSelf: 'center', maxWidth: '85%'},
+        {
+          padding: 10,
+          alignSelf: 'center',
+          maxWidth: '85%',
+          alignSelf: 'flex-start'
+        },
         props.backgroundStyle
       ]}
     >

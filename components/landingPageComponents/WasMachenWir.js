@@ -9,18 +9,22 @@ import {
   View
 } from 'react-native';
 
+import {Octicons} from '@expo/vector-icons';
+
 import textStyles from '../../styles/generalTextStyles';
 
 import CloseButton from '../buttons/closeButton';
+import colors from '../../assets/colors';
 
 const WasMachenWir = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollView>
         <View style={textStyles.fullScreenContainer}>
+          <Octicons name="question" size={28} color={colors.primaryDark} />
           <Text style={textStyles.headerSecondary}>Was Machen Wir? </Text>
           <Text style={textStyles.paragraph}>
-            ? Im Unterschied zu anderen Berufsgruppen müssen sich Tänzer nach
+            Im Unterschied zu anderen Berufsgruppen müssen sich Tänzer nach
             einer relativ kurzen aktiven Bühnenlaufbahn beruflich neu
             orientieren (Transition). Oft in einem Alter, in dem in anderen
             Berufen erst richtig durchgestartet wird. So bestimmen während und

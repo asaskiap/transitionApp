@@ -1,11 +1,18 @@
 import React from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, Dimensions} from 'react-native';
 import MoreButton from '../../components/buttons/moreButton';
 import colors from '../../assets/colors';
 
+const windowHeight = Dimensions.get('window').height;
+
 const SingleStory = (props) => {
   return (
-    <View style={{marginVertical: 40, marginHorizontal: 10}}>
+    <View
+      style={{
+        marginVertical: 40,
+        marginHorizontal: windowHeight > 600 ? 10 : 12
+      }}
+    >
       <View
         style={{
           borderColor: colors.secondary,
@@ -37,8 +44,8 @@ const SingleStory = (props) => {
       <View style={{flexDirection: 'row', justifyContent: 'center'}}>
         <Image
           style={{
-            width: 120,
-            height: 120,
+            width: windowHeight > 600 ? 120 : 90,
+            height: windowHeight > 600 ? 120 : 90,
             borderRadius: 60,
             //backgroundColor: 'lightgrey',
             margin: 16,

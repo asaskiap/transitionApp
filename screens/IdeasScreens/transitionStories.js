@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, Image, View} from 'react-native';
+import {Text, Image, View, Dimensions} from 'react-native';
 import colors from '../../assets/colors';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
@@ -10,6 +10,8 @@ import {
   TransitionStoryMichal,
   TransitionStoryLenhart
 } from './transitionStoryModal';
+
+const windowHeight = Dimensions.get('window').height;
 
 class TransitionStories extends React.Component {
   state = {
@@ -44,7 +46,7 @@ class TransitionStories extends React.Component {
         <View style={{flexDirection: 'row'}}>
           <Text
             style={{
-              fontSize: 28,
+              fontSize: windowHeight > 600 ? 28 : 22,
               fontWeight: 'bold',
               color: colors.accentDark,
               padding: 18,
@@ -56,8 +58,8 @@ class TransitionStories extends React.Component {
           </Text>
           <Image
             style={{
-              width: 180,
-              height: 180,
+              width: windowHeight > 600 ? 180 : 160,
+              height: windowHeight > 600 ? 180 : 160,
               borderRadius: 90,
               margin: 16,
               marginLeft: -100

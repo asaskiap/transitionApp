@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {StyleSheet} from 'react-native';
+import {Linking, StyleSheet} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import colors from '../../assets/colors';
@@ -74,8 +74,11 @@ class insuranceMenuScreen extends React.Component {
           image={require('../../assets/illustrations/insuranceIllustrations/rainGreen.png')}
         />
         <MenuCard
-          textSample={
-            'https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Fl_Blallett_Leitfaden_18.pdf'
+          textSample={'Wir haben das Wichtigste für euch zusammengetragen!'}
+          onPress={() =>
+            Linking.openURL(
+              'https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Fl_Blallett_Leitfaden_18.pdf'
+            )
           }
         >
           Unser Flyer zu Arbeitsagentur und Co
@@ -93,7 +96,7 @@ class insuranceMenuScreen extends React.Component {
             'Mit der Künstlersozialversicherung sind seit 1983 die selbständigen Künstler und Publizisten in den Schutz der gesetzlichen Sozialversicherung einbezogen. Besonderheit: Die Künstler und Publizisten brauchen nur die Hälfte ihrer Beiträge zu tragen und sind damit ähnlich günstig gestellt wie Arbeitnehmer...'
           }
         >
-          Die Künstlersozialversicherung (KSK)
+          Die Künstlersozial- versicherung (KSK)
         </MenuCard>
         <MenuCard
           textSample={
@@ -107,7 +110,7 @@ class insuranceMenuScreen extends React.Component {
             'Was tun bei Berufsaufgabe aus gesundheitlichen Gründen?Voraussetzungen für den Erhalt von Leistungen zur Teilhabe am Arbeitsleben (LTA) wie Umschulungen, Maßnahmen zur Weiterqualifizierung bzw. Integrationshilfen oder Gründungszuschuss über die Deutsche Rentenversicherung...'
           }
         >
-          Rerufsunfähigkeits- und Unfallversicherung
+          Berufsunfähigkeits- und Unfallversicherung
         </MenuCard>
       </ScrollableScreenContainer>
     );

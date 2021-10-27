@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, View} from 'react-native';
+import {Modal, View, Linking} from 'react-native';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import CloseButton from '../../components/buttons/closeButton';
@@ -29,14 +29,38 @@ const Berufsportraits = (props) => {
           Webseiten:
         </Paragraph>
         <View style={{alignItems: 'flex-start'}}>
-          <Link backgroundStyle={{alignSelf: 'flex-start'}}>
+          <Link
+            onPress={() =>
+              Linking.openURL('https://www.aubi-plus.de/berufe/a-z/')
+            }
+          >
             https://www.aubi-plus.de/berufe/a-z/
           </Link>
-          <Link>https://www.einstieg.com/ausbildung/berufe-a-z.html</Link>
-          <Link>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'https://www.einstieg.com/ausbildung/berufe-a-z.html'
+              )
+            }
+          >
+            https://www.einstieg.com/ausbildung/berufe-a-z.html
+          </Link>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'https://planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/'
+              )
+            }
+          >
             https://planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
           </Link>
-          <Link>https://www.xing.com/campus/de/job-search</Link>
+          <Link
+            onPress={() =>
+              Linking.openURL('https://www.xing.com/campus/de/job-search')
+            }
+          >
+            https://www.xing.com/campus/de/job-search
+          </Link>
         </View>
       </ScrollableScreenContainer>
     </Modal>

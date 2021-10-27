@@ -19,7 +19,7 @@ export default ArticleHeader;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    padding: windowHeight > 600 ? 20 : 10,
     marginTop: 30,
     alignItems: 'center',
     justifyContent: 'center'
