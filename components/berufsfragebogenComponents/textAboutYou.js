@@ -1,4 +1,5 @@
 import React from 'react';
+import colors from '../../assets/colors';
 
 import Article from '../articleComponents/article';
 import ArticleSubHeader from '../articleComponents/articleSubHeader';
@@ -7,17 +8,16 @@ import Paragraph from '../articleComponents/paragraph';
 export const Handwerklich = (props) => {
   return (
     <Article style={{marginHorizontal: 20}}>
-      <ArticleSubHeader>Du bist ein handwerklicher Typ</ArticleSubHeader>
+      <ArticleSubHeader>
+        Du bist ein handwerklicher- technischer Typ
+      </ArticleSubHeader>
       <Paragraph>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem{' '}
+        Menschen dieses Typs arbeiten gerne mit ihren Händen oder mit
+        Werkzeugen. Häufig kommen dabei auch technische Geräte zum Einsatz. Sie
+        mögen es, körperlich und mit handwerklichem Geschick zu arbeiten.
+      </Paragraph>
+      <Paragraph style={{color: colors.accentDark}}>
+        Berufsfelder: Handwerk, Technik, Landwirtschaft
       </Paragraph>
     </Article>
   );
@@ -28,15 +28,13 @@ export const Forschend = (props) => {
     <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein forschender Typ</ArticleSubHeader>
       <Paragraph>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem{' '}
+        Menschen dieses Typs arbeiten gerne aufgabenorientiert und versuchen,
+        Probleme auf intellektueller Eben zu lösen. Dabei setzen sie logisches
+        Denken und wissenschaftliche Methoden ein. Sie sind neugierig und
+        bereit, sich intensiv mit einzelnen Themen zu befassen.
+      </Paragraph>
+      <Paragraph style={{color: colors.accentDark}}>
+        Berufsfelder: Wissenschaft, Forschung
       </Paragraph>
     </Article>
   );
@@ -45,17 +43,17 @@ export const Forschend = (props) => {
 export const Künstlerisch = (props) => {
   return (
     <Article style={{marginHorizontal: 20}}>
-      <ArticleSubHeader>Du bist ein künstlerischer Typ</ArticleSubHeader>
+      <ArticleSubHeader>
+        Du bist ein künstlerisch- kreativer Typ
+      </ArticleSubHeader>
       <Paragraph>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem{' '}
+        Menschen dieses Typs arbeiten gerne mit dem eigenen Körper,
+        Musikinstrumenten oder anderen Materialien. Künstlerische Gestaltung
+        steht dabei im Vordergrund. Sie mögen es, sich selbst darin auszudrücken
+        und die Kulturlandschaft zu bereichern.
+      </Paragraph>
+      <Paragraph style={{color: colors.accentDark}}>
+        Berufsfelder: Kunst, Musik, Theater, Schriftstellerei
       </Paragraph>
     </Article>
   );
@@ -66,15 +64,13 @@ export const Sozial = (props) => {
     <Article style={{marginHorizontal: 20}}>
       <ArticleSubHeader>Du bist ein sozialer Typ</ArticleSubHeader>
       <Paragraph>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem{' '}
+        Menschen dieses Typs arbeiten gerne in Bereichen, in denen sie Menschen
+        helfen können. Sie wollen andere pflegen, beraten, ausbilden oder
+        unterstützen. Sie haben gute soziale Fähigkeiten und sehen das
+        Wohlbefinden anderer im Zentrum ihrer Arbeit.
+      </Paragraph>
+      <Paragraph style={{color: colors.accentDark}}>
+        Berufsfelder: Gesundheitswesen, Beratung, Bildung/Schule
       </Paragraph>
     </Article>
   );
@@ -83,17 +79,17 @@ export const Sozial = (props) => {
 export const Wirtschaftlich = (props) => {
   return (
     <Article style={{marginHorizontal: 20}}>
-      <ArticleSubHeader>Du bist ein wirtschaftlicher Typ</ArticleSubHeader>
+      <ArticleSubHeader>
+        Du bist ein wirtschaftlich- unternehmerischer Typ
+      </ArticleSubHeader>
       <Paragraph>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem{' '}
+        Menschen dieses Typs arbeiten gerne in Bereichen, die von Verkauf,
+        Leitung und Organisation geprägt sind. Sie können wirtschaftlich denken
+        und Menschen überzeugen. Sie haben gute kommunikative Kompetenzen und
+        haben Interesse daran, Führungsverantwortung zu übernehmen.
+      </Paragraph>
+      <Paragraph style={{color: colors.accentDark}}>
+        Berufsfelder: Management, Verkauf
       </Paragraph>
     </Article>
   );
@@ -102,17 +98,18 @@ export const Wirtschaftlich = (props) => {
 export const Verwaltend = (props) => {
   return (
     <Article style={{marginHorizontal: 20}}>
-      <ArticleSubHeader>Du bist ein verwaltender Typ</ArticleSubHeader>
+      <ArticleSubHeader>
+        Du bist ein organisierend-verwaltender Typ
+      </ArticleSubHeader>
       <Paragraph>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem{' '}
+        Menschen dieses Typs arbeiten gerne in Bereichen, die ein hohes Ausmaß
+        an Organisation verlangen. Sie sind gut im Umgang mit Zahlen,
+        Informationen und Daten, über die sie leicht den Überblick behalten.
+        Dabei geht es häufig um Aufgaben in der Verwaltung oder Buchhaltung.
+      </Paragraph>
+      <Paragraph style={{color: colors.accentDark}}>
+        Berufsfelder: Kaufmännische Berufe, Büro- und Schalterberufe,
+        Serviceberufe
       </Paragraph>
     </Article>
   );

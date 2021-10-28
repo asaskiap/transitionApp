@@ -53,7 +53,10 @@ const menu = (props) => {
             <Text style={styles.menuItemText}>Ideen - Berufsfindung</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItem}>
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => navigateTo('Umsetzung')}
+          >
             <Text style={styles.menuItemText}>
               Wie setze ich meine Ideen um?
             </Text>

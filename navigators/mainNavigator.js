@@ -14,12 +14,14 @@ import EntscheidungsbaumGoScreen from '../screens/entscheidungsbaumGoScreen';
 import BerufsfragebogenIntro from '../screens/IdeasScreens/berufsfragebogenIntro';
 import BerufsfragebogenGo from '../screens/IdeasScreens/berufsfragebogen';
 import TransitionStories from '../screens/IdeasScreens/transitionStories';
+import UmsetzungMenuScreen from '../screens/menuScreens/umsetzungMenu';
 
 const mainNavigator = createStackNavigator({
   Home: LandingPage,
   Menu: menu,
   Psychology: psychologyMenuScreen,
   Ideas: ideasMenuScreen,
+  Umsetzung: UmsetzungMenuScreen,
   Financial: financialMenuScreen,
   Insurance: insuranceMenuScreen,
   Germany: germanyMenuScreen,

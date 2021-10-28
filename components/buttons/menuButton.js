@@ -17,7 +17,7 @@ const MenuButton = (props) => {
       <View style={styles.menuButtonIcon}>
         <Ionicons
           name="menu"
-          size={windowHeight > 600 ? 48 : 40}
+          size={windowHeight > 600 ? 40 : 30}
           color={Colors.textLight}
         />
       </View>
@@ -30,12 +30,9 @@ export default MenuButton;
 const styles = StyleSheet.create({
   menuButton: {
     position: 'absolute',
-    bottom: 20,
-    right: 25
+    padding: 2,
+    bottom: 0,
+    right: 5
   },
-  menuButtonIcon: {
-    backgroundColor: Colors.primary,
-    padding: windowHeight > 600 ? 5 : 3,
-    borderRadius: 40
-  }
+  menuButtonIcon: {}
 });

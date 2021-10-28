@@ -9,6 +9,7 @@ import {
   ImageBackground,
   Image
 } from 'react-native';
+import {Entypo} from '@expo/vector-icons';
 
 import MenuButton from '../components/buttons/menuButton';
 
@@ -19,6 +20,7 @@ import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelf
 
 import textStyles from '../styles/generalTextStyles';
 import Colors from '../assets/colors';
+import colors from '../assets/colors';
 
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
@@ -58,7 +60,6 @@ const LandingPage = (props) => {
           ></WomitHelfen>
 
           <View style={styles.header}>
-            <Text style={styles.headerText}>Stiftung Tanz</Text>
             <Image
               source={require('../assets/transitionLogoTransparent.png')}
               resizeMode={'cover'}
@@ -69,10 +70,11 @@ const LandingPage = (props) => {
                 width: 50,
                 height: 50,
                 position: 'absolute',
-                right: 10,
+                left: 20,
                 top: 25
               }}
             />
+            <Text style={styles.headerText}>Stiftung Tanz</Text>
           </View>
 
           <View style={styles.buttonContainer}>
@@ -97,7 +99,18 @@ const LandingPage = (props) => {
               <Text style={styles.subHeaderText}>Womit können wir helfen?</Text>
             </TouchableOpacity>
           </View>
+        </View>
+        <View
+          style={{
+            backgroundColor: colors.primary,
+            height: 45,
+            width: windowWidth,
+            position: 'absolute',
+            bottom: 0
+          }}
+        >
           <MenuButton setDisplayMenu={setDisplayMenu} />
+          <Entypo name="mail" size={32} color={colors.textLight} />
         </View>
       </ImageBackground>
     </ScrollView>
@@ -121,8 +134,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     // paddingTop: windowHeight > 600 ? 40 : 30,
     // paddingBottom: windowHeight > 600 ? 40 : 10,
-    alignItems: 'center',
-    backgroundColor: Colors.primaryDark,
+    backgroundColor: Colors.primary,
     position: 'absolute',
     top: 0,
     width: windowWidth
@@ -132,7 +144,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   headerText: {
-    marginLeft: 10,
+    marginLeft: 90,
     fontSize: 30,
     //fontSize: windowHeight < 600 ? 36 : 46,
     fontWeight: windowHeight < 600 ? '600' : 'bold',

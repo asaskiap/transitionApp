@@ -253,6 +253,12 @@ class Berufsfragebogen extends React.Component {
             >
               Test neu starten
             </ButtonPrimary>
+
+            <ButtonPrimary
+              onPress={() => this.props.navigation.navigate('Home')}
+            >
+              Startseite
+            </ButtonPrimary>
           </View>
         )}
       </ScrollableScreenContainer>

@@ -71,28 +71,26 @@ class germanyMenuScreen extends React.Component {
         />
         <MenuCard
           textSample={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id metus velit. In vulputate venenatis iaculis. Vivamus et dictum dui, at auctor ex. Sed eget mauris quis lacus venenatis fringilla. Phasellus ac lorem eros. Sed condimentum est tellus, ut maximus nulla venenatis quis. Vestibulum porta sed eros id lacinia. '
+            'Deutschkurse sind über verschiedene Anbieter zu finden. Beispielsweise über das Goethe Institut, die Volkshochschule oder die DeutschAkademie in Berlin. Unter bestimmten Voraussetzungen kann der Deutschkurs über das Arbeitsamt finanziert.'
           }
         >
           Deutschkurse
         </MenuCard>
         <MenuCard
-          textSample={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id metus velit. In vulputate venenatis iaculis. Vivamus et dictum dui, at auctor ex. Sed eget mauris quis lacus venenatis fringilla. Phasellus ac lorem eros. Sed condimentum est tellus, ut maximus nulla venenatis quis. Vestibulum porta sed eros id lacinia. '
-          }
+          textSample={'Aufenthalts- und Arbeitsgenehmigung in Deutschland'}
         >
           Visum
         </MenuCard>
         <MenuCard
           textSample={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id metus velit. In vulputate venenatis iaculis. Vivamus et dictum dui, at auctor ex. Sed eget mauris quis lacus venenatis fringilla. Phasellus ac lorem eros. Sed condimentum est tellus, ut maximus nulla venenatis quis. Vestibulum porta sed eros id lacinia. '
+            'Allgemeine Informationen zum Thema „Leben und Arbeiten in Deutschland” und damit verbundene Fragen... '
           }
         >
           Nachweise
         </MenuCard>
         <MenuCard
           textSample={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id metus velit. In vulputate venenatis iaculis. Vivamus et dictum dui, at auctor ex. Sed eget mauris quis lacus venenatis fringilla. Phasellus ac lorem eros. Sed condimentum est tellus, ut maximus nulla venenatis quis. Vestibulum porta sed eros id lacinia. '
+            'In Deutschland verfügt jedes Bundesland über eine Zeugnisanerkennungsstelle, die für die Bewertung von Zeugnissen als Nachweis der Hochschulreife,der Fachhochschulreife, eines mittleren Schulabschlusses oder des erfolgreichen Hauptschulabschlusses zuständig ist.'
           }
         >
           Anerkennen von ausländischen Zeugnissen

@@ -13,15 +13,13 @@ import ArticleIllustration from '../../components/articleComponents/articleIllus
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
-import Berufsportraits from '../IdeasScreens/berufsportraits';
-
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
 
-class ideasMenuScreen extends React.Component {
+class UmsetzungMenu extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Ideen - Berufsfindung',
+      headerTitle: 'Wie setze ich Ideen um?',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -31,7 +29,6 @@ class ideasMenuScreen extends React.Component {
           <Item
             title="Menu"
             iconName="menu"
-            //color={colors.primaryLight}
             onPress={navigation.getParam('toggleMenu')}
           />
         </HeaderButtons>
@@ -44,8 +41,7 @@ class ideasMenuScreen extends React.Component {
   }
 
   state = {
-    displayMenu: false,
-    berufsportraits: false
+    displayMenu: false
   };
 
   toggleMenu = () => {
@@ -68,12 +64,8 @@ class ideasMenuScreen extends React.Component {
           close={this.closeMenu}
           {...this.props}
         ></Menu>
-        <Berufsportraits
-          isVisible={this.state.berufsportraits}
-          close={() => this.setState({berufsportraits: false})}
-        />
         <ArticleHeader textStyle={{textAlign: 'center'}}>
-          Ideen - Berufsfindung
+          Wie setze ich meine Ideen um?
         </ArticleHeader>
         <ArticleIllustration
           imageStyle={{
@@ -81,32 +73,37 @@ class ideasMenuScreen extends React.Component {
             height: windowHeight * 0.45,
             resizeMode: 'cover'
           }}
-          image={require('../../assets/illustrations/ideasIllustrations/baloon.png')}
+          image={require('../../assets/illustrations/umsetzungIllustrations/businessPlan.png')}
         />
-
         <MenuCard
-          textSample={'Test mit individuellem Ergebnis'}
-          onPress={() => this.props.navigation.navigate('Berufsfragebogen')}
+          textSample={
+            'Es gibt ein paar gute Seiten im Netz, auf denen eine Auflistung aller Universitäten und deren Studiengänge zu finden sind...'
+          }
         >
-          Berufsinteressen Fragebogen
+          Liste mit Universitäten
         </MenuCard>
         <MenuCard
-          onPress={() => this.setState({berufsportraits: true})}
-          textSample={'Eine Auflistung mit verschiedensten Berufen...'}
+          textSample={'Wie gehe ich vor, wenn ich einen Studienplatz suche?'}
         >
-          Berufsportraits
+          Studienplatzsuche
         </MenuCard>
         <MenuCard
-          onPress={() => this.props.navigation.navigate('TransitionStories')}
-          textSample={'Wie haben andere Tänzer die Transition gemeistert?'}
+          textSample={
+            'Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann sehr individuell und facettenreich sein, denn es gibt eine Vielzahl an verschiedensten Berufen und Bereichen in denen eine Berufsausbildung absolviert werden kann...'
+          }
         >
-          Transition Stories
+          Ausbildungsbetriebe
+        </MenuCard>
+        <MenuCard
+          textSample={
+            'Für das Schreiben einer Bewerbung gibt es kein allgemeingültiges Rezept; hängt es doch stark von dem beruflichen Feld und der spezifischen Stellenbeschreibung, sowie der Person des Bewerbers ab...'
+          }
+        >
+          Bewerbungsprozess
         </MenuCard>
       </ScrollableScreenContainer>
     );
   }
 }
 
-export default ideasMenuScreen;
-
-const styles = StyleSheet.create({});
+export default UmsetzungMenu;
