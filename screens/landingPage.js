@@ -9,7 +9,6 @@ import {
   ImageBackground,
   Image
 } from 'react-native';
-import {Entypo} from '@expo/vector-icons';
 
 import MenuButton from '../components/buttons/menuButton';
 
@@ -17,6 +16,8 @@ import Menu from '../components/menu';
 import WerSindWir from '../components/landingPageComponents/WerSindWir';
 import WasMachenWir from '../components/landingPageComponents/WasMachenWir';
 import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelfen';
+import ContactButton from '../components/buttons/contactButton';
+import TreeButton from '../components/buttons/treeButton';
 
 import textStyles from '../styles/generalTextStyles';
 import Colors from '../assets/colors';
@@ -64,11 +65,8 @@ const LandingPage = (props) => {
               source={require('../assets/transitionLogoTransparent.png')}
               resizeMode={'cover'}
               style={{
-                // marginTop: windowHeight > 600 ? 90 : 70,
-                // width: windowHeight > 600 ? 160 : 100,
-                // height: windowHeight > 600 ? 160 : 100
-                width: 50,
-                height: 50,
+                width: windowHeight > 600 ? 50 : 36,
+                height: windowHeight > 600 ? 50 : 36,
                 position: 'absolute',
                 left: 20,
                 top: 25
@@ -103,14 +101,21 @@ const LandingPage = (props) => {
         <View
           style={{
             backgroundColor: colors.primary,
-            height: 45,
+            height: windowHeight > 600 ? 45 : 38,
             width: windowWidth,
             position: 'absolute',
             bottom: 0
           }}
         >
           <MenuButton setDisplayMenu={setDisplayMenu} />
-          <Entypo name="mail" size={32} color={colors.textLight} />
+          <TreeButton
+            style={{position: 'absolute', bottom: 2, left: '45%'}}
+            onPress={() => props.navigation.navigate('Entscheidungsbaum')}
+          />
+          <ContactButton
+            style={{position: 'absolute', bottom: 2, left: 5}}
+            onPress={() => console.log('pressed contact button')}
+          />
         </View>
       </ImageBackground>
     </ScrollView>
@@ -130,10 +135,8 @@ export default LandingPage;
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
-    paddingTop: 25,
-    paddingBottom: 10,
-    // paddingTop: windowHeight > 600 ? 40 : 30,
-    // paddingBottom: windowHeight > 600 ? 40 : 10,
+    paddingTop: windowHeight > 600 ? 25 : 22,
+    paddingBottom: windowHeight > 600 ? 10 : 4,
     backgroundColor: Colors.primary,
     position: 'absolute',
     top: 0,
@@ -145,15 +148,14 @@ const styles = StyleSheet.create({
   },
   headerText: {
     marginLeft: 90,
-    fontSize: 30,
-    //fontSize: windowHeight < 600 ? 36 : 46,
+    fontSize: windowHeight > 600 ? 30 : 24,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
     textAlign: 'center',
     color: Colors.secondaryLight,
-    letterSpacing: 5
+    letterSpacing: windowHeight > 600 ? 5 : 2
   },
   buttonContainer: {
-    marginTop: 450,
+    marginTop: windowHeight > 600 ? 450 : 350,
 
     marginBottom: windowHeight > 600 ? 50 : 20
     //marginTop: windowHeight > 600 ? 180 : 170

@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import colors from '../../assets/colors';
-import textStyles from '../../styles/generalTextStyles';
 
 import Menu from '../../components/menu';
 import MyHeaderButton from '../../components/buttons/headerButton';
@@ -13,6 +12,10 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import MenuCard from '../../components/menuScreenComponents/menuCard';
+
+import Visum from '../germanyScreens/Visum';
+import Nachweise from '../germanyScreens/nachweise';
+import Zeugnisse from '../germanyScreens/zeugnisse';
 
 class germanyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -40,7 +43,10 @@ class germanyMenuScreen extends React.Component {
   }
 
   state = {
-    displayMenu: false
+    displayMenu: false,
+    visum: false,
+    nachweise: false,
+    zeugnisse: false
   };
 
   toggleMenu = () => {
@@ -63,6 +69,18 @@ class germanyMenuScreen extends React.Component {
           close={this.closeMenu}
           {...this.props}
         ></Menu>
+        <Visum
+          isVisible={this.state.visum}
+          close={() => this.setState({visum: false})}
+        />
+        <Nachweise
+          isVisible={this.state.nachweise}
+          close={() => this.setState({nachweise: false})}
+        />
+        <Zeugnisse
+          isVisible={this.state.zeugnisse}
+          close={() => this.setState({zeugnisse: false})}
+        />
         <ArticleHeader textStyle={{textAlign: 'center', letterSpacing: 1}}>
           Leben und Arbeiten in Deutschland
         </ArticleHeader>
@@ -77,11 +95,13 @@ class germanyMenuScreen extends React.Component {
           Deutschkurse
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({visum: true})}
           textSample={'Aufenthalts- und Arbeitsgenehmigung in Deutschland'}
         >
           Visum
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({nachweise: true})}
           textSample={
             'Allgemeine Informationen zum Thema „Leben und Arbeiten in Deutschland” und damit verbundene Fragen... '
           }
@@ -89,6 +109,7 @@ class germanyMenuScreen extends React.Component {
           Nachweise
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({zeugnisse: true})}
           textSample={
             'In Deutschland verfügt jedes Bundesland über eine Zeugnisanerkennungsstelle, die für die Bewertung von Zeugnissen als Nachweis der Hochschulreife,der Fachhochschulreife, eines mittleren Schulabschlusses oder des erfolgreichen Hauptschulabschlusses zuständig ist.'
           }
