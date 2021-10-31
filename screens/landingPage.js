@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: windowHeight > 600 ? 25 : 22,
     paddingBottom: windowHeight > 600 ? 10 : 4,
-    backgroundColor: Colors.primary,
+    //backgroundColor: Colors.primary,
     position: 'absolute',
     top: 0,
     width: windowWidth

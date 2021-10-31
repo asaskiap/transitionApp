@@ -13,6 +13,9 @@ import ArticleIllustration from '../../components/articleComponents/articleIllus
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 
 import Bayerische from '../insuranceScreens/bayrischeVersorgungskammer';
+import KünstlerSozialVersicherung from '../insuranceScreens/ksk';
+import Arbeitslosversicherung from '../insuranceScreens/arbeitslosversicherung';
+import Unfallversicherung from '../insuranceScreens/unfallversicherung';
 
 class insuranceMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -41,7 +44,10 @@ class insuranceMenuScreen extends React.Component {
 
   state = {
     displayMenu: false,
-    bayrische: false
+    bayrische: false,
+    ksk: false,
+    arbeitslos: false,
+    unfall: false
   };
 
   toggleMenu = () => {
@@ -68,6 +74,18 @@ class insuranceMenuScreen extends React.Component {
           isVisible={this.state.bayrische}
           close={() => this.setState({bayrische: false})}
         />
+        <KünstlerSozialVersicherung
+          isVisible={this.state.ksk}
+          close={() => this.setState({ksk: false})}
+        />
+        <Arbeitslosversicherung
+          isVisible={this.state.arbeitslos}
+          close={() => this.setState({arbeitslos: false})}
+        />
+        <Unfallversicherung
+          isVisible={this.state.unfall}
+          close={() => this.setState({unfall: false})}
+        />
         <ArticleHeader>Versicherung</ArticleHeader>
         <ArticleIllustration
           imageContainerStyle={{marginBottom: 80}}
@@ -92,6 +110,7 @@ class insuranceMenuScreen extends React.Component {
           Bayerische Versorgungskammer
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({ksk: true})}
           textSample={
             'Mit der Künstlersozialversicherung sind seit 1983 die selbständigen Künstler und Publizisten in den Schutz der gesetzlichen Sozialversicherung einbezogen. Besonderheit: Die Künstler und Publizisten brauchen nur die Hälfte ihrer Beiträge zu tragen und sind damit ähnlich günstig gestellt wie Arbeitnehmer...'
           }
@@ -99,6 +118,7 @@ class insuranceMenuScreen extends React.Component {
           Die Künstlersozial- versicherung (KSK)
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({arbeitslos: true})}
           textSample={
             'Seit 1. Februar 2006 bietet die Arbeitsagentur eine Antragspflichtversicherung in der Arbeitslosenversicherung an. Auf Antrag können sich in der Arbeitslosenversicherung Personen weiter versichern, die eine selbständige Tätigkeit mit einem Umfang von mindestens 15 Stunden wöchentlich aufnehmen und ausüben...'
           }
@@ -106,6 +126,7 @@ class insuranceMenuScreen extends React.Component {
           Arbeitslosigkeits- Versicherung
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({unfall: true})}
           textSample={
             'Was tun bei Berufsaufgabe aus gesundheitlichen Gründen?Voraussetzungen für den Erhalt von Leistungen zur Teilhabe am Arbeitsleben (LTA) wie Umschulungen, Maßnahmen zur Weiterqualifizierung bzw. Integrationshilfen oder Gründungszuschuss über die Deutsche Rentenversicherung...'
           }
