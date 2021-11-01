@@ -13,6 +13,9 @@ import ArticleIllustration from '../../components/articleComponents/articleIllus
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
+import UniversitaetenListe from '../umsetzungScreens/uniList';
+import Studienplatzsuche from '../umsetzungScreens/studienplatzsuche';
+
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
 
@@ -41,7 +44,9 @@ class UmsetzungMenu extends React.Component {
   }
 
   state = {
-    displayMenu: false
+    displayMenu: false,
+    uniList: false,
+    studienplatz: false
   };
 
   toggleMenu = () => {
@@ -64,6 +69,14 @@ class UmsetzungMenu extends React.Component {
           close={this.closeMenu}
           {...this.props}
         ></Menu>
+        <UniversitaetenListe
+          isVisible={this.state.uniList}
+          close={() => this.setState({uniList: false})}
+        />
+        <Studienplatzsuche
+          isVisible={this.state.studienplatz}
+          close={() => this.setState({studienplatz: false})}
+        />
         <ArticleHeader textStyle={{textAlign: 'center'}}>
           Wie setze ich meine Ideen um?
         </ArticleHeader>
@@ -76,6 +89,7 @@ class UmsetzungMenu extends React.Component {
           image={require('../../assets/illustrations/umsetzungIllustrations/businessPlan.png')}
         />
         <MenuCard
+          onPress={() => this.setState({uniList: true})}
           textSample={
             'Es gibt ein paar gute Seiten im Netz, auf denen eine Auflistung aller Universitäten und deren Studiengänge zu finden sind...'
           }
@@ -83,6 +97,7 @@ class UmsetzungMenu extends React.Component {
           Liste mit Universitäten
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({studienplatz: true})}
           textSample={'Wie gehe ich vor, wenn ich einen Studienplatz suche?'}
         >
           Studienplatzsuche
