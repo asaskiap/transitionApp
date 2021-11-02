@@ -10,13 +10,19 @@ import MyHeaderButton from '../../components/buttons/headerButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
-import MenuScreenHeader from '../../components/articleComponents/menuScreenHeader';
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 
 import Menu from '../../components/menu';
 import StipendiumStiftung from '../financialScreens/stipendiumStiftung';
 import Bafoeg from '../financialScreens/bafoeg';
 import Aufstiegsstipendium from '../financialScreens/aufgstieg';
+import Bildungskredit from '../financialScreens/bildungskredit';
+import Studienkredit from '../financialScreens/studienkredit';
+import Arbeitslosengeld from '../financialScreens/arbeitslosengeld';
+import Stipendien from '../financialScreens/stipendien';
+import Bayrische from '../financialScreens/bayrische';
+import Nebenjobs from '../financialScreens/nebenjobs';
+import Bildungsgutschein from '../financialScreens/bildungsgutschein';
 
 const windowHeight = Dimensions.get('window').height;
 
@@ -48,7 +54,14 @@ class financialMenuScreen extends React.Component {
     displayMenu: false,
     aufstiegsstipendium: false,
     stipendiumStiftung: false,
-    bafoeg: false
+    bafoeg: false,
+    bildungskredit: false,
+    studienkredit: false,
+    arbeitslosengeld: false,
+    stipendien: false,
+    bayrische: false,
+    nebenjobs: false,
+    bildungsgutschein: false
   };
 
   toggleMenu = () => {
@@ -83,7 +96,35 @@ class financialMenuScreen extends React.Component {
           isVisible={this.state.bafoeg}
           close={() => this.setState({bafoeg: false})}
         />
-
+        <Bildungskredit
+          isVisible={this.state.bildungskredit}
+          close={() => this.setState({bildungskredit: false})}
+        />
+        <Studienkredit
+          isVisible={this.state.studienkredit}
+          close={() => this.setState({studienkredit: false})}
+        />
+        <Arbeitslosengeld
+          isVisible={this.state.arbeitslosengeld}
+          close={() => this.setState({arbeitslosengeld: false})}
+        />
+        <Bildungsgutschein
+          isVisible={this.state.bildungsgutschein}
+          close={() => this.setState({bildungsgutschein: false})}
+        />
+        <Bayrische
+          isVisible={this.state.bayrische}
+          close={() => this.setState({bayrische: false})}
+          {...this.props}
+        />
+        <Stipendien
+          isVisible={this.state.stipendien}
+          close={() => this.setState({stipendien: false})}
+        />
+        <Nebenjobs
+          isVisible={this.state.nebenjobs}
+          close={() => this.setState({nebenjobs: false})}
+        />
         <ArticleHeader>Finanzierung</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/images/financeColorful.png')}
@@ -113,26 +154,62 @@ class financialMenuScreen extends React.Component {
         >
           Aufstiegsstipendium
         </MenuCard>
-        <MenuCard>Bildungsgutschein</MenuCard>
         <MenuCard
+          onPress={() => this.setState({bildungsgutschein: true})}
+          textSample={
+            'Wenn man sich beim Arbeitsamt als arbeitslos gemeldet hat und eine Weiterbildung zu einem anderen Beruf machen möchte, gibt es in manchen Fällen die Möglichkeit eines Bildungsgutscheins. Das bedeutet, dass das Arbeitsamt die Kosten für die Weiterbildung übernimmt.'
+          }
+        >
+          Bildungsgutschein
+        </MenuCard>
+        <MenuCard
+          onPress={() => this.setState({bildungskredit: true})}
           textSample={
             'Der Bildungskredit ist speziell für die Schlussphase des Studiums, für Praktika, Zusatz-, Ergänzungs- oder Aufbaustudiengänge gedacht. Er finanziert den Studierenden oder die Studierende bis zu zwei Jahre lang mit monatlich...'
           }
         >
           Bildungskredit
         </MenuCard>
-        <MenuCard>Bankdarlehn</MenuCard>
-        <MenuCard>Arbeitslosengeld</MenuCard>
-        <MenuCard>Bayrische Versicherung</MenuCard>
         <MenuCard
+          onPress={() => this.setState({arbeitslosengeld: true})}
+          textSample={
+            'In manchen Fällen kann für eine Weile das Arbeitslosengeld genutzt werden um die erste Zeit der Weiterbildung zu überbrücken. Im besten Fall hat man Anspruch auf 12 Monate Arbeitslosengeld (60% des vorherigen Nettogehalts) und kann diese Zeit nutzen um sich ggf. um weitere Finanzierungsmöglichkeiten zu kümmern. '
+          }
+        >
+          Arbeitslosengeld
+        </MenuCard>
+        <MenuCard
+          onPress={() => this.setState({bayrische: true})}
+          textSample={
+            'Es gibt die Möglichkeit sich die Beiträge die man in der BayerischenVersorgungskammer eingezahlt hat für seine Weiterbildung zu nutzen.'
+          }
+        >
+          Bayrische Versicherung
+        </MenuCard>
+        <MenuCard
+          onPress={() => this.setState({studienkredit: true})}
           textSample={
             'Bis zu 14 Semester lang können Studierende ihre Lebenshaltungskosten mit einem Studienkredit finanzieren. Die monatlichen Kreditbeträge können von 100,- bis zu 650,- Euro betragen, abhängig vom Wunsch des Kreditnehmers oder der Kreditnehmerin... '
           }
         >
           Studienkredit
         </MenuCard>
-        <MenuCard>Andere Stipendien</MenuCard>
-        <MenuCard>Nebenjobs</MenuCard>
+        <MenuCard
+          onPress={() => this.setState({stipendien: true})}
+          textSample={
+            ' Es gibt eine Vielzahl von anderen Stipendienmöglichkeiten. Es lohnt sich auf jeden Fall sich genauer zu informieren und zu bewerben.'
+          }
+        >
+          Andere Stipendien
+        </MenuCard>
+        <MenuCard
+          onPress={() => this.setState({nebenjobs: true})}
+          textSample={
+            'Einige Studiengänge oder Weiterbildungsmaßnahmen sind so strukturiert, dass man auch durchaus neben dem Studium sein Geld mit einem Nebenjob verdienen kann. Das ist zwar manchmal eine Herausforderung, aber mit etwas Organisation und Strukturiertheit auch sehr gut zu bewältigen.'
+          }
+        >
+          Nebenjobs
+        </MenuCard>
       </ScrollableScreenContainer>
     );
   }

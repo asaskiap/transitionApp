@@ -16,6 +16,7 @@ import MenuCard from '../../components/menuScreenComponents/menuCard';
 import Visum from '../germanyScreens/Visum';
 import Nachweise from '../germanyScreens/nachweise';
 import Zeugnisse from '../germanyScreens/zeugnisse';
+import Deutschkurse from '../germanyScreens/deutschkurse';
 
 class germanyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -46,7 +47,8 @@ class germanyMenuScreen extends React.Component {
     displayMenu: false,
     visum: false,
     nachweise: false,
-    zeugnisse: false
+    zeugnisse: false,
+    deutschkurse: false
   };
 
   toggleMenu = () => {
@@ -81,6 +83,10 @@ class germanyMenuScreen extends React.Component {
           isVisible={this.state.zeugnisse}
           close={() => this.setState({zeugnisse: false})}
         />
+        <Deutschkurse
+          isVisible={this.state.deutschkurse}
+          close={() => this.setState({deutschkurse: false})}
+        />
         <ArticleHeader textStyle={{textAlign: 'center', letterSpacing: 1}}>
           Leben und Arbeiten in Deutschland
         </ArticleHeader>
@@ -88,8 +94,9 @@ class germanyMenuScreen extends React.Component {
           image={require('../../assets/illustrations/globeColorful.png')}
         />
         <MenuCard
+          onPress={() => this.setState({deutschkurse: true})}
           textSample={
-            'Deutschkurse sind über verschiedene Anbieter zu finden. Beispielsweise über das Goethe Institut, die Volkshochschule oder die DeutschAkademie in Berlin. Unter bestimmten Voraussetzungen kann der Deutschkurs über das Arbeitsamt finanziert.'
+            'Deutschkurse sind über verschiedene Anbieter zu finden...'
           }
         >
           Deutschkurse

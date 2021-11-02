@@ -15,6 +15,8 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 import UniversitaetenListe from '../umsetzungScreens/uniList';
 import Studienplatzsuche from '../umsetzungScreens/studienplatzsuche';
+import Ausbildungsbetriebe from '../umsetzungScreens/ausbildung';
+import Bewerbungsprozess from '../umsetzungScreens/bewerbung';
 
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
@@ -46,7 +48,9 @@ class UmsetzungMenu extends React.Component {
   state = {
     displayMenu: false,
     uniList: false,
-    studienplatz: false
+    studienplatz: false,
+    ausbildung: false,
+    bewerbung: false
   };
 
   toggleMenu = () => {
@@ -77,6 +81,14 @@ class UmsetzungMenu extends React.Component {
           isVisible={this.state.studienplatz}
           close={() => this.setState({studienplatz: false})}
         />
+        <Ausbildungsbetriebe
+          isVisible={this.state.ausbildung}
+          close={() => this.setState({ausbildung: false})}
+        />
+        <Bewerbungsprozess
+          isVisible={this.state.bewerbung}
+          close={() => this.setState({bewerbung: false})}
+        />
         <ArticleHeader textStyle={{textAlign: 'center'}}>
           Wie setze ich meine Ideen um?
         </ArticleHeader>
@@ -103,6 +115,7 @@ class UmsetzungMenu extends React.Component {
           Studienplatzsuche
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({ausbildung: true})}
           textSample={
             'Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann sehr individuell und facettenreich sein, denn es gibt eine Vielzahl an verschiedensten Berufen und Bereichen in denen eine Berufsausbildung absolviert werden kann...'
           }
@@ -110,6 +123,7 @@ class UmsetzungMenu extends React.Component {
           Ausbildungsbetriebe
         </MenuCard>
         <MenuCard
+          onPress={() => this.setState({bewerbung: true})}
           textSample={
             'Für das Schreiben einer Bewerbung gibt es kein allgemeingültiges Rezept; hängt es doch stark von dem beruflichen Feld und der spezifischen Stellenbeschreibung, sowie der Person des Bewerbers ab...'
           }

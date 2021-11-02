@@ -14,6 +14,8 @@ import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import MenuCard from '../../components/menuScreenComponents/menuCard';
 
+import Existenzgruendung from '../selfEmploymentScreens/existenzgruendung';
+
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
 
@@ -43,7 +45,8 @@ class selfEmploymentMenuScreen extends React.Component {
   }
 
   state = {
-    displayMenu: false
+    displayMenu: false,
+    existenzgruendung: false
   };
 
   toggleMenu = () => {
@@ -65,18 +68,23 @@ class selfEmploymentMenuScreen extends React.Component {
           close={this.closeMenu}
           {...this.props}
         ></Menu>
+        <Existenzgruendung
+          isVisible={this.state.existenzgruendung}
+          close={() => this.setState({existenzgruendung: false})}
+        />
         <ArticleHeader>Selbstständigkeit</ArticleHeader>
         <ArticleIllustration
           imageStyle={{
             resizeMode: 'contain',
-            maxHeight: windowHeight * 0.3,
+            maxHeight: windowHeight * 0.5,
             maxWidth: windowWidth * 0.9
           }}
-          image={require('../../assets/illustrations/levitate.png')}
+          image={require('../../assets/illustrations/selfemploymentIllustrations/plans.png')}
         />
         <MenuCard
+          onPress={() => this.setState({existenzgruendung: true})}
           textSample={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id metus velit. In vulputate venenatis iaculis. Vivamus et dictum dui, at auctor ex. Sed eget mauris quis lacus venenatis fringilla. Phasellus ac lorem eros. Sed condimentum est tellus, ut maximus nulla venenatis quis. Vestibulum porta sed eros id lacinia. '
+            'Einige TänzerInnen wollen nach ihrer Tanzkarriere als Selbständige arbeiten. Dies betrifft sowohl diejenigen, die vom Festengagement in die freie Szene wechseln als auch diejenigen, die in einem neuen Feld (z.B. als Tanzpädagoge oder Yogalehrer) freiberuflich arbeiten wollen.'
           }
         >
           Existenzgründung
