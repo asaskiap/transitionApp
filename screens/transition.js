@@ -12,6 +12,9 @@ import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import MyHeaderButton from '../components/buttons/headerButton';
 
+const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get('window').width;
+
 class Transition extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
@@ -62,7 +65,7 @@ class Transition extends React.Component {
         ></Menu>
         <ArticleHeader>Die Transition</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 400}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
           image={require('../assets/illustrations/transitionIllustrations/hurry.png')}
         />
         <ArticleSubHeader>Was bedeutet Transition?</ArticleSubHeader>
@@ -97,12 +100,16 @@ class Transition extends React.Component {
           Karriere oder am Ende des Tänzer-Daseins.
         </Paragraph>
         <ArticleHeader
-          textStyle={{fontSize: 28, letterSpacing: 2, textAlign: 'center'}}
+          textStyle={{
+            fontSize: windowHeight > 600 ? 28 : 26,
+            letterSpacing: windowHeight > 600 ? 2 : 1,
+            textAlign: 'center'
+          }}
         >
           Entwicklung einer Vision für ein Leben nach dem Tanz
         </ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 300}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
           image={require('../assets/illustrations/transitionIllustrations/relaxation.png')}
         ></ArticleIllustration>
         <ArticleSubHeader>Vision</ArticleSubHeader>
@@ -136,7 +143,7 @@ class Transition extends React.Component {
           glückliches Leben zu führen.
         </Paragraph>
         <ArticleIllustration
-          imageStyle={{maxHeight: 300}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
           image={require('../assets/illustrations/transitionIllustrations/meditating.png')}
         ></ArticleIllustration>
         <ArticleSubHeader>Interests</ArticleSubHeader>
@@ -153,8 +160,8 @@ class Transition extends React.Component {
           mit und zu sich selbst.
         </Paragraph>
         <ArticleIllustration
-          imageStyle={{height: 400}}
-          image={require('../assets/illustrations/transitionIllustrations/swinging.png')}
+          image={require('../assets/illustrations/transitionIllustrations/reading-side.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 280 : 220}}
         ></ArticleIllustration>
         <ArticleSubHeader>Skills</ArticleSubHeader>
 

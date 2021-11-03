@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Modal, Dimensions} from 'react-native';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
@@ -9,12 +9,18 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
+const windowHeight = Dimensions.get('window').height;
 const Bewerbungsprozess = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{fontSize: 32, letterSpacing: 2}}>
+        <ArticleHeader
+          textStyle={{
+            fontSize: windowHeight > 600 ? 32 : 28,
+            letterSpacing: windowHeight > 600 ? 2 : 1
+          }}
+        >
           Bewerbungsprozess
         </ArticleHeader>
         <ArticleIllustration

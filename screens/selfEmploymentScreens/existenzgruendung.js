@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Linking, Modal} from 'react-native';
+import {Linking, Modal, Dimensions} from 'react-native';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
@@ -8,6 +8,8 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import Link from '../../components/articleComponents/link';
+
+const windowHeight = Dimensions.get('window').height;
 
 const Existenzgruendung = (props) => {
   return (
@@ -18,7 +20,7 @@ const Existenzgruendung = (props) => {
           Existenzgründung
         </ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 400}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
           image={require('../../assets/illustrations/selfemploymentIllustrations/business.png')}
         />
         <Article>

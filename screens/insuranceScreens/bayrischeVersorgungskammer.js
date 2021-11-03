@@ -110,7 +110,10 @@ const Bayerische = (props) => {
             Theater versichert ist. In diesem Fall finden ausschließlich die
             allgemeinen Satzungsbestimmungen Anwendung.
           </Paragraph>
-          <ArticleHeader>Möglichkeit der Weiterversicherung</ArticleHeader>
+          <ArticleSubHeader>
+            Möglichkeit der Weiterversicherung
+          </ArticleSubHeader>
+
           <Paragraph>
             Statt der Inanspruchnahme einer Abfindung kann sich ein Tänzer oder
             eine Tänzerin nach Aufgabe des Bühnenberufs alternativ

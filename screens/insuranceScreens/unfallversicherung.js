@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Linking, Modal} from 'react-native';
+import {Linking, Modal, Dimensions} from 'react-native';
 import colors from '../../assets/colors';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -12,16 +12,23 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
+const windowHeight = Dimensions.get('window').height;
+
 const Unfallversicherung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <ArticleHeader
-          textStyle={{letterSpacing: 2, fontSize: 32, textAlign: 'center'}}
+          textStyle={{
+            letterSpacing: windowHeight > 600 ? 2 : 1,
+            fontSize: windowHeight > 600 ? 32 : 28,
+            textAlign: 'center'
+          }}
         >
           Berufsunfähigkeits- und Unfallversicherung
         </ArticleHeader>
         <ArticleIllustration
+          imageContainerStyle={{marginTop: 50}}
           image={require('../../assets/illustrations/insuranceIllustrations/CatCup.png')}
         />
         <Article>
@@ -88,7 +95,7 @@ const Unfallversicherung = (props) => {
           <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
             06151 – 3917 601
           </Paragraph>
-          <Link onPress={() => Linking.openURL('www.tamed.de')}>
+          <Link onPress={() => Linking.openURL('http://www.tamed.de')}>
             www.tamed.de
           </Link>
 
@@ -142,7 +149,7 @@ const Unfallversicherung = (props) => {
           <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
             04421/407-407
           </Paragraph>
-          <Link onPress={() => Linking.openURL('www.uk-bund.de')}>
+          <Link onPress={() => Linking.openURL('http://www.uk-bund.de')}>
             www.uk-bund.de
           </Link>
           <ArticleSubHeader textStyle={{color: colors.accentDark}}>
@@ -151,7 +158,9 @@ const Unfallversicherung = (props) => {
           <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
             030/ 76 24 – 0
           </Paragraph>
-          <Link onPress={() => Linking.openURL('www.unfallkasse-berlin.de')}>
+          <Link
+            onPress={() => Linking.openURL('http://www.unfallkasse-berlin.de')}
+          >
             www.unfallkasse-berlin.de
           </Link>
           <Paragraph>sowie in allen Bundesländern, bitte googeln.</Paragraph>

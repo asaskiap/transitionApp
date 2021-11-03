@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Modal, Dimensions} from 'react-native';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
@@ -9,6 +9,8 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
+const windowHeight = Dimensions.get('window').height;
+
 const Deutschkurse = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
@@ -16,7 +18,8 @@ const Deutschkurse = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Deutschkurse</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 350}}
+          imageContainerStyle={{marginTop: 20}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 350 : 300}}
           image={require('../../assets/illustrations/germanyIllustrations/headphones.png')}
         />
         <Article>
