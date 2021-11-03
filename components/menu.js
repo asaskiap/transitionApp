@@ -30,6 +30,13 @@ const menu = (props) => {
             <Text style={styles.menuItemText}>Startseite</Text>
           </TouchableOpacity>
 
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => navigateTo('Transition')}
+          >
+            <Text style={styles.menuItemText}>Die Transition</Text>
+          </TouchableOpacity>
+
           <TouchableOpacity style={styles.menuItem}>
             <Text
               style={styles.menuItemText}

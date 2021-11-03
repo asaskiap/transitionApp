@@ -17,13 +17,15 @@ const Bildungsgutschein = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader>Bildungsgutschein</ArticleHeader>
+        <ArticleHeader textStyle={{letterSpacing: 2}}>
+          Bildungsgutschein
+        </ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: 200}}
           image={require('../../assets/illustrations/levitate.png')}
         />
         <Article>
-          <Paragraph>
+          <Paragraph style={{marginTop: -20}}>
             Wenn man sich beim Arbeitsamt als arbeitslos gemeldet hat und eine
             Weiterbildung zu einem anderen Beruf machen möchte, gibt es in
             manchen Fällen die Möglichkeit eines Bildungsgutscheins. Das
