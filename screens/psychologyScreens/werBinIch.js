@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Linking, Modal} from 'react-native';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
@@ -75,7 +75,13 @@ const WerBindIch = (props) => {
             erkennst.
           </Paragraph>
 
-          <Link>https://www.vernuenftig-leben.de/wer-bin-ich/</Link>
+          <Link
+            onPress={() =>
+              Linking.openURL('https://www.vernuenftig-leben.de/wer-bin-ich/')
+            }
+          >
+            www.vernuenftig-leben.de/wer-bin-ich/
+          </Link>
           <ArticleSubHeader>Abschnitt 1: Wer warst du?</ArticleSubHeader>
           <List>
             <ListItem>Was wolltest du früher mal werden?</ListItem>

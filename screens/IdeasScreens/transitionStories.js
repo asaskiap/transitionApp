@@ -43,18 +43,39 @@ class TransitionStories extends React.Component {
         <ArticleHeader textStyle={{letterSpacing: 2}}>
           Transition Stories
         </ArticleHeader>
-        <View style={{flexDirection: 'row'}}>
-          <Text
-            style={{
-              fontSize: windowHeight > 600 ? 28 : 22,
-              fontWeight: 'bold',
-              color: colors.accentDark,
-              padding: 18
-            }}
-          >
-            Tänzer berichten:
-          </Text>
-        </View>
+
+        <SingleStory
+          quote={
+            '... Elisabeth Exner-Grave, eine Tanzmedizinerin. Sie ist Mitschuld daran, dass er nun selbst Mediziner werden will. '
+          }
+          image={require('../../assets/images/portrait1.jpg')}
+          title={'Medizin Studium'}
+          name={'Tobias Almasi'}
+        ></SingleStory>
+
+        <SingleStory
+          quote={
+            'Manchmal fühlte sich diese Tanzwelt an, als würde man in einer Blase leben. Ich wußte immer, ich möchte auch einmal in der richtigen Welt arbeiten'
+          }
+          image={require('../../assets/images/portrait4.jpg')}
+          title={'Heilerziehungspfleger '}
+          name={'Bram Koch'}
+        ></SingleStory>
+
+        <SingleStory
+          quote={'lernen zu dürfen ohne sich selbst dabei eine Blöße zu geben'}
+          image={require('../../assets/images/portrait5.jpg')}
+          title={'Konditorin'}
+          name={'Cynthia Barcomi'}
+        ></SingleStory>
+        <SingleStory
+          quote={
+            ' "Eine harte, eine ehrliche Entscheidung“, die er bis heute nicht bereut. „Ich habe sie alleine getroffen, niemand hat mich dazu gedrängt.“'
+          }
+          image={require('../../assets/images/portrait6.jpg')}
+          title={'Oberbürgermeister'}
+          name={'Peter Boch'}
+        ></SingleStory>
 
         <SingleStory
           quote={
@@ -97,3 +118,9 @@ TransitionStories.navigationOptions = {
 };
 
 export default TransitionStories;
+
+// <SingleStory
+// quote={''}
+// image={require('')}
+// title={''}
+// name={''}></SingleStory>

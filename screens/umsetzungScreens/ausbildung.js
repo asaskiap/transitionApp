@@ -25,7 +25,7 @@ const Ausbildung = (props) => {
           image={require('../../assets/illustrations/umsetzungIllustrations/welcome_umsetzung.png')}
         />
         <Article>
-          <Paragraph>
+          <Paragraph style={{marginTop: -20}}>
             Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann
             sehr individuell und facettenreich sein, denn es gibt eine Vielzahl
             an verschiedensten Berufen und Bereichen in denen eine
@@ -48,7 +48,7 @@ const Ausbildung = (props) => {
               )
             }
           >
-            https://www.arbeitsagentur.de/m/ausbildungklarmachen/?pk_campaign=AusbildungKlarmachen&pk_source=google_paid&pk_medium=textad&pk_content=Performance
+            www.arbeitsagentur.de/m/ausbildungklarmachen/?pk_campaign=AusbildungKlarmachen&pk_source=google_paid&pk_medium=textad&pk_content=Performance
           </Link>
           <Link
             onPress={() =>
@@ -57,12 +57,12 @@ const Ausbildung = (props) => {
               )
             }
           >
-            https://www.ihk-berlin.de/ausbildung/infos-fuer-ausbildungsbetriebe/
+            www.ihk-berlin.de/ausbildung/infos-fuer-ausbildungsbetriebe/
           </Link>
           <Link
             onPress={() => Linking.openURL('https://www.bibb.de/de/65925.php')}
           >
-            https://www.bibb.de/de/65925.php
+            www.bibb.de/de/65925.php
           </Link>
           <Link
             onPress={() =>
@@ -71,7 +71,7 @@ const Ausbildung = (props) => {
               )
             }
           >
-            https://www.bmwi.de/Navigation/DE/Service/Ausbildungsberufe/ausbildungsberufe.html
+            www.bmwi.de/Navigation/DE/Service/Ausbildungsberufe/ausbildungsberufe.html
           </Link>
           <Link
             onPress={() =>
@@ -80,7 +80,7 @@ const Ausbildung = (props) => {
               )
             }
           >
-            https://planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
+            planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
           </Link>
         </Article>
       </ScrollableScreenContainer>

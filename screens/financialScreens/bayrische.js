@@ -22,7 +22,13 @@ const Bayrische = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{fontSize: windowHeight < 600 ? 28 : 30}}>
+        <ArticleHeader
+          textStyle={{
+            fontSize: windowHeight < 600 ? 28 : 30,
+            letterSpacing: 1,
+            textAlign: 'center'
+          }}
+        >
           Bayrische Versorgungskammer
         </ArticleHeader>
         <ArticleIllustration

@@ -15,14 +15,12 @@ const SingleStory = (props) => {
     >
       <View
         style={{
-          borderColor: colors.secondary,
-          borderWidth: 1,
-          borderRadius: 20,
           padding: 10,
           marginLeft: 80,
           marginRight: 16,
           shadowColor: colors.secondary,
-          backgroundColor: colors.secondaryLight,
+          borderRadius: 20,
+          backgroundColor: colors.textLight,
           shadowOpacity: 0.4,
           shadowRadius: 5,
           shadowOffset: {height: 2, width: -2},
@@ -31,7 +29,7 @@ const SingleStory = (props) => {
       >
         <Text
           style={{
-            fontSize: 16,
+            fontSize: 14,
             color: colors.text,
             fontStyle: 'italic',
             textAlign: 'center'
@@ -53,18 +51,36 @@ const SingleStory = (props) => {
           }}
           source={props.image}
         />
-        <View style={{alignItems: 'center', marginRight: 20, width: '65%'}}>
+        <View
+          style={{
+            alignItems: 'center',
+            marginRight: 20,
+            marginTop: 20,
+            width: '60%'
+          }}
+        >
           <Text
             style={{
-              fontSize: 20,
+              fontSize: 24,
               fontWeight: 'bold',
-              padding: 10,
-              color: colors.text
+
+              marginLeft: -30,
+              color: colors.secondary,
+              alignSelf: 'flex-start'
             }}
           >
-            {props.title}
+            {props.name}
           </Text>
-          <Text style={{color: colors.text}}>{props.name}</Text>
+          <Text
+            style={{
+              color: colors.text,
+              fontSize: 16,
+              fontWeight: 'bold',
+              alignSelf: 'flex-end'
+            }}
+          >
+            - {props.title}
+          </Text>
           <MoreButton
             onPress={props.onPress}
             btnContainerStyle={{alignSelf: 'center'}}

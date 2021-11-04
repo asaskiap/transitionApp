@@ -1,4 +1,5 @@
 import React from 'react';
+import {Entypo} from '@expo/vector-icons';
 
 import {Text, View} from 'react-native';
 import colors from '../../assets/colors';
@@ -13,7 +14,7 @@ export const ListItem = (props) => {
         padding: 8
       }}
     >
-      ◼ {props.children}
+      <Entypo name="dot-single" size={24} color="black" /> {props.children}
     </Text>
   );
 };

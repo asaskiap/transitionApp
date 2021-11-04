@@ -22,7 +22,7 @@ const Bayerische = (props) => {
 
         <ArticleHeader
           textStyle={{
-            fontSize: windowHeight > 600 ? 32 : 24,
+            fontSize: windowHeight > 600 ? 30 : 24,
             letterSpacing: windowHeight > 600 ? 2 : 1,
             textAlign: 'center'
           }}

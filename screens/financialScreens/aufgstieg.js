@@ -23,7 +23,7 @@ const Aufstiegsstipendium = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader
           textStyle={{
-            fontSize: windowHeight > 600 ? 32 : 26,
+            fontSize: windowHeight > 600 ? 30 : 26,
             letterSpacing: windowHeight > 600 ? 2 : 1
           }}
         >

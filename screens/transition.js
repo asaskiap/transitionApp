@@ -127,7 +127,7 @@ class Transition extends React.Component {
           einen Ort in dem die Möglichkeit besteht diese zu definieren.
         </Paragraph>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 220}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 260 : 220}}
           image={require('../assets/illustrations/transitionIllustrations/reading-side_transition.png')}
         ></ArticleIllustration>
         <ArticleSubHeader>Needs</ArticleSubHeader>

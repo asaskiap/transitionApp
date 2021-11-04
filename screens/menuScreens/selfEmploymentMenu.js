@@ -72,7 +72,9 @@ class selfEmploymentMenuScreen extends React.Component {
           isVisible={this.state.existenzgruendung}
           close={() => this.setState({existenzgruendung: false})}
         />
-        <ArticleHeader>Selbstständigkeit</ArticleHeader>
+        <ArticleHeader textStyle={{letterSpacing: 1}}>
+          Selbstständigkeit
+        </ArticleHeader>
         <ArticleIllustration
           imageContainerStyle={{marginTop: 20}}
           imageStyle={{

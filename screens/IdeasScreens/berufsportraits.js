@@ -34,7 +34,7 @@ const Berufsportraits = (props) => {
               Linking.openURL('https://www.aubi-plus.de/berufe/a-z/')
             }
           >
-            https://www.aubi-plus.de/berufe/a-z/
+            www.aubi-plus.de/berufe/a-z/
           </Link>
           <Link
             onPress={() =>
@@ -43,7 +43,7 @@ const Berufsportraits = (props) => {
               )
             }
           >
-            https://www.einstieg.com/ausbildung/berufe-a-z.html
+            www.einstieg.com/ausbildung/berufe-a-z.html
           </Link>
           <Link
             onPress={() =>
@@ -52,14 +52,14 @@ const Berufsportraits = (props) => {
               )
             }
           >
-            https://planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
+            planet-beruf.de/schuelerinnen/mein-beruf/berufe-von-a-z/
           </Link>
           <Link
             onPress={() =>
               Linking.openURL('https://www.xing.com/campus/de/job-search')
             }
           >
-            https://www.xing.com/campus/de/job-search
+            www.xing.com/campus/de/job-search
           </Link>
         </View>
       </ScrollableScreenContainer>

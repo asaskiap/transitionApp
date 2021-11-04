@@ -39,7 +39,7 @@ const UniversitaetenListe = (props) => {
               )
             }
           >
-            https://www.hochschulkompass.de/hochschulen.html
+            www.hochschulkompass.de/hochschulen.html
           </Link>
           <Link
             onPress={() =>
@@ -48,7 +48,7 @@ const UniversitaetenListe = (props) => {
               )
             }
           >
-            https://studiengaenge.zeit.de/hochschulen/
+            studiengaenge.zeit.de/hochschulen/
           </Link>
           <Link
             onPress={() =>
@@ -57,7 +57,7 @@ const UniversitaetenListe = (props) => {
               )
             }
           >
-            https://www2.daad.de/deutschland/studienangebote/studiengang/de/
+            www2.daad.de/deutschland/studienangebote/studiengang/de/
           </Link>
           <Link
             onPress={() =>
@@ -66,7 +66,7 @@ const UniversitaetenListe = (props) => {
               )
             }
           >
-            https://studieren.de/landkarte-unis-deutschland.0.html
+            studieren.de/landkarte-unis-deutschland.0.html
           </Link>
         </Article>
       </ScrollableScreenContainer>

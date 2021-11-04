@@ -16,7 +16,7 @@ const Existenzgruendung = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{letterSpacing: 2}}>
+        <ArticleHeader textStyle={{letterSpacing: 1}}>
           Existenzgründung
         </ArticleHeader>
         <ArticleIllustration
