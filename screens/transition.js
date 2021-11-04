@@ -99,6 +99,7 @@ class Transition extends React.Component {
           helfen in all diesen Momenten; sei es während der Ausbildung, der
           Karriere oder am Ende des Tänzer-Daseins.
         </Paragraph>
+
         <ArticleHeader
           textStyle={{
             fontSize: windowHeight > 600 ? 28 : 26,
@@ -110,8 +111,9 @@ class Transition extends React.Component {
         </ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
-          image={require('../assets/illustrations/transitionIllustrations/relaxation.png')}
+          image={require('../assets/illustrations/transitionIllustrations/meditating_transition.png')}
         ></ArticleIllustration>
+
         <ArticleSubHeader>Vision</ArticleSubHeader>
         <Paragraph>
           Zur Entwicklung einer Vision für das eigene Leben und die weitere
@@ -124,6 +126,10 @@ class Transition extends React.Component {
           Bereiche seine Zeit und seinen Ort. Hierfür bietet die Stiftung Tanz
           einen Ort in dem die Möglichkeit besteht diese zu definieren.
         </Paragraph>
+        <ArticleIllustration
+          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 220}}
+          image={require('../assets/illustrations/transitionIllustrations/reading-side_transition.png')}
+        ></ArticleIllustration>
         <ArticleSubHeader>Needs</ArticleSubHeader>
         <Paragraph>
           An einem bestimmten Punkt im Leben entdeckt man, dass man sich selbst
@@ -144,7 +150,7 @@ class Transition extends React.Component {
         </Paragraph>
         <ArticleIllustration
           imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
-          image={require('../assets/illustrations/transitionIllustrations/meditating.png')}
+          image={require('../assets/illustrations/transitionIllustrations/coffee_transition.png')}
         ></ArticleIllustration>
         <ArticleSubHeader>Interests</ArticleSubHeader>
         <Paragraph>
@@ -159,10 +165,7 @@ class Transition extends React.Component {
           Dinge über sich selbst. Dies ist ein ganz besonderer Prozess der Zeit
           mit und zu sich selbst.
         </Paragraph>
-        <ArticleIllustration
-          image={require('../assets/illustrations/transitionIllustrations/reading-side.png')}
-          imageStyle={{maxHeight: windowHeight > 600 ? 280 : 220}}
-        ></ArticleIllustration>
+
         <ArticleSubHeader>Skills</ArticleSubHeader>
 
         <Paragraph>
@@ -176,6 +179,10 @@ class Transition extends React.Component {
           Stärken, kann daher gute Einsichten und Erkenntnisse bringen, welcher
           berufliche Bereich gut.
         </Paragraph>
+        <ArticleIllustration
+          image={require('../assets/illustrations/transitionIllustrations/relaxation.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 280 : 220}}
+        ></ArticleIllustration>
         <ArticleSubHeader>Values</ArticleSubHeader>
         <Paragraph>
           Die Erfüllung die wir in einer Tätigkeit erleben hängt meist stark

@@ -66,7 +66,7 @@ class Entscheidungsbaum extends React.Component {
         <SubheaderEB>Was brauche ich in meiner Situation?</SubheaderEB>
 
         <ArticleImage
-          image={require('./../assets/illustrations/thinking.png')}
+          image={require('./../assets/illustrations/entscheidungsbaumIllustrations/thinking.png')}
         />
         <ButtonSecondary
           onPress={() => this.props.navigation.navigate('EntscheidungsbaumGo')}

@@ -22,7 +22,7 @@ const Bildungsgutschein = (props) => {
         </ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: 200}}
-          image={require('../../assets/illustrations/levitate.png')}
+          image={require('../../assets/illustrations/financialIllustrations/levitate_finance.png')}
         />
         <Article>
           <Paragraph style={{marginTop: -20}}>

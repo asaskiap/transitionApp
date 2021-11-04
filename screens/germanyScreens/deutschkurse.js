@@ -18,12 +18,10 @@ const Deutschkurse = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Deutschkurse</ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginTop: 20}}
-          imageStyle={{maxHeight: windowHeight > 600 ? 350 : 300}}
-          image={require('../../assets/illustrations/germanyIllustrations/headphones.png')}
+          image={require('../../assets/illustrations/germanyIllustrations/2windows.png')}
         />
         <Article>
-          <Paragraph>
+          <Paragraph style={{marginTop: -60}}>
             Deutschkurse sind über verschiedene Anbieter zu finden.
             Beispielsweise über das Goethe Institut, die Volkshochschule oder
             die DeutschAkademie in Berlin. Unter bestimmten Voraussetzungen kann

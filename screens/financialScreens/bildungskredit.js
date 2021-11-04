@@ -16,7 +16,7 @@ const Bildungskredit = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Bildungskredit</ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/financialIllustrations/bildung.png')}
+          image={require('../../assets/illustrations/financialIllustrations/reading_financial.png')}
         />
         <Article>
           <Paragraph>

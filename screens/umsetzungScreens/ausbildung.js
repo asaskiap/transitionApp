@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Linking, Modal} from 'react-native';
+import {Linking, Modal, Dimensions} from 'react-native';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
@@ -9,16 +9,20 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
+const windowHeight = Dimensions.get('window').height;
+
 const Ausbildung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{letterSpacing: 2, fontSize: 32}}>
+        <ArticleHeader
+          textStyle={{letterSpacing: 1, fontSize: windowHeight > 600 ? 32 : 28}}
+        >
           Ausbildungsbetriebe
         </ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/umsetzungIllustrations/teamwork.png')}
+          image={require('../../assets/illustrations/umsetzungIllustrations/welcome_umsetzung.png')}
         />
         <Article>
           <Paragraph>

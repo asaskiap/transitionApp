@@ -18,7 +18,7 @@ const Nachweise = (props) => {
         <ArticleIllustration
           imageContainerStyle={{marginBottom: -10}}
           imageStyle={{maxWidth: windowWidth * 0.9}}
-          image={require('../../assets/illustrations/germanyIllustrations/unboxing.png')}
+          image={require('../../assets/illustrations/germanyIllustrations/letterbox_deutschland.png')}
         />
         <Article>
           <Paragraph>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Dimensions} from 'react-native';
+import {Modal, Dimensions, Linking} from 'react-native';
 
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -12,6 +12,7 @@ import Link from '../../components/articleComponents/link';
 import Quote from '../../components/articleComponents/quote';
 
 import CloseButton from '../../components/buttons/closeButton';
+import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
 
 const windowHeight = Dimensions.get('window').height;
 
@@ -32,14 +33,9 @@ const Aufstiegsstipendium = (props) => {
           image={require('../../assets/illustrations/financialIllustrations/window.png')}
         />
         <Article>
-          <ArticleHeader
-            textStyle={{
-              fontSize: windowHeight > 600 ? 32 : 26,
-              letterSpacing: windowHeight > 600 ? 2 : 1
-            }}
-          >
-            Aufstiegs- stipendium der Bundesregierung
-          </ArticleHeader>
+          <ArticleSubHeader>
+            Das Aufstiegsstipendium der Bundesregierung
+          </ArticleSubHeader>
           <Paragraph>
             Das Aufstiegsstipendium unterstützt Berufserfahrene bei der
             Durchführung eines ersten akademischen Hochschulstudiums. Das
@@ -80,14 +76,20 @@ const Aufstiegsstipendium = (props) => {
           <Paragraph>
             Weitere Möglichkeiten der Studienfinanzierung: Bildungskredit von
             der staatlich geförderten KfW-Bank  oder Stipendien von
-            verschiedensten Stiftungen. Mehr unter:{' '}
+            verschiedensten Stiftungen. Mehr unter:
           </Paragraph>
-          <Link>www.studienfinanzierung.de</Link>
+          <Link
+            onPress={() =>
+              Linking.openURL('https://www.studienfinanzierung.de')
+            }
+          >
+            www.studienfinanzierung.de
+          </Link>
         </Article>
         <Article>
-          <ArticleHeader textStyle={{fontSize: 24}}>
+          <ArticleSubHeader>
             Ab 1.August 2016: Aufstiegs-Bafög (statt Meister-Bafög)
-          </ArticleHeader>
+          </ArticleSubHeader>
           <Paragraph>Das AFBG soll in allen Berufsgruppen</Paragraph>
           <Quote>
             “Maßnahmen der beruflichen Aufstiegsfortbildung finanziell […]
@@ -143,7 +145,11 @@ const Aufstiegsstipendium = (props) => {
           </Paragraph>
           <Paragraph>Mehr Informationen:</Paragraph>
 
-          <Link> https://www.aufstiegs-bafoeg.de</Link>
+          <Link
+            onPress={() => Linking.openURL('https://www.aufstiegs-bafoeg.de')}
+          >
+             www.aufstiegs-bafoeg.de
+          </Link>
         </Article>
       </ScrollableScreenContainer>
     </Modal>

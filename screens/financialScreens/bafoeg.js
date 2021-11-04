@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Modal, Dimensions} from 'react-native';
 
 import colors from '../../assets/colors';
 import Article from '../../components/articleComponents/article';
@@ -12,6 +12,8 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 import CloseButton from '../../components/buttons/closeButton';
 
+const windowHeight = Dimensions.get('window').height;
+
 const Bafoeg = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
@@ -20,7 +22,8 @@ const Bafoeg = (props) => {
 
         <ArticleHeader>Bafög</ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/financialIllustrations/Relationship.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
+          image={require('../../assets/illustrations/financialIllustrations/unboxing_finance.png')}
         ></ArticleIllustration>
         <Article>
           <ArticleSubHeader>Wie finanziere ich ein Studium?</ArticleSubHeader>

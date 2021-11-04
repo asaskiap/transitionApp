@@ -10,16 +10,22 @@ import MenuScreenHeader from '../../components/articleComponents/menuScreenHeade
 import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
 import Paragraph from '../../components/articleComponents/paragraph';
 import ArticleImage from '../../components/articleComponents/articleImage';
+import ArticleHeader from '../../components/articleComponents/articleHeader';
+import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 
 const Abschied = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <MenuScreenHeader
+        {/* <MenuScreenHeader
           image={require('../../assets/images/psychologyImages/insecure.jpg')}
         >
           Abschied
-        </MenuScreenHeader>
+        </MenuScreenHeader> */}
+        <ArticleHeader>Abschied</ArticleHeader>
+        <ArticleIllustration
+          image={require('../../assets/illustrations/psychologyIllustrations/ship.png')}
+        />
         <CloseButton close={props.close} />
         <Article>
           <ArticleSubHeader>Abschied nehmen</ArticleSubHeader>
@@ -58,9 +64,9 @@ const Abschied = (props) => {
             bereit für den Neuanfang.
           </Paragraph>
         </Article>
-        <ArticleImage
+        {/* <ArticleImage
           image={require('../../assets/images/psychologyImages/leanOnMe.jpg')}
-        ></ArticleImage>
+        ></ArticleImage> */}
         <Article>
           <ArticleSubHeader>
             Abschied und Neubeginn im Leben eines Tänzers

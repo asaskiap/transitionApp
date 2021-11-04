@@ -74,6 +74,7 @@ class selfEmploymentMenuScreen extends React.Component {
         />
         <ArticleHeader>Selbstständigkeit</ArticleHeader>
         <ArticleIllustration
+          imageContainerStyle={{marginTop: 20}}
           imageStyle={{
             resizeMode: 'contain',
             maxHeight: windowHeight * 0.5,

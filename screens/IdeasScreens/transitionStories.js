@@ -49,23 +49,11 @@ class TransitionStories extends React.Component {
               fontSize: windowHeight > 600 ? 28 : 22,
               fontWeight: 'bold',
               color: colors.accentDark,
-              padding: 18,
-              marginLeft: -40,
-              marginTop: 150
+              padding: 18
             }}
           >
             Tänzer berichten:
           </Text>
-          <Image
-            style={{
-              width: windowHeight > 600 ? 180 : 160,
-              height: windowHeight > 600 ? 180 : 160,
-              borderRadius: 90,
-              margin: 16,
-              marginLeft: -100
-            }}
-            source={require('../../assets/illustrations/coffee.png')}
-          />
         </View>
 
         <SingleStory

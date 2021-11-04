@@ -24,10 +24,11 @@ const Bewerbungsprozess = (props) => {
           Bewerbungsprozess
         </ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/umsetzungIllustrations/Reading.png')}
+          imageContainerStyle={{marginVertical: 30}}
+          image={require('../../assets/illustrations/umsetzungIllustrations/settings_umsetzung.png')}
         />
         <Article>
-          <Paragraph style={{marginTop: -40}}>
+          <Paragraph>
             Für das Schreiben einer Bewerbung gibt es kein allgemeingültiges
             Rezept; hängt es doch stark von dem beruflichen Feld und der
             spezifischen Stellenbeschreibung, sowie der Person des Bewerbers ab.

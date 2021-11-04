@@ -15,6 +15,8 @@ import Abschied from '../psychologyScreens/abschied';
 import Unsicherheiten from '../psychologyScreens/unsicherheiten';
 import Veraenderung from '../psychologyScreens/veraenderung';
 import WerBindIch from '../psychologyScreens/werBinIch';
+import ArticleIllustration from '../../components/articleComponents/articleIllustration';
+import ArticleHeader from '../../components/articleComponents/articleHeader';
 
 class psychologyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -85,11 +87,20 @@ class psychologyMenuScreen extends React.Component {
             isVisible={this.state.werBindIch}
             close={() => this.setState({werBindIch: false})}
           />
-          <MenuScreenHeader
+          {/* <MenuScreenHeader
             image={require('./../../assets/images/psychologyImages/freeSwing.jpg')}
           >
             Psychologische Aspekte der Transition
-          </MenuScreenHeader>
+          </MenuScreenHeader> */}
+          <ArticleHeader
+            textStyle={{letterSpacing: 1, textAlign: 'center', fontSize: 28}}
+          >
+            Psychologische Aspekte der Transition
+          </ArticleHeader>
+          <ArticleIllustration
+            imageContainerStyle={{marginLeft: 20}}
+            image={require('../../assets/illustrations/psychologyIllustrations/earth.png')}
+          />
 
           <MenuCard
             onPress={() => this.setState({abschied: true})}

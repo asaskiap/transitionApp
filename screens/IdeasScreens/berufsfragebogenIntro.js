@@ -71,7 +71,7 @@ class BerufsfragebogenIntro extends React.Component {
         <ArticleIllustration
           imageContainerStyle={{marginVertical: -50}}
           imageStyle={{height: '70%'}}
-          image={require('../../assets/illustrations/messy.png')}
+          image={require('../../assets/illustrations/ideasIllustrations/messy_berufsfragebogen.png')}
         />
         <ButtonPrimary
           backgroundStyle={{backgroundColor: colors.accentDark}}

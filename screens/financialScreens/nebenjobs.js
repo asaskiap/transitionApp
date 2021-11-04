@@ -17,7 +17,7 @@ const Nebenjobs = (props) => {
         <ArticleHeader>Nebenjobs</ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: 300}}
-          image={require('../../assets/illustrations/financialIllustrations/job.png')}
+          image={require('../../assets/illustrations/financialIllustrations/job_nebenjobs.png')}
         />
         <Article>
           <Paragraph>

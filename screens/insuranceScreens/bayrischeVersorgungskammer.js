@@ -30,7 +30,7 @@ const Bayerische = (props) => {
           Die Versorgungsanstalt der Deutschen Bühnenangehörigen
         </ArticleHeader>
         <ArticleIllustration
-          image={require('../../assets/illustrations/insuranceIllustrations/Hangout.png')}
+          image={require('../../assets/illustrations/insuranceIllustrations/Friends.png')}
         />
         <Article>
           <Paragraph>
