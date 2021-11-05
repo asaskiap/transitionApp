@@ -76,6 +76,46 @@ class TransitionStories extends React.Component {
           title={'Oberbürgermeister'}
           name={'Peter Boch'}
         ></SingleStory>
+        <SingleStory
+          quote={
+            'Aus dem schüchternen Mädchen von einst ist eine selbstbewusste Frau mit ansteckend fröhlichem Lachen geworden, eine zweifache Mutter mit intakter Familie. Was beweist: Es gibt auch ein erfülltes Leben nach dem Tanz.'
+          }
+          image={require('../../assets/images/portrait7.jpg')}
+          title={'Physiotherapeutin'}
+          name={'Britt Folk'}
+        ></SingleStory>
+        <SingleStory
+          quote={
+            ' "Im Studio entstehen die Kreationen aus Licht, Farbe, Idee, Komposition, ob Porträts oder Theaterplakate.“ '
+          }
+          image={require('../../assets/images/portrait8.jpg')}
+          title={'Fotograf'}
+          name={'Yan Revazov'}
+        ></SingleStory>
+        <SingleStory
+          quote={
+            ' Offen, neugierig zu sein, rät er jungen Tänzern. Inzwischen sammelt er Kunst, Fotos, Malerei, Objekte, Collagen - und bleibt selbst neugierig, was die Zukunft noch so bringen mag.'
+          }
+          image={require('../../assets/images/portrait9.jpg')}
+          title={'Aufnahmeleiter'}
+          name={'Peter Ulbrich'}
+        ></SingleStory>
+        <SingleStory
+          quote={
+            '„Ich kann nur jeden Tänzer und jede Tänzerin ermutigen, entspannt und erhobenen Hauptes in die nächste Berufswelt hineinzugehen“ '
+          }
+          image={require('../../assets/images/portrait10.jpg')}
+          title={'Lehrer'}
+          name={'Sören Swart'}
+        ></SingleStory>
+        <SingleStory
+          quote={
+            '"Ich wende sie an wie eine Choreografie, kann sie fließend verbinden" '
+          }
+          image={require('../../assets/images/portrait11.jpg')}
+          title={'Kosmetikerin'}
+          name={'Alexandra Post'}
+        ></SingleStory>
 
         <SingleStory
           quote={
