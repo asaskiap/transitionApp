@@ -13,7 +13,6 @@ const SingleStory = (props) => {
         marginVertical: 20,
         marginHorizontal: windowHeight > 600 ? 10 : 12,
         paddingVertical: 10,
-
         borderRadius: 20,
         shadowColor: colors.text,
         borderRadius: 20,
@@ -30,7 +29,6 @@ const SingleStory = (props) => {
           marginLeft: 80,
           marginRight: 16,
           marginBottom: -16,
-
           shadowColor: colors.primaryDark,
           borderRadius: 20,
           borderColor: 'rgb(235, 243, 250)',

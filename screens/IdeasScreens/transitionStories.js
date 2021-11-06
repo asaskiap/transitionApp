@@ -3,25 +3,98 @@ import {Text, Image, View, Dimensions} from 'react-native';
 import colors from '../../assets/colors';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
-
+import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import SingleStory from '../../components/transitionStoriesComponents/singleStory';
 import {
   TransitionStoryLuisa,
   TransitionStoryMichal,
   TransitionStoryLenhart
-} from './transitionStoryModal';
+} from './transitionStories/transitionStoryModal';
+import TransitionStoryTobias from './transitionStories/transitionStoryTobias';
+import TransitionStoryBram from './transitionStories/transitionStoryBram';
+import TransitionStoryCynthia from './transitionStories/transitionStoryCynthia';
+import TransitionStoryPeterBoch from './transitionStories/transitionStoryPeterBoch';
+import TransitionStoryBritt from './transitionStories/transitionStoryBritt';
+import TransitionStoryYan from './transitionStories/transitionStoryYan';
+import TransitionStoryPeter from './transitionStories/transitionStroryPeterUlbrich';
+import TransitionStoryAlexandra from './transitionStories/transitionStoryAlexandra';
+import TransitionStorySoeren from './transitionStories/transitionStorySoeren';
 
 const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get('window').width;
 
 class TransitionStories extends React.Component {
   state = {
+    storyTobias: false,
+    storyCynthia: false,
+    storyPeterBoch: false,
+    storyBritt: false,
+    storyYan: false,
+    storyPeterUlbrich: false,
+    storyAlexandra: false,
+    storySoeren: false,
     storyLuisa: false,
     storyMichal: false,
-    storyLenhart: false
+    storyLenhart: false,
+    storyBram: false
   };
   render() {
     return (
       <ScrollableScreenContainer>
+        <TransitionStoryTobias
+          isVisible={this.state.storyTobias}
+          close={() => {
+            this.setState({storyTobias: false});
+          }}
+        />
+        <TransitionStoryBram
+          isVisible={this.state.storyBram}
+          close={() => {
+            this.setState({storyBram: false});
+          }}
+        />
+        <TransitionStoryCynthia
+          isVisible={this.state.storyCynthia}
+          close={() => {
+            this.setState({storyCynthia: false});
+          }}
+        />
+        <TransitionStoryPeterBoch
+          isVisible={this.state.storyPeterBoch}
+          close={() => {
+            this.setState({storyPeterBoch: false});
+          }}
+        />
+        <TransitionStoryBritt
+          isVisible={this.state.storyBritt}
+          close={() => {
+            this.setState({storyBritt: false});
+          }}
+        />
+        <TransitionStoryYan
+          isVisible={this.state.storyYan}
+          close={() => {
+            this.setState({storyYan: false});
+          }}
+        />
+        <TransitionStoryPeter
+          isVisible={this.state.storyPeterUlbrich}
+          close={() => {
+            this.setState({storyPeterUlbrich: false});
+          }}
+        />
+        <TransitionStorySoeren
+          isVisible={this.state.storySoeren}
+          close={() => {
+            this.setState({storySoeren: false});
+          }}
+        />
+        <TransitionStoryAlexandra
+          isVisible={this.state.storyAlexandra}
+          close={() => {
+            this.setState({storyAlexandra: false});
+          }}
+        />
         <TransitionStoryLuisa
           isVisible={this.state.storyLuisa}
           close={() => {
@@ -43,6 +116,10 @@ class TransitionStories extends React.Component {
         <ArticleHeader textStyle={{letterSpacing: 2}}>
           Transition Stories
         </ArticleHeader>
+        <ArticleIllustration
+          imageStyle={{maxWidth: windowWidth > 400 ? 400 : 350}}
+          image={require('../../assets/illustrations/bildung.png')}
+        />
 
         <SingleStory
           quote={
@@ -51,6 +128,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait1.jpg')}
           title={'Medizin Studium'}
           name={'Tobias Almasi'}
+          onPress={() => this.setState({storyTobias: true})}
         ></SingleStory>
 
         <SingleStory
@@ -60,6 +138,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait4.jpg')}
           title={'Heilerziehungspfleger '}
           name={'Bram Koch'}
+          onPress={() => this.setState({storyBram: true})}
         ></SingleStory>
 
         <SingleStory
@@ -67,6 +146,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait5.jpg')}
           title={'Konditorin'}
           name={'Cynthia Barcomi'}
+          onPress={() => this.setState({storyCynthia: true})}
         ></SingleStory>
         <SingleStory
           quote={
@@ -75,6 +155,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait6.jpg')}
           title={'Oberbürgermeister'}
           name={'Peter Boch'}
+          onPress={() => this.setState({storyPeterBoch: true})}
         ></SingleStory>
         <SingleStory
           quote={
@@ -83,6 +164,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait7.jpg')}
           title={'Physiotherapeutin'}
           name={'Britt Folk'}
+          onPress={() => this.setState({storyBritt: true})}
         ></SingleStory>
         <SingleStory
           quote={
@@ -91,6 +173,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait8.jpg')}
           title={'Fotograf'}
           name={'Yan Revazov'}
+          onPress={() => this.setState({storyYan: true})}
         ></SingleStory>
         <SingleStory
           quote={
@@ -99,6 +182,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait9.jpg')}
           title={'Aufnahmeleiter'}
           name={'Peter Ulbrich'}
+          onPress={() => this.setState({storyPeterUlbrich: true})}
         ></SingleStory>
         <SingleStory
           quote={
@@ -107,6 +191,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait10.jpg')}
           title={'Lehrer'}
           name={'Sören Swart'}
+          onPress={() => this.setState({storySoeren: true})}
         ></SingleStory>
         <SingleStory
           quote={
@@ -115,6 +200,7 @@ class TransitionStories extends React.Component {
           image={require('../../assets/images/portrait11.jpg')}
           title={'Kosmetikerin'}
           name={'Alexandra Post'}
+          onPress={() => this.setState({storyAlexandra: true})}
         ></SingleStory>
 
         <SingleStory

@@ -1,12 +1,12 @@
 import React from 'react';
 
 import {Modal, Image, View, Text, StyleSheet} from 'react-native';
-import ArticleHeader from '../../components/articleComponents/articleHeader';
-import ScrollableScreenContainer from '../../components/scrollableScreen';
-import colors from '../../assets/colors';
-import Article from '../../components/articleComponents/article';
-import Paragraph from '../../components/articleComponents/paragraph';
-import CloseButton from '../../components/buttons/closeButton';
+import ArticleHeader from '../../../components/articleComponents/articleHeader';
+import ScrollableScreenContainer from '../../../components/scrollableScreen';
+import colors from '../../../assets/colors';
+import Article from '../../../components/articleComponents/article';
+import Paragraph from '../../../components/articleComponents/paragraph';
+import CloseButton from '../../../components/buttons/closeButton';
 
 export const TransitionStoryLuisa = (props) => {
   return (
@@ -18,7 +18,7 @@ export const TransitionStoryLuisa = (props) => {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={require('../../assets/images/portrait3.jpg')}
+            source={require('../../../assets/images/portrait3.jpg')}
           />
           <View style={styles.header}>
             <Text style={styles.headerText}>Immer Auf der Suche</Text>
@@ -155,7 +155,7 @@ export const TransitionStoryMichal = (props) => {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={require('../../assets/images/portrait.jpg')}
+            source={require('../../../assets/images/portrait.jpg')}
           />
           <View style={styles.header}>
             <Text style={styles.headerText}>Ich will in Berlin bleiben</Text>
@@ -297,7 +297,7 @@ export const TransitionStoryLenhart = (props) => {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={require('../../assets/images/portrait2.jpg')}
+            source={require('../../../assets/images/portrait2.jpg')}
           />
           <View style={styles.header}>
             <Text style={styles.headerText}>Versuchung</Text>
