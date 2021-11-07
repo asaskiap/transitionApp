@@ -116,10 +116,10 @@ class TransitionStories extends React.Component {
         <ArticleHeader textStyle={{letterSpacing: 2}}>
           Transition Stories
         </ArticleHeader>
-        <ArticleIllustration
+        {/* <ArticleIllustration
           imageStyle={{maxWidth: windowWidth > 400 ? 400 : 350}}
           image={require('../../assets/illustrations/bildung.png')}
-        />
+        /> */}
 
         <SingleStory
           quote={

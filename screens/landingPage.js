@@ -135,9 +135,9 @@ export default LandingPage;
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
-    paddingTop: windowHeight > 600 ? 25 : 22,
+    paddingTop: windowHeight > 600 ? 28 : 24,
     paddingBottom: windowHeight > 600 ? 10 : 4,
-    //backgroundColor: Colors.primary,
+    marginTop: 20,
     position: 'absolute',
     top: 0,
     width: windowWidth
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     marginLeft: 90,
-    fontSize: windowHeight > 600 ? 30 : 24,
+    fontSize: windowHeight > 600 ? 28 : 24,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
     textAlign: 'center',
     color: Colors.secondaryLight,

@@ -5,12 +5,14 @@ import {PieChart} from 'react-native-svg-charts';
 import colors from '../../assets/colors';
 
 import ArticleHeader from '../../components/articleComponents/articleHeader';
-import ArticleIllustration from '../../components/articleComponents/articleIllustration';
-import Paragraph from '../../components/articleComponents/paragraph';
-import ScrollableScreenContainer from '../../components/scrollableScreen';
+
 import {
   Question1,
-  Question2
+  Question2,
+  Question3,
+  Question4,
+  Question5,
+  Question6
 } from '../../components/berufsfragebogenComponents/questionContent';
 import ButtonPrimary from '../../components/buttons/buttonPrimary';
 import PieLegende from '../../components/berufsfragebogenComponents/pieLegende';
@@ -22,6 +24,7 @@ import {
   Sozial,
   Wirtschaftlich
 } from '../../components/berufsfragebogenComponents/textAboutYou';
+import {ScrollView} from 'react-native';
 
 class Berufsfragebogen extends React.Component {
   state = {
@@ -46,7 +49,8 @@ class Berufsfragebogen extends React.Component {
     displayQ6: false,
     displayResult: false,
     result: -1,
-    pieData: []
+    pieData: [],
+    scrollRef: React.createRef()
   };
 
   createPieData = () => {
@@ -102,16 +106,17 @@ class Berufsfragebogen extends React.Component {
       displayResult: false,
       result: -1
     });
+    this.scrollRef.scrollTo({x: 0, y: 0});
   };
 
   resetCurrVariables() {
     this.setState({
-      currA: 0,
-      currB: 0,
-      currC: 0,
-      currD: 0,
-      currE: 0,
-      currF: 0
+      currA: 1,
+      currB: 1,
+      currC: 1,
+      currD: 1,
+      currE: 1,
+      currF: 1
     });
   }
 
@@ -133,33 +138,72 @@ class Berufsfragebogen extends React.Component {
       displayQ1: false,
       displayQ2: true
     });
+    this.scrollRef.scrollTo({x: 0, y: 0});
   };
 
   handleSubmit2 = () => {
     this.updateValues();
-    this.createPieData();
     this.setState({
       displayQ2: false,
+      displayQ3: true
+    });
+    this.scrollRef.scrollTo({x: 0, y: 0});
+  };
+
+  handleSubmit3 = () => {
+    this.updateValues();
+    this.setState({
+      displayQ3: false,
+      displayQ4: true
+    });
+    this.scrollRef.scrollTo({x: 0, y: 0});
+  };
+  handleSubmit4 = () => {
+    this.updateValues();
+    this.setState({
+      displayQ4: false,
+      displayQ5: true
+    });
+    this.scrollRef.scrollTo({x: 0, y: 0});
+  };
+  handleSubmit5 = () => {
+    this.updateValues();
+    this.setState({
+      displayQ5: false,
+      displayQ6: true
+    });
+    this.scrollRef.scrollTo({x: 0, y: 0});
+  };
+
+  handleSubmit6 = () => {
+    this.updateValues();
+    this.createPieData();
+    this.setState({
+      displayQ6: false,
       displayIllustration: false,
       displayResult: true
     });
+    this.scrollRef.scrollTo({x: 0, y: 0});
   };
 
   render() {
     return (
-      <ScrollableScreenContainer>
+      <ScrollView
+        style={{padding: 16}}
+        ref={(scrollRef) => (this.scrollRef = scrollRef)}
+      >
         {this.state.displayQ1 && (
           <Question1
             a={this.state.currA}
-            b={this.state.currB}
-            c={this.state.currC}
-            d={this.state.currD}
+            b={this.state.currC}
+            c={this.state.currD}
+            d={this.state.currB}
             e={this.state.currE}
             f={this.state.currF}
             setA={(val) => this.setState({currA: val})}
-            setB={(val) => this.setState({currB: val})}
-            setC={(val) => this.setState({currC: val})}
-            setD={(val) => this.setState({currD: val})}
+            setB={(val) => this.setState({currC: val})}
+            setC={(val) => this.setState({currD: val})}
+            setD={(val) => this.setState({currB: val})}
             setE={(val) => this.setState({currE: val})}
             setF={(val) => this.setState({currF: val})}
             handleSubmit={this.handleSubmit1}
@@ -168,19 +212,89 @@ class Berufsfragebogen extends React.Component {
 
         {this.state.displayQ2 && (
           <Question2
-            a={this.state.currA}
+            a={this.state.currD}
+            b={this.state.currA}
+            c={this.state.currB}
+            d={this.state.currE}
+            e={this.state.currF}
+            f={this.state.currC}
+            setA={(val) => this.setState({currD: val})}
+            setB={(val) => this.setState({currA: val})}
+            setC={(val) => this.setState({currB: val})}
+            setD={(val) => this.setState({currE: val})}
+            setE={(val) => this.setState({currF: val})}
+            setF={(val) => this.setState({currC: val})}
+            handleSubmit={this.handleSubmit2}
+          />
+        )}
+
+        {this.state.displayQ3 && (
+          <Question3
+            a={this.state.currE}
             b={this.state.currB}
+            c={this.state.currA}
+            d={this.state.currF}
+            e={this.state.currC}
+            f={this.state.currD}
+            setA={(val) => this.setState({currE: val})}
+            setB={(val) => this.setState({currB: val})}
+            setC={(val) => this.setState({currA: val})}
+            setD={(val) => this.setState({currF: val})}
+            setE={(val) => this.setState({currC: val})}
+            setF={(val) => this.setState({currD: val})}
+            handleSubmit={this.handleSubmit3}
+          />
+        )}
+
+        {this.state.displayQ4 && (
+          <Question4
+            a={this.state.currC}
+            b={this.state.currE}
+            c={this.state.currF}
+            d={this.state.currA}
+            e={this.state.currD}
+            f={this.state.currB}
+            setA={(val) => this.setState({currC: val})}
+            setB={(val) => this.setState({currE: val})}
+            setC={(val) => this.setState({currF: val})}
+            setD={(val) => this.setState({currA: val})}
+            setE={(val) => this.setState({currD: val})}
+            setF={(val) => this.setState({currB: val})}
+            handleSubmit={this.handleSubmit4}
+          />
+        )}
+        {this.state.displayQ5 && (
+          <Question5
+            a={this.state.currF}
+            b={this.state.currD}
+            c={this.state.currE}
+            d={this.state.currC}
+            e={this.state.currB}
+            f={this.state.currA}
+            setA={(val) => this.setState({currF: val})}
+            setB={(val) => this.setState({currD: val})}
+            setC={(val) => this.setState({currE: val})}
+            setD={(val) => this.setState({currC: val})}
+            setE={(val) => this.setState({currB: val})}
+            setF={(val) => this.setState({currA: val})}
+            handleSubmit={this.handleSubmit5}
+          />
+        )}
+        {this.state.displayQ6 && (
+          <Question6
+            a={this.state.currB}
+            b={this.state.currF}
             c={this.state.currC}
             d={this.state.currD}
-            e={this.state.currE}
-            f={this.state.currF}
-            setA={(val) => this.setState({currA: val})}
-            setB={(val) => this.setState({currB: val})}
+            e={this.state.currA}
+            f={this.state.currE}
+            setA={(val) => this.setState({currB: val})}
+            setB={(val) => this.setState({currF: val})}
             setC={(val) => this.setState({currC: val})}
             setD={(val) => this.setState({currD: val})}
-            setE={(val) => this.setState({currE: val})}
-            setF={(val) => this.setState({currF: val})}
-            handleSubmit={this.handleSubmit2}
+            setE={(val) => this.setState({currA: val})}
+            setF={(val) => this.setState({currE: val})}
+            handleSubmit={this.handleSubmit6}
           />
         )}
 
@@ -261,7 +375,7 @@ class Berufsfragebogen extends React.Component {
             </ButtonPrimary>
           </View>
         )}
-      </ScrollableScreenContainer>
+      </ScrollView>
     );
   }
 }

@@ -74,7 +74,7 @@ class BerufsfragebogenIntro extends React.Component {
           image={require('../../assets/illustrations/ideasIllustrations/messy_berufsfragebogen.png')}
         />
         <ButtonPrimary
-          backgroundStyle={{backgroundColor: colors.accentDark}}
+          backgroundStyle={{backgroundColor: colors.accentDark, marginTop: -30}}
           textStyle={{color: colors.textLight}}
           onPress={() => this.props.navigation.navigate('BerufsfragebogenGo')}
         >
