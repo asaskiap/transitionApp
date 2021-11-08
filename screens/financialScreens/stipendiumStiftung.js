@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import {Linking, Modal} from 'react-native';
 
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import Article from './../../components/articleComponents/article';
@@ -11,6 +11,7 @@ import ArticleIllustration from '../../components/articleComponents/articleIllus
 import colors from '../../assets/colors';
 
 import CloseButton from '../../components/buttons/closeButton';
+import Link from '../../components/articleComponents/link';
 
 const StipendiumStiftung = (props) => {
   return (
@@ -70,19 +71,38 @@ const StipendiumStiftung = (props) => {
           <ArticleSubHeader>
             Statuten zur Vergabe des Stipendiums:
           </ArticleSubHeader>
-          <Paragraph>
-            https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Statuten-zur-Vergabe-von-Unterst%C3%BCtzung-und-Stipendien.pdf
-          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Statuten-zur-Vergabe-von-Unterst%C3%BCtzung-und-Stipendien.pdf'
+              )
+            }
+          >
+            stiftung-tanz.com
+          </Link>
           <ArticleSubHeader>Antragsformular für Stipendien:</ArticleSubHeader>
-          <Paragraph>
-            https://stiftung-tanz.com/wordpress/wp-content/uploads/2021/03/Antragsformular-fuer-Stipendien-Stiftung-TANZ-1.pdf
-          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'https://stiftung-tanz.com/wordpress/wp-content/uploads/2021/03/Antragsformular-fuer-Stipendien-Stiftung-TANZ-1.pdf'
+              )
+            }
+          >
+            {' '}
+            stiftung-tanz.com/.../Antragsformular-fuer-Stipendien-Stiftung-TANZ-1.pdf
+          </Link>
           <ArticleSubHeader>
             Einkommensnachweis für Stipendiumsantrag:
           </ArticleSubHeader>
-          <Paragraph>
-            https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Einkommensnachweis-Antrag-Stiftung-TANZ.pdf
-          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Einkommensnachweis-Antrag-Stiftung-TANZ.pdf'
+              )
+            }
+          >
+            stiftung-tanz.com/.../Einkommensnachweis-Antrag-Stiftung-TANZ.pdf
+          </Link>
         </Article>
       </ScrollableScreenContainer>
     </Modal>

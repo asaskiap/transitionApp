@@ -126,10 +126,7 @@ class Transition extends React.Component {
           Bereiche seine Zeit und seinen Ort. Hierfür bietet die Stiftung Tanz
           einen Ort in dem die Möglichkeit besteht diese zu definieren.
         </Paragraph>
-        <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 260 : 220}}
-          image={require('../assets/illustrations/transitionIllustrations/reading-side_transition.png')}
-        ></ArticleIllustration>
+
         <ArticleSubHeader>Needs</ArticleSubHeader>
         <Paragraph>
           An einem bestimmten Punkt im Leben entdeckt man, dass man sich selbst
@@ -149,9 +146,10 @@ class Transition extends React.Component {
           glückliches Leben zu führen.
         </Paragraph>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
-          image={require('../assets/illustrations/transitionIllustrations/coffee_transition.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 260 : 220}}
+          image={require('../assets/illustrations/transitionIllustrations/reading-side_transition.png')}
         ></ArticleIllustration>
+
         <ArticleSubHeader>Interests</ArticleSubHeader>
         <Paragraph>
           Die eigenen Interessen zu kennen ist meist gar nicht so leicht wie es
@@ -180,8 +178,8 @@ class Transition extends React.Component {
           berufliche Bereich gut.
         </Paragraph>
         <ArticleIllustration
-          image={require('../assets/illustrations/transitionIllustrations/relaxation.png')}
-          imageStyle={{maxHeight: windowHeight > 600 ? 280 : 220}}
+          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
+          image={require('../assets/illustrations/transitionIllustrations/coffee_transition.png')}
         ></ArticleIllustration>
         <ArticleSubHeader>Values</ArticleSubHeader>
         <Paragraph>

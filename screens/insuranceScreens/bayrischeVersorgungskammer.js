@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Text, Dimensions} from 'react-native';
+import {Modal, Text, Dimensions, Linking} from 'react-native';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import CloseButton from '../../components/buttons/closeButton';
@@ -10,7 +10,6 @@ import Link from '../../components/articleComponents/link';
 import Article from '../../components/articleComponents/article';
 import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
 import {ListItem} from '../../components/articleComponents/list';
-import MyLink from '../../components/articleComponents/link';
 import colors from '../../assets/colors';
 
 const windowHeight = Dimensions.get('window').height;
@@ -159,11 +158,16 @@ const Bayerische = (props) => {
             Detaillierte Ausführungen zur Tänzerabfindung, der
             Weiterversicherung und der beitragsfreien Versicherung können – auch
             auf Englisch – unter{' '}
-            <Text style={{color: colors.primaryDark, fontWeight: 'bold'}}>
-              https://www.buehnenversorgung.de 
-            </Text>
-             nachgelesen werden.
           </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(' https://www.buehnenversorgung.de ')
+            }
+          >
+            www.buehnenversorgung.de 
+          </Link>
+
+          <Paragraph> nachgelesen werden.</Paragraph>
         </Article>
       </ScrollableScreenContainer>
     </Modal>

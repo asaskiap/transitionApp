@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Dimensions} from 'react-native';
+import {Modal, Dimensions, Linking} from 'react-native';
 
 import colors from '../../assets/colors';
 import Article from '../../components/articleComponents/article';
@@ -11,6 +11,7 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 
 import CloseButton from '../../components/buttons/closeButton';
+import Link from '../../components/articleComponents/link';
 
 const windowHeight = Dimensions.get('window').height;
 
@@ -71,12 +72,10 @@ const Bafoeg = (props) => {
             BaföG gibt es die Möglichkeit gegen einen abgelehnten Antrag
             innerhalb von 4 Wochen Widerspruch einzulegen.
           </Paragraph>
-          <Paragraph>
-            Mehr unter: 
-            <Paragraph style={{fontWeight: 'bold', color: colors.primaryDark}}>
-              www.bafoeg.bmbf.de
-            </Paragraph>
-          </Paragraph>
+          <Paragraph>Mehr unter: </Paragraph>
+          <Link onPress={() => Linking.openURL('http://www.bafoeg.bmbf.de')}>
+            www.bafoeg.bmbf.de
+          </Link>
         </Article>
       </ScrollableScreenContainer>
     </Modal>

@@ -170,6 +170,6 @@ EntscheidungsbaumGoScreen.navigationOptions = {
   headerStyle: {
     backgroundColor: Colors.accentPale
   },
-  title: 'Entscheidungsbaum Test'
+  title: 'Entscheidungsbaum'
 };
 export default EntscheidungsbaumGoScreen;

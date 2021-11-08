@@ -48,7 +48,7 @@ const Ausbildung = (props) => {
               )
             }
           >
-            www.arbeitsagentur.de/m/ausbildungklarmachen/?pk_campaign=AusbildungKlarmachen&pk_source=google_paid&pk_medium=textad&pk_content=Performance
+            www.arbeitsagentur.de/m/ausbildungklarmachen/
           </Link>
           <Link
             onPress={() =>
@@ -71,7 +71,7 @@ const Ausbildung = (props) => {
               )
             }
           >
-            www.bmwi.de/Navigation/DE/Service/Ausbildungsberufe/ausbildungsberufe.html
+            www.bmwi.de/
           </Link>
           <Link
             onPress={() =>

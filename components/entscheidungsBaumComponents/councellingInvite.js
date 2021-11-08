@@ -1,5 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity
+} from 'react-native';
 
 import Colors from '../../assets/colors';
 
@@ -27,8 +33,13 @@ export const CouncellingInvite1 = (props) => {
         Unsere Psychologen helfen dir beim Herausfinden von deinen verborgenen
         Talenten, Interessen, Leidenschaften. Schau auch gerne unter:
       </Text>
-      <Text style={styles.highlight}>Ideen- und Berufsfindung</Text>
-      <Text style={styles.highlight}>Psychologische Aspekte</Text>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Ideas')}>
+        <Text style={styles.highlight}>Ideen- und Berufsfindung</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Psychology')}>
+        <Text style={styles.highlight}>Psychologische Aspekte</Text>
+      </TouchableOpacity>
+
       <ButtonPrimary
         onPress={() => props.navigation.navigate('Home')}
         backgroundStyle={{paddingHorizontal: 30}}
@@ -61,7 +72,10 @@ export const CouncellingInvite2 = (props) => {
         Unsere Psychologen helfen dir beim Suchen einer geeigneten Ausbildung.
         Schau auch gerne unter:
       </Text>
-      <Text style={styles.highlight}>Wie setze ich meine Ideen um?</Text>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Umsetzung')}>
+        <Text style={styles.highlight}>Wie setze ich meine Ideen um?</Text>
+      </TouchableOpacity>
+
       <ButtonPrimary
         onPress={() => props.navigation.navigate('Home')}
         backgroundStyle={{paddingHorizontal: 30}}
@@ -95,8 +109,9 @@ export const CouncellingInvite3 = (props) => {
         Finanzierungsmöglichkeit. Evtl. kommt auch eines unserer Stipendien für
         dich in Frage. Schau auch gerne unter:
       </Text>
-      <Text style={styles.highlight}>Finanzierungsmöglichkeiten</Text>
-      <Text style={styles.highlight}>Stipendien</Text>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Financial')}>
+        <Text style={styles.highlight}>Finanzierungsmöglichkeiten</Text>
+      </TouchableOpacity>
 
       <ButtonPrimary
         onPress={() => props.navigation.navigate('Home')}
@@ -135,8 +150,12 @@ export const FinalCouncellingInvite = (props) => {
         Unsere Psychologen helfen dir beim Beantworten deiner Fragen. Schau auch
         gerne unter:
       </Text>
-      <Text style={styles.highlight}>Versicherungen</Text>
-      <Text style={styles.highlight}>Leben und Arbeiten in Deutschland</Text>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Insurance')}>
+        <Text style={styles.highlight}>Versicherungen</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate('Germany')}>
+        <Text style={styles.highlight}>Leben und Arbeiten in Deutschland</Text>
+      </TouchableOpacity>
 
       <ButtonPrimary
         onPress={() => props.navigation.navigate('Home')}
@@ -151,7 +170,8 @@ export const FinalCouncellingInvite = (props) => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    padding: 10
   },
   header: {
     textAlign: 'center',
