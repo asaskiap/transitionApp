@@ -94,7 +94,7 @@ const LandingPage = (props) => {
               style={styles.subHeader}
               onPress={() => setDisplayWomit(true)}
             >
-              <Text style={styles.subHeaderText}>Womit können wir helfen?</Text>
+              <Text style={styles.subHeaderText}>Wobei können wir helfen?</Text>
             </TouchableOpacity>
           </View>
         </View>

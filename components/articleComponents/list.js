@@ -11,7 +11,8 @@ export const ListItem = (props) => {
         fontSize: 14,
         lineHeight: 22,
         color: colors.text,
-        padding: 8
+        padding: 8,
+        fontWeight: 'bold'
       }}
     >
       <Entypo name="dot-single" size={24} color="black" /> {props.children}

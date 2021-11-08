@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {View} from 'react-native';
+import {View, Dimensions} from 'react-native';
 
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
@@ -17,6 +17,8 @@ import Veraenderung from '../psychologyScreens/veraenderung';
 import WerBindIch from '../psychologyScreens/werBinIch';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
+
+const windowHeight = Dimensions.get('window').height;
 
 class psychologyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -93,7 +95,11 @@ class psychologyMenuScreen extends React.Component {
             Psychologische Aspekte der Transition
           </MenuScreenHeader> */}
           <ArticleHeader
-            textStyle={{letterSpacing: 1, textAlign: 'center', fontSize: 28}}
+            textStyle={{
+              letterSpacing: 1,
+              textAlign: 'center',
+              fontSize: windowHeight > 600 ? 28 : 24
+            }}
           >
             Psychologische Aspekte der Transition
           </ArticleHeader>

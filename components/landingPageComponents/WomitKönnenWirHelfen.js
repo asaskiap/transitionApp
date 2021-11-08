@@ -21,30 +21,36 @@ import ScrollableScreenContainer from '../scrollableScreen';
 
 const WomitHelfen = (props) => {
   return (
-    <Modal visible={props.isVisible} animationType={'slide'}>
-      <ScrollableScreenContainer style={{justifyContent: 'center'}}>
+    <Modal visible={props.isVisible} animationType={'slide'} transparent>
+      <ScrollableScreenContainer
+        style={{
+          justifyContent: 'center',
+          backgroundColor: 'rgba(247, 252, 252, 0.95)',
+          paddingTop: 40
+        }}
+      >
         <Entypo name="light-bulb" size={28} color={colors.primaryDark} />
         <Text style={textStyles.headerSecondary}>Wobei Können Wir helfen?</Text>
-        <Paragraph>
-          Die Stiftung TANZ bietet professionellen Tänzern:{' '}
+        <Paragraph
+          style={{textAlign: 'center', fontSize: 20, marginBottom: -10}}
+        >
+          Die Stiftung TANZ bietet professionellen Tänzern:
         </Paragraph>
         <List>
           <ListItem>
             Informationen (alle wichtigen Informationen rund um den
             Transitionprozess)
           </ListItem>
-          <ListItem style={styles.listItem}>
+          <ListItem>
             Bürokratische und praktische Unterstützung (beispielsweise in der
             Form von Anschreiben an Institutionen wie dem Arbeitsamt)
           </ListItem>
-          <ListItem style={styles.listItem}>
+          <ListItem>
             Beratung (Coaching und psychologische Betreuung des
             Transitionprozess)
           </ListItem>
-          <ListItem style={styles.listItem}>Workshops </ListItem>
-          <ListItem style={styles.listItem}>
-            Stipendium für die Weiterbildung
-          </ListItem>
+          <ListItem>Workshops </ListItem>
+          <ListItem>Stipendium für die Weiterbildung</ListItem>
         </List>
       </ScrollableScreenContainer>
       <CloseButton close={props.close}></CloseButton>

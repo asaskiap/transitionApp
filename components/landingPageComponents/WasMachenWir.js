@@ -18,8 +18,10 @@ import colors from '../../assets/colors';
 
 const WasMachenWir = (props) => {
   return (
-    <Modal visible={props.isVisible} animationType={'slide'}>
-      <ScrollView>
+    <Modal visible={props.isVisible} animationType={'slide'} transparent>
+      <ScrollView
+        style={{backgroundColor: 'rgba(247, 252, 252, 0.95)', paddingTop: 40}}
+      >
         <View style={textStyles.fullScreenContainer}>
           <Octicons name="question" size={28} color={colors.primaryDark} />
           <Text style={textStyles.headerSecondary}>Was Machen Wir? </Text>

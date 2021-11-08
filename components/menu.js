@@ -20,7 +20,7 @@ const menu = (props) => {
   };
 
   return (
-    <Modal visible={props.isVisible} animationType={'slide'}>
+    <Modal visible={props.isVisible} animationType={'slide'} transparent>
       <ScrollView>
         <View style={styles.menuScreen}>
           <TouchableOpacity
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   menuScreen: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: 'dodgerblue',
+    backgroundColor: 'rgba(0, 90, 156, 0.9)',
     height: windowHeight,
     padding: 20
   },

@@ -18,8 +18,8 @@ import {color} from 'react-native-reanimated';
 import colors from '../../assets/colors';
 const WerSindWir = (props) => {
   return (
-    <Modal visible={props.isVisible} animationType={'slide'}>
-      <ScrollView>
+    <Modal visible={props.isVisible} animationType={'slide'} transparent>
+      <ScrollView style={{backgroundColor: 'rgba(247, 252, 252, 0.95)'}}>
         <View style={textStyles.fullScreenContainer}>
           <Entypo name="users" size={28} color={colors.primaryDark} />
           <Text style={textStyles.headerSecondary}>Wer sind Wir? </Text>

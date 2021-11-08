@@ -29,7 +29,10 @@ export const CouncellingInvite1 = (props) => {
       </Text>
       <Text style={styles.highlight}>Ideen- und Berufsfindung</Text>
       <Text style={styles.highlight}>Psychologische Aspekte</Text>
-      <ButtonPrimary onPress={() => props.navigation.navigate('Home')}>
+      <ButtonPrimary
+        onPress={() => props.navigation.navigate('Home')}
+        backgroundStyle={{paddingHorizontal: 30}}
+      >
         Startseite
       </ButtonPrimary>
     </View>
@@ -59,7 +62,10 @@ export const CouncellingInvite2 = (props) => {
         Schau auch gerne unter:
       </Text>
       <Text style={styles.highlight}>Wie setze ich meine Ideen um?</Text>
-      <ButtonPrimary onPress={() => props.navigation.navigate('Home')}>
+      <ButtonPrimary
+        onPress={() => props.navigation.navigate('Home')}
+        backgroundStyle={{paddingHorizontal: 30}}
+      >
         Startseite
       </ButtonPrimary>
     </View>
@@ -92,7 +98,10 @@ export const CouncellingInvite3 = (props) => {
       <Text style={styles.highlight}>Finanzierungsmöglichkeiten</Text>
       <Text style={styles.highlight}>Stipendien</Text>
 
-      <ButtonPrimary onPress={() => props.navigation.navigate('Home')}>
+      <ButtonPrimary
+        onPress={() => props.navigation.navigate('Home')}
+        backgroundStyle={{paddingHorizontal: 30}}
+      >
         Startseite
       </ButtonPrimary>
     </View>
@@ -129,7 +138,10 @@ export const FinalCouncellingInvite = (props) => {
       <Text style={styles.highlight}>Versicherungen</Text>
       <Text style={styles.highlight}>Leben und Arbeiten in Deutschland</Text>
 
-      <ButtonPrimary onPress={() => props.navigation.navigate('Home')}>
+      <ButtonPrimary
+        onPress={() => props.navigation.navigate('Home')}
+        backgroundStyle={{paddingHorizontal: 30}}
+      >
         Startseite
       </ButtonPrimary>
     </View>
@@ -139,8 +151,7 @@ export const FinalCouncellingInvite = (props) => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    justifyContent: 'center',
-    padding: 30
+    justifyContent: 'center'
   },
   header: {
     textAlign: 'center',

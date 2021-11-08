@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   cardText: {
     fontSize: 16,
     color: Colors.text,
+    textAlign: 'center',
     padding: 10
   },
   cardBtnContainer: {
