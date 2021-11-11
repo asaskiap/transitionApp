@@ -7,13 +7,10 @@ const windowHeight = Dimensions.get('window').height;
 
 export const contactButton = (props) => {
   return (
-    <TouchableOpacity
-      style={[{padding: 2}, props.style]}
-      onPress={props.onPress}
-    >
+    <TouchableOpacity style={props.style} onPress={props.onPress}>
       <Entypo
         name="mail"
-        size={windowHeight > 600 ? 40 : 32}
+        size={windowHeight > 600 ? 34 : 32}
         color={colors.textLight}
       />
     </TouchableOpacity>

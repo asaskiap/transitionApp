@@ -59,6 +59,7 @@ class Berufsfragebogen extends React.Component {
         {
           value: this.state.handwerklich,
           svg: {fill: colors.pieBlue},
+
           key: 0
         },
         {value: this.state.forschend, svg: {fill: colors.pieGreen}, key: 1},

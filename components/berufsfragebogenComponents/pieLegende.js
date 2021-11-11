@@ -17,19 +17,19 @@ const PieLegende = (props) => {
       <View>
         <View style={styles.colorInfo}>
           <View
-            style={[styles.colorBox, {backgroundColor: colors.accentDark}]}
+            style={[styles.colorBox, {backgroundColor: colors.pieBlue}]}
           ></View>
           <Text style={styles.colorText}>Handwerklich</Text>
         </View>
         <View style={styles.colorInfo}>
           <View
-            style={[styles.colorBox, {backgroundColor: colors.accentPale}]}
+            style={[styles.colorBox, {backgroundColor: colors.pieGreen}]}
           ></View>
           <Text style={styles.colorText}>Forschend</Text>
         </View>
         <View style={styles.colorInfo}>
           <View
-            style={[styles.colorBox, {backgroundColor: colors.psychology}]}
+            style={[styles.colorBox, {backgroundColor: colors.pieDarkBlue}]}
           ></View>
           <Text style={styles.colorText}>Künstlerisch</Text>
         </View>
@@ -37,19 +37,19 @@ const PieLegende = (props) => {
       <View>
         <View style={styles.colorInfo}>
           <View
-            style={[styles.colorBox, {backgroundColor: colors.secondary}]}
+            style={[styles.colorBox, {backgroundColor: colors.pieOrange}]}
           ></View>
           <Text style={styles.colorText}>Sozial</Text>
         </View>
         <View style={styles.colorInfo}>
           <View
-            style={[styles.colorBox, {backgroundColor: colors.primary}]}
+            style={[styles.colorBox, {backgroundColor: colors.pieYellow}]}
           ></View>
           <Text style={styles.colorText}>Wirtschaftlich</Text>
         </View>
         <View style={styles.colorInfo}>
           <View
-            style={[styles.colorBox, {backgroundColor: colors.secondaryLight}]}
+            style={[styles.colorBox, {backgroundColor: colors.piePink}]}
           ></View>
           <Text style={styles.colorText}>Verwaltend</Text>
         </View>

@@ -11,28 +11,16 @@ const windowHeight = Dimensions.get('window').height;
 const MenuButton = (props) => {
   return (
     <TouchableOpacity
-      style={styles.menuButton}
+      style={props.style}
       onPress={() => props.setDisplayMenu(true)}
     >
-      <View style={styles.menuButtonIcon}>
-        <Ionicons
-          name="menu"
-          size={windowHeight > 600 ? 40 : 30}
-          color={Colors.textLight}
-        />
-      </View>
+      <Ionicons
+        name="menu"
+        size={windowHeight > 600 ? 34 : 32}
+        color={Colors.textLight}
+      />
     </TouchableOpacity>
   );
 };
 
 export default MenuButton;
-
-const styles = StyleSheet.create({
-  menuButton: {
-    position: 'absolute',
-    padding: 2,
-    bottom: 0,
-    right: 5
-  },
-  menuButtonIcon: {}
-});

@@ -42,7 +42,7 @@ const menu = (props) => {
               style={styles.menuItemText}
               onPress={() => navigateTo('Entscheidungsbaum')}
             >
-              Entscheidungsbaum
+              Was brauche ich in meiner Situation?
             </Text>
           </TouchableOpacity>
 

@@ -17,8 +17,6 @@ import WerSindWir from '../components/landingPageComponents/WerSindWir';
 import WasMachenWir from '../components/landingPageComponents/WasMachenWir';
 import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelfen';
 import ContactButton from '../components/buttons/contactButton';
-import TreeButton from '../components/buttons/treeButton';
-
 import textStyles from '../styles/generalTextStyles';
 import Colors from '../assets/colors';
 import colors from '../assets/colors';
@@ -48,8 +46,9 @@ const LandingPage = (props) => {
   return (
     <ScrollView>
       <ImageBackground
-        source={require('./../assets/images/cambre_1.jpg')}
+        source={require('./../assets/images/cambreSketchDark.png')}
         style={styles.backgroundImage}
+        //blurRadius={2}
       >
         <View style={textStyles.fullScreenContainer}>
           <Menu isVisible={displayMenu} close={closeMenu} {...props}></Menu>
@@ -96,27 +95,55 @@ const LandingPage = (props) => {
             >
               <Text style={styles.subHeaderText}>Wobei können wir helfen?</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[
+                styles.subHeader,
+                {
+                  backgroundColor: colors.pieOrange,
+                  marginTop: 30
+                }
+              ]}
+              onPress={() => props.navigation.navigate('Transition')}
+            >
+              <Text style={[styles.subHeaderText, {letterSpacing: 2}]}>
+                Tanz! Und Danach?
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
-        <View
+
+        <MenuButton
           style={{
-            backgroundColor: colors.primary,
-            height: windowHeight > 600 ? 45 : 38,
-            width: windowWidth,
             position: 'absolute',
-            bottom: 0
+            bottom: 12,
+            right: 15,
+            backgroundColor: colors.primary,
+            height: windowHeight > 600 ? 50 : 45,
+            width: windowHeight > 600 ? 50 : 45,
+            borderRadius: windowHeight > 600 ? 25 : 22,
+            padding: windowHeight > 600 ? 8 : 4,
+            alignItems: 'center',
+            justifyContent: 'center'
           }}
-        >
-          <MenuButton setDisplayMenu={setDisplayMenu} />
-          <TreeButton
-            style={{position: 'absolute', bottom: 2, left: '45%'}}
-            onPress={() => props.navigation.navigate('Entscheidungsbaum')}
-          />
-          <ContactButton
-            style={{position: 'absolute', bottom: 2, left: 5}}
-            onPress={() => console.log('pressed contact button')}
-          />
-        </View>
+          setDisplayMenu={setDisplayMenu}
+        />
+
+        <ContactButton
+          style={{
+            position: 'absolute',
+            bottom: 12,
+            left: 15,
+            backgroundColor: colors.primary,
+            height: windowHeight > 600 ? 50 : 45,
+            width: windowHeight > 600 ? 50 : 45,
+            borderRadius: windowHeight > 600 ? 25 : 22,
+            padding: windowHeight > 600 ? 8 : 4,
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+          onPress={() => console.log('pressed contact button')}
+        />
       </ImageBackground>
     </ScrollView>
   );
@@ -155,10 +182,8 @@ const styles = StyleSheet.create({
     letterSpacing: windowHeight > 600 ? 5 : 2
   },
   buttonContainer: {
-    marginTop: windowHeight > 600 ? 450 : 350,
-
-    marginBottom: windowHeight > 600 ? 50 : 20
-    //marginTop: windowHeight > 600 ? 180 : 170
+    marginTop: windowHeight > 600 ? 400 : 300,
+    marginBottom: windowHeight > 600 ? 20 : 10
   },
   subHeader: {
     paddingHorizontal: 10,
