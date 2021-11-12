@@ -142,7 +142,7 @@ const LandingPage = (props) => {
             alignItems: 'center',
             justifyContent: 'center'
           }}
-          onPress={() => console.log('pressed contact button')}
+          // onPress={() => console.log('pressed contact button')}
         />
       </ImageBackground>
     </ScrollView>

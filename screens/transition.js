@@ -69,7 +69,7 @@ class Transition extends React.Component {
           {...this.props}
         ></Menu>
         <ArticleHeader textStyle={{textAlign: 'center'}}>
-          Ein Leben nach dem Tanz
+          Die Transition
         </ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
