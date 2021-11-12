@@ -12,11 +12,7 @@ export const contactButton = (props) => {
     <TouchableOpacity
       style={props.style}
       onPress={() =>
-        sendEmail(
-          'alannapfeiffer@gmail.com',
-          'Does this work?',
-          'Trial email'
-        ).then(() => {
+        sendEmail('alannapfeiffer@gmail.com', 'Anfrage', '').then(() => {
           console.log('Your message was successfully sent!');
         })
       }

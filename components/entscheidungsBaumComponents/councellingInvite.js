@@ -11,6 +11,8 @@ import Colors from '../../assets/colors';
 
 import ButtonPrimary from '../buttons/buttonPrimary';
 
+import {sendEmail} from '../../utilities/sendEmail';
+
 export const CouncellingInvite1 = (props) => {
   return (
     <View style={styles.container}>
@@ -27,8 +29,18 @@ export const CouncellingInvite1 = (props) => {
       <Text style={styles.text}>
         Vereinbare gerne einen Beratungstermin unter
       </Text>
+      <TouchableOpacity
+        onPress={() => {
+          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
+            () => {
+              console.log('Your message was successfully sent!');
+            }
+          );
+        }}
+      >
+        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      </TouchableOpacity>
 
-      <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
       <Text style={styles.text}>
         Unsere Psychologen helfen dir beim Herausfinden von deinen verborgenen
         Talenten, Interessen, Leidenschaften. Schau auch gerne unter:
@@ -66,8 +78,17 @@ export const CouncellingInvite2 = (props) => {
       <Text style={styles.text}>
         Vereinbare gerne einen Beratungstermin unter
       </Text>
-
-      <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      <TouchableOpacity
+        onPress={() => {
+          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
+            () => {
+              console.log('Your message was successfully sent!');
+            }
+          );
+        }}
+      >
+        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      </TouchableOpacity>
       <Text style={styles.text}>
         Unsere Psychologen helfen dir beim Suchen einer geeigneten Ausbildung.
         Schau auch gerne unter:
@@ -75,7 +96,6 @@ export const CouncellingInvite2 = (props) => {
       <TouchableOpacity onPress={() => props.navigation.navigate('Umsetzung')}>
         <Text style={styles.highlight}>Wie setze ich meine Ideen um?</Text>
       </TouchableOpacity>
-
       <ButtonPrimary
         onPress={() => props.navigation.navigate('Home')}
         backgroundStyle={{paddingHorizontal: 30}}
@@ -103,7 +123,17 @@ export const CouncellingInvite3 = (props) => {
         Vereinbare gerne einen Beratungstermin unter
       </Text>
 
-      <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      <TouchableOpacity
+        onPress={() => {
+          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
+            () => {
+              console.log('Your message was successfully sent!');
+            }
+          );
+        }}
+      >
+        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      </TouchableOpacity>
       <Text style={styles.text}>
         Unsere Psychologen helfen dir beim Suchen einer
         Finanzierungsmöglichkeit. Evtl. kommt auch eines unserer Stipendien für
@@ -145,7 +175,17 @@ export const FinalCouncellingInvite = (props) => {
         Vereinbare gerne einen Beratungstermin unter
       </Text>
 
-      <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      <TouchableOpacity
+        onPress={() => {
+          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
+            () => {
+              console.log('Your message was successfully sent!');
+            }
+          );
+        }}
+      >
+        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+      </TouchableOpacity>
       <Text style={styles.text}>
         Unsere Psychologen helfen dir beim Beantworten deiner Fragen. Schau auch
         gerne unter:

@@ -1,16 +1,19 @@
 ### TO DO
 
-- link up councelling invite inner app links
-- check all links (presentation and functionality)
-- rework starting page for Transition?
-- menu shortcut for die transition
+- check illustrations, possibly update and buy package
 - add other berufsportraits
 - add proper photos for transition stories
 - add real logo and splash screen
-- implement send email
+
 - look up how to add news updates
 
 - check on other devices!
+
+- link up councelling invite inner app links ✅
+- check all links (presentation and functionality)
+- rework starting page for Transition? ✅
+- menu shortcut for die transition ✅
+- implement send email ✅
 
 ## reminder: Links need to have https:// before ! in order to work!!
 

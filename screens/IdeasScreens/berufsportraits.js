@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import {Modal, View, Linking, TouchableOpacity} from 'react-native';
+import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
@@ -12,7 +13,12 @@ import Link from '../../components/articleComponents/link';
 import {
   Augenoptiker,
   Automobilverkäufer,
-  AuswertigesAmt
+  AuswertigesAmt,
+  Bekleidungstechniker,
+  Gesundheitsmanager,
+  Biologie,
+  Blindenpädagoge,
+  Buchbinder
 } from '../../components/berufsportraitComponents/berufsportaitTexts';
 import colors from '../../assets/colors';
 
@@ -20,6 +26,11 @@ const Berufsportraits = (props) => {
   const [augenoptikerIn, setAugenoptikerIn] = useState(false);
   const [automobilverkäuferIn, setAutomobilverkäuferin] = useState(false);
   const [auswertigesAmt, setAuswertigesAmt] = useState(false);
+  const [bekleidungstechniker, setBekleidungstechniker] = useState(false);
+  const [gesundheitsmanager, setGesundheitsmanager] = useState(false);
+  const [biologe, setBiologe] = useState(false);
+  const [blindenpaedagoge, setBlingenpaedagoge] = useState(false);
+  const [buchbinder, setBuchbinder] = useState(false);
 
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
@@ -30,25 +41,59 @@ const Berufsportraits = (props) => {
           image={require('../../assets/illustrations/ideasIllustrations/PictureFrame.png')}
         />
 
-        <TouchableOpacity onPress={() => setAugenoptikerIn(!augenoptikerIn)}>
-          <ArticleSubHeader>AugenoptikerIn ▽</ArticleSubHeader>
-        </TouchableOpacity>
-        {augenoptikerIn && <Augenoptiker></Augenoptiker>}
+        <Article>
+          <TouchableOpacity onPress={() => setAugenoptikerIn(!augenoptikerIn)}>
+            <ArticleSubHeader>AugenoptikerIn ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {augenoptikerIn && <Augenoptiker></Augenoptiker>}
 
-        <TouchableOpacity
-          onPress={() => setAutomobilverkäuferin(!automobilverkäuferIn)}
-        >
-          <ArticleSubHeader>AutomobilverkäuferIn ▽</ArticleSubHeader>
-        </TouchableOpacity>
-        {automobilverkäuferIn && <Automobilverkäufer />}
+          <TouchableOpacity
+            onPress={() => setAutomobilverkäuferin(!automobilverkäuferIn)}
+          >
+            <ArticleSubHeader>AutomobilverkäuferIn ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {automobilverkäuferIn && <Automobilverkäufer />}
 
-        <TouchableOpacity onPress={() => setAuswertigesAmt(!auswertigesAmt)}>
-          <ArticleSubHeader textStyle={{textAlign: 'center'}}>
-            Beamte*r im Mittleren Dienst des Auswärtigen Amtes ▽
-          </ArticleSubHeader>
-        </TouchableOpacity>
-        {auswertigesAmt && <AuswertigesAmt />}
+          <TouchableOpacity onPress={() => setAuswertigesAmt(!auswertigesAmt)}>
+            <ArticleSubHeader>
+              Beamte*r im Mittleren Dienst des Auswärtigen Amtes ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {auswertigesAmt && <AuswertigesAmt />}
 
+          <TouchableOpacity
+            onPress={() => setBekleidungstechniker(!bekleidungstechniker)}
+          >
+            <ArticleSubHeader>BekleidungstechnikerIn (BA) ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {bekleidungstechniker && <Bekleidungstechniker />}
+
+          <TouchableOpacity
+            onPress={() => setGesundheitsmanager(!gesundheitsmanager)}
+          >
+            <ArticleSubHeader>
+              Betriebliche/r Gesundheits- manager/in ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {gesundheitsmanager && <Gesundheitsmanager />}
+
+          <TouchableOpacity onPress={() => setBiologe(!biologe)}>
+            <ArticleSubHeader>Biologe/in M.Sc. ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {biologe && <Biologie />}
+
+          <TouchableOpacity
+            onPress={() => setBlingenpaedagoge(!blindenpaedagoge)}
+          >
+            <ArticleSubHeader>Blindenpädagog*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {blindenpaedagoge && <Blindenpädagoge />}
+
+          <TouchableOpacity onPress={() => setBuchbinder(!buchbinder)}>
+            <ArticleSubHeader>Buchbinder*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {buchbinder && <Buchbinder />}
+        </Article>
         <View
           style={{
             width: '100%',
@@ -57,6 +102,7 @@ const Berufsportraits = (props) => {
             marginVertical: 40
           }}
         ></View>
+
         <Paragraph
           style={{
             fontSize: 18,
