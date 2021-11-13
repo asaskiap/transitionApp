@@ -18,7 +18,24 @@ import {
   Gesundheitsmanager,
   Biologie,
   Blindenpädagoge,
-  Buchbinder
+  Buchbinder,
+  Clown,
+  Cruise,
+  Ernaehrungsberatung,
+  Eurythmist,
+  Erzieher,
+  Goethe,
+  Freizeit,
+  Gesundheitsfoerderung,
+  Hoerakustiker,
+  Hoergeraeteaktustiker,
+  Kosmetik,
+  Kulturvermittler,
+  Kunstgeragoge,
+  Lehrer,
+  Logopaede,
+  Luftverkehr,
+  Mediengestalter
 } from '../../components/berufsportraitComponents/berufsportaitTexts';
 import colors from '../../assets/colors';
 
@@ -31,6 +48,23 @@ const Berufsportraits = (props) => {
   const [biologe, setBiologe] = useState(false);
   const [blindenpaedagoge, setBlingenpaedagoge] = useState(false);
   const [buchbinder, setBuchbinder] = useState(false);
+  const [clown, setClown] = useState(false);
+  const [cruise, setCruise] = useState(false);
+  const [ernaehrung, setErnaehrung] = useState(false);
+  const [eurythmist, setEurythmist] = useState(false);
+  const [erzieher, setErzieher] = useState(false);
+  const [goethe, setGoethe] = useState(false);
+  const [freizeit, setFreizeit] = useState(false);
+  const [gesundheitsfoerderung, setGesundheitsfoerderung] = useState(false);
+  const [hoerakustiker, setHoerakustiker] = useState(false);
+  const [hoergeraeteaktustiker, setHoergeraeteakustiker] = useState(false);
+  const [kosmetik, setKosmetik] = useState(false);
+  const [kulturvermittler, setKulturvermittler] = useState(false);
+  const [kunstgeragoge, setKunstgeragoge] = useState(false);
+  const [lehrer, setLehrer] = useState(false);
+  const [luftverkehr, setLuftverkehr] = useState(false);
+  const [logopaede, setLogopaede] = useState(false);
+  const [mediengestalter, setMediengestalter] = useState(false);
 
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
@@ -93,6 +127,113 @@ const Berufsportraits = (props) => {
             <ArticleSubHeader>Buchbinder*in ▽</ArticleSubHeader>
           </TouchableOpacity>
           {buchbinder && <Buchbinder />}
+
+          <TouchableOpacity onPress={() => setClown(!clown)}>
+            <ArticleSubHeader>Clown ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {clown && <Clown />}
+
+          <TouchableOpacity onPress={() => setCruise(!cruise)}>
+            <ArticleSubHeader>Cruise Tourism Manager*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {cruise && <Cruise />}
+
+          <TouchableOpacity onPress={() => setErnaehrung(!ernaehrung)}>
+            <ArticleSubHeader>Ernährungsberatung ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {ernaehrung && <Ernaehrungsberatung />}
+
+          <TouchableOpacity onPress={() => setEurythmist(!eurythmist)}>
+            <ArticleSubHeader>EurythmistIn ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {eurythmist && <Eurythmist />}
+
+          <TouchableOpacity onPress={() => setErzieher(!erzieher)}>
+            <ArticleSubHeader>
+              Erzieher*in sowie Facherzieher*in ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {erzieher && <Erzieher />}
+
+          <TouchableOpacity onPress={() => setGoethe(!goethe)}>
+            <ArticleSubHeader>
+              Fach- und Führungskraft beim Goethe-Institut ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {goethe && <Goethe />}
+
+          <TouchableOpacity onPress={() => setFreizeit(!freizeit)}>
+            <ArticleSubHeader>Freizeitwissenschaftler*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {freizeit && <Freizeit />}
+
+          <TouchableOpacity
+            onPress={() => setGesundheitsfoerderung(!gesundheitsfoerderung)}
+          >
+            <ArticleSubHeader>
+              Berufe in der Gesundheitsförderung ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {gesundheitsfoerderung && <Gesundheitsfoerderung />}
+
+          <TouchableOpacity onPress={() => setHoerakustiker(!hoerakustiker)}>
+            <ArticleSubHeader>Hörakustiker*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {hoerakustiker && <Hoerakustiker />}
+
+          <TouchableOpacity
+            onPress={() => setHoergeraeteakustiker(!hoergeraeteaktustiker)}
+          >
+            <ArticleSubHeader>Hörgeräteakustiker*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {hoergeraeteaktustiker && <Hoergeraeteaktustiker />}
+
+          <TouchableOpacity onPress={() => setKosmetik(!kosmetik)}>
+            <ArticleSubHeader>
+              Kosmetik, Maskenbild, Tätowierer*in ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {kosmetik && <Kosmetik />}
+
+          <TouchableOpacity
+            onPress={() => setKulturvermittler(!kulturvermittler)}
+          >
+            <ArticleSubHeader>
+              Kultur- und Kunstvermittler*in ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {kulturvermittler && <Kulturvermittler />}
+
+          <TouchableOpacity onPress={() => setKunstgeragoge(!kunstgeragoge)}>
+            <ArticleSubHeader>Kunstgeragog*Innen ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {kunstgeragoge && <Kunstgeragoge />}
+
+          <TouchableOpacity onPress={() => setLehrer(!lehrer)}>
+            <ArticleSubHeader>
+              Lehrer*in an staatlichen Schulen ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {lehrer && <Lehrer />}
+
+          <TouchableOpacity onPress={() => setLogopaede(!logopaede)}>
+            <ArticleSubHeader>Logopäde*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {logopaede && <Logopaede />}
+
+          <TouchableOpacity onPress={() => setLuftverkehr(!luftverkehr)}>
+            <ArticleSubHeader>Luftverkehrskaufleute ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {luftverkehr && <Luftverkehr />}
+
+          <TouchableOpacity
+            onPress={() => setMediengestalter(!mediengestalter)}
+          >
+            <ArticleSubHeader>
+              Mediengestalter_in digital und print bzw. Webdesign ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {mediengestalter && <Mediengestalter />}
         </Article>
         <View
           style={{
