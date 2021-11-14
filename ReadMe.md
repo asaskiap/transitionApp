@@ -1,7 +1,6 @@
 ### TO DO
 
 - check illustrations, possibly update and buy package
-- add other berufsportraits
 - add proper photos for transition stories
 - add real logo and splash screen
 
@@ -9,6 +8,7 @@
 
 - check on other devices!
 
+- add other berufsportraits ✅
 - link up councelling invite inner app links ✅
 - check all links (presentation and functionality)
 - rework starting page for Transition? ✅
@@ -24,7 +24,7 @@
 - find a way that close button sticks on screen in scroll views?
 - rework navigator?
 - Implement automatic scrolling to top of screen on rerender ❗✅ (maybe still for Entscheidungsbaum)
-- bigger close button ❗
+  (- bigger close button ❗)
 
 ### Modal Template
 

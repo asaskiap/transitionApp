@@ -76,13 +76,13 @@ class selfEmploymentMenuScreen extends React.Component {
           Selbstständigkeit
         </ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginTop: 20}}
+          imageContainerStyle={{marginBottom: -20}}
           imageStyle={{
             resizeMode: 'contain',
-            maxHeight: windowHeight * 0.5,
+
             maxWidth: windowWidth * 0.9
           }}
-          image={require('../../assets/illustrations/selfemploymentIllustrations/plans.png')}
+          image={require('../../assets/illustrations/selfemploymentIllustrations/Selbstständigkeit.png')}
         />
         <MenuCard
           onPress={() => this.setState({existenzgruendung: true})}

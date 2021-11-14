@@ -72,8 +72,8 @@ class Transition extends React.Component {
           Die Transition
         </ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
-          image={require('../assets/illustrations/transitionIllustrations/hurry.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 350}}
+          image={require('../assets/illustrations/transitionIllustrations/transitionHeader.png')}
         />
         <ArticleSubHeader>Was bedeutet Transition?</ArticleSubHeader>
         <Paragraph>
@@ -117,18 +117,14 @@ class Transition extends React.Component {
           Entwicklung einer Vision für ein Leben nach dem Tanz
         </ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
-          image={require('../assets/illustrations/transitionIllustrations/meditating_transition.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 370}}
+          image={require('../assets/illustrations/transitionIllustrations/transitionVision.png')}
         ></ArticleIllustration>
 
         <TouchableOpacity
           onPress={() => this.setState({vision: !this.state.vision})}
         >
-          <ArticleSubHeader
-            textStyle={{fontWeight: 'bold', marginVertical: 10}}
-          >
-            Vision ∇
-          </ArticleSubHeader>
+          <ArticleSubHeader>Vision ▽</ArticleSubHeader>
         </TouchableOpacity>
         {this.state.vision && (
           <>
@@ -149,11 +145,7 @@ class Transition extends React.Component {
         <TouchableOpacity
           onPress={() => this.setState({needs: !this.state.needs})}
         >
-          <ArticleSubHeader
-            textStyle={{fontWeight: 'bold', marginVertical: 10}}
-          >
-            Needs ∇
-          </ArticleSubHeader>
+          <ArticleSubHeader>Needs ▽</ArticleSubHeader>
         </TouchableOpacity>
         {this.state.needs && (
           <Paragraph>
@@ -178,19 +170,11 @@ class Transition extends React.Component {
         <TouchableOpacity
           onPress={() => this.setState({interests: !this.state.interests})}
         >
-          <ArticleSubHeader
-            textStyle={{fontWeight: 'bold', marginVertical: 10}}
-          >
-            Interests ∇
-          </ArticleSubHeader>
+          <ArticleSubHeader>Interests ▽</ArticleSubHeader>
         </TouchableOpacity>
 
         {this.state.interests && (
           <>
-            <ArticleIllustration
-              imageStyle={{maxHeight: windowHeight > 600 ? 260 : 220}}
-              image={require('../assets/illustrations/transitionIllustrations/reading-side_transition.png')}
-            ></ArticleIllustration>
             <Paragraph>
               Die eigenen Interessen zu kennen ist meist gar nicht so leicht wie
               es auf Anhieb erscheinen mag. Und doch sind sie einer der
@@ -210,11 +194,7 @@ class Transition extends React.Component {
         <TouchableOpacity
           onPress={() => this.setState({skills: !this.state.skills})}
         >
-          <ArticleSubHeader
-            textStyle={{fontWeight: 'bold', marginVertical: 10}}
-          >
-            Skills ∇
-          </ArticleSubHeader>
+          <ArticleSubHeader>Skills ▽</ArticleSubHeader>
         </TouchableOpacity>
 
         {this.state.skills && (
@@ -234,19 +214,11 @@ class Transition extends React.Component {
         <TouchableOpacity
           onPress={() => this.setState({values: !this.state.values})}
         >
-          <ArticleSubHeader
-            textStyle={{fontWeight: 'bold', marginVertical: 10}}
-          >
-            Values ∇
-          </ArticleSubHeader>
+          <ArticleSubHeader>Values ▽</ArticleSubHeader>
         </TouchableOpacity>
 
         {this.state.values && (
           <>
-            <ArticleIllustration
-              imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
-              image={require('../assets/illustrations/transitionIllustrations/coffee_transition.png')}
-            ></ArticleIllustration>
             <Paragraph>
               Die Erfüllung die wir in einer Tätigkeit erleben hängt meist stark
               zusammen mit den persönlichen Werten die wir mit dieser Tätigkeit
@@ -271,5 +243,4 @@ class Transition extends React.Component {
     );
   }
 }
-
 export default Transition;

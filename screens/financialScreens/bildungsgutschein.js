@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Linking, Modal} from 'react-native';
+import {Linking, Modal, Dimensions} from 'react-native';
 import colors from '../../assets/colors';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -11,6 +11,7 @@ import {ListItem, List} from '../../components/articleComponents/list';
 import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
+const windowHeight = Dimensions.get('window').height;
 
 const Bildungsgutschein = (props) => {
   return (
@@ -21,8 +22,8 @@ const Bildungsgutschein = (props) => {
           Bildungsgutschein
         </ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 200}}
-          image={require('../../assets/illustrations/financialIllustrations/levitate_finance.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
+          image={require('../../assets/illustrations/financialIllustrations/Bildungsgutschein.png')}
         />
         <Article>
           <Paragraph style={{marginTop: -20}}>

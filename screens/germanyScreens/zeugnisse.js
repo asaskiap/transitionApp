@@ -29,6 +29,7 @@ const Zeugnisse = (props) => {
           Anerkennung von ausländischen Zeugnissen
         </ArticleHeader>
         <ArticleIllustration
+          imageContainerStyle={{marginTop: 40}}
           image={require('../../assets/illustrations/germanyIllustrations/relax.png')}
         />
         <Article>

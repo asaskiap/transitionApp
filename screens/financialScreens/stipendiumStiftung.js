@@ -22,7 +22,6 @@ const StipendiumStiftung = (props) => {
         <ArticleHeader>Stipendium der Stiftung</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/Message.png')}
-          imageContainerStyle={{marginVertical: 40, paddingBottom: 30}}
         ></ArticleIllustration>
         <Article>
           <ArticleSubHeader>

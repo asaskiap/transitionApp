@@ -16,8 +16,8 @@ const Nebenjobs = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Nebenjobs</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 300}}
-          image={require('../../assets/illustrations/financialIllustrations/job_nebenjobs.png')}
+          imageStyle={{maxHeight: 350}}
+          image={require('../../assets/illustrations/financialIllustrations/failure.png')}
         />
         <Article>
           <Paragraph>

@@ -10,13 +10,12 @@ import {
   Image
 } from 'react-native';
 
-import MenuButton from '../components/buttons/menuButton';
+import {Ionicons} from '@expo/vector-icons';
 
 import Menu from '../components/menu';
 import WerSindWir from '../components/landingPageComponents/WerSindWir';
 import WasMachenWir from '../components/landingPageComponents/WasMachenWir';
 import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelfen';
-import ContactButton from '../components/buttons/contactButton';
 import textStyles from '../styles/generalTextStyles';
 import Colors from '../assets/colors';
 import colors from '../assets/colors';
@@ -110,40 +109,34 @@ const LandingPage = (props) => {
                 Tanz! Und Danach?
               </Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[
+                styles.subHeader,
+                {
+                  backgroundColor: colors.primary,
+                  flexDirection: 'row',
+                  justifyContent: 'center'
+                }
+              ]}
+              onPress={() => setDisplayMenu(true)}
+            >
+              <Text
+                style={[
+                  styles.subHeaderText,
+                  {letterSpacing: 2, paddingHorizontal: 5}
+                ]}
+              >
+                Menu
+              </Text>
+              <Ionicons
+                name="menu"
+                size={windowHeight > 600 ? 24 : 20}
+                color={Colors.textLight}
+              />
+            </TouchableOpacity>
           </View>
         </View>
-
-        <MenuButton
-          style={{
-            position: 'absolute',
-            bottom: 12,
-            right: 15,
-            //backgroundColor: colors.primary,
-            height: windowHeight > 600 ? 50 : 45,
-            width: windowHeight > 600 ? 50 : 45,
-            borderRadius: windowHeight > 600 ? 25 : 22,
-            padding: windowHeight > 600 ? 8 : 4,
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-          setDisplayMenu={setDisplayMenu}
-        />
-
-        <ContactButton
-          style={{
-            position: 'absolute',
-            bottom: 12,
-            left: 15,
-            // backgroundColor: colors.primary,
-            height: windowHeight > 600 ? 50 : 45,
-            width: windowHeight > 600 ? 50 : 45,
-            borderRadius: windowHeight > 600 ? 25 : 22,
-            padding: windowHeight > 600 ? 8 : 4,
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-          // onPress={() => console.log('pressed contact button')}
-        />
       </ImageBackground>
     </ScrollView>
   );
@@ -174,7 +167,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   headerText: {
-    marginLeft: 90,
+    marginLeft: 70,
     fontSize: windowHeight > 600 ? 28 : 24,
     fontWeight: windowHeight < 600 ? '600' : 'bold',
     textAlign: 'center',

@@ -19,8 +19,8 @@ export const contactButton = (props) => {
     >
       <Entypo
         name="mail"
-        size={windowHeight > 600 ? 34 : 32}
-        color={colors.primary}
+        size={windowHeight > 600 ? 30 : 28}
+        color={colors.textLight}
       />
     </TouchableOpacity>
   );

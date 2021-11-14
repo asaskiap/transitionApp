@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Linking, Modal} from 'react-native';
+import {Linking, Modal, Dimensions} from 'react-native';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
@@ -9,6 +9,7 @@ import Link from '../../components/articleComponents/link';
 import Paragraph from '../../components/articleComponents/paragraph';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
+const windowHeight = Dimensions.get('window').height;
 
 const Studienkredit = (props) => {
   return (
@@ -17,8 +18,8 @@ const Studienkredit = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Studienkredit</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: 300}}
-          image={require('../../assets/illustrations/financialIllustrations/chart1.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
+          image={require('../../assets/illustrations/financialIllustrations/Bildungsscheck.png')}
         />
         <Article>
           <Paragraph>

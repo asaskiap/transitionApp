@@ -21,7 +21,7 @@ const Existenzgruendung = (props) => {
         </ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
-          image={require('../../assets/illustrations/selfemploymentIllustrations/business.png')}
+          image={require('../../assets/illustrations/selfemploymentIllustrations/existenz.png')}
         />
         <Article>
           <Paragraph>

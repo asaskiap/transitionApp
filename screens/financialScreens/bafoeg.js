@@ -23,8 +23,8 @@ const Bafoeg = (props) => {
 
         <ArticleHeader>Bafög</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 300 : 240}}
-          image={require('../../assets/illustrations/financialIllustrations/unboxing_finance.png')}
+          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
+          image={require('../../assets/illustrations/financialIllustrations/Bafoeg.png')}
         ></ArticleIllustration>
         <Article>
           <ArticleSubHeader>Wie finanziere ich ein Studium?</ArticleSubHeader>

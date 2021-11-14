@@ -10,6 +10,8 @@ import {
   Dimensions
 } from 'react-native';
 
+import ContactButton from '../components/buttons/contactButton';
+
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
 
@@ -98,6 +100,14 @@ const menu = (props) => {
           >
             <Text style={styles.menuItemText}>Selbstständigkeit</Text>
           </TouchableOpacity>
+
+          <ContactButton
+            style={{
+              position: 'absolute',
+              bottom: 12,
+              right: 12
+            }}
+          />
         </View>
       </ScrollView>
       <TouchableOpacity style={styles.closeButton} onPress={props.close}>
