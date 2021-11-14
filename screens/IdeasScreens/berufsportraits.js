@@ -35,7 +35,21 @@ import {
   Lehrer,
   Logopaede,
   Luftverkehr,
-  Mediengestalter
+  Mediengestalter,
+  Osteopathie,
+  SozialeArbeitBA,
+  SozialeArbeitStudium,
+  Sozialversicherungsangestellter,
+  Sportkaufmann,
+  PTA,
+  Raumausstatter,
+  Reiseleiter,
+  Veranstaltungstechnik,
+  Tierphysiotherapie,
+  Tierwirt,
+  Trainee,
+  Versicherungsmakler,
+  Zirkuspaedagoge
 } from '../../components/berufsportraitComponents/berufsportaitTexts';
 import colors from '../../assets/colors';
 
@@ -65,6 +79,21 @@ const Berufsportraits = (props) => {
   const [luftverkehr, setLuftverkehr] = useState(false);
   const [logopaede, setLogopaede] = useState(false);
   const [mediengestalter, setMediengestalter] = useState(false);
+  const [osteopathie, setOsteopathie] = useState(false);
+  const [sozialeArbeitBA, setSozialeArbeitBA] = useState(false);
+  const [sozialeArbeitStudium, setSozialeArbeitStudium] = useState(false);
+  const [sozialversicherungsangestellter, setSozialversicherungsangestellter] =
+    useState(false);
+  const [sportkaufmann, setSportkaufmann] = useState(false);
+  const [pta, setPTA] = useState(false);
+  const [raumausstatter, setRaumausstatter] = useState(false);
+  const [reiseleiter, setReiseleiter] = useState(false);
+  const [veranstaltungstechnik, setVeranstaltungstechnik] = useState(false);
+  const [tierphysiotherapie, setTierphysiotherapie] = useState(false);
+  const [tierwirt, setTierwirt] = useState(false);
+  const [trainee, setTrainee] = useState(false);
+  const [versicherungsmakler, setVersicherungsmakler] = useState(false);
+  const [zirkuspaedagoge, setZirkuspaedagoge] = useState(false);
 
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
@@ -234,7 +263,106 @@ const Berufsportraits = (props) => {
             </ArticleSubHeader>
           </TouchableOpacity>
           {mediengestalter && <Mediengestalter />}
+
+          <TouchableOpacity onPress={() => setOsteopathie(!osteopathie)}>
+            <ArticleSubHeader>Osteopathie ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {osteopathie && <Osteopathie />}
+
+          <TouchableOpacity onPress={() => setPTA(!pta)}>
+            <ArticleSubHeader>
+              Pharmazeutisch-technischen Assistentin (PTA) ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {pta && <PTA />}
+
+          <TouchableOpacity onPress={() => setRaumausstatter(!raumausstatter)}>
+            <ArticleSubHeader>Raumausstatter*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {raumausstatter && <Raumausstatter />}
+
+          <TouchableOpacity onPress={() => setReiseleiter(!reiseleiter)}>
+            <ArticleSubHeader>Reiseleiter*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {reiseleiter && <Reiseleiter />}
+
+          <TouchableOpacity
+            onPress={() => setSozialeArbeitBA(!sozialeArbeitBA)}
+          >
+            <ArticleSubHeader>Soziale Arbeit BA ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {sozialeArbeitBA && <SozialeArbeitBA />}
+
+          <TouchableOpacity
+            onPress={() => setSozialeArbeitStudium(!sozialeArbeitStudium)}
+          >
+            <ArticleSubHeader>Studium Soziale Arbeit ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {sozialeArbeitStudium && <SozialeArbeitStudium />}
+
+          <TouchableOpacity
+            onPress={() =>
+              setSozialversicherungsangestellter(
+                !sozialversicherungsangestellter
+              )
+            }
+          >
+            <ArticleSubHeader>
+              Sozialversicherungs- fachangestellte*r ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {sozialversicherungsangestellter && (
+            <Sozialversicherungsangestellter />
+          )}
+
+          <TouchableOpacity onPress={() => setSportkaufmann(!sportkaufmann)}>
+            <ArticleSubHeader>
+              Sport- und Fitnesskaufmann/Sport- und Fitnesskauffrau ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {sportkaufmann && <Sportkaufmann />}
+
+          <TouchableOpacity
+            onPress={() => setVeranstaltungstechnik(!veranstaltungstechnik)}
+          >
+            <ArticleSubHeader>
+              Theater- bzw. Veranstaltungstechnik ▽
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          {veranstaltungstechnik && <Veranstaltungstechnik />}
+
+          <TouchableOpacity
+            onPress={() => setTierphysiotherapie(!tierphysiotherapie)}
+          >
+            <ArticleSubHeader>Tierphysiotherapie ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {tierphysiotherapie && <Tierphysiotherapie />}
+
+          <TouchableOpacity onPress={() => setTierwirt(!tierwirt)}>
+            <ArticleSubHeader>Tierwirt*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {tierwirt && <Tierwirt />}
+
+          <TouchableOpacity onPress={() => setTrainee(!trainee)}>
+            <ArticleSubHeader>Trainee ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {trainee && <Trainee />}
+
+          <TouchableOpacity
+            onPress={() => setVersicherungsmakler(!versicherungsmakler)}
+          >
+            <ArticleSubHeader>Versicherungsmakler*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {versicherungsmakler && <Versicherungsmakler />}
+
+          <TouchableOpacity
+            onPress={() => setZirkuspaedagoge(!zirkuspaedagoge)}
+          >
+            <ArticleSubHeader>Zirkuspädagog*in ▽</ArticleSubHeader>
+          </TouchableOpacity>
+          {zirkuspaedagoge && <Zirkuspaedagoge />}
         </Article>
+
         <View
           style={{
             width: '100%',

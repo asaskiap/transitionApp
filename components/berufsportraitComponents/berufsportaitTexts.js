@@ -1557,3 +1557,59 @@ export const Mediengestalter = (props) => {
     </>
   );
 };
+
+export const Osteopathie = (props) => {
+  return <></>;
+};
+
+export const PTA = (props) => {
+  return <></>;
+};
+
+export const Raumausstatter = (props) => {
+  return <></>;
+};
+
+export const Reiseleiter = (props) => {
+  return <></>;
+};
+
+export const SozialeArbeitBA = (props) => {
+  return <></>;
+};
+
+export const SozialeArbeitStudium = (props) => {
+  return <></>;
+};
+
+export const Sozialversicherungsangestellter = (props) => {
+  return <></>;
+};
+
+export const Sportkaufmann = (props) => {
+  return <></>;
+};
+
+export const Veranstaltungstechnik = (props) => {
+  return <></>;
+};
+
+export const Tierphysiotherapie = (props) => {
+  return <></>;
+};
+
+export const Tierwirt = (props) => {
+  return <></>;
+};
+
+export const Trainee = (props) => {
+  return <></>;
+};
+
+export const Versicherungsmakler = (props) => {
+  return <></>;
+};
+
+export const Zirkuspaedagoge = (props) => {
+  return <></>;
+};
