@@ -16,8 +16,8 @@ const MenuButton = (props) => {
     >
       <Ionicons
         name="menu"
-        size={windowHeight > 600 ? 34 : 32}
-        color={Colors.textLight}
+        size={windowHeight > 600 ? 40 : 36}
+        color={Colors.primary}
       />
     </TouchableOpacity>
   );

@@ -64,7 +64,7 @@ const LandingPage = (props) => {
               source={require('../assets/transitionLogoTransparent.png')}
               resizeMode={'cover'}
               style={{
-                width: windowHeight > 600 ? 50 : 36,
+                width: windowHeight > 600 ? 50 : 40,
                 height: windowHeight > 600 ? 50 : 36,
                 position: 'absolute',
                 left: 20,
@@ -118,7 +118,7 @@ const LandingPage = (props) => {
             position: 'absolute',
             bottom: 12,
             right: 15,
-            backgroundColor: colors.primary,
+            //backgroundColor: colors.primary,
             height: windowHeight > 600 ? 50 : 45,
             width: windowHeight > 600 ? 50 : 45,
             borderRadius: windowHeight > 600 ? 25 : 22,
@@ -134,7 +134,7 @@ const LandingPage = (props) => {
             position: 'absolute',
             bottom: 12,
             left: 15,
-            backgroundColor: colors.primary,
+            // backgroundColor: colors.primary,
             height: windowHeight > 600 ? 50 : 45,
             width: windowHeight > 600 ? 50 : 45,
             borderRadius: windowHeight > 600 ? 25 : 22,

@@ -20,7 +20,7 @@ export const contactButton = (props) => {
       <Entypo
         name="mail"
         size={windowHeight > 600 ? 34 : 32}
-        color={colors.textLight}
+        color={colors.primary}
       />
     </TouchableOpacity>
   );

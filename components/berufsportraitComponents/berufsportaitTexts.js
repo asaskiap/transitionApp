@@ -1559,57 +1559,777 @@ export const Mediengestalter = (props) => {
 };
 
 export const Osteopathie = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Ostheopathie ist eine Behandlungsmethode für körperliche Beschwerden.
+        Der Ansatz der Osteopathie ist einfach: Leben zeigt sich in Form von
+        Bewegung. Dort wo Bewegung verhindert wird, macht sich Krankheit breit.
+        Die Osteopathie kennt alle kleinen und großen Bewegungen des
+        menschlichen Körpers. Sie hilft Bewegungseinschränkungen aufzuspüren und
+        zu lösen. Die Osteopathie bietet gegenüber der Schulmedizin eine ganze
+        Reihe von zusätzlichen Möglichkeiten zum Wohle des Patienten. So
+        betrachtet die Osteopathie den Patienten immer in seiner Gesamtheit.
+        Auch beschäftigt sich die Osteopathie nicht mit der Behandlung einzelner
+        Symptome, sondern will immer die Ursachen von Beschwerden aufspüren und
+        behandeln.
+      </Paragraph>
+      <Paragraph>
+        In Deutschland erfolgt die Ausbildung zum Osteopathen vorrangig an
+        privaten Osteopathie-Schulen.
+      </Paragraph>
+      <Paragraph>
+        Die meisten dieser Schulen bieten ihre Ausbildung berufsbegleitend an.
+        Die berufsbegleitende Ausbildung richtet sich an Ärzte, Heilpraktiker,
+        Physiotherapeuten.
+      </Paragraph>
+      <Paragraph>
+        Da die Osteopathie in Deutschland als Heilkunde gilt, darf sie nur von
+        Ärzten oder Heilpraktikern eigenständig praktiziert werden. Andere
+        Berufsgruppen müssen während oder nach ihrer Ausbildung den
+        Heilpraktikerschein erwerben. Wer nicht Arzt oder Heilpraktiker ist
+        (z.B. Physiotherapeut), darf nur auf Anordnung eine Arztes oder
+        Heilpraktikers „in den Grenzen seines Grundberufes“ osteopathisch
+        arbeiten.
+      </Paragraph>
+      <Paragraph>
+        Die berufsbegleitende Ausbildung beträgt mindestens vier Jahre und
+        findet in Wochenendseminaren statt. Insgesamt müssen die Schüler
+        mindestens 1.350 Unterrichtsstunden absolvieren. Der Unterricht ist
+        aufgeteilt in Theorie und Praxis und umfasst medizinische
+        Grundlagenfächer wie Anatomie und Physiologie sowie das Erlernen der
+        verschiedenen osteopathischen Techniken. Eine Abschlussarbeit und eine
+        Abschlussprüfung beenden die Ausbildung.
+      </Paragraph>
+      <Paragraph>
+        Osteopathie wird ebenfalls als fünfjährige Vollzeitausbildung angeboten.
+        Dieses Angebot richtet sich vorwiegend an Abiturienten. Während ihrer
+        Ausbildung werden diese auf die Prüfung zum Erwerb des
+        Heilpraktikertitels vorbereitet, ohne den sie die Osteopathie nicht
+        eigenständig praktizieren zu dürfen.
+      </Paragraph>
+      <Paragraph>
+        Vollzeitabsolventen haben in einer fünfjährigen Vollzeitausbildung mit
+        über 5000 Unterrichtseinheiten an einer Vollzeitschule Osteopathie
+        erlernt. Damit sie in Deutschland ohne Einschränkungen legal im Bereich
+        Osteopathie arbeiten dürfen, haben sie die Heilpraktikerprüfung
+        abgelegt. Die Vollzeitausbildung ist die derzeit fundierteste
+        osteopathische Ausbildung.
+      </Paragraph>
+      <Paragraph>
+        Die mindestens vierjährige Ausbildung ist notwendig, um einerseits die
+        vielen Bereiche der Osteopathie als eigenständige und wirksame Form der
+        Medizin zu erlernen und andererseits die eigenen Hände zu feinfühligen
+        Instrumenten zu schulen.
+      </Paragraph>
+      <Paragraph>Verband der Osteopathen Deutschland e.V.</Paragraph>
+      <Link onPress={() => Linking.openURL('http://www.osteopathie.de')}>
+        www.osteopathie.de
+      </Link>
+    </>
+  );
 };
 
 export const PTA = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Ob verschreibungspflichtige oder rezeptfreie Medikamente -
+        pharmazeutisch-technische Assistenten unterstützen Apotheker, ärztliche
+        Rezepte zu kontrollieren und Arznei an Kunden zu übergeben.“ Sie beraten
+        Kund*innen, stellen Arzneimittel her bzw. entwickeln sie weiter, sind
+        für die Qualitätskontrolle (z.B. durch Analysen zur Reinheit und
+        Dosierung gemäß gesetzlicher Vorgaben) verantwortlich, übernehmen
+        Verwaltungsaufgaben und führen diverse Serviceleistungen durch, wie
+        beispielsweise Blutdruckmessungen. Der Gesundheitssektor ist einer der
+        am stärksten wachsenden Märkte. Deshalb sind PTA gesuchte Fachleute in
+        Apotheken, Krankenhäusern, Seniorenresidenzen, in der Pharma-Industrie
+        sowie für das betriebliche Gesundheitsmanagement verschiedenster Firmen.
+        Sowohl in familienfreundlicher Teilzeit als auch aufgrund des hohen
+        Bedarfs in Vollzeit erfolgt die Beschäftigung in Festanstellung.
+      </Paragraph>
+      <Paragraph>
+        Die duale Ausbildung an einer der bundesweiten ungefähr 80 privaten (mit
+        Schulgeld) oder staatlichen (ohne Schulgeld) Fachschulen dauert 2,5
+        Jahre in Vollzeit und beinhaltet mindestens ein mehrmonatiges
+        Berufspraktikum. Theoretische Grundlagen der Ausbildung sind u.a.
+        Arzneimittelkunde, Chemie und Fachrechnen. Praktische Fächer sind
+        beispielsweise Botanik, Ernährungskunde und Diätik sowie Drogenkunde.
+        Ausbildungsvoraussetzung ist ein guter mittlerer Schulabschluss bzw. ein
+        (Fach-) Abitur. Interesse an Naturwissenschaften und Mathematik, Freude
+        am Menschen, Gründlichkeit und Sorgfalt sollten gegeben sein. Die
+        Ausbildung zur PTA wird auf Antrag von den Arbeitsagenturen gefördert!
+      </Paragraph>
+      <Paragraph>Weitere DETAILS hier: </Paragraph>
+      <Link
+        onPress={() => Linking.openURL('https://www.ausbildung.de/berufe/pta/')}
+      >
+        www.ausbildung.de/berufe/pta/
+      </Link>
+    </>
+  );
 };
 
 export const Raumausstatter = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Wer gern gestaltet und kreativ ist, wem Schönes wichtig ist, wer
+        gleichzeitig gern werkelt und Dinge berechnet sowie sich für
+        verschiedene Materialien interessiert andere mit seiner Arbeit erfreuen
+        möchte, für den/die kann Raumausstattung eine befriedigende berufliche
+        Beschäftigung sein. „RaumausstatterInnen gestalten Wohn- und
+        Geschäftsräume und beraten hinsichtlich der Gestaltung und Materialwahl.
+        Sie planen die Raumausstattung nach den Wünschen des Kunden und bereiten
+        diese vor. Sie ermitteln Kosten und besorgen nach Auftragsabschluss die
+        benötigten Materialien, mit denen sie die Räumlichkeiten gestalten. [Bei
+        Bedarf] bereiten [sie] die Untergründe vor, verlegen Bodenbeläge,
+        kleiden Wände und Decken mit Stoffen und Tapeten aus, montieren Sicht-
+        und Sonnenschutzanlagen und dekorieren die Räume. Darüber hinaus
+        beziehen sie Polstermöbel neu. … “ (1)
+      </Paragraph>
+      <Paragraph>
+        Ein sehr vielseitiges Berufsfeld, das selbstverständlich an Theatern und
+        Spielstätten beispielsweise Einsatzmöglichkeiten als RequisiteurIn
+        (konkrete Ausschreibung weiter unten) bietet. Darüber hinaus begleiten
+        RaumausstatterInnen sehr oft freiberuflich ImmobilienbesitzerInnen oder
+        auch beauftragte Architekturbüros bei der Innengestaltung von
+        Räumlichkeiten. Deutsche HandwerkerInnen genießen im Ausland einen sehr
+        guten Ruf, so dass RaumausstatterInnen grundsätzlich überall dort ein
+        Auskommen möglich ist, wo es zu gestaltendes Wohneigentum gibt und gern
+        angemessen für diese Dienstleistung bezahlt wird. In diesem Zusammenhang
+        wichtig zu wissen, dass es für Azubis bzw. Berufstätige in
+        Handwerksberufen mit SINDBAD ein EU-Mobilitätsprogramm gibt, mit dem im
+        Ausland wichtige berufliche Erfahrungen gesammelt werden können. Näher
+        dazu im nächsten Newsletter.
+      </Paragraph>
+      <Paragraph>
+        Interessant ist, dass für die dreijährige duale Ausbildung (also
+        Theoriemodule an einer Berufsschule/Praxismodule im Ausbildungsbetrieb)
+        als RaumausstatterIn keine bestimmte Schulbildung vorausgesetzt wird,
+        aber ein guter Mittelschulabschluss als Zugangsbedingung überwiegt. (2)
+        Ausbildungsbetrieb kann selbstverständlich auch ein Theater sein. Für an
+        diesem Beruf interessierte TänzerInnen in Transition lohnt sich eine
+        konkrete Nachfrage.
+      </Paragraph>
+      <Paragraph>
+        Der Beruf Raumausstatter/in erfordert einerseits ein hohes Maß an
+        gestalterischer Kreativität im Umgang mit Formen, Farben und
+        unterschiedlichen Materialien, andererseits aber auch gute soziale und
+        kommunikative Fähigkeiten. Der Wunsch der Kunden steht stets im
+        Mittelpunkt, so dass man Freude daran haben muss die eigenen kreativen
+        Fähigkeiten in den Dienst von Anderen zu stellen. Dennoch kann man
+        natürlich mit zunehmender Berufserfahrung einen eigenen Stil entwickeln,
+        was sich auch empfiehlt, um sich auf dem Arbeitsmarkt abzuheben.
+      </Paragraph>
+      <Paragraph>
+        Die Ausbildung zum Raumausstatter/zur Raumausstatterin dauert insgesamt
+        drei Jahre und gilt als anerkannter Handwerksberuf. Die
+        Ausbildungsinhalte und -bedingungen sind in der deutschen
+        Handwerksordnung festgeschrieben. Man kann eine klassische duale
+        Ausbildung absolvieren, d.h. man ist bei einem Ausbildungsbetrieb
+        eingestellt und erhält auch ein tariflich geregeltes Gehalt. Neben der
+        Arbeit im Betrieb besucht man mehrmals wöchentlich oder aber in Blöcken
+        die Berufsschule. Diejenigen, die keinen betrieblichen Ausbildungsplatz
+        finden, können eine rein schulische Ausbildung machen. Diese ist
+        grundsätzlich gleichwertig, wobei erfahrungsgemäß Praxiserfahrung immer
+        ein Pluspunkt ist bei der späteren Jobsuche. Außerdem erhält man in
+        diesem Fall natürlich kein Ausbildungsgehalt, unter Umständen kann man
+        aber BaföG als Unterstützung erhalten.
+      </Paragraph>
+      <Paragraph>
+        Im Prinzip kann sich jeder für die Ausbildung als Raumausstatter/in
+        bewerben. Es ist kein bestimmter Schulabschluss vorgeschrieben. Sowohl
+        die Ausbildungsbetriebe als auch die Berufsfachschulen haben eigene
+        Kriterien, um ihre Bewerber auszuwählen. Empfehlenswert ist mindestens
+        ein mittlerer Schulabschluss. Außerdem kann man seine Chance durch
+        Praktika und ähnliches erhöhen.
+      </Paragraph>
+    </>
+  );
 };
 
 export const Reiseleiter = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Deutschland und Europa werden als Reiseländer für Außereuropäer immer
+        attraktiver. Zahlreiche Reiseanbieter (u.a. Education First, Globus,
+        Insight, Trafalgar) suchen deshalb Reiseleiter für Gruppen, die durch
+        Europa reisen (mehrere Tage oder Wochen). Dies ist eine herausfordernde
+        Aufgabe, bei der man Sprachkenntnisse (Englisch 2. europäische Sprache
+        sind zwingend erforderlich) und internationale Erfahrung einfließen
+        lassen kann. Kommunikationsstärke, Organisations- und
+        Improvisationstalent sollten vorhanden sein, ein paar Geschichts- und
+        Kunstkenntnisse sind von Vorteil. Dann kann man die eigene Reiselust mit
+        Gelderwerb verbinden. Als Reiseleiter arbeitet man häufig freelance und
+        eher saisonabhängig, womit dieser Job also zur Finanzierung der
+        Transition-Zeit, oder für die Kombination mit einer anderen
+        projektorientierten Berufstätigkeit geeignet ist. Der Quereinstieg in
+        diese Tätigkeit ist möglich. Auch eine weitere Qualifizierung im
+        Tourismusbereich ist denkbar. mehr Information bei Andreas Müller:
+        a.myller@gmx.de
+      </Paragraph>
+    </>
+  );
 };
 
 export const SozialeArbeitBA = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        {' '}
+        Im Bachelor Studiengang „Soziale Arbeit“ sind die beiden Bereiche
+        Sozialarbeit und Sozialpädagogik integriert. Der Studiengang zielt
+        inhaltlich auf die Vermittlung universeller Qualifikationen für die
+        berufliche Praxis im weiten Feld der Sozialen Arbeit ab. Studiert werden
+        kann Sozialen Arbeit überwiegend an Hochschulen wie z.B. der Alice
+        Salomon Hochschule in Berlin. Es gibt den Studiengang jedoch auch an
+        einigen wenigen Universitäten oder privaten Hochschulen.
+      </Paragraph>
+      <Paragraph>Voraussetzungen für das Studium der Sozialen Arbeit</Paragraph>
+      <Paragraph>
+        Grundsätzlich ist die allgemeine oder fachgebundene Hochschulreife oder
+        die Fachhochschulreife erforderlich, um das Studium zu beginnen. An
+        einigen Hochschulen gibt es jedoch die Möglichkeit, auch ohne
+        Hochschulzugangsberechtigung und etwa über einen Eignungstest nach einer
+        Ausbildung und mehrjähriger Berufserfahrung in anerkannten sozialen
+        Bereichen die Qualifikation für ein Studium zu erhalten. Da sich in den
+        letzten Jahren deutlich mehr Studieninteressierte bewerben, als
+        Studienplätze zur Verfügung stehen, gibt es an vielen Hochschulen
+        zusätzliche Auswahlkriterien. Dazu kann z.B. die Durchschnittsnote
+        gehören oder auch Vorerfahrung im sozialen Bereich wie ehrenamtliches
+        Arbeiten, ein Bundesfreiwilligendienst oder Praktika.
+      </Paragraph>
+      <Paragraph>Wie ist das Studium aufgebaut?</Paragraph>
+      <Paragraph>
+        Die Regelstudienzeit beträgt meist 6 oder 7 Semester je nach Hochschule.
+        Grundsätzlich ist der Studiengang sehr praxisnah aufgebaut. Praktika
+        sind in das Studium integriert und viele Hochschulen kooperieren mit
+        sozialen Einrichtungen im Rahmen der Lehrveranstaltungen und Seminare.
+        Die Dozenten sind auch oftmals neben ihre Lehrtätigkeit selbst in der
+        Praxis tätig. An vielen Hochschulen besteht zudem die Möglichkeit, im
+        letzten Teil des Studiums Schwerpunkte zu wählen und sich damit
+        spezifischer zu qualifizieren. Viele Hochschulen bieten auch
+        anschließende Masterstudiengänge an.
+      </Paragraph>
+      <Paragraph>Und nach dem Studium?</Paragraph>
+      <Paragraph>
+        Die Arbeitsfelder für SozialarbeiterInnen sind nahezu grenzenlos.
+        Klassische Arbeitsfelder sind z.B. Kinder- und Jugendarbeit,
+        Kinderschutz und Jugendhilfe, Bewährungshilfe, Allgemeiner Sozialer
+        Dienst (z.B. Jugendämter), Flüchtlings- und Migrationshilfe, Streetwork
+        oder Suchthilfe. SozialarbeiterInnen kommen aber auch in Schulen oder
+        Kindergärten zum Einsatz oder arbeiten in Krankenhäusern,
+        psychiatrischen Einrichtungen, im Bereich der Seniorenarbeit und in
+        Werkstätten für beeinträchtigte Menschen.
+      </Paragraph>
+      <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
+        Geschrieben von Lena Diel (Sozialpädagogin/Sozialarbeiterin, B.A.)
+      </Paragraph>
+    </>
+  );
 };
 
 export const SozialeArbeitStudium = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Wer gern mit Menschen umgeben ist und ein Herz für benachteiligte
+        Menschen hat, kann im sozialen Bereich große Befriedigung finden.
+        Besonders praktisch orientiert ist die Soziale Arbeit.
+        Sozialarbeiter/innen unterstützen hilfsbedürftige Menschen aller
+        Altersgruppen mit sehr konkreten Hilfestellungen. Das dreijährige
+        Bachelor-Studium „Soziale Arbeit“ umfasst Inhalte der Sozialpsychiatrie,
+        der Beratung in Familie und Schule sowie der Klinischen Sozialarbeit und
+        Entwicklungsrehabilitation. Die Studiengänge setzen sich – je nach
+        Hochschule – aus einer unterschiedlichen Anzahl von Modulen zusammen und
+        umfassen neben den Lehrveranstaltungen Praxismodule und eine
+        Bachelorarbeit. Diese ist gegen Ende des Studiums anzufertigen.
+        Praxisphasen werden bei Trägern der Kultur- und Sozialarbeit absolviert.
+      </Paragraph>
+      <Paragraph>
+        Module sind beispielsweise: Beratung in Familie und Schule , Geschichte,
+        Grundbegriffe, Arbeitsfelder der Sozialen Arbeit, Handeln in
+        Verwaltung/Organisation; Kindheit, Jugend, Erwachsene, Alter und Soziale
+        Arbeit; Mensch und Organisation; Prekäre Lebenslagen; Rechtliche
+        Grundlagen für die Soziale Arbeit; Soziale Ungleichheit;
+        Sozialpsychiatrie; Sozialpolitik.
+      </Paragraph>
+      <Paragraph>
+        Die Ausrichtung oder Schwerpunktsetzung der Studiengänge im Bereich
+        Soziale Arbeit kann von Hochschule zu Hochschule unterschiedlich sein.
+      </Paragraph>
+      <Paragraph>
+        Im Anschluss an ein Bachelorstudium im Bereich Soziale Arbeit ist ein
+        direkter Einstieg ins Berufsleben in unterschiedlichen Tätigkeitsfeldern
+        wie z.B. Sozialberatung, -arbeit oder Pädagogische Arbeit (ohne
+        Lehrtätigkeit), möglich. Auch der Schritt in die Selbstständigkeit ist
+        denkbar, z.B. als Jugendberater/in oder als
+        Rehabilitationspädagoge/-pädagogin. Für Führungspositionen wird i.d.R.
+        der Abschluss eines weiterführenden ca. 2-jährigen Master-Studiums
+        erwartet. Wenn die Zugangsvoraussetzungen der jeweiligen Hochschule
+        erfüllt sind, kann man nach dem Abschluss eines Bachelorstudiums im
+        Bereich Soziale Arbeit das Studium in einem weiterführenden Studienfach
+        fortsetzen und einen Masterabschluss erwerben, z.B. in Soziale Arbeit,
+        Sozialwissenschaften oder Sozialmanagement.
+      </Paragraph>
+      <Paragraph>Mehr unter: berufenet.arbeitsagentur.de</Paragraph>
+      <Link
+        onPress={() => Linking.openURL('http://berufenet.arbeitsagentur.de')}
+      >
+        berufenet.arbeitsagentur.de
+      </Link>
+    </>
+  );
 };
 
 export const Sozialversicherungsangestellter = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Der Ausbildungsberuf Sozialversicherungsfachangestellte*r ist
+        anspruchsvoll und hat eine hohe Reputation. Als eine/r der ersten und
+        wichtigsten Ansprechpartner*in ist die/der
+        Sozialversicherungsfachangestellte Dreh- und Angelpunkt zwischen den
+        Versicherungsträgern und den Versicherten. Sie sind Spezialist*innen im
+        Umgang mit dem Sozialgesetzbuch (SGB V), das seit 1881 (!) eine
+        wesentliche Säule des deutschen Sozialwesens darstellt.
+      </Paragraph>
+      <Paragraph>
+        Die drei Ausbildungsjahre sind inhaltlich sehr abwechslungsreich bzw.
+        kommunikativ und im Vergleich zu anderen Ausbildungsberufen
+        überdurchschnittlich bezahlt. Bis zum Ende der Ausbildung werden mehrere
+        Theoriebereiche absolviert, in denen sozialver-sicherungsrechtliches,
+        verwaltungs- und auch kommunikations-wissenschaftliches Fachwissen im
+        Mittelpunkt steht. Mehrere Praxismodule bei Versicherungsträgern wie
+        Krankenkassen, gesetzlicher Renten- und Pflegeversicherung sowie
+        Unfallkassen ist garantierter Ausbildungsbestandteil. Die
+        Berufsaussichten sind sehr gut!
+      </Paragraph>
+      <Paragraph>
+        Ein Ausbildungseinstieg ist mit Abitur oder mindestens sehr gutem
+        Realschulabschluss möglich. Freude am Umgang mit Menschen, analytisches
+        Denken und systematisches Herangehen sowie Selbständigkeit sind wichtige
+        Voraussetzungen für eine erfüllte Tätigkeit in diesem Berufsfeld.
+      </Paragraph>
+    </>
+  );
 };
 
 export const Sportkaufmann = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Wenn man sportbegeistert ist und gleichzeitig auch noch ein bisschen
+        Freude am Organisieren, Planen und Rechnen hat, dann handelt es sich bei
+        der Ausbildung zum Sport- und Fitnesskaufmann/zur Sport- und
+        Fitnesskauffrau definitiv um einen Traumjob, der viel Abwechslung und
+        Spaß mit sich bringt. So berät und betreut man nicht nur Kunden, sondern
+        ist auch für die Planung von Verwaltungsprozessen zuständig und
+        koordiniert den Sportbetrieb. Aber auch die Entwicklung von
+        verschiedenen Programmen für die unterschiedlichsten Zielgruppen (von
+        jung bis alt, vom Sportanfänger bis zum Profi) gehören zum üblichen
+        Aufgabenfeld. Diese erstrecken sich inhaltlich von Trainings- bzw.
+        Fitnessplänen und Sportprogrammen, über Ernährungspläne oder allgemeine
+        Informationsveranstaltungen oder Präventionsprogramme.
+      </Paragraph>
+      <Paragraph>
+        Dieses bunte Tätigkeitsfeld fordert natürlich auch eine Reihe von
+        Fähigkeiten. So sollte man neben der als selbstverständlich
+        vorausgesetzten Sportbegeisterung und Sportlichkeit definitiv Freude am
+        Umgang mit Menschen mitbringen, aber auch organisatorische sowie
+        wirtschaftlich-mathematische Fähigkeiten sowie ein hohes Maß an
+        Engagement und Eigenverantwortung sind gefragt. Da man seinen Beruf zu
+        großen Teilen ausübt, während andere Menschen ihre Freizeit verbringen,
+        muss man auf Arbeitszeiten am Abend und am Wochenende eingestellt sein.
+        Die Arbeitsmöglichkeiten sind breit gefächert und der Arbeitsmarkt
+        bietet viele Angebote und Möglichkeiten. Ein weiterer großer Pluspunkt
+        ist, dass man sein Hobby teilweise zum Beruf machen kann. Ich habe meine
+        Berufswahl jedenfalls nie bereut!
+      </Paragraph>
+      <Paragraph>
+        Es handelt sich um einen klassischen dualen Ausbildungsgang, der drei
+        Jahre dauert und mit einer Prüfung der IHK (Industrie- und
+        Handelskammer) endet. Als Eingangsvoraussetzung wird ein MSA (mittlerer
+        Schulabschluss) empfohlen.
+      </Paragraph>
+      <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
+        geschrieben von Samir E., Sport- und Fitnesskaufmann
+      </Paragraph>
+    </>
+  );
 };
 
 export const Veranstaltungstechnik = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        In jedem Theater arbeiten viele Techniker auf verschiedenen Ebenen.
+        Bühnenarbeiter sind dabei teilweise Quereinsteiger aus anderen
+        Handwerksberufen oder dem künstlerischen Bereich. Meist wird in den
+        technischen Abteilungen (bei Bühnenbau, in der Tonabteilung und in der
+        Beleuchtung) inzwischen die Ausbildung zur Fachkraft für
+        Veranstaltungstechnik erwartet. Diese 3-jährige Ausbildung ist dual
+        strukturiert. Das Theater ist dabei der Ausbildungsbetrieb, parallel
+        besucht der Auszubildende 1 Tag pro Woche die Berufsschule.
+      </Paragraph>
+      <Paragraph>
+        Fachkräfte für Veranstaltungstechnik planen und betreuen den technischen
+        Ablauf von Veranstaltungen und sind an deren Durchführung beteiligt. Im
+        Schwerpunkt Aufbau und Durchführung bereiten sie zunächst die Auswahl
+        und den Einsatz der technischen Anlagen vor: Sie bauen Beleuchtungs-,
+        Projektions- und Beschallungsanlagen auf und richten sie ein. Während
+        einer Vorstellung oder eines Konzerts bedienen sie Mischpulte oder
+        Nebelmaschinen. Im Schwerpunkt Aufbau und Organisation konzipieren sie
+        Messestände oder Ausstellungsräume. Vor Ort koordinieren sie die
+        unterschiedlichen Arbeitsgänge und -bereiche: So sorgen sie
+        beispielsweise dafür, dass die Tischler/innen, die die Einrichtung
+        aufbauen, und die Fachkräfte, die sich um die Elektrik kümmern,
+        termingerecht zur Verfügung stehen. Außerdem bauen sie technische
+        Ausstattung wie Beleuchtungs- und Tonanlagen auf.
+      </Paragraph>
+      <Paragraph>
+        Die höheren Positionen der technischen Leitung von Theatern werden meist
+        mit Ingenieuren besetzt. Ganz spezifisch kann man dieses Ziel mit dem BA
+        und MA-Studium Theatertechnik an der Beuth-Hochschule für Technik Berlin
+        anstreben. Das Bachelor-Studium dauert drei Jahre, das Master-Studium
+        darauf aufbauend weitere 2 Jahre.
+      </Paragraph>
+    </>
+  );
 };
 
 export const Tierphysiotherapie = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Bei Physiotherapie denkt man zuerst wahrscheinlich vor allem an
+        Menschen, die daran Bedarf haben könnten. Dass es aber auch
+        Physiotherapie für Tiere, wie zum Beispiel für Pferde, Hunde und
+        Kleintiere gibt, ist vielleicht manchem neu.
+      </Paragraph>
+      <Paragraph>
+        Allgemeine Informationen zur Tierphysiotherapie, also beispielsweise
+        ihre Entstehung und Verbreitung in Deutschland, finden sich hier:
+      </Paragraph>
+      <Link onPress={() => Linking.openURL('http://www.ift-info.de')}>
+        www.ift-info.de
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.tiergestuetzte.org')}>
+        www.tiergestuetzte.org
+      </Link>
+      <Paragraph>
+        Tänzer/innen in Transition, die Tiere mögen, medizinisch-anatomisches
+        Interesse haben und sich vorstellen können, als Tierphysiotherapeut/in
+        tätig zu sein, sollten dieses Berufsfeld näher in Augenschein nehmen. Es
+        bietet vielfältige Einsatzmöglichkeiten.
+      </Paragraph>
+      <Paragraph>
+        Wie meist, geht es aber auch bei diesem relativ jungen Beruf nicht ohne
+        spezifische Ausbildung, die in Deutschland bundesweit möglich ist.
+      </Paragraph>
+      <Paragraph>
+        An dieser Stelle ein erstes Ausbildungsbeispiel: Jederzeit beginnen kann
+        man an der ATM Akademie für Tierheilkunde eine 24-monatige Ausbildung
+        zum/r Tierphysiotherapeuten/in. Laut Informationen auf der ATM-Webseite
+        sind zwei Ausbildungsaspekte wesentlich:
+      </Paragraph>
+      <Paragraph>
+        - ein staatlich zugelassener Fernlehrgang in Anatomie, Physiologie und
+        Krankheitslehre,
+      </Paragraph>
+      <Paragraph>begleitet von Seminaren und E-Learning Angeboten</Paragraph>
+      <Paragraph>
+        - ein spezifischer physiotherapeutischer Lehrgang aus Theorie und Praxis
+        für die
+      </Paragraph>
+      <Paragraph>
+        spezielle Schulung manueller Fähigkeiten der angehenden Therapeuten
+      </Paragraph>
+      <Paragraph>
+        Die Kosten dieser Ausbildung betragen ca. 4.580,00 bis 5.980,00 €. Die
+        Praktika werden in Bad Bramstedt absolviert, die theoretische Ausbildung
+        läuft bundesweit an verschiedenen Standorten, von denen man einen wählen
+        kann.
+      </Paragraph>
+      <Paragraph>Diese Ausbildung ist von der IHK zertifiziert.</Paragraph>
+      <Paragraph>
+        Ob eine Finanzierung über die Arbeitsagentur möglich wäre, sollte direkt
+        erfragt werden (auf die Maßnahmenummer der Arbeitsagentur achten, siehe
+        in Newsletter 02/2016).
+      </Paragraph>
+      <Paragraph>Weitere Infos:</Paragraph>
+      <Link onPress={() => Linking.openURL('http://www.atm.de/')}>
+        www.atm.de
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.atm.de/studiengang')}>
+        www.atm.de/studiengang
+      </Link>
+    </>
+  );
 };
 
 export const Tierwirt = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Fachrichtung Imkerei. Tierliebe, Interesse an Biologie und Ökologie,
+        Freude an bewegungsintensiven Tätigkeiten im Freien,
+        Verantwortungsbewusstsein, Belastbarkeit, selbständige und engagierte
+        Arbeitsweise sind einige der wichtigsten Voraussetzungen, um generell
+        Tierwirt*in sein zu können. Wer sich besonders für Bienen interessiert,
+        kann sich zur/m Tierwirt*in für Imkerei spezialisieren. Sie arbeiten
+        unter anderem in Imkereien, in Königinnenzucht- und Bestäubungsbetrieben
+        oder sind in der ökologischen Landwirtschaft als Partner gefragt. Die
+        Zahl der Imker*innen liegt bei ca. 120.000 Imker*innen, wobei der meiste
+        Nachwuchs aus Bayern kommt. Die Imkerei erfreut sich zunehmender
+        Beliebtheit, besonders in den Städten. Urbane Imkerei wird dort deshalb
+        zwar oft sehr begeistert, aber meist als Hobby betrieben, was aufgrund
+        fehlenden Fachwissens mit großen Risiken für die empfindlichen
+        Bienenvölker verbunden ist. Die Professionalisierung der urbanen
+        Bienenzucht durch spezialisierte Tierwirt*innen, die auch selbständig
+        bzw. nebenberuflich tätig sein können, wäre deshalb sehr wünschenswert.
+      </Paragraph>
+      <Paragraph>
+        Immerhin müssen 80% aller Kulturpflanzen durch Honigbienen bestäubt
+        werden, um Früchte zu tragen „Imker leisten mit der Bienenhaltung [also]
+        einen großen ökologischen Beitrag zur Bestäubung blühender Pflanzen und
+        produzieren gleichzeitig ein hochwertiges Nahrungsmittel. Dazu füttern
+        und pflegen sie die Bienenvölker, halten die Bienenunterkünfte instand
+        und bestimmen einen passenden Standort für ihre Tiere. Sind die
+        Honigwaben gefüllt, entnehmen sie diese und schleudern sie im
+        Schleuderraum. Dabei achten sie auf Hygiene und Qualitätsstandards.“{' '}
+      </Paragraph>
+      <Paragraph>
+        Die duale Ausbildung zur/m Tierwirt*in dauert in der Regel bundesweit
+        drei Jahre und kann auf zwei Jahre verkürzt werden, wenn bereits eine
+        abgeschlossene Berufsausbildung bzw. das Abitur vorliegt. Eine
+        anerkannte staatliche Ausbildungsstätte in der Imkerei ist z.B. das
+        niedersächsische Institut für Bienenkunde in Celle:
+        www.laves.niedersachsen.deDETAILS zur Ausbildung als Tierwirt*in,
+        Fachrichtung Imkerei bei der Landwirtschaftskammer unter:
+      </Paragraph>
+      <Link
+        onPress={() =>
+          Linking.openURL(
+            'http://www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/'
+          )
+        }
+      >
+        www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/
+      </Link>
+      <Paragraph>
+        Mit „Imkern auf Probe“ bzw. „Mietbienen“ im gesamten Bundesgebiet
+        möchten viele Imker*innen-Vereine Nachwuchs für die Bienenzucht
+        gewinnen. Anschauliche DETAILS zum Beruf und zum „Imkern auf Probe“
+        unter:
+      </Paragraph>
+      <Link
+        onPress={() =>
+          Linking.openURL(
+            'https://www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html'
+          )
+        }
+      >
+        www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html
+      </Link>
+    </>
+  );
 };
 
 export const Trainee = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Bei unserer Beratungsarbeit fällt uns immer wieder auf, dass viele
+        Tänzer*innen in Transition wenig oder gar nichts über Möglichkeiten
+        wissen, wie man zeitlich befristet neue berufliche Praxiserfahrungen
+        sammeln kann. Zum Beispiel als Trainee!
+      </Paragraph>
+      <Paragraph>
+        Trainees sind in der Regel Hochschulabsolvent*innen, die innerhalb eines
+        Unternehmens eine praktische Ausbildung in allen bzw. wichtigen
+        Abteilungen erhalten und dadurch intensiv auf eine spätere Tätigkeit
+        vorbereitet werden. Traineeprogramme laufen üblicherweise mindestens ein
+        Jahr und längstens zwei Jahre, überwiegend in Vollzeit und werden
+        entsprechend bezahlt. Sie sind deshalb sowohl inhaltlich,
+        arbeitsrechtlich als auch finanziell nicht mit Praktika vergleichbar.
+      </Paragraph>
+      <Paragraph>
+        Unternehmen, aber auch mehr und mehr Behörden bieten entsprechende
+        Einstiegsprogramme für Absolvent*innen an, bei denen man sich zu einem
+        High Potential mit Führungsverantwortung oder zum Spezialisten auf einem
+        Gebiet entwickelt. Gleichzeitig knüpft man wichtige Kontakte und baut
+        ein umfangreiches Netzwerk auf. Ausnahmen bestätigen dabei die Regel!
+        Meist sind es Absolvent*innen, die mit einem Traineeprogramm den
+        Einstieg wagen, doch auch mit Berufserfahrung oder als Quereinsteiger*in
+        kann man als Trainee eingestellt werden. So wird man zum Beispiel bei
+        der Bundesagentur für Arbeit innerhalb eines Traineeprogramms auf
+        Aufgaben als Führungskraft vorbereitet:
+      </Paragraph>
+      <Link
+        onPress={() =>
+          Linking.openURL(
+            'https://www.arbeitsagentur.de/ba-karriere/trainee-programm'
+          )
+        }
+      >
+        www.arbeitsagentur.de/ba-karriere/trainee-programm
+      </Link>
+      <Paragraph>DETAILS zu Traineeprogrammen generell unter:</Paragraph>
+      <Link
+        onPress={() =>
+          Linking.openURL('https://www.trainee.de/ratgeber/trainee/')
+        }
+      >
+        www.trainee.de/ratgeber/trainee/
+      </Link>
+      <Link
+        onPress={() => Linking.openURL('https://www.berufsstart.de/trainee/')}
+      >
+        www.berufsstart.de/trainee/
+      </Link>
+      <Link onPress={() => Linking.openURL('https://www.connecticum.de/')}>
+        www.connecticum.de/
+      </Link>
+    </>
+  );
 };
 
 export const Versicherungsmakler = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Wir hatten in unserem letzten Newsletter festgestellt, dass ein/e
+        vertrauenswürdige/r und kompetente/r Versicherungsmakler/in für
+        TänzerInnen und TänzerInnen in Transition von hoher Relevanz sein
+        müsste, weil sie wegen des sehr spezifischen TänzerInnenberufs mit
+        diversen Risiken auf alle Fälle gut versichert sein sollten. Heute
+        informieren wir, wie angekündigt, über den sehr vielseitigen und
+        anspruchsvollen Beruf des/der Versicherungsmakler/in:
+      </Paragraph>
+      <Paragraph>
+        Versicherungsmakler sind KEINE Versicherungsvertreter, denn sie sind
+        Kaufleute. Anders als Versicherungsvertreter, sind Versicherungsmakler
+        an keine bestimmte Versicherungsgesellschaft gebunden. “Damit [sind sie
+        ] ein absolut unabhängiger Partner. Er wird deshalb auch als
+        „treuhänderischer Sachwalter” [von] Versicherungsinteressen bezeichnet.”
+        Kommt der/die Makler/in aus der künstlerischen Branche, war vielleicht
+        sogar selbst TänzerIn, dürfte das von großem Vorteil sein, weil sehr
+        viel wichtiges Hintergrundwissen zum Tänzerberuf an sich und den
+        Bedingungen der tänzerisch-künstlerischen Berufsausübung vorhanden ist,
+        das Externe in dieser fundierten Art und Weise kaum vorweisen können.
+        Hinzu kommt, dass die bei TänzerInnen in Transition überwiegend sehr
+        hohe interkulturelle Kompetenz, also auch Mehrsprachigkeit, bereits
+        vorhanden ist. Ein großer Vorteil, weil sich der Beruf des/der
+        Versicherungsmaklers/in zunehmenden internationalisiert.
+      </Paragraph>
+      <Paragraph>
+        Folgende Aufgaben gehören zum Beruf: Risikoanalyse/-optimierung und
+        Bedarfsermittlung Vertragsgestaltung Dokumentation Betreuung und
+        Verwaltung (einschließlich Begleitung bei Schäden)
+      </Paragraph>
+      <Paragraph>
+        Der Beruf des/der Versicherungsmaklers/in ist in Deutschland aufgrund
+        der sogenannten EU-Vermittlerrichtlinie seit 2007 zulassungs- und
+        registrierungspflichtig. Um als Versicherungsmakler/in tätig sein zu
+        können, muss man also ganz bestimmte Voraussetzungen erfüllen. Dazu
+        zählt auf alle Fälle ein Sachkundenachweis, der beispielsweise durch
+        eine IHK-Prüfung zur/zum Versicherungsfachfrau/mann (IHK) erworben
+        werden kann. Damit einher geht die Registrierung bei der örtlichen IHK,
+        die für jede/n sein Gewerbe ausübenden Makler/in bindend ist und geprüft
+        werden kann. Auch andere Qualifikationen sind als Nachweis der Sachkunde
+        anerkannt, wie man beim Verband deutscher Versicherungsmakler e.V.
+        (VDVM) nachlesen kann.
+      </Paragraph>
+      <Paragraph>
+        Wo man aktuell eine entsprechende Ausbildung zu welchen Konditionen
+        machen kann, erfährt man beispielsweise bei der örtlichen IHK (siehe
+        dazu IHK-Artikel in diesem Newsletter). Wichtige Infos zum Beruf bekommt
+        man auch bei den sogenannten Regionalkreisen des VDVM:
+      </Paragraph>
+      <Link onPress={() => Linking.openURL('http://www.vdvm.de/')}>
+        www.vdvm.de
+      </Link>
+    </>
+  );
 };
 
 export const Zirkuspaedagoge = (props) => {
-  return <></>;
+  return (
+    <>
+      <Paragraph>
+        Aus Anlass der Gründung der Circus Akademie Berlin (CAB) Ende 2017, über
+        die wir oben berichteten, machen wir an dieser Stelle auf das
+        vielseitige Tätigkeitsfeld „Zirkuspädagogik“ aufmerksam.
+      </Paragraph>
+      <Paragraph>
+        Die Zirkusdisziplinen Akrobatik, Trapez, Jonglage, Balance, Diabolo,
+        Clownerie fördern als de facto Formen des Spiels in Kombination mit
+        Musik, Tanz und Performance vielfältige kreative Körperarbeit, besseres
+        Körperempfinden sowie konzeptionelles Denken. Darüber hinaus: Reflexion,
+        Selbsterkenntnis und Zufriedenheit durch Aktivität und Freude im
+        Austausch mit anderen. Da Zirkus ressourcen- und kompetenzorientiert
+        altersunabhängige Kooperation, d.h. Gemeinschaft fördert, wirkt sich
+        Zirkuspädagogik zusätzlich sehr günstig auf das Sozialverhalten und
+        damit auf diverse Gruppengefüge aus. Zirkuspädagogische Angebote sind
+        generell in der sozialen Arbeit mit Kindern, Jugendlichen, Senioren,
+        Menschen mit Einschränkung (beispielsweise Autisten), für präventive
+        Kurse im betrieblichen Gesundheitsmanagement (wie bei Haltungsproblemen,
+        Stressbewältigungsstrategien), bei der Rehabilitation Verunfallter
+        (Balance, Kraft, Reaktionsfähigkeit usw.) in der unternehmerischen
+        Personalarbeit (u.a. Teambuilding-Maßnahmen, Führungstrainings,
+        Konfliktbewältigung usw.) sowie bei der Arbeit mit traumatisierten
+        Menschen (z.B. Flucht, sexualisierte Gewalt, Todeserfahrung) möglich.
+        Zirkuspädagogik bereichert demnach nicht nur tanzpädagogische und
+        theaterpädagogische Konzepte, sondern ist ebenso sehr gut mit weiteren
+        Fachrichtungen kombinierbar (u.a. Sozialpädagogik,
+        Rehabilitationspädagogik, Medizin, Heilerziehungspflege, Personalwesen).
+        Deshalb ist sowohl eine festangestellte als auch eine freiberufliche
+        Beschäftigung denkbar, wobei bei ausschließlich zirkuspädagogischem
+        Ausbildungshintergrund wahrscheinlich die Freiberuflichkeit überwiegt.
+      </Paragraph>
+      <Paragraph>
+        Die CAB bietet eine Vollzeit-Weiterbildung an, die neun Monate dauert,
+        1.200 h umfasst und lt. CAB momentan deutschlandweit die einzige
+        zirkuspädagogische Vollzeit-Weiterbildung mit Zertifikatsabschluss
+        „Geprüfte*r Zirkuspädagog*in“ ist. Sie richtet sich keineswegs nur an
+        (ehemalige) Zirkusartist*innen und Tänzer*innen, sondern ebenso an
+        (Tanz-) Pädagog*innen, Heilerziehungspfleger*innen, Lehrer*innen,
+        Erzieher*innen, Sozialarbeiter*innen und alle ernsthaft an der Kunst-
+        und Darstellungsform Zirkus/Varieté Interessierten. Folgende Kenntnisse
+        sind für zukünftige Zirkuspädagog*innen wichtig und werden bei der CAB
+        vermittelt:
+      </Paragraph>
+      <Paragraph>
+        Zirkuspädagogische Praxis: Didaktik und Methodik in Trainings- und
+        Unterrichtsaufbau, Spiele und Spielformen für Zirkustraining /
+        Kommunikation: Grundlagen der Kommunikation, altersgerechtes Arbeiten,
+        Entwicklungskommunikation / Künstlerisch-ästhetische Arbeitsprozesse:
+        Geschichte der Artistik, Erarbeiten von Zirkusnummern mit Kindern,
+        Präsentation einer Show, Schminken, Grundwissen Licht und Ton /
+        Selbstständig als Zirkuspädadog*in: rechtliche Grundlagen der
+        Selbständigkeit, Selbstorganisation / Trainingswissenschaft:
+        Trainingslehre, Physiologie, Anatomie, Biomechanik
+      </Paragraph>
+      <Paragraph>Kosten: 8.500 € + DETAILS hier: </Paragraph>
+      <Link onPress={() => Linking.openURL('http://circusakademie.de/')}>
+        circusakademie.de/
+      </Link>
+      <Paragraph>
+        Zirkuspädagogische Weiterbildungsangebote in Österreich und der Schweiz:{' '}
+      </Paragraph>
+      <Link onPress={() => Linking.openURL('https://www.zirkusakademie.ac.at')}>
+        www.zirkusakademie.ac.at
+      </Link>
+      <Link
+        onPress={() =>
+          Linking.openURL('http://www.zirkuspaedagogik.ch/akademie/index.php')
+        }
+      >
+        www.zirkuspaedagogik.ch/akademie/index.php
+      </Link>
+    </>
+  );
 };
