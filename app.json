@@ -1,19 +1,21 @@
 {
   "expo": {
-    "name": "transitionApp",
-    "slug": "transitionApp",
+    "name": "TanzTransitionApp",
+    "slug": "tanz-transition-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/appLogo.png",
     "splash": {
-      "image": "./assets/AppSplash_theFall.png",
+      "image": "./assets/appSplash_theFall_blue.png",
       "resizeMode": "cover",
       "backgroundColor": "#121e2a"
     },
     "updates": {
       "fallbackToCacheTimeout": 5000
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -24,6 +26,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A first test"
   }
 }

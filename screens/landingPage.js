@@ -41,7 +41,7 @@ const LandingPage = (props) => {
   return (
     <ScrollView>
       <ImageBackground
-        source={require('./../assets/images/cambreSketchDark.png')}
+        source={require('./../assets/landingPageBackground.png')}
         style={styles.backgroundImage}
       >
         <View style={styles.fullScreenContainer}>
