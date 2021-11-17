@@ -24,7 +24,7 @@ const windowWidth = Dimensions.get('window').width;
 class UmsetzungMenu extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Wie setze ich Ideen um?',
+      headerTitle: 'Ideen - Umsetzung',
       headerStyle: {
         backgroundColor: colors.psychology
       },

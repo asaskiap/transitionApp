@@ -1,9 +1,11 @@
 export default {
   primary: 'dodgerblue',
+  primarySemiTransparent: 'rgba(30,144,255,0.8)',
   primaryDark: '#006CA2',
   primaryLight: '#BFEAFF',
   secondary: 'yellowgreen',
   secondaryLight: '#D9FD9F',
+  secondarySemiTransparent: 'rgba(154,205,50,0.8)',
   backgroundLight: '#f7fcff',
   textLight: 'whitesmoke',
   accentDark: '#FF6B53',
@@ -17,5 +19,6 @@ export default {
   pieBlue: '#26F0F1',
   piePink: '#EF476F',
   pieDarkBlue: '#118AB2',
-  pieOrange: '#EF8354'
+  pieOrange: '#EF8354',
+  pieOrangeSemiTransparant: 'rgba(239,131,84,0.8)'
 };

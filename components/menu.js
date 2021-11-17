@@ -1,19 +1,13 @@
 import React from 'react';
 
-import {
-  Modal,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  Dimensions
-} from 'react-native';
+import {Modal, ScrollView, StyleSheet, View, Dimensions} from 'react-native';
 
 import ContactButton from '../components/buttons/contactButton';
+import MenuPageButton from './buttons/menuPageButton';
+import CloseButton from './buttons/closeButton';
+import colors from '../assets/colors';
 
 const windowHeight = Dimensions.get('window').height;
-const windowWidth = Dimensions.get('window').width;
 
 const menu = (props) => {
   const navigateTo = (screen) => {
@@ -25,81 +19,45 @@ const menu = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'} transparent>
       <ScrollView>
         <View style={styles.menuScreen}>
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Home')}
-          >
-            <Text style={styles.menuItemText}>Startseite</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Home')}>
+            Startseite
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Transition')}
-          >
-            <Text style={styles.menuItemText}>Die Transition</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Transition')}>
+            Die Transition
+          </MenuPageButton>
 
-          <TouchableOpacity style={styles.menuItem}>
-            <Text
-              style={styles.menuItemText}
-              onPress={() => navigateTo('Entscheidungsbaum')}
-            >
-              Was brauche ich in meiner Situation?
-            </Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Entscheidungsbaum')}>
+            Was brauche ich in meiner Situation?
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Psychology')}
-          >
-            <Text style={styles.menuItemText}>Psychologische Aspekte</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Psychology')}>
+            Psychologische Aspekte
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Ideas')}
-          >
-            <Text style={styles.menuItemText}>Ideen - Berufsfindung</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Ideas')}>
+            Ideen - Berufsfindung
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Umsetzung')}
-          >
-            <Text style={styles.menuItemText}>
-              Wie setze ich meine Ideen um?
-            </Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Umsetzung')}>
+            Wie setze ich meine Ideen um?
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Financial')}
-          >
-            <Text style={styles.menuItemText}>Finanzierung</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Financial')}>
+            Finanzierung
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Insurance')}
-          >
-            <Text style={styles.menuItemText}>Versicherung</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Insurance')}>
+            Versicherung
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Germany')}
-          >
-            <Text style={styles.menuItemText}>
-              Leben und Arbeiten in Deutschland
-            </Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Germany')}>
+            Leben und Arbeiten in Deutschland
+          </MenuPageButton>
 
-          <TouchableOpacity
-            style={styles.menuItem}
-            onPress={() => navigateTo('Selfemployment')}
-          >
-            <Text style={styles.menuItemText}>Selbstständigkeit</Text>
-          </TouchableOpacity>
+          <MenuPageButton onPress={() => navigateTo('Selfemployment')}>
+            Selbstständigkeit
+          </MenuPageButton>
 
           <ContactButton
             style={{
@@ -110,9 +68,7 @@ const menu = (props) => {
           />
         </View>
       </ScrollView>
-      <TouchableOpacity style={styles.closeButton} onPress={props.close}>
-        <Text style={styles.closeButtonText}>⨉</Text>
-      </TouchableOpacity>
+      <CloseButton close={props.close} textStyle={{color: colors.textLight}} />
     </Modal>
   );
 };
@@ -126,23 +82,5 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 90, 156, 0.9)',
     height: windowHeight,
     padding: 20
-  },
-  menuItem: {
-    padding: 16
-  },
-  menuItemText: {
-    fontSize: windowHeight > 600 ? 20 : 14,
-    color: 'whitesmoke'
-  },
-  closeButton: {
-    margin: 20,
-    position: 'absolute',
-    right: 10,
-    top: 15,
-    alignItems: 'center'
-  },
-  closeButtonText: {
-    fontSize: 25,
-    color: 'whitesmoke'
   }
 });

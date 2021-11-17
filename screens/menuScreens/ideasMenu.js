@@ -21,7 +21,7 @@ const windowWidth = Dimensions.get('window').width;
 class ideasMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Ideen - Berufsfindung',
+      headerTitle: 'Berufsfindung',
       headerStyle: {
         backgroundColor: colors.psychology
       },

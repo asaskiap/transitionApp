@@ -7,7 +7,7 @@ import Colors from '../../assets/colors';
 const closeButton = (props) => {
   return (
     <TouchableOpacity style={styles.closeButton} onPress={props.close}>
-      <Text style={styles.closeButtonText}>⨉</Text>
+      <Text style={[styles.closeButtonText, props.textStyle]}>⨉</Text>
     </TouchableOpacity>
   );
 };
