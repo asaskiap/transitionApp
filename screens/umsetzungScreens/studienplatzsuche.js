@@ -17,9 +17,7 @@ const Studienplatzsuche = (props) => {
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
 
-        <ArticleHeader textStyle={{textAlign: 'center'}}>
-          Studienplatz- Suche
-        </ArticleHeader>
+        <ArticleHeader>Studienplatzsuche</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/search.png')}
         />

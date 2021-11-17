@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: windowHeight > 600 ? 36 : 30,
     fontWeight: 'bold',
-    color: Colors.primaryDark,
-    letterSpacing: windowHeight > 600 ? 4 : 1
+    textAlign: 'center',
+    color: Colors.primaryDark
   }
 });

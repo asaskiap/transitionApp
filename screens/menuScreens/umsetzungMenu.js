@@ -89,15 +89,8 @@ class UmsetzungMenu extends React.Component {
           isVisible={this.state.bewerbung}
           close={() => this.setState({bewerbung: false})}
         />
-        <ArticleHeader textStyle={{textAlign: 'center'}}>
-          Wie setze ich meine Ideen um?
-        </ArticleHeader>
+        <ArticleHeader>Wie setze ich meine Ideen um?</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{
-            width: windowWidth,
-            height: windowHeight * 0.45,
-            resizeMode: 'cover'
-          }}
           image={require('../../assets/illustrations/umsetzungIllustrations/businessPlan.png')}
         />
         <MenuCard

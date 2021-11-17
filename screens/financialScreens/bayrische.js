@@ -14,10 +14,7 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 const windowHeight = Dimensions.get('window').height;
 
 const Bayrische = (props) => {
-  const navigateTo = (screen) => {
-    props.navigation.navigate(screen);
-    props.close();
-  };
+  console.log(props);
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
@@ -48,7 +45,13 @@ const Bayrische = (props) => {
           <Paragraph>
             Mehr Informationen zur Bayerischen Versorgungskammer unter
           </Paragraph>
-          <TouchableOpacity onPress={() => navigateTo('Insurance')}>
+          <TouchableOpacity
+            onPress={() => {
+              console.log('pressed');
+              props.navigation.navigate('Insurance');
+              props.close();
+            }}
+          >
             <Text
               style={{
                 fontSize: 22,

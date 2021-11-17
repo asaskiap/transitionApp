@@ -16,16 +16,12 @@ const Ausbildung = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader
-          textStyle={{letterSpacing: 1, fontSize: windowHeight > 600 ? 32 : 28}}
-        >
-          Ausbildungsbetriebe
-        </ArticleHeader>
+        <ArticleHeader>Ausbildungsbetriebe</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/welcome_umsetzung.png')}
         />
         <Article>
-          <Paragraph style={{marginTop: -20}}>
+          <Paragraph>
             Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann
             sehr individuell und facettenreich sein, denn es gibt eine Vielzahl
             an verschiedensten Berufen und Bereichen in denen eine

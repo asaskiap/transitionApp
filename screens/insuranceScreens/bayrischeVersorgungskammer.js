@@ -19,13 +19,7 @@ const Bayerische = (props) => {
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
 
-        <ArticleHeader
-          textStyle={{
-            fontSize: windowHeight > 600 ? 30 : 24,
-            letterSpacing: windowHeight > 600 ? 2 : 1,
-            textAlign: 'center'
-          }}
-        >
+        <ArticleHeader>
           Die Versorgungsanstalt der Deutschen Bühnenangehörigen
         </ArticleHeader>
         <ArticleIllustration

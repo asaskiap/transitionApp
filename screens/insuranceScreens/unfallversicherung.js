@@ -18,17 +18,10 @@ const Unfallversicherung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <ArticleHeader
-          textStyle={{
-            letterSpacing: windowHeight > 600 ? 2 : 1,
-            fontSize: windowHeight > 600 ? 32 : 28,
-            textAlign: 'center'
-          }}
-        >
+        <ArticleHeader>
           Berufsunfähigkeits- und Unfallversicherung
         </ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginTop: 50}}
           image={require('../../assets/illustrations/insuranceIllustrations/CatCup.png')}
         />
         <Article>

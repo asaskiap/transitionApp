@@ -21,14 +21,7 @@ const Aufstiegsstipendium = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader
-          textStyle={{
-            fontSize: windowHeight > 600 ? 30 : 26,
-            letterSpacing: windowHeight > 600 ? 2 : 1
-          }}
-        >
-          Aufstiegsstipendium
-        </ArticleHeader>
+        <ArticleHeader>Aufstiegsstipendium</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/window.png')}
         />
@@ -72,7 +65,9 @@ const Aufstiegsstipendium = (props) => {
             Die Bewerbung erfolgt in einem dreistufigen Auswahlverfahren. Mehr
             unter:
           </Paragraph>
-          <Link> www.sbb-stipendien.de</Link>
+          <Link onPress={() => Linking.openURL('http://www.sbb-stipendien.de')}>
+             www.sbb-stipendien.de
+          </Link>
           <Paragraph>
             Weitere Möglichkeiten der Studienfinanzierung: Bildungskredit von
             der staatlich geförderten KfW-Bank  oder Stipendien von

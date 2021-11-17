@@ -14,9 +14,7 @@ const Stipendien = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{textAlign: 'center'}}>
-          Andere Stipendien
-        </ArticleHeader>
+        <ArticleHeader>Andere Stipendien</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/Painter.png')}
         />

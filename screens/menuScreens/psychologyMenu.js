@@ -89,22 +89,9 @@ class psychologyMenuScreen extends React.Component {
             isVisible={this.state.werBindIch}
             close={() => this.setState({werBindIch: false})}
           />
-          {/* <MenuScreenHeader
-            image={require('./../../assets/images/psychologyImages/freeSwing.jpg')}
-          >
-            Psychologische Aspekte der Transition
-          </MenuScreenHeader> */}
-          <ArticleHeader
-            textStyle={{
-              letterSpacing: 1,
-              textAlign: 'center',
-              fontSize: windowHeight > 600 ? 28 : 24
-            }}
-          >
-            Psychologische Aspekte der Transition
-          </ArticleHeader>
+
+          <ArticleHeader>Psychologische Aspekte der Transition</ArticleHeader>
           <ArticleIllustration
-            imageContainerStyle={{marginLeft: 20}}
             image={require('../../assets/illustrations/psychologyIllustrations/earth.png')}
           />
 

@@ -2,29 +2,32 @@
 
 - check illustrations, possibly update and buy package
 - add proper photos for transition stories
-- add real logo and splash screen
+
+- change answer possibility in Entscheidungsbaum
 
 - look up how to add news updates
 
 - check on other devices!
 
-- add other berufsportraits ✅
-- link up councelling invite inner app links ✅
 - check all links (presentation and functionality)
-- rework starting page for Transition? ✅
-- menu shortcut for die transition ✅
-- implement send email ✅
+
+- sticky close btn
+
+- format of title / line breaks
+
+- berufsfindungstest formatting (pie legende and test scores)
+
+- pixelated illustrations?
+
+- Link to Versicherung in Bayrische Insurance ?!
 
 ## reminder: Links need to have https:// before ! in order to work!!
 
 ## General
 
 - Create documentation for components
-- create components for landing page and landing page parts
 - find a way that close button sticks on screen in scroll views?
-- rework navigator?
 - Implement automatic scrolling to top of screen on rerender ❗✅ (maybe still for Entscheidungsbaum)
-  (- bigger close button ❗)
 
 ### Modal Template
 

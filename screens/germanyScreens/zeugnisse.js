@@ -19,17 +19,8 @@ const Zeugnisse = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <ArticleHeader
-          textStyle={{
-            fontSize: windowHeight > 600 ? 32 : 26,
-            letterSpacing: windowHeight > 600 ? 2 : 1,
-            textAlign: 'center'
-          }}
-        >
-          Anerkennung von ausländischen Zeugnissen
-        </ArticleHeader>
+        <ArticleHeader>Anerkennung von ausländischen Zeugnissen</ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginTop: 40}}
           image={require('../../assets/illustrations/germanyIllustrations/relax.png')}
         />
         <Article>

@@ -18,11 +18,8 @@ const Bildungsgutschein = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{letterSpacing: 1}}>
-          Bildungsgutschein
-        </ArticleHeader>
+        <ArticleHeader>Bildungsgutschein</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
           image={require('../../assets/illustrations/financialIllustrations/Bildungsgutschein.png')}
         />
         <Article>

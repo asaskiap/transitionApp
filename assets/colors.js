@@ -1,11 +1,11 @@
 export default {
   primary: 'dodgerblue',
-  primarySemiTransparent: 'rgba(30,144,255,0.8)',
+  primarySemiTransparent: 'rgba(30,144,255,0.9)',
   primaryDark: '#006CA2',
   primaryLight: '#BFEAFF',
   secondary: 'yellowgreen',
   secondaryLight: '#D9FD9F',
-  secondarySemiTransparent: 'rgba(154,205,50,0.8)',
+  secondarySemiTransparent: 'rgba(154,205,50,0.9)',
   backgroundLight: '#f7fcff',
   textLight: 'whitesmoke',
   accentDark: '#FF6B53',

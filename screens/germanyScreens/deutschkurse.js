@@ -21,7 +21,7 @@ const Deutschkurse = (props) => {
           image={require('../../assets/illustrations/germanyIllustrations/2windows.png')}
         />
         <Article>
-          <Paragraph style={{marginTop: -60}}>
+          <Paragraph>
             Deutschkurse sind über verschiedene Anbieter zu finden.
             Beispielsweise über das Goethe Institut, die Volkshochschule oder
             die DeutschAkademie in Berlin. Unter bestimmten Voraussetzungen kann

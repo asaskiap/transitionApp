@@ -19,7 +19,6 @@ const Visum = (props) => {
         <CloseButton close={props.close} />
         <ArticleHeader>Visum</ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginTop: 40}}
           image={require('../../assets/illustrations/germanyIllustrations/world.png')}
         />
         <Article>

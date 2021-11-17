@@ -128,7 +128,6 @@ class financialMenuScreen extends React.Component {
         <ArticleHeader>Finanzierung</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/images/financeColorful.png')}
-          imageContainerStyle={{marginBottom: windowHeight > 600 ? -20 : 20}}
         />
         <MenuCard
           onPress={() => this.setState({stipendiumStiftung: true})}

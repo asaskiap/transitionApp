@@ -27,6 +27,8 @@ const style = StyleSheet.create({
     alignItems: 'center'
   },
   articleImage: {
+    maxHeight: windowHeight * 0.6,
+    maxWidth: windowWidth,
     resizeMode: 'contain'
   }
 });

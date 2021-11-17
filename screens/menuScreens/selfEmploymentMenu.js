@@ -32,7 +32,6 @@ class selfEmploymentMenuScreen extends React.Component {
           <Item
             title="Menu"
             iconName="menu"
-            //color={colors.primaryLight}
             onPress={navigation.getParam('toggleMenu')}
           />
         </HeaderButtons>
@@ -72,16 +71,9 @@ class selfEmploymentMenuScreen extends React.Component {
           isVisible={this.state.existenzgruendung}
           close={() => this.setState({existenzgruendung: false})}
         />
-        <ArticleHeader textStyle={{letterSpacing: 1}}>
-          Selbstständigkeit
-        </ArticleHeader>
+        <ArticleHeader>Selbstständigkeit</ArticleHeader>
         <ArticleIllustration
           imageContainerStyle={{marginBottom: -20}}
-          imageStyle={{
-            resizeMode: 'contain',
-
-            maxWidth: windowWidth * 0.9
-          }}
           image={require('../../assets/illustrations/selfemploymentIllustrations/Selbstständigkeit.png')}
         />
         <MenuCard

@@ -160,7 +160,11 @@ const KünstlerSozialVersicherung = (props) => {
           <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
             auskunft@kuenstlersozialkasse.de
           </Paragraph>
-          <Link onPress={() => Linking.openURL('www.kuenstlersozialkasse.de')}>
+          <Link
+            onPress={() =>
+              Linking.openURL('http://www.kuenstlersozialkasse.de')
+            }
+          >
             www.kuenstlersozialkasse.de
           </Link>
         </Article>

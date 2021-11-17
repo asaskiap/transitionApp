@@ -16,8 +16,6 @@ const Nachweise = (props) => {
       <ScrollableScreenContainer>
         <ArticleHeader>Nachweise</ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginBottom: -10}}
-          imageStyle={{maxWidth: windowWidth * 0.9}}
           image={require('../../assets/illustrations/germanyIllustrations/letterbox_deutschland.png')}
         />
         <Article>

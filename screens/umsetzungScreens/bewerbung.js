@@ -15,16 +15,8 @@ const Bewerbungsprozess = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader
-          textStyle={{
-            fontSize: windowHeight > 600 ? 30 : 28,
-            letterSpacing: windowHeight > 600 ? 2 : 1
-          }}
-        >
-          Bewerbungsprozess
-        </ArticleHeader>
+        <ArticleHeader>Bewerbungsprozess</ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginVertical: 30}}
           image={require('../../assets/illustrations/umsetzungIllustrations/settings_umsetzung.png')}
         />
         <Article>

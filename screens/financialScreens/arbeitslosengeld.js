@@ -17,9 +17,7 @@ const Arbeitslosengeld = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{paddingTop: 20, letterSpacing: 1}}>
-          Arbeitslosengeld
-        </ArticleHeader>
+        <ArticleHeader>Arbeitslosengeld</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/skate.png')}
         />

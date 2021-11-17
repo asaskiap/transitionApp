@@ -80,7 +80,9 @@ const Arbeitslosversicherung = (props) => {
           </ArticleSubHeader>
           <Link
             onPress={() =>
-              Linking.openURL('www.arbeitsagentur.de/web/content/DE/Formulare/')
+              Linking.openURL(
+                'http://www.arbeitsagentur.de/web/content/DE/Formulare/'
+              )
             }
           >
             www.arbeitsagentur.de/web/content/DE/Formulare/

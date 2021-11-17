@@ -30,7 +30,6 @@ class insuranceMenuScreen extends React.Component {
           <Item
             title="Menu"
             iconName="menu"
-            //color={colors.primaryLight}
             onPress={navigation.getParam('toggleMenu')}
           />
         </HeaderButtons>
@@ -88,7 +87,6 @@ class insuranceMenuScreen extends React.Component {
         />
         <ArticleHeader>Versicherung</ArticleHeader>
         <ArticleIllustration
-          imageContainerStyle={{marginBottom: 80}}
           image={require('../../assets/illustrations/insuranceIllustrations/rainGreen.png')}
         />
         <MenuCard

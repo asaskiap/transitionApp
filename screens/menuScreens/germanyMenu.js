@@ -87,11 +87,7 @@ class germanyMenuScreen extends React.Component {
           isVisible={this.state.deutschkurse}
           close={() => this.setState({deutschkurse: false})}
         />
-        <ArticleHeader
-          textStyle={{textAlign: 'center', letterSpacing: 1, fontSize: 30}}
-        >
-          Leben und Arbeiten in Deutschland
-        </ArticleHeader>
+        <ArticleHeader>Leben und Arbeiten in Deutschland</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/globeColorful.png')}
         />

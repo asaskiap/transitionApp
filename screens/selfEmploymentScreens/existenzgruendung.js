@@ -16,11 +16,8 @@ const Existenzgruendung = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
-        <ArticleHeader textStyle={{letterSpacing: 1}}>
-          Existenzgründung
-        </ArticleHeader>
+        <ArticleHeader>Existenzgründung</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
           image={require('../../assets/illustrations/selfemploymentIllustrations/existenz.png')}
         />
         <Article>

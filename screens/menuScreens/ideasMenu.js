@@ -72,15 +72,8 @@ class ideasMenuScreen extends React.Component {
           isVisible={this.state.berufsportraits}
           close={() => this.setState({berufsportraits: false})}
         />
-        <ArticleHeader textStyle={{textAlign: 'center'}}>
-          Ideen - Berufsfindung
-        </ArticleHeader>
+        <ArticleHeader>Ideen - Berufsfindung</ArticleHeader>
         <ArticleIllustration
-          imageStyle={{
-            width: windowWidth,
-            height: windowHeight * 0.45,
-            resizeMode: 'cover'
-          }}
           image={require('../../assets/illustrations/ideasIllustrations/baloon.png')}
         />
 
