@@ -107,8 +107,8 @@ const Zeugnisse = (props) => {
             http://www.anabin.de/
           </Link>
         </Article>
-        <CloseButton close={props.close} />
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

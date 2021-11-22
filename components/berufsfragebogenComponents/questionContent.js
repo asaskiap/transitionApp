@@ -23,6 +23,7 @@ export const Question1 = (props) => {
       setE={props.setE}
       setF={props.setF}
       handleSubmit={props.handleSubmit}
+      progress={props.progress}
     >
       Meine Interessen sind...
     </Question>
@@ -51,6 +52,7 @@ export const Question2 = (props) => {
       setE={props.setE}
       setF={props.setF}
       handleSubmit={props.handleSubmit}
+      progress={props.progress}
     >
       Meine Interessen sind...
     </Question>
@@ -79,6 +81,7 @@ export const Question3 = (props) => {
       setE={props.setE}
       setF={props.setF}
       handleSubmit={props.handleSubmit}
+      progress={props.progress}
     >
       Meine Interessen sind...
     </Question>
@@ -107,6 +110,7 @@ export const Question4 = (props) => {
       setE={props.setE}
       setF={props.setF}
       handleSubmit={props.handleSubmit}
+      progress={props.progress}
     >
       Meine Interessen sind...
     </Question>
@@ -135,6 +139,7 @@ export const Question5 = (props) => {
       setE={props.setE}
       setF={props.setF}
       handleSubmit={props.handleSubmit}
+      progress={props.progress}
     >
       Meine Interessen sind...
     </Question>
@@ -163,6 +168,7 @@ export const Question6 = (props) => {
       setE={props.setE}
       setF={props.setF}
       handleSubmit={props.handleSubmit}
+      progress={props.progress}
     >
       Meine Interessen sind...
     </Question>

@@ -13,10 +13,8 @@ const Nebenjobs = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Nebenjobs</ArticleHeader>
         <ArticleIllustration
-          // imageStyle={{maxHeight: 350}}
           image={require('../../assets/illustrations/financialIllustrations/failure.png')}
         />
         <Article>
@@ -70,6 +68,7 @@ const Nebenjobs = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

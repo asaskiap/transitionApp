@@ -12,6 +12,7 @@ import {
   CouncellingInvite3,
   FinalCouncellingInvite
 } from '../components/entscheidungsBaumComponents/councellingInvite';
+import colors from './../assets/colors';
 
 class EntscheidungsbaumGoScreen extends React.Component {
   state = {
@@ -170,6 +171,7 @@ EntscheidungsbaumGoScreen.navigationOptions = {
   headerStyle: {
     backgroundColor: Colors.accentPale
   },
+  headerTintColor: colors.accentDark,
   title: 'Entscheidungsbaum'
 };
 export default EntscheidungsbaumGoScreen;

@@ -18,7 +18,6 @@ const Bayrische = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader
           textStyle={{
             fontSize: windowHeight < 600 ? 28 : 30,
@@ -47,7 +46,6 @@ const Bayrische = (props) => {
           </Paragraph>
           <TouchableOpacity
             onPress={() => {
-              console.log('pressed');
               props.navigation.navigate('Insurance');
               props.close();
             }}
@@ -66,6 +64,7 @@ const Bayrische = (props) => {
           </TouchableOpacity>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

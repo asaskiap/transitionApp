@@ -16,7 +16,6 @@ const Arbeitslosengeld = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Arbeitslosengeld</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/skate.png')}
@@ -160,6 +159,7 @@ const Arbeitslosengeld = (props) => {
           www.arbeitsagentur.de
         </Link>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

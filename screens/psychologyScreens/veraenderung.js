@@ -13,7 +13,6 @@ const Veraenderung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Veränderung</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/psychologyIllustrations/path.png')}
@@ -58,6 +57,7 @@ const Veraenderung = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

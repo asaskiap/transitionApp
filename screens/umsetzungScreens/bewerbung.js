@@ -14,7 +14,6 @@ const Bewerbungsprozess = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Bewerbungsprozess</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/settings_umsetzung.png')}
@@ -71,6 +70,7 @@ const Bewerbungsprozess = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

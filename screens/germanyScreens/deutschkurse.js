@@ -15,7 +15,6 @@ const Deutschkurse = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Deutschkurse</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/germanyIllustrations/2windows.png')}
@@ -29,6 +28,7 @@ const Deutschkurse = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

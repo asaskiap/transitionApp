@@ -15,7 +15,6 @@ const Studienkredit = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Studienkredit</ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
@@ -47,6 +46,7 @@ const Studienkredit = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

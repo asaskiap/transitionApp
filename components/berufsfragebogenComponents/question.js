@@ -4,7 +4,7 @@ import {View, Text, Dimensions} from 'react-native';
 import colors from '../../assets/colors';
 
 import ButtonPrimary from '../../components/buttons/buttonPrimary';
-
+import ProgressBar from './progressBar';
 import SliderComponent from '../../components/berufsfragebogenComponents/sliderComponent';
 
 const windowHeight = Dimensions.get('window').height;
@@ -12,32 +12,25 @@ const windowHeight = Dimensions.get('window').height;
 class Question extends React.Component {
   render() {
     return (
-      <View style={{width: '90%'}}>
+      <View style={{paddingBottom: 40}}>
         <Text
           style={{
             fontSize: 24,
             fontWeight: 'bold',
-            margin: 22,
-            marginTop: 32,
-            textAlign: 'center',
-            //backgroundColor: colors.secondaryLight,
-            color: colors.primaryDark,
-            padding: 10
+            marginVertical: 32,
+            color: colors.primaryDark
           }}
         >
           {this.props.children}
         </Text>
         <View
           style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
             marginBottom: 32
           }}
         >
           <Text
             style={{
               fontSize: windowHeight > 600 ? 14 : 12,
-              fontWeight: 'bold',
               color: colors.primary
             }}
           >
@@ -46,8 +39,8 @@ class Question extends React.Component {
           <Text
             style={{
               fontSize: windowHeight > 600 ? 14 : 12,
-              fontWeight: 'bold',
-              color: colors.primary
+              color: colors.primary,
+              alignSelf: 'flex-end'
             }}
           >
             5: trifft voll und ganz zu
@@ -87,6 +80,7 @@ class Question extends React.Component {
         >
           WEITER
         </ButtonPrimary>
+        <ProgressBar>{this.props.progress}</ProgressBar>
       </View>
     );
   }

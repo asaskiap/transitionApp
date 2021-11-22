@@ -15,7 +15,6 @@ const Ausbildung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Ausbildungsbetriebe</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/welcome_umsetzung.png')}
@@ -80,6 +79,7 @@ const Ausbildung = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

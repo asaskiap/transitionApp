@@ -15,7 +15,6 @@ const Existenzgruendung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Existenzgründung</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/selfemploymentIllustrations/existenz.png')}
@@ -113,6 +112,7 @@ const Existenzgruendung = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
   vv;

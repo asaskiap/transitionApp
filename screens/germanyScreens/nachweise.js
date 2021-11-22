@@ -39,8 +39,8 @@ const Nachweise = (props) => {
             http://www.bva.bund.de
           </Link>
         </Article>
-        <CloseButton close={props.close} />
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

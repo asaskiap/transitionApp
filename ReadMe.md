@@ -11,11 +11,11 @@
 
 - check all links (presentation and functionality)
 
-- sticky close btn
+- sticky close btn✅
 
-- format of title / line breaks
+- format of title / line breaks✅
 
-- berufsfindungstest formatting (pie legende and test scores)
+- berufsfindungstest formatting (pie legende and test scores)✅
 
 - pixelated illustrations?
 

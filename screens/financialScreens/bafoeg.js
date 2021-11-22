@@ -19,8 +19,6 @@ const Bafoeg = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
-
         <ArticleHeader>Bafög</ArticleHeader>
         <ArticleIllustration
           imageStyle={{maxHeight: windowHeight > 600 ? 400 : 300}}
@@ -78,6 +76,7 @@ const Bafoeg = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

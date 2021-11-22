@@ -17,16 +17,10 @@ const Abschied = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        {/* <MenuScreenHeader
-          image={require('../../assets/images/psychologyImages/insecure.jpg')}
-        >
-          Abschied
-        </MenuScreenHeader> */}
         <ArticleHeader>Abschied</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/psychologyIllustrations/ship.png')}
         />
-        <CloseButton close={props.close} />
         <Article>
           <ArticleSubHeader>Abschied nehmen</ArticleSubHeader>
           <Paragraph>
@@ -96,6 +90,7 @@ const Abschied = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

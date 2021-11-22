@@ -13,7 +13,6 @@ const Bildungskredit = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Bildungskredit</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/reading_financial.png')}
@@ -45,6 +44,7 @@ const Bildungskredit = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

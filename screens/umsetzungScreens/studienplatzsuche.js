@@ -15,8 +15,6 @@ const Studienplatzsuche = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
-
         <ArticleHeader>Studienplatzsuche</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/search.png')}
@@ -69,6 +67,7 @@ const Studienplatzsuche = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

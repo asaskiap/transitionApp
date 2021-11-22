@@ -1,8 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Dimensions} from 'react-native';
 
 import {Slider} from 'react-native-elements';
+import {color} from 'react-native-reanimated';
 import colors from '../../assets/colors';
+
+const windowWidth = Dimensions.get('window').width;
 
 const SliderComponent = (props) => {
   return (
@@ -12,8 +15,8 @@ const SliderComponent = (props) => {
         style={{
           flex: 1,
           alignItems: 'stretch',
-          justifyContent: 'center',
-          marginVertical: 16
+          marginVertical: 16,
+          marginHorizontal: 20
         }}
       >
         <Slider
@@ -28,7 +31,26 @@ const SliderComponent = (props) => {
             height: 22
           }}
         />
-        <Text style={{alignSelf: 'flex-end'}}>Ausgewählt: {props.val}</Text>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between'
+          }}
+        >
+          <Text style={{color: colors.primary}}>1</Text>
+          <Text
+            style={{
+              color: colors.secondary,
+              borderColor: colors.secondary,
+              borderRadius: 10,
+              borderWidth: 1,
+              paddingHorizontal: 5
+            }}
+          >
+            {props.val}
+          </Text>
+          <Text style={{color: colors.primary}}>5</Text>
+        </View>
       </View>
     </>
   );

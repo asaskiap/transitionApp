@@ -208,6 +208,7 @@ class Berufsfragebogen extends React.Component {
             setE={(val) => this.setState({currE: val})}
             setF={(val) => this.setState({currF: val})}
             handleSubmit={this.handleSubmit1}
+            progress={1}
           />
         )}
 
@@ -226,6 +227,7 @@ class Berufsfragebogen extends React.Component {
             setE={(val) => this.setState({currF: val})}
             setF={(val) => this.setState({currC: val})}
             handleSubmit={this.handleSubmit2}
+            progress={2}
           />
         )}
 
@@ -244,6 +246,7 @@ class Berufsfragebogen extends React.Component {
             setE={(val) => this.setState({currC: val})}
             setF={(val) => this.setState({currD: val})}
             handleSubmit={this.handleSubmit3}
+            progress={3}
           />
         )}
 
@@ -262,6 +265,7 @@ class Berufsfragebogen extends React.Component {
             setE={(val) => this.setState({currD: val})}
             setF={(val) => this.setState({currB: val})}
             handleSubmit={this.handleSubmit4}
+            progress={4}
           />
         )}
         {this.state.displayQ5 && (
@@ -279,6 +283,7 @@ class Berufsfragebogen extends React.Component {
             setE={(val) => this.setState({currB: val})}
             setF={(val) => this.setState({currA: val})}
             handleSubmit={this.handleSubmit5}
+            progress={5}
           />
         )}
         {this.state.displayQ6 && (
@@ -296,19 +301,16 @@ class Berufsfragebogen extends React.Component {
             setE={(val) => this.setState({currA: val})}
             setF={(val) => this.setState({currE: val})}
             handleSubmit={this.handleSubmit6}
+            progress={6}
           />
         )}
 
         {this.state.displayResult && (
-          <View>
+          <View style={{paddingVertical: 10}}>
             <ArticleHeader
               containerStyle={{
-                marginTop: 5
-              }}
-              textStyle={{
-                backgroundColor: colors.secondaryLight,
-                fontSize: 24,
-                padding: 10
+                marginTop: 5,
+                marginBottom: 10
               }}
             >
               Mein Ergebnis
@@ -384,7 +386,8 @@ Berufsfragebogen.navigationOptions = {
   headerStyle: {
     backgroundColor: colors.accentPale
   },
-  title: 'Berufsinteressen Fragebogen'
+  headerTintColor: colors.accentDark,
+  title: 'Fragebogen'
 };
 
 export default Berufsfragebogen;

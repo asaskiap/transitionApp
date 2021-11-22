@@ -14,8 +14,6 @@ const Unsicherheiten = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
-
         <ArticleHeader>Unsicherheiten</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/psychologyIllustrations/ladder.png')}
@@ -85,6 +83,7 @@ const Unsicherheiten = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

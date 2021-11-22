@@ -17,8 +17,6 @@ const StipendiumStiftung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
-
         <ArticleHeader>Stipendium der Stiftung</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/Message.png')}
@@ -104,6 +102,7 @@ const StipendiumStiftung = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

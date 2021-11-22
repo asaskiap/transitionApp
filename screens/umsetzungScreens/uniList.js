@@ -13,8 +13,6 @@ const UniversitaetenListe = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
-
         <ArticleHeader>Liste mit Universitäten</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/spyglass.png')}
@@ -70,6 +68,7 @@ const UniversitaetenListe = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

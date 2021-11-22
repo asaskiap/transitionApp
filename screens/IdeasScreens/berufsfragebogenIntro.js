@@ -14,12 +14,11 @@ import ArticleIllustration from '../../components/articleComponents/articleIllus
 import ButtonSecondary from '../../components/buttons/buttonSecondary';
 import ButtonPrimary from '../../components/buttons/buttonPrimary';
 import colors from '../../assets/colors';
-import {color} from 'react-native-reanimated';
 
 class BerufsfragebogenIntro extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Berufsinteressen Fragebogen',
+      headerTitle: 'Berufsinteressen',
       headerStyle: {
         backgroundColor: colors.psychology
       },

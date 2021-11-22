@@ -16,7 +16,6 @@ const WerBindIch = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Wer Bin Ich?</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/psychologyIllustrations/freedom.png')}
@@ -173,6 +172,7 @@ const WerBindIch = (props) => {
           </Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

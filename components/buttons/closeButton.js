@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     top: 10
   },
   closeButtonText: {
+    fontWeight: 'bold',
     fontSize: 26,
     color: Colors.accentDark
   }

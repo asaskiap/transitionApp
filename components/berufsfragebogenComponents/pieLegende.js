@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   colorInfo: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    marginLeft: 30
+    marginLeft: 10
   },
   colorText: {
     fontSize: 14,

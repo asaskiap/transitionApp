@@ -17,7 +17,6 @@ const Bildungsgutschein = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Bildungsgutschein</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/Bildungsgutschein.png')}
@@ -233,6 +232,7 @@ const Bildungsgutschein = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

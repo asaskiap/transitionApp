@@ -16,7 +16,6 @@ const Visum = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Visum</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/germanyIllustrations/world.png')}
@@ -146,6 +145,7 @@ const Visum = (props) => {
           </Link>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };
