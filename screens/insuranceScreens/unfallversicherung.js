@@ -76,7 +76,7 @@ const Unfallversicherung = (props) => {
               Linking.openURL('http://www.deutsche-rentenversicherung-bund.de')
             }
           >
-            http://www.deutsche-rentenversicherung-bund.de
+            www.deutsche-rentenversicherung-bund.de
           </Link>
           <Paragraph>
             Wichtiger Kontakt zum Verein tamed e.V., die spezifisch beraten und
@@ -158,8 +158,8 @@ const Unfallversicherung = (props) => {
           </Link>
           <Paragraph>sowie in allen Bundesländern, bitte googeln.</Paragraph>
         </Article>
-        <CloseButton close={props.close} />
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

@@ -42,7 +42,7 @@ const Studienkredit = (props) => {
               )
             }
           >
-            https://www.kfw.de/inlandsfoerderung/Privatpersonen/Studieren-Qualifizieren/Finanzierungsangebote/KfW-Studienkredit-(174)/
+            www.kfw.de/inlandsfoerderung/Privatpersonen/Studieren-Qualifizieren/Finanzierungsangebote/KfW-Studienkredit-(174)/
           </Link>
         </Article>
       </ScrollableScreenContainer>

@@ -78,7 +78,6 @@ class EntscheidungsbaumGoScreen extends React.Component {
   };
 
   render() {
-    console.log(!(this.state.q1_yes || this.state.q1_no));
     return (
       <ScrollableScreenContainer>
         <HeaderEB>Entscheidungsbaum</HeaderEB>

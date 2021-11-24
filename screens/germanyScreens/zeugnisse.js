@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Text, Dimensions, Linking} from 'react-native';
+import {Modal, Text, Dimensions, Linking, TouchableOpacity} from 'react-native';
 import colors from '../../assets/colors';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -10,6 +10,7 @@ import Link from '../../components/articleComponents/link';
 import {List, ListItem} from '../../components/articleComponents/list';
 import Paragraph from '../../components/articleComponents/paragraph';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
+import {sendEmail} from '../../utilities/sendEmail';
 
 import CloseButton from '../../components/buttons/closeButton';
 
@@ -71,16 +72,28 @@ const Zeugnisse = (props) => {
           <Paragraph>Info-Center der ZAV: </Paragraph>
           <Paragraph>Telefon: 0228 713-1313 </Paragraph>
           <Paragraph>E-Mail:</Paragraph>
-          <Text
-            style={{
-              fontWeight: 'bold',
-              color: colors.primaryDark,
-              fontSize: 14,
-              alignSelf: 'center'
+          <TouchableOpacity
+            onPress={() => {
+              sendEmail(
+                'alannapfeiffer@gmail.com',
+                'Vermittlungsanfrage',
+                ''
+              ).then(() => {
+                console.log('Your message was successfully sent!');
+              });
             }}
           >
-            zav-auslandsvermittlung@arbeitsagentur.de
-          </Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: colors.primaryDark,
+                fontSize: 14,
+                alignSelf: 'center'
+              }}
+            >
+              zav-auslandsvermittlung@arbeitsagentur.de
+            </Text>
+          </TouchableOpacity>
 
           <Paragraph>
             Eine zusammenfassende Beschreibung der Dienstleistung sowie
@@ -91,11 +104,11 @@ const Zeugnisse = (props) => {
           <Link
             onPress={() =>
               Linking.openURL(
-                'http://www.ba-auslandsvermittlung.de/lang_de/nn_7688/SharedDocs/Publikationen/ZAV/ZAV-Anerkennungsberatung-Flyer,templateId=raw,property=publicationFile.pdf'
+                'https://www.arbeitsagentur.de/vor-ort/zav/startseite'
               )
             }
           >
-            http://www.ba-auslandsvermittlung.de/
+            www.ba-auslandsvermittlung.de/
           </Link>
 
           <Paragraph>
@@ -104,7 +117,7 @@ const Zeugnisse = (props) => {
           </Paragraph>
 
           <Link onPress={() => Linking.openURL('http://www.anabin.de/')}>
-            http://www.anabin.de/
+            www.anabin.de/
           </Link>
         </Article>
       </ScrollableScreenContainer>

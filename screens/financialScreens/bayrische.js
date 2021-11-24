@@ -1,7 +1,6 @@
 import React from 'react';
 
-import {Modal, Dimensions, Text} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {Modal, Dimensions, Text, TouchableOpacity} from 'react-native';
 import colors from '../../assets/colors';
 import Article from '../../components/articleComponents/article';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -14,7 +13,6 @@ import ScrollableScreenContainer from '../../components/scrollableScreen';
 const windowHeight = Dimensions.get('window').height;
 
 const Bayrische = (props) => {
-  console.log(props);
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>

@@ -88,8 +88,8 @@ const Arbeitslosversicherung = (props) => {
             www.arbeitsagentur.de/web/content/DE/Formulare/
           </Link>
         </Article>
-        <CloseButton close={props.close} />
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal, Linking} from 'react-native';
+import {Modal, Linking, TouchableOpacity, Text} from 'react-native';
 import CloseButton from '../../components/buttons/closeButton';
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
@@ -11,6 +11,7 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import {List, ListItem} from '../../components/articleComponents/list';
 import Link from '../../components/articleComponents/link';
 import colors from '../../assets/colors';
+import {sendEmail} from '../../utilities/sendEmail';
 
 const KünstlerSozialVersicherung = (props) => {
   return (
@@ -154,12 +155,39 @@ const KünstlerSozialVersicherung = (props) => {
           <ArticleSubHeader textStyle={{color: colors.accentDark}}>
             Kontakt
           </ArticleSubHeader>
-          <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
+          <Text
+            style={{
+              fontWeight: 'bold',
+              alignSelf: 'center',
+              color: colors.primary,
+              marginVertical: 10
+            }}
+          >
             04421/ 973 405 1500
-          </Paragraph>
-          <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
-            auskunft@kuenstlersozialkasse.de
-          </Paragraph>
+          </Text>
+          <TouchableOpacity
+            onPress={() => {
+              sendEmail(
+                'alannapfeiffer@gmail.com',
+                'Auskunft Anfrage',
+                ''
+              ).then(() => {
+                console.log('Your message was successfully sent!');
+              });
+            }}
+          >
+            <Text
+              style={{
+                fontWeight: 'bold',
+                alignSelf: 'center',
+                color: colors.primary,
+                marginVertical: 10
+              }}
+            >
+              auskunft@kuenstlersozialkasse.de
+            </Text>
+          </TouchableOpacity>
+
           <Link
             onPress={() =>
               Linking.openURL('http://www.kuenstlersozialkasse.de')
@@ -168,8 +196,8 @@ const KünstlerSozialVersicherung = (props) => {
             www.kuenstlersozialkasse.de
           </Link>
         </Article>
-        <CloseButton close={props.close} />
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

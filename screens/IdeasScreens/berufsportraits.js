@@ -164,7 +164,9 @@ const Berufsportraits = (props) => {
             <TouchableOpacity
               onPress={() => setAugenoptikerIn(!augenoptikerIn)}
             >
-              <ArticleSubHeader>AugenoptikerIn ▽</ArticleSubHeader>
+              {!augenoptikerIn && (
+                <ArticleSubHeader>AugenoptikerIn ▽</ArticleSubHeader>
+              )}
             </TouchableOpacity>
             {augenoptikerIn && <Augenoptiker></Augenoptiker>}
 

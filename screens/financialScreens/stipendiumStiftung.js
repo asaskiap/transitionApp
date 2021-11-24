@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Linking, Modal} from 'react-native';
+import {Linking, Modal, TouchableOpacity, Text} from 'react-native';
 
 import ScrollableScreenContainer from '../../components/scrollableScreen';
 import Article from './../../components/articleComponents/article';
@@ -9,6 +9,7 @@ import Paragraph from '../../components/articleComponents/paragraph';
 import ArticleHeader from '../../components/articleComponents/articleHeader';
 import ArticleIllustration from '../../components/articleComponents/articleIllustration';
 import colors from '../../assets/colors';
+import {sendEmail} from '../../utilities/sendEmail';
 
 import CloseButton from '../../components/buttons/closeButton';
 import Link from '../../components/articleComponents/link';
@@ -49,19 +50,30 @@ const StipendiumStiftung = (props) => {
             Bewerbungen bitte ausschließlich (Ausnahmefälle nach persönlicher
             Absprache) per Email als eine zusammengefügte PDF-Datei an:
           </Paragraph>
-          <Paragraph
-            style={{
-              fontWeight: 'bold',
-              color: colors.primary,
-              fontSize: 16,
-              alignSelf: 'center',
-              marginTop: 10,
-              backgroundColor: colors.secondaryLight,
-              padding: 5
+          <TouchableOpacity
+            onPress={() => {
+              sendEmail(
+                'alannapfeiffer@gmail.com',
+                'Stipendien Anfrage',
+                ''
+              ).then(() => {
+                console.log('Your message was successfully sent!');
+              });
             }}
           >
-             info@stiftung-tanz.com 
-          </Paragraph>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: colors.primary,
+                fontSize: 16,
+                alignSelf: 'center',
+                marginTop: 10,
+                padding: 5
+              }}
+            >
+               info@stiftung-tanz.com 
+            </Text>
+          </TouchableOpacity>
         </Article>
 
         <Article>

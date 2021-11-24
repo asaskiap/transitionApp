@@ -43,10 +43,9 @@ const WasMachenWir = (props) => {
             festangestellt oder freiberuflich tätig, ob an städtischen Bühnen,
             an Staatstheatern, beim Musical, Film oder Fernsehen.
           </Text>
-
-          <CloseButton close={props.close} />
         </View>
       </ScrollView>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

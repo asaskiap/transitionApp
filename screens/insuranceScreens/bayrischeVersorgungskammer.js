@@ -17,8 +17,6 @@ const Bayerische = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
-
         <ArticleHeader>
           Die Versorgungsanstalt der Deutschen Bühnenangehörigen
         </ArticleHeader>
@@ -164,6 +162,7 @@ const Bayerische = (props) => {
           <Paragraph> nachgelesen werden.</Paragraph>
         </Article>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

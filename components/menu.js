@@ -62,9 +62,8 @@ const menu = (props) => {
 
         <ContactButton
           style={{
-            position: 'absolute',
-            bottom: 12,
-            right: 12
+            padding: 30,
+            alignSelf: 'flex-end'
           }}
         />
       </ScrollView>
@@ -81,7 +80,7 @@ const styles = StyleSheet.create({
     paddingVertical: 40,
     paddingBottom: 60,
     backgroundColor: 'rgba(0, 90, 156, 0.9)',
-    minHeight: windowHeight,
+    //minHeight: windowHeight,
     width: windowWidth
   }
 });

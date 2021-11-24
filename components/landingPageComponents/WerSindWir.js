@@ -32,10 +32,9 @@ const WerSindWir = (props) => {
             ihrer Karriere und ihres Übergangs in einen neuen Beruf nach dem
             Ende ihrer aktiven Tanzkarriere.
           </Text>
-
-          <CloseButton close={props.close}></CloseButton>
         </View>
       </ScrollView>
+      <CloseButton close={props.close}></CloseButton>
     </Modal>
   );
 };

@@ -1,9 +1,6 @@
 ### TO DO
 
-- check illustrations, possibly update and buy package
 - add proper photos for transition stories
-
-- change answer possibility in Entscheidungsbaum
 
 - look up how to add news updates
 
@@ -11,23 +8,13 @@
 
 - check all links (presentation and functionality)
 
-- sticky close btn✅
-
-- format of title / line breaks✅
-
-- berufsfindungstest formatting (pie legende and test scores)✅
-
 - pixelated illustrations?
-
-- Link to Versicherung in Bayrische Insurance ?!
 
 ## reminder: Links need to have https:// before ! in order to work!!
 
 ## General
 
 - Create documentation for components
-- find a way that close button sticks on screen in scroll views?
-- Implement automatic scrolling to top of screen on rerender ❗✅ (maybe still for Entscheidungsbaum)
 
 ### Modal Template
 

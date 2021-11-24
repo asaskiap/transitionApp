@@ -41,7 +41,7 @@ const Visum = (props) => {
             geltenden Übergangsregelungen erhalten Sie unter
           </Paragraph>
           <Link onPress={() => Linking.openURL('http://ec.europa.eu/eures')}>
-            http://ec.europa.eu/eures
+            ec.europa.eu/eures
           </Link>
           <ArticleSubHeader>
             In der Regel gilt für Bürger aus Nicht-EU-Staaten und Staatenlose:
@@ -141,7 +141,7 @@ const Visum = (props) => {
               )
             }
           >
-            http://bundesrecht.juris.de/aufenthg_2004/index.html
+            bundesrecht.juris.de/aufenthg_2004/index.html
           </Link>
         </Article>
       </ScrollableScreenContainer>

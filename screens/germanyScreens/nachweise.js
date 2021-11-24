@@ -29,14 +29,14 @@ const Nachweise = (props) => {
             EURES-Portal (European Employment Services)
           </Paragraph>
           <Link onPress={() => Linking.openURL('http://ec.europa.eu/eures')}>
-             http://ec.europa.eu/eures
+             ec.europa.eu/eures
           </Link>
           <Paragraph>
             Informationen für Auswanderer und Auslandstätige bietet der
             Informationsdienst des Bundesverwaltungsamtes (BVA)
           </Paragraph>
           <Link onPress={() => Linking.openURL('http://www.bva.bund.de')}>
-            http://www.bva.bund.de
+            www.bva.bund.de
           </Link>
         </Article>
       </ScrollableScreenContainer>

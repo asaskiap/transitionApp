@@ -12,6 +12,7 @@ import {exp} from 'react-native-reanimated';
 export const Augenoptiker = (props) => {
   return (
     <>
+      <ArticleSubHeader>AugenoptikerIn △</ArticleSubHeader>
       <Paragraph>
         Moderne Brillen sind schon lange nicht mehr nur Sehhilfen, sie sind
         Accessoires, die den Typ ihrer Träger unterstreichen und gut zu deren
