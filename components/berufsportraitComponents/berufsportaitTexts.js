@@ -220,6 +220,9 @@ export const AuswertigesAmt = (props) => {
 export const Bekleidungstechniker = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>BekleidungstechnikerIn (BA) △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Das Bachelor-Studium Bekleidungstechnik/Konfektion gehört als sehr
         interdisziplinär ausgerichtetes Fach zu den Ingenieurwissenschaften. Der
@@ -291,6 +294,12 @@ export const Bekleidungstechniker = (props) => {
 export const Gesundheitsmanager = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Betriebliche/r Gesundheits- manager/in △
+        </ArticleSubHeader>
+      </TouchableOpacity>
+
       <Paragraph>
         Der Bedarf an Fachkräften für Gesundheitsmanagement und Prävention
         steigt. So verwundert auch nicht, dass es bundesweit immer mehr
@@ -392,6 +401,9 @@ export const Gesundheitsmanager = (props) => {
 export const Biologie = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Biologe/in M.Sc. △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph style={{fontWeight: 'bold'}}>Berufsbild:</Paragraph>
       <Paragraph>
         Den klassischen Biologen gibt es so eigentlich gar nicht. Viel mehr
@@ -462,6 +474,9 @@ export const Biologie = (props) => {
 export const Blindenpädagoge = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Blindenpädagog*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Blindenpädagog*innen sind spezialisiert auf das Einschränkungsbild
         sehbehinderter und blinder Menschen aller Altersgruppen. Ihr Einsatzfeld
@@ -558,6 +573,9 @@ export const Blindenpädagoge = (props) => {
 export const Buchbinder = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Buchbinder*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Dieser Handwerksberuf reicht zurück bis in die Antike, konnte aber trotz
         Digitalisierung überleben. Buchbinder*innen fertigen Einzel- sowie
@@ -624,6 +642,9 @@ export const Buchbinder = (props) => {
 export const Clown = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Clown △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Die Methoden der künstlerischen Darstellung eines Clowns eignen sich
         sehr gut für:
@@ -674,6 +695,9 @@ export const Clown = (props) => {
 export const Cruise = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Cruise Tourism Manager*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         “Urlaubsreisen haben als Wirtschaftsfaktor weltweit eine herausragende
         Bedeutung erlangt. Über die letzten zwanzig Jahre hat sich dabei eine
@@ -727,6 +751,9 @@ export const Cruise = (props) => {
 export const Ernaehrungsberatung = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Ernährungsberatung △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Der Beruf „Ernährungsberater/in“ ist in Deutschland keine gesetzlich
         geschützte Berufsbezeichnung. Theoretisch benötigen Sie daher keine
@@ -779,6 +806,9 @@ export const Ernaehrungsberatung = (props) => {
 export const Eurythmist = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>EurythmistIn △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Weil die öffentlich geförderte Kinderbetreuung bundesweit ausgebaut
         wurde, kam es zwischen 2006 und 2016 zu einem Personalanstieg bei
@@ -814,6 +844,9 @@ export const Eurythmist = (props) => {
 export const Erzieher = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Erzieher*in sowie Facherzieher*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Der hohe Bedarf an professioneller Betreuung und pädagogischer
         Begleitung hält an. An mittlerweile fast 600 Fachschulen für
@@ -875,6 +908,11 @@ export const Erzieher = (props) => {
 export const Goethe = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Fach- und Führungskraft beim Goethe-Institut △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Das Goethe-Institut ist eine weltweit arbeitende und ebenso anerkannte
         Institution der Auswärtigen Sprach- und Kulturpolitik Deutschlands. Es
@@ -906,6 +944,9 @@ export const Goethe = (props) => {
 export const Freizeit = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Freizeitwissenschaftler*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>Hochschule Bremen</Paragraph>
       <Paragraph>
         Freizeit bietet vielfältige Gelegenheiten zur Erholung und Unterhaltung,
@@ -970,6 +1011,11 @@ export const Freizeit = (props) => {
 export const Gesundheitsfoerderung = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Berufe in der Gesundheitsförderung △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Erhalt der Gesundheit zu verschieben, macht sich auch bei neu
         entstehenden Berufen bemerkbar. Es finden sich sowohl neue
@@ -1013,6 +1059,9 @@ export const Gesundheitsfoerderung = (props) => {
 export const Hoerakustiker = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Hörakustiker*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         In unserer älter werdenden Gesellschaft kann man Berufe als
         zukunftssicher einstufen, die Dienstleistungen für Senioren beinhalten,
@@ -1066,6 +1115,9 @@ export const Hoerakustiker = (props) => {
 export const Hoergeraeteaktustiker = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Hörgeräteakustiker*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Hörgeräteakustiker/innen beraten Kunden hinsichtlich unterschiedlicher
         Arten von Hörsystemen bzw. Gehörschutz. Dabei gehen sie auf die
@@ -1100,6 +1152,11 @@ export const Hoergeraeteaktustiker = (props) => {
 export const Kosmetik = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Kosmetik, Maskenbild, Tätowierer*in △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Die intensive Beschäftigung mit dem Körper macht Berufe rund um die
         Kosmetik und Maske für einige Tänzerinnen und Tänzer attraktiv.
@@ -1139,7 +1196,12 @@ export const Kosmetik = (props) => {
         nicht geschützt und kann deshalb auch in Kursen von wenigen Monaten
         erlernt werden.
       </Paragraph>
-      <Paragraph>Mehr: berufenet.arbeitsagentur.de</Paragraph>
+      <Paragraph>Mehr: </Paragraph>
+      <Link
+        onPress={() => Linking.openURL('http://berufenet.arbeitsagentur.de')}
+      >
+        berufenet.arbeitsagentur.de
+      </Link>
     </>
   );
 };
@@ -1147,6 +1209,9 @@ export const Kosmetik = (props) => {
 export const Kulturvermittler = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader> Kultur- und Kunstvermittler*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Kultur- und Kunstvermittler*in ist (noch) keine geschützte
         Berufsbezeichnung, bietet aber eine große Vielfalt an beruflichen
@@ -1208,8 +1273,12 @@ export const Kulturvermittler = (props) => {
       </Paragraph>
       <Paragraph>
         UND zum Netzwerk professioneller Kunstvermittler hier:
-        www.berufkunstvermittlung.de
       </Paragraph>
+      <Link
+        onPress={() => Linking.openURL('http://www.berufkunstvermittlung.de')}
+      >
+        www.berufkunstvermittlung.de
+      </Link>
     </>
   );
 };
@@ -1217,6 +1286,9 @@ export const Kulturvermittler = (props) => {
 export const Kunstgeragoge = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Kunstgeragog*Innen △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         „In Zukunft werden Ältere und aus heutiger Sicht sehr alte Menschen die
         Bevölkerung erheblich stärker prägen als heute. […] Am stärksten besetzt
@@ -1275,6 +1347,9 @@ export const Kunstgeragoge = (props) => {
 export const Lehrer = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Lehrer*in an staatlichen Schulen △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Lehrer*innen sind mittelweile Mangelware. Das gilt für alle Schulformen,
         also
@@ -1368,6 +1443,9 @@ export const Lehrer = (props) => {
 export const Logopaede = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Logopäde*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         “Wer seine Sprachfähigkeit nicht voll entwickeln kann oder verliert, ist
         gefährdet, ausgeschlossen zu werden: Aus dem Freundeskreis, aus der
@@ -1451,6 +1529,9 @@ export const Logopaede = (props) => {
 export const Luftverkehr = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Luftverkehrskaufleute △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Unsere Mobilität steigt. So wird das durchschnittliche globale Wachstum
         des Luftverkehrs auf Grundlage von Passagierkilometern (RPK) von der
@@ -1508,6 +1589,11 @@ export const Luftverkehr = (props) => {
 export const Mediengestalter = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Mediengestalter_in digital und print bzw. Webdesign △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Als Urvater dieses Ausbildungsberufes gilt Johannes Gutenberg, der 1455
         den Buchdruck revolutionierte, indem er bewegliche und wiederverwendbare
@@ -1574,6 +1660,9 @@ export const Mediengestalter = (props) => {
 export const Osteopathie = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Osteopathie △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Ostheopathie ist eine Behandlungsmethode für körperliche Beschwerden.
         Der Ansatz der Osteopathie ist einfach: Leben zeigt sich in Form von
@@ -1646,6 +1735,11 @@ export const Osteopathie = (props) => {
 export const PTA = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Pharmazeutisch-technischen Assistentin (PTA) △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Ob verschreibungspflichtige oder rezeptfreie Medikamente -
         pharmazeutisch-technische Assistenten unterstützen Apotheker, ärztliche
@@ -1686,6 +1780,9 @@ export const PTA = (props) => {
 export const Raumausstatter = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Raumausstatter*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Wer gern gestaltet und kreativ ist, wem Schönes wichtig ist, wer
         gleichzeitig gern werkelt und Dinge berechnet sowie sich für
@@ -1765,6 +1862,9 @@ export const Raumausstatter = (props) => {
 export const Reiseleiter = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Reiseleiter*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Deutschland und Europa werden als Reiseländer für Außereuropäer immer
         attraktiver. Zahlreiche Reiseanbieter (u.a. Education First, Globus,
@@ -1790,6 +1890,9 @@ export const Reiseleiter = (props) => {
 export const SozialeArbeitBA = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Soziale Arbeit BA △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         {' '}
         Im Bachelor Studiengang „Soziale Arbeit“ sind die beiden Bereiche
@@ -1847,6 +1950,9 @@ export const SozialeArbeitBA = (props) => {
 export const SozialeArbeitStudium = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Studium Soziale Arbeit △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Wer gern mit Menschen umgeben ist und ein Herz für benachteiligte
         Menschen hat, kann im sozialen Bereich große Befriedigung finden.
@@ -1900,6 +2006,11 @@ export const SozialeArbeitStudium = (props) => {
 export const Sozialversicherungsangestellter = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Sozialversicherungs- fachangestellte*r △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Der Ausbildungsberuf Sozialversicherungsfachangestellte*r ist
         anspruchsvoll und hat eine hohe Reputation. Als eine/r der ersten und
@@ -1933,6 +2044,11 @@ export const Sozialversicherungsangestellter = (props) => {
 export const Sportkaufmann = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Sport- und Fitnesskaufmann/Sport- und Fitnesskauffrau △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Wenn man sportbegeistert ist und gleichzeitig auch noch ein bisschen
         Freude am Organisieren, Planen und Rechnen hat, dann handelt es sich bei
@@ -1977,6 +2093,11 @@ export const Sportkaufmann = (props) => {
 export const Veranstaltungstechnik = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Theater- bzw. Veranstaltungstechnik △
+        </ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         In jedem Theater arbeiten viele Techniker auf verschiedenen Ebenen.
         Bühnenarbeiter sind dabei teilweise Quereinsteiger aus anderen
@@ -2016,6 +2137,9 @@ export const Veranstaltungstechnik = (props) => {
 export const Tierphysiotherapie = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Tierphysiotherapie △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Bei Physiotherapie denkt man zuerst wahrscheinlich vor allem an
         Menschen, die daran Bedarf haben könnten. Dass es aber auch
@@ -2086,6 +2210,9 @@ export const Tierphysiotherapie = (props) => {
 export const Tierwirt = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Tierwirt*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Fachrichtung Imkerei. Tierliebe, Interesse an Biologie und Ökologie,
         Freude an bewegungsintensiven Tätigkeiten im Freien,
@@ -2154,6 +2281,9 @@ export const Tierwirt = (props) => {
 export const Trainee = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Trainee △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Bei unserer Beratungsarbeit fällt uns immer wieder auf, dass viele
         Tänzer*innen in Transition wenig oder gar nichts über Möglichkeiten
@@ -2213,6 +2343,9 @@ export const Trainee = (props) => {
 export const Versicherungsmakler = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Versicherungsmakler*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Wir hatten in unserem letzten Newsletter festgestellt, dass ein/e
         vertrauenswürdige/r und kompetente/r Versicherungsmakler/in für
@@ -2272,6 +2405,9 @@ export const Versicherungsmakler = (props) => {
 export const Zirkuspaedagoge = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Zirkuspädagog*in △</ArticleSubHeader>
+      </TouchableOpacity>
       <Paragraph>
         Aus Anlass der Gründung der Circus Akademie Berlin (CAB) Ende 2017, über
         die wir oben berichteten, machen wir an dieser Stelle auf das

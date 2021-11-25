@@ -193,245 +193,331 @@ const Berufsportraits = (props) => {
               <AuswertigesAmt close={() => setAuswertigesAmt(false)} />
             )}
 
-            <TouchableOpacity
-              onPress={() => setBekleidungstechniker(!bekleidungstechniker)}
-            >
-              <ArticleSubHeader>BekleidungstechnikerIn (BA) ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setBekleidungstechniker(true)}>
+              {!bekleidungstechniker && (
+                <ArticleSubHeader>
+                  BekleidungstechnikerIn (BA) ▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {bekleidungstechniker && <Bekleidungstechniker />}
-
-            <TouchableOpacity
-              onPress={() => setGesundheitsmanager(!gesundheitsmanager)}
-            >
-              <ArticleSubHeader>
-                Betriebliche/r Gesundheits- manager/in ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {gesundheitsmanager && <Gesundheitsmanager />}
-
-            <TouchableOpacity onPress={() => setBiologe(!biologe)}>
-              <ArticleSubHeader>Biologe/in M.Sc. ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {biologe && <Biologie />}
-
-            <TouchableOpacity
-              onPress={() => setBlingenpaedagoge(!blindenpaedagoge)}
-            >
-              <ArticleSubHeader>Blindenpädagog*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {blindenpaedagoge && <Blindenpädagoge />}
-
-            <TouchableOpacity onPress={() => setBuchbinder(!buchbinder)}>
-              <ArticleSubHeader>Buchbinder*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {buchbinder && <Buchbinder />}
-
-            <TouchableOpacity onPress={() => setClown(!clown)}>
-              <ArticleSubHeader>Clown ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {clown && <Clown />}
-
-            <TouchableOpacity onPress={() => setCruise(!cruise)}>
-              <ArticleSubHeader>Cruise Tourism Manager*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {cruise && <Cruise />}
-
-            <TouchableOpacity onPress={() => setErnaehrung(!ernaehrung)}>
-              <ArticleSubHeader>Ernährungsberatung ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {ernaehrung && <Ernaehrungsberatung />}
-
-            <TouchableOpacity onPress={() => setEurythmist(!eurythmist)}>
-              <ArticleSubHeader>EurythmistIn ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {eurythmist && <Eurythmist />}
-
-            <TouchableOpacity onPress={() => setErzieher(!erzieher)}>
-              <ArticleSubHeader>
-                Erzieher*in sowie Facherzieher*in ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {erzieher && <Erzieher />}
-
-            <TouchableOpacity onPress={() => setGoethe(!goethe)}>
-              <ArticleSubHeader>
-                Fach- und Führungskraft beim Goethe-Institut ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {goethe && <Goethe />}
-
-            <TouchableOpacity onPress={() => setFreizeit(!freizeit)}>
-              <ArticleSubHeader>Freizeitwissenschaftler*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {freizeit && <Freizeit />}
-
-            <TouchableOpacity
-              onPress={() => setGesundheitsfoerderung(!gesundheitsfoerderung)}
-            >
-              <ArticleSubHeader>
-                Berufe in der Gesundheitsförderung ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {gesundheitsfoerderung && <Gesundheitsfoerderung />}
-
-            <TouchableOpacity onPress={() => setHoerakustiker(!hoerakustiker)}>
-              <ArticleSubHeader>Hörakustiker*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {hoerakustiker && <Hoerakustiker />}
-
-            <TouchableOpacity
-              onPress={() => setHoergeraeteakustiker(!hoergeraeteaktustiker)}
-            >
-              <ArticleSubHeader>Hörgeräteakustiker*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {hoergeraeteaktustiker && <Hoergeraeteaktustiker />}
-
-            <TouchableOpacity onPress={() => setKosmetik(!kosmetik)}>
-              <ArticleSubHeader>
-                Kosmetik, Maskenbild, Tätowierer*in ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {kosmetik && <Kosmetik />}
-
-            <TouchableOpacity
-              onPress={() => setKulturvermittler(!kulturvermittler)}
-            >
-              <ArticleSubHeader>
-                Kultur- und Kunstvermittler*in ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {kulturvermittler && <Kulturvermittler />}
-
-            <TouchableOpacity onPress={() => setKunstgeragoge(!kunstgeragoge)}>
-              <ArticleSubHeader>Kunstgeragog*Innen ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {kunstgeragoge && <Kunstgeragoge />}
-
-            <TouchableOpacity onPress={() => setLehrer(!lehrer)}>
-              <ArticleSubHeader>
-                Lehrer*in an staatlichen Schulen ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {lehrer && <Lehrer />}
-
-            <TouchableOpacity onPress={() => setLogopaede(!logopaede)}>
-              <ArticleSubHeader>Logopäde*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {logopaede && <Logopaede />}
-
-            <TouchableOpacity onPress={() => setLuftverkehr(!luftverkehr)}>
-              <ArticleSubHeader>Luftverkehrskaufleute ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {luftverkehr && <Luftverkehr />}
-
-            <TouchableOpacity
-              onPress={() => setMediengestalter(!mediengestalter)}
-            >
-              <ArticleSubHeader>
-                Mediengestalter_in digital und print bzw. Webdesign ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {mediengestalter && <Mediengestalter />}
-
-            <TouchableOpacity onPress={() => setOsteopathie(!osteopathie)}>
-              <ArticleSubHeader>Osteopathie ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {osteopathie && <Osteopathie />}
-
-            <TouchableOpacity onPress={() => setPTA(!pta)}>
-              <ArticleSubHeader>
-                Pharmazeutisch-technischen Assistentin (PTA) ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {pta && <PTA />}
-
-            <TouchableOpacity
-              onPress={() => setRaumausstatter(!raumausstatter)}
-            >
-              <ArticleSubHeader>Raumausstatter*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {raumausstatter && <Raumausstatter />}
-
-            <TouchableOpacity onPress={() => setReiseleiter(!reiseleiter)}>
-              <ArticleSubHeader>Reiseleiter*in ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {reiseleiter && <Reiseleiter />}
-
-            <TouchableOpacity
-              onPress={() => setSozialeArbeitBA(!sozialeArbeitBA)}
-            >
-              <ArticleSubHeader>Soziale Arbeit BA ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {sozialeArbeitBA && <SozialeArbeitBA />}
-
-            <TouchableOpacity
-              onPress={() => setSozialeArbeitStudium(!sozialeArbeitStudium)}
-            >
-              <ArticleSubHeader>Studium Soziale Arbeit ▽</ArticleSubHeader>
-            </TouchableOpacity>
-            {sozialeArbeitStudium && <SozialeArbeitStudium />}
-
-            <TouchableOpacity
-              onPress={() =>
-                setSozialversicherungsangestellter(
-                  !sozialversicherungsangestellter
-                )
-              }
-            >
-              <ArticleSubHeader>
-                Sozialversicherungs- fachangestellte*r ▽
-              </ArticleSubHeader>
-            </TouchableOpacity>
-            {sozialversicherungsangestellter && (
-              <Sozialversicherungsangestellter />
+            {bekleidungstechniker && (
+              <Bekleidungstechniker
+                close={() => setBekleidungstechniker(false)}
+              />
             )}
 
-            <TouchableOpacity onPress={() => setSportkaufmann(!sportkaufmann)}>
-              <ArticleSubHeader>
-                Sport- und Fitnesskaufmann/Sport- und Fitnesskauffrau ▽
-              </ArticleSubHeader>
+            <TouchableOpacity onPress={() => setGesundheitsmanager(true)}>
+              {!gesundheitsmanager && (
+                <ArticleSubHeader>
+                  Betriebliche/r Gesundheits- manager/in ▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {sportkaufmann && <Sportkaufmann />}
+            {gesundheitsmanager && (
+              <Gesundheitsmanager close={() => setGesundheitsmanager(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setBiologe(true)}>
+              {!biologe && (
+                <ArticleSubHeader>Biologe/in M.Sc. ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {biologe && <Biologie close={() => setBiologe(false)} />}
+
+            <TouchableOpacity onPress={() => setBlingenpaedagoge(true)}>
+              {!blindenpaedagoge && (
+                <ArticleSubHeader>Blindenpädagog*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {blindenpaedagoge && (
+              <Blindenpädagoge close={() => setBlingenpaedagoge(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setBuchbinder(true)}>
+              {!buchbinder && (
+                <ArticleSubHeader>Buchbinder*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {buchbinder && <Buchbinder close={() => setBuchbinder(false)} />}
+
+            <TouchableOpacity onPress={() => setClown(true)}>
+              {!clown && <ArticleSubHeader>Clown ▽</ArticleSubHeader>}
+            </TouchableOpacity>
+            {clown && <Clown close={() => setClown(false)} />}
+
+            <TouchableOpacity onPress={() => setCruise(true)}>
+              {!cruise && (
+                <ArticleSubHeader>Cruise Tourism Manager*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {cruise && <Cruise close={() => setCruise(false)} />}
+
+            <TouchableOpacity onPress={() => setErnaehrung(true)}>
+              {!ernaehrung && (
+                <ArticleSubHeader>Ernährungsberatung ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {ernaehrung && (
+              <Ernaehrungsberatung close={() => setErnaehrung(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setEurythmist(true)}>
+              {eurythmist && (
+                <ArticleSubHeader>EurythmistIn ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {eurythmist && <Eurythmist close={() => setEurythmist(false)} />}
+
+            <TouchableOpacity onPress={() => setErzieher(true)}>
+              {!erzieher && (
+                <ArticleSubHeader>
+                  Erzieher*in sowie Facherzieher*in ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {erzieher && <Erzieher close={() => setErzieher(false)} />}
+
+            <TouchableOpacity onPress={() => setGoethe(true)}>
+              {!goethe && (
+                <ArticleSubHeader>
+                  Fach- und Führungskraft beim Goethe-Institut ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {goethe && <Goethe close={() => setGoethe(false)} />}
+
+            <TouchableOpacity onPress={() => setFreizeit(true)}>
+              {!freizeit && (
+                <ArticleSubHeader>
+                  Freizeitwissenschaftler*in ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {freizeit && <Freizeit close={() => setFreizeit(false)} />}
+
+            <TouchableOpacity onPress={() => setGesundheitsfoerderung(true)}>
+              {!gesundheitsfoerderung && (
+                <ArticleSubHeader>
+                  Berufe in der Gesundheitsförderung ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {gesundheitsfoerderung && (
+              <Gesundheitsfoerderung
+                close={() => setGesundheitsfoerderung(false)}
+              />
+            )}
+
+            <TouchableOpacity onPress={() => setHoerakustiker(true)}>
+              {!hoerakustiker && (
+                <ArticleSubHeader>Hörakustiker*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {hoerakustiker && (
+              <Hoerakustiker close={() => setHoerakustiker(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setHoergeraeteakustiker(true)}>
+              {!hoergeraeteaktustiker && (
+                <ArticleSubHeader>Hörgeräteakustiker*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {hoergeraeteaktustiker && (
+              <Hoergeraeteaktustiker
+                close={() => setHoergeraeteakustiker(false)}
+              />
+            )}
+
+            <TouchableOpacity onPress={() => setKosmetik(true)}>
+              {!kosmetik && (
+                <ArticleSubHeader>
+                  Kosmetik, Maskenbild, Tätowierer*in ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {kosmetik && <Kosmetik close={() => setKosmetik(false)} />}
+
+            <TouchableOpacity onPress={() => setKulturvermittler(true)}>
+              {!kulturvermittler && (
+                <ArticleSubHeader>
+                  Kultur- und Kunstvermittler*in ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {kulturvermittler && (
+              <Kulturvermittler close={() => setKulturvermittler(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setKunstgeragoge(true)}>
+              {!kunstgeragoge && (
+                <ArticleSubHeader>Kunstgeragog*Innen ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {kunstgeragoge && (
+              <Kunstgeragoge close={() => setKunstgeragoge(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setLehrer(true)}>
+              {!lehrer && (
+                <ArticleSubHeader>
+                  Lehrer*in an staatlichen Schulen ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {lehrer && <Lehrer close={() => setLehrer(false)} />}
+
+            <TouchableOpacity onPress={() => setLogopaede(true)}>
+              {!logopaede && <ArticleSubHeader>Logopäde*in ▽</ArticleSubHeader>}
+            </TouchableOpacity>
+            {logopaede && <Logopaede close={() => setLogopaede(false)} />}
+
+            <TouchableOpacity onPress={() => setLuftverkehr(true)}>
+              {luftverkehr && (
+                <ArticleSubHeader>Luftverkehrskaufleute ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {luftverkehr && <Luftverkehr close={() => setLuftverkehr(false)} />}
+
+            <TouchableOpacity onPress={() => setMediengestalter(true)}>
+              {!mediengestalter && (
+                <ArticleSubHeader>
+                  Mediengestalter_in digital und print bzw. Webdesign ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {mediengestalter && (
+              <Mediengestalter close={() => setMediengestalter(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setOsteopathie(true)}>
+              {!osteopathie && (
+                <ArticleSubHeader>Osteopathie ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {osteopathie && <Osteopathie close={() => setOsteopathie(false)} />}
+
+            <TouchableOpacity onPress={() => setPTA(true)}>
+              {!pta && (
+                <ArticleSubHeader>
+                  Pharmazeutisch-technischen Assistentin (PTA) ▽
+                </ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {pta && <PTA close={() => setPTA(false)} />}
+
+            <TouchableOpacity onPress={() => setRaumausstatter(true)}>
+              {!raumausstatter && (
+                <ArticleSubHeader>Raumausstatter*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {raumausstatter && (
+              <Raumausstatter close={() => setRaumausstatter(true)} />
+            )}
+
+            <TouchableOpacity onPress={() => setReiseleiter(true)}>
+              {!reiseleiter && (
+                <ArticleSubHeader>Reiseleiter*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {reiseleiter && <Reiseleiter close={() => setReiseleiter(false)} />}
+
+            <TouchableOpacity onPress={() => setSozialeArbeitBA(true)}>
+              {!sozialeArbeitBA && (
+                <ArticleSubHeader>Soziale Arbeit BA ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {sozialeArbeitBA && (
+              <SozialeArbeitBA close={() => setSozialeArbeitBA(false)} />
+            )}
+
+            <TouchableOpacity onPress={() => setSozialeArbeitStudium(true)}>
+              {!sozialeArbeitStudium && (
+                <ArticleSubHeader>Studium Soziale Arbeit ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {sozialeArbeitStudium && (
+              <SozialeArbeitStudium
+                close={() => setSozialeArbeitStudium(false)}
+              />
+            )}
 
             <TouchableOpacity
-              onPress={() => setVeranstaltungstechnik(!veranstaltungstechnik)}
+              onPress={() => setSozialversicherungsangestellter(true)}
             >
-              <ArticleSubHeader>
-                Theater- bzw. Veranstaltungstechnik ▽
-              </ArticleSubHeader>
+              {!sozialversicherungsangestellter && (
+                <ArticleSubHeader>
+                  Sozialversicherungs- fachangestellte*r ▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {veranstaltungstechnik && <Veranstaltungstechnik />}
+            {sozialversicherungsangestellter && (
+              <Sozialversicherungsangestellter
+                close={() => setSozialversicherungsangestellter(false)}
+              />
+            )}
 
-            <TouchableOpacity
-              onPress={() => setTierphysiotherapie(!tierphysiotherapie)}
-            >
-              <ArticleSubHeader>Tierphysiotherapie ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setSportkaufmann(true)}>
+              {!sportkaufmann && (
+                <ArticleSubHeader>
+                  Sport- und Fitnesskaufmann/Sport- und Fitnesskauffrau ▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {tierphysiotherapie && <Tierphysiotherapie />}
+            {sportkaufmann && (
+              <Sportkaufmann close={() => setSportkaufmann(false)} />
+            )}
 
-            <TouchableOpacity onPress={() => setTierwirt(!tierwirt)}>
-              <ArticleSubHeader>Tierwirt*in ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setVeranstaltungstechnik(true)}>
+              {!veranstaltungstechnik && (
+                <ArticleSubHeader>
+                  Theater- bzw. Veranstaltungstechnik ▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {tierwirt && <Tierwirt />}
+            {veranstaltungstechnik && (
+              <Veranstaltungstechnik
+                close={() => setVeranstaltungstechnik(false)}
+              />
+            )}
 
-            <TouchableOpacity onPress={() => setTrainee(!trainee)}>
-              <ArticleSubHeader>Trainee ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setTierphysiotherapie(true)}>
+              {!tierphysiotherapie && (
+                <ArticleSubHeader>Tierphysiotherapie ▽</ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {trainee && <Trainee />}
+            {tierphysiotherapie && (
+              <Tierphysiotherapie close={() => setTierphysiotherapie(false)} />
+            )}
 
-            <TouchableOpacity
-              onPress={() => setVersicherungsmakler(!versicherungsmakler)}
-            >
-              <ArticleSubHeader>Versicherungsmakler*in ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setTierwirt(true)}>
+              {!tierwirt && <ArticleSubHeader>Tierwirt*in ▽</ArticleSubHeader>}
             </TouchableOpacity>
-            {versicherungsmakler && <Versicherungsmakler />}
+            {tierwirt && <Tierwirt close={() => setTierwirt(false)} />}
 
-            <TouchableOpacity
-              onPress={() => setZirkuspaedagoge(!zirkuspaedagoge)}
-            >
-              <ArticleSubHeader>Zirkuspädagog*in ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setTrainee(true)}>
+              {!trainee && <ArticleSubHeader>Trainee ▽</ArticleSubHeader>}
             </TouchableOpacity>
-            {zirkuspaedagoge && <Zirkuspaedagoge />}
+            {trainee && <Trainee close={() => setTrainee(false)} />}
+
+            <TouchableOpacity onPress={() => setVersicherungsmakler(true)}>
+              {!versicherungsmakler && (
+                <ArticleSubHeader>Versicherungsmakler*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {versicherungsmakler && (
+              <Versicherungsmakler
+                close={() => setVersicherungsmakler(false)}
+              />
+            )}
+
+            <TouchableOpacity onPress={() => setZirkuspaedagoge(true)}>
+              {!zirkuspaedagoge && (
+                <ArticleSubHeader>Zirkuspädagog*in ▽</ArticleSubHeader>
+              )}
+            </TouchableOpacity>
+            {zirkuspaedagoge && (
+              <Zirkuspaedagoge close={() => setZirkuspaedagoge(false)} />
+            )}
           </Article>
         </View>
       </ScrollableScreenContainer>
