@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/appLogo.png",
     "splash": {
-      "image": "./assets/appSplash_theFall_blue.png",
+      "image": "./assets/AppSplash_theFall3.png",
       "resizeMode": "cover",
       "backgroundColor": "#121e2a"
     },
@@ -27,6 +27,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "A few more updates"
+    "description": "More bug fixes"
   }
 }

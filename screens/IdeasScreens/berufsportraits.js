@@ -98,7 +98,6 @@ const Berufsportraits = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <CloseButton close={props.close} />
         <ArticleHeader>Berufsportraits</ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/ideasIllustrations/PictureFrame.png')}
@@ -161,30 +160,38 @@ const Berufsportraits = (props) => {
           </Paragraph>
 
           <Article>
-            <TouchableOpacity
-              onPress={() => setAugenoptikerIn(!augenoptikerIn)}
-            >
+            <TouchableOpacity onPress={() => setAugenoptikerIn(true)}>
               {!augenoptikerIn && (
                 <ArticleSubHeader>AugenoptikerIn ▽</ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {augenoptikerIn && <Augenoptiker></Augenoptiker>}
+            {augenoptikerIn && (
+              <Augenoptiker
+                close={() => setAugenoptikerIn(false)}
+              ></Augenoptiker>
+            )}
 
-            <TouchableOpacity
-              onPress={() => setAutomobilverkäuferin(!automobilverkäuferIn)}
-            >
-              <ArticleSubHeader>AutomobilverkäuferIn ▽</ArticleSubHeader>
+            <TouchableOpacity onPress={() => setAutomobilverkäuferin(true)}>
+              {!automobilverkäuferIn && (
+                <ArticleSubHeader>Automobilverkäufer*In ▽</ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {automobilverkäuferIn && <Automobilverkäufer />}
+            {automobilverkäuferIn && (
+              <Automobilverkäufer
+                close={() => setAutomobilverkäuferin(false)}
+              />
+            )}
 
-            <TouchableOpacity
-              onPress={() => setAuswertigesAmt(!auswertigesAmt)}
-            >
-              <ArticleSubHeader>
-                Beamte*r im Mittleren Dienst des Auswärtigen Amtes ▽
-              </ArticleSubHeader>
+            <TouchableOpacity onPress={() => setAuswertigesAmt(true)}>
+              {!auswertigesAmt && (
+                <ArticleSubHeader>
+                  Beamte*r im Mittleren Dienst des Auswärtigen Amtes ▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {auswertigesAmt && <AuswertigesAmt />}
+            {auswertigesAmt && (
+              <AuswertigesAmt close={() => setAuswertigesAmt(false)} />
+            )}
 
             <TouchableOpacity
               onPress={() => setBekleidungstechniker(!bekleidungstechniker)}
@@ -428,6 +435,7 @@ const Berufsportraits = (props) => {
           </Article>
         </View>
       </ScrollableScreenContainer>
+      <CloseButton close={props.close} />
     </Modal>
   );
 };

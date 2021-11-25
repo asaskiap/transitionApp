@@ -1,18 +1,20 @@
 import React from 'react';
 import Paragraph from '../articleComponents/paragraph';
 import Link from '../articleComponents/link';
-import {Linking, Touchable, TouchableOpacity} from 'react-native';
+import {Linking, TouchableOpacity} from 'react-native';
 import {List, ListItem} from '../articleComponents/list';
 import ArticleSubHeader from '../articleComponents/articleSubHeader';
 import Quote from '../../components/articleComponents/quote';
 
 import {sendEmail} from '../../utilities/sendEmail';
-import {exp} from 'react-native-reanimated';
 
 export const Augenoptiker = (props) => {
   return (
     <>
-      <ArticleSubHeader>AugenoptikerIn △</ArticleSubHeader>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>AugenoptikerIn △</ArticleSubHeader>
+      </TouchableOpacity>
+
       <Paragraph>
         Moderne Brillen sind schon lange nicht mehr nur Sehhilfen, sie sind
         Accessoires, die den Typ ihrer Träger unterstreichen und gut zu deren
@@ -61,6 +63,10 @@ export const Augenoptiker = (props) => {
 export const Automobilverkäufer = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>Automobilverkäufer*In △</ArticleSubHeader>
+      </TouchableOpacity>
+
       <Paragraph>
         Berufliche Zukunft im Vertrieb (z.B. in der Automobilindustrie)
       </Paragraph>
@@ -156,6 +162,12 @@ export const Automobilverkäufer = (props) => {
 export const AuswertigesAmt = (props) => {
   return (
     <>
+      <TouchableOpacity onPress={props.close}>
+        <ArticleSubHeader>
+          Beamte*r im Mittleren Dienst des Auswärtigen Amtes △
+        </ArticleSubHeader>
+      </TouchableOpacity>
+
       <Paragraph>
         Für alle Tänzer*innen in Transition eine Option, die:
       </Paragraph>

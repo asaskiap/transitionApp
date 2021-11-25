@@ -4,6 +4,7 @@ import {
   StyleSheet,
   View,
   Dimensions,
+  Image,
   ImageBackground
 } from 'react-native';
 
@@ -18,6 +19,7 @@ import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelf
 import colors from '../assets/colors';
 
 const windowHeight = Dimensions.get('window').height;
+const windowWidth = Dimensions.get('window').width;
 
 const LandingPage = (props) => {
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -53,8 +55,18 @@ const LandingPage = (props) => {
             close={closeWomit}
           ></WomitHelfen>
 
-          <LandingPageHeader>Stiftung Tanz</LandingPageHeader>
-
+          {/* <LandingPageHeader>Stiftung Tanz</LandingPageHeader> */}
+          <Image
+            source={require('../assets/StiftungFullLogo_transparent.png')}
+            style={{
+              maxWidth: windowWidth,
+              minHeight: 60,
+              maxHeight: 100,
+              resizeMode: 'contain',
+              position: 'absolute',
+              top: 40
+            }}
+          ></Image>
           <View style={styles.buttonContainer}>
             <LandingPageButton onPress={() => setDisplayWer(true)}>
               Wer sind wir?
