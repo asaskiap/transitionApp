@@ -34,7 +34,7 @@ const WomitHelfen = (props) => {
         <Paragraph
           style={{textAlign: 'center', fontSize: 20, marginBottom: -10}}
         >
-          Die Stiftung TANZ bietet professionellen Tänzern:
+          Die Stiftung TANZ bietet professionellen TänzernInnen:
         </Paragraph>
         <List>
           <ListItem>

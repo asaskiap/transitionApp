@@ -5,19 +5,18 @@ import {
   View,
   Dimensions,
   Image,
-  ImageBackground
+  ImageBackground,
+  TouchableOpacity,
+  Text
 } from 'react-native';
 
-import {Ionicons} from '@expo/vector-icons';
-
 import Menu from '../components/menu';
-import LandingPageButton from '../components/buttons/landingPageButton';
-import LandingPageHeader from '../components/landingPageComponents/landingPageHeader';
 import WerSindWir from '../components/landingPageComponents/WerSindWir';
 import WasMachenWir from '../components/landingPageComponents/WasMachenWir';
 import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelfen';
 import colors from '../assets/colors';
-
+import LandingPageDeutsch from '../components/landingPageComponents/landingPageDeutsch';
+import LandingPageEnglish from '../components/landingPageComponents/landingPageEnglish';
 const windowHeight = Dimensions.get('window').height;
 const windowWidth = Dimensions.get('window').width;
 
@@ -26,6 +25,7 @@ const LandingPage = (props) => {
   const [displayWer, setDisplayWer] = useState(false);
   const [displayWas, setDisplayWas] = useState(false);
   const [displayWomit, setDisplayWomit] = useState(false);
+  const [english, setEnglish] = useState(false);
 
   const closeMenu = () => {
     setDisplayMenu(false);
@@ -55,7 +55,6 @@ const LandingPage = (props) => {
             close={closeWomit}
           ></WomitHelfen>
 
-          {/* <LandingPageHeader>Stiftung Tanz</LandingPageHeader> */}
           <Image
             source={require('../assets/StiftungFullLogo_transparent.png')}
             style={{
@@ -67,42 +66,26 @@ const LandingPage = (props) => {
               top: 40
             }}
           ></Image>
-          <View style={styles.buttonContainer}>
-            <LandingPageButton onPress={() => setDisplayWer(true)}>
-              Wer sind wir?
-            </LandingPageButton>
-            <LandingPageButton onPress={() => setDisplayWas(true)}>
-              Was machen wir?
-            </LandingPageButton>
-            <LandingPageButton onPress={() => setDisplayWomit(true)}>
-              Wobei können wir helfen?
-            </LandingPageButton>
-
-            <LandingPageButton
-              backgroundStyle={{
-                backgroundColor: colors.pieOrangeSemiTransparant,
-                marginTop: 30
-              }}
-              onPress={() => props.navigation.navigate('Transition')}
-            >
-              Tanz! Und Danach?
-            </LandingPageButton>
-
-            <LandingPageButton
-              backgroundStyle={{
-                backgroundColor: colors.primarySemiTransparent,
-                paddingVertical: 3,
-                paddingHorizontal: 20,
-                alignSelf: 'center'
-              }}
-              onPress={() => setDisplayMenu(true)}
-            >
-              <Ionicons
-                name="menu"
-                size={windowHeight > 600 ? 28 : 24}
-                color={colors.textLight}
-              />
-            </LandingPageButton>
+          {!english && <LandingPageDeutsch></LandingPageDeutsch>}
+          {english && <LandingPageEnglish></LandingPageEnglish>}
+          <View
+            style={{
+              position: 'absolute',
+              bottom: 20,
+              left: 20
+            }}
+          >
+            <TouchableOpacity onPress={() => setEnglish(!english)}>
+              <Text
+                style={{
+                  color: colors.piePink,
+                  fontSize: 24,
+                  fontWeight: 'bold'
+                }}
+              >
+                {!english ? 'EN' : 'DE'}
+              </Text>
+            </TouchableOpacity>
           </View>
         </View>
       </ImageBackground>
@@ -124,17 +107,12 @@ const styles = StyleSheet.create({
   fullScreenContainer: {
     flex: 1,
     minHeight: windowHeight,
-    paddingBottom: 70,
+    // paddingBottom: 70,
     justifyContent: 'center',
     alignItems: 'center'
   },
   backgroundImage: {
     flex: 1,
     resizeMode: 'contain'
-  },
-
-  buttonContainer: {
-    marginTop: windowHeight > 600 ? 400 : 290,
-    marginBottom: windowHeight > 600 ? 20 : 10
   }
 });

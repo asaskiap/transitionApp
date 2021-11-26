@@ -58,16 +58,14 @@ const Abschied = (props) => {
             bereit für den Neuanfang.
           </Paragraph>
         </Article>
-        {/* <ArticleImage
-          image={require('../../assets/images/psychologyImages/leanOnMe.jpg')}
-        ></ArticleImage> */}
+
         <Article>
           <ArticleSubHeader>
-            Abschied und Neubeginn im Leben eines Tänzers
+            Abschied und Neubeginn im Leben eines/er Tänzers*in
           </ArticleSubHeader>
           <Paragraph>
             Der Übergang in einem Leben von der einen Phase in eine andere ist
-            nie leicht. Aber bei einem Tänzer*in können sich da große,
+            nie leicht. Aber bei einem/er Tänzer*in können sich da große,
             existentielle Sinnfragen ergeben: Wer bin ich eigentlich, wenn ich
             nicht tanze? Kann ich überhaupt etwas anderes als tanzen? Gibt es
             überhaupt irgendetwas, das mich so ausfüllen kann wie das Tanzen?
@@ -80,12 +78,12 @@ const Abschied = (props) => {
             zuerst diesen Fragen gewidmet. Um den Kopf überhaupt frei zu haben
             für etwas Neues, etwas Anderes, etwas Unbekanntes, ist der Prozess
             des Abschiedes nehmen und der Auseinandersetzung mit der eigenen
-            (Tänzer-) Identität sehr wichtig. Denn erst wenn man sich mental von
-            einer alten Liebe verabschieden konnte und mit dieser emotional
-            abschließen kann, erst dann eröffnen sich im eigenen Sichtfeld
-            überhaupt die Möglichkeiten für eine neue Liebe, für einen neuen
-            Weg, für eine neuen Lebensabschnitt. Daher geht es am Anfang meist
-            um Abschied, Trauer, Loslösen und sich öffnen können für etwas
+            (Tänzer*innne-) Identität sehr wichtig. Denn erst wenn man sich
+            mental von einer alten Liebe verabschieden konnte und mit dieser
+            emotional abschließen kann, erst dann eröffnen sich im eigenen
+            Sichtfeld überhaupt die Möglichkeiten für eine neue Liebe, für einen
+            neuen Weg, für eine neuen Lebensabschnitt. Daher geht es am Anfang
+            meist um Abschied, Trauer, Loslösen und sich öffnen können für etwas
             Neues.
           </Paragraph>
         </Article>

@@ -181,10 +181,10 @@ const Bildungsgutschein = (props) => {
             andere Finanzierungsmöglichkeiten wie z.B. Ausbildungskredite bei
             der KfW oder die Abfindung von der VddB (Bayerische
             Versorgungskammer – Versorgungsanstalt der Deutschen Bühnen) bei
-            Beendigung der aktiven Tänzerlaufbahn vor dem 40. Lebensjahr und
-            vorheriger Einzahlung von mindestens 60 Monaten (von uns nur für den
-            äußersten Notfall empfohlen, da nach der Zahlung der Abfindung ein
-            Anspruch auf Altersruhegeld zusätzlich zur gesetzlichen
+            Beendigung der aktiven TänzerInnenlaufbahn vor dem 40. Lebensjahr
+            und vorheriger Einzahlung von mindestens 60 Monaten (von uns nur für
+            den äußersten Notfall empfohlen, da nach der Zahlung der Abfindung
+            ein Anspruch auf Altersruhegeld zusätzlich zur gesetzlichen
             Rentenversicherung im Alter entfällt).
           </Paragraph>
           <ArticleSubHeader>

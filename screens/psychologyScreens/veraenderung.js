@@ -37,7 +37,7 @@ const Veraenderung = (props) => {
             Sucht man nach typischen Verbindungen, die sich zum Wort
             „Veränderung“ ergeben, stößt man schnell auf „einschneidend“,
             „dramatisch“, „tiefgreifend“ und „radikal“. Diese Begriffe können
-            abschrecken. Betrachtet man den Transitionprozess von Tänzer*innen,
+            abschrecken. Betrachtet man den Transitionprozess von TänzerInnen,
             sind sie jedoch in den meisten Fällen auch zutreffend. Gleichzeitig
             findet man aber auch auf Worte wie „notwendig“, „positiv“ und
             „gestalten“. Da eine aktive Tanzkarriere nicht ewig dauern kann, ist

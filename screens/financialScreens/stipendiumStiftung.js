@@ -34,11 +34,11 @@ const StipendiumStiftung = (props) => {
             werden. Wer einen Antrag stellen will, sollte sich zuvor von der
             Geschäftsstelle der Stiftung zu seiner individuellen Transition
             beraten lassen- telefonisch, persönlich oder per E-mail. Einen
-            Antrag stellen können alle professionellen Tänzer/-innen, die eine
+            Antrag stellen können alle professionellen TänzerInnen, die eine
             mind. 7 jährige Berufstätigkeit als festangestellter/-e oder
-            freischaffender/e Tänzer/-innen nachweisen können. Davon müssen
-            mind. 5 Jahre Berufstätigkeit in Deutschland nachgewiesen werden.
-            Nicht EU- oder Schengen- Bürger benötigen eine unbefristete
+            freischaffender/e TänzerInnen nachweisen können. Davon müssen mind.
+            5 Jahre Berufstätigkeit in Deutschland nachgewiesen werden. Nicht
+            EU- oder Schengen- Bürger benötigen eine unbefristete
             Aufenthaltsgenehmigung. Bewerbungsvoraussetzung für eine
             individuelle Transition-Förderung ist eine persönliche
             Transition-Beratung durch die Stiftung TANZ oder die Teilnahme an

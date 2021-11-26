@@ -25,7 +25,7 @@ const Unsicherheiten = (props) => {
             Kontext einer Tanzkarriere und deren Ende kann diese Veränderung
             sehr groß und weitreichend sein, da der Tanzberuf nicht nur einen
             Job darstellt, sondern vollkommene Leidenschaft und Hingabe
-            bedeutet. Tänzer*innen werden nicht nur aus ihrem gewohnten Umfeld
+            bedeutet. TänzerInnen werden nicht nur aus ihrem gewohnten Umfeld
             gerissen. Sie sind auch damit konfrontiert, dass sie den Beruf, den
             sie seit vielen Jahren – oft sogar Jahrzehnten – so lieben, aufgeben
             müssen. Da der Fokus während dieser Zeit oftmals einzig und allein

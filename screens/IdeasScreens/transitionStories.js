@@ -121,7 +121,7 @@ class TransitionStories extends React.Component {
           quote={
             '... Elisabeth Exner-Grave, eine Tanzmedizinerin. Sie ist Mitschuld daran, dass er nun selbst Mediziner werden will. '
           }
-          image={require('../../assets/images/portrait1.jpg')}
+          image={require('../../assets/images/avatarMale.jpg')}
           title={'Medizin Studium'}
           name={'Tobias Almasi'}
           onPress={() => this.setState({storyTobias: true})}
@@ -131,7 +131,7 @@ class TransitionStories extends React.Component {
           quote={
             'Manchmal fühlte sich diese Tanzwelt an, als würde man in einer Blase leben. Ich wußte immer, ich möchte auch einmal in der richtigen Welt arbeiten'
           }
-          image={require('../../assets/images/portrait4.jpg')}
+          image={require('../../assets/images/bramKoch.jpg')}
           title={'Heilerziehungspfleger '}
           name={'Bram Koch'}
           onPress={() => this.setState({storyBram: true})}
@@ -139,7 +139,7 @@ class TransitionStories extends React.Component {
 
         <SingleStory
           quote={'lernen zu dürfen ohne sich selbst dabei eine Blöße zu geben'}
-          image={require('../../assets/images/portrait5.jpg')}
+          image={require('../../assets/images/cynthiaBarcomi.jpg')}
           title={'Konditorin'}
           name={'Cynthia Barcomi'}
           onPress={() => this.setState({storyCynthia: true})}
@@ -148,7 +148,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "Eine harte, eine ehrliche Entscheidung“, die er bis heute nicht bereut. „Ich habe sie alleine getroffen, niemand hat mich dazu gedrängt.“'
           }
-          image={require('../../assets/images/portrait6.jpg')}
+          image={require('../../assets/images/peterBoch.jpg')}
           title={'Oberbürgermeister'}
           name={'Peter Boch'}
           onPress={() => this.setState({storyPeterBoch: true})}
@@ -157,7 +157,7 @@ class TransitionStories extends React.Component {
           quote={
             'Aus dem schüchternen Mädchen von einst ist eine selbstbewusste Frau mit ansteckend fröhlichem Lachen geworden, eine zweifache Mutter mit intakter Familie. Was beweist: Es gibt auch ein erfülltes Leben nach dem Tanz.'
           }
-          image={require('../../assets/images/portrait7.jpg')}
+          image={require('../../assets/images/brittFolk.jpeg')}
           title={'Physiotherapeutin'}
           name={'Britt Folk'}
           onPress={() => this.setState({storyBritt: true})}
@@ -166,7 +166,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "Im Studio entstehen die Kreationen aus Licht, Farbe, Idee, Komposition, ob Porträts oder Theaterplakate.“ '
           }
-          image={require('../../assets/images/portrait8.jpg')}
+          image={require('../../assets/images/yanRevazov.jpg')}
           title={'Fotograf'}
           name={'Yan Revazov'}
           onPress={() => this.setState({storyYan: true})}
@@ -175,7 +175,7 @@ class TransitionStories extends React.Component {
           quote={
             ' Offen, neugierig zu sein, rät er jungen Tänzern. Inzwischen sammelt er Kunst, Fotos, Malerei, Objekte, Collagen - und bleibt selbst neugierig, was die Zukunft noch so bringen mag.'
           }
-          image={require('../../assets/images/portrait9.jpg')}
+          image={require('../../assets/images/avatarMale.jpg')}
           title={'Aufnahmeleiter'}
           name={'Peter Ulbrich'}
           onPress={() => this.setState({storyPeterUlbrich: true})}
@@ -184,7 +184,7 @@ class TransitionStories extends React.Component {
           quote={
             '„Ich kann nur jeden Tänzer und jede Tänzerin ermutigen, entspannt und erhobenen Hauptes in die nächste Berufswelt hineinzugehen“ '
           }
-          image={require('../../assets/images/portrait10.jpg')}
+          image={require('../../assets/images/avatarMale.jpg')}
           title={'Lehrer'}
           name={'Sören Swart'}
           onPress={() => this.setState({storySoeren: true})}
@@ -193,7 +193,7 @@ class TransitionStories extends React.Component {
           quote={
             '"Ich wende sie an wie eine Choreografie, kann sie fließend verbinden" '
           }
-          image={require('../../assets/images/portrait11.jpg')}
+          image={require('../../assets/images/avatarFemale.jpg')}
           title={'Kosmetikerin'}
           name={'Alexandra Post'}
           onPress={() => this.setState({storyAlexandra: true})}
@@ -203,7 +203,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "In eine Rolle zu steigen, das hilft bei der Interpretation. Und bei der Kreativität" '
           }
-          image={require('../../assets/images/portrait.jpg')}
+          image={require('../../assets/images/avatarMale.jpg')}
           title={'Ich will in Berlin bleiben'}
           name={'Michael Fatura'}
           onPress={() => this.setState({storyMichal: true})}
@@ -212,7 +212,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "Das hält einen am Leben, sich selber neuen Situationen auszusetzen" '
           }
-          image={require('../../assets/images/portrait3.jpg')}
+          image={require('../../assets/images/avatarFemale.jpg')}
           title={'Immer auf der Suche'}
           name={'Luisa Sancho Escanero'}
           onPress={() => this.setState({storyLuisa: true})}
@@ -221,7 +221,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "Ein Osteopath ist nicht alleine, er hat immer ein Gegenüber" '
           }
-          image={require('../../assets/images/portrait2.jpg')}
+          image={require('../../assets/images/avatarMale.jpg')}
           title={'Versuchung'}
           name={'Hans-Georg Lenhart'}
           onPress={() => this.setState({storyLenhart: true})}

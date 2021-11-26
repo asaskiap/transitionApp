@@ -14,7 +14,7 @@ const TransitionStoryBritt = (props) => {
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
         <TransitionStoryModalHeader
-          image={require('../../../assets/images/portrait7.jpg')}
+          image={require('../../../assets/images/brittFolk.jpeg')}
           title={'Physiotherapeutin'}
         >
           Britt Folk

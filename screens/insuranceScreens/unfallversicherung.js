@@ -53,16 +53,16 @@ const Unfallversicherung = (props) => {
           </List>
           <Paragraph>
             Fazit: Im Anschluss an eine medizinische Rehabilitation stehen
-            Tänzern bei entsprechender medizinischer Begutachtung die Türen zum
-            Empfang von Leistungen zur Teilhabe offen. Das bedeutet im Klartext:
-            Tänzer mit Umschulungswunsch bzw. -vorhaben, die über einen vom
-            behandelnden Arzt gestellten Rehaantrag eine medizinische Reha von
-            der DRV bewilligt bekommen oder die Reha vom medizinischen Dienst
-            der Krankenkassen in Auftrag gegeben wird, sollten diese
+            TänzerInnen bei entsprechender medizinischer Begutachtung die Türen
+            zum Empfang von Leistungen zur Teilhabe offen. Das bedeutet im
+            Klartext: TänzerIn mit Umschulungswunsch bzw. -vorhaben, die über
+            einen vom behandelnden Arzt gestellten Rehaantrag eine medizinische
+            Reha von der DRV bewilligt bekommen oder die Reha vom medizinischen
+            Dienst der Krankenkassen in Auftrag gegeben wird, sollten diese
             in arbeitsunfähigem Zustand beginnen. So haben die Ärzte der
             Rehabilitationseinrichtung bei der abschließenden
-            sozialmedizinischen Beurteilung die Möglichkeit, den Beruf des
-            Tänzers künftig für nicht mehr leidensgerecht bzw. unter 3 h
+            sozialmedizinischen Beurteilung die Möglichkeit, den Beruf des/der
+            Tänzers/in künftig für nicht mehr leidensgerecht bzw. unter 3 h
             zumutbar zu beurteilen. Gleichzeitig werden im Entlassungsbericht
             Leistungen zur Teilhabe am Arbeitsleben angeregt, für die dann die
             DRV zuständig ist.

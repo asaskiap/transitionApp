@@ -57,14 +57,14 @@ const WerBindIch = (props) => {
             diesen neuen Lebensweg zu beschreiten. Denn der Wille, dieses
             „andere ich“ Wirklichkeit werden zu lassen, trägt jemanden durch
             diese Schwierigkeiten, die jede Veränderung mit sich bringt. Und das
-            ist das Wichtigste was ein/e Tänzer*in im Transition Prozess
+            ist das Wichtigste was ein/e TänzerIn im Transition Prozess
             erreichen kann, dass er oder sie eine eigene Vision für sich selbst
             und das eigene Leben entwickelt, eine Vision darüber wie das Leben
             aussehen soll und was einen glücklich machen wird. Denn das
-            Wunderbare an jedem/r einzelnen Tänzer*in ist, dass sie diesen
-            Willen etwas erreichen zu wollen und die nötige Disziplin auch einen
+            Wunderbare an jedem/r einzelnen TänzerIn ist, dass sie diesen Willen
+            etwas erreichen zu wollen und die nötige Disziplin auch einen
             schwierigen Weg dafür zu gehen, schon mitbringen, denn dies waren
-            die Eigenschaften die sie auf ihrem Weg zur Tänzer*in schon getragen
+            die Eigenschaften die sie auf ihrem Weg zur TänzerIn schon getragen
             haben, und die sie auch diesmal tragen werden.
           </Paragraph>
           <Paragraph style={{color: colors.accentDark}}>
