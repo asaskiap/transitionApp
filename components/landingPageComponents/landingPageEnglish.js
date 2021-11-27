@@ -25,9 +25,10 @@ const LandingPageEnglish = (props) => {
           backgroundColor: colors.primarySemiTransparent,
           paddingVertical: 3,
           paddingHorizontal: 20,
+          minWidth: '20%',
           alignSelf: 'center'
         }}
-        onPress={() => setDisplayMenu(true)}
+        onPress={() => props.setDisplayMenu()}
       >
         <Ionicons
           name="menu"

@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     backgroundColor: Colors.secondarySemiTransparent,
     borderRadius: 15,
-    marginVertical: 8
+    marginVertical: 8,
+    minWidth: '70%'
   },
   buttonText: {
     fontSize: windowHeight < 600 ? 16 : 22,

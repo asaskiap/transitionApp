@@ -29,6 +29,7 @@ const LandingPage = (props) => {
 
   const closeMenu = () => {
     setDisplayMenu(false);
+    setDisplayMenuEng(false);
   };
   const closeWer = () => {
     setDisplayWer(false);
@@ -47,7 +48,13 @@ const LandingPage = (props) => {
         style={styles.backgroundImage}
       >
         <View style={styles.fullScreenContainer}>
-          <Menu isVisible={displayMenu} close={closeMenu} {...props}></Menu>
+          <Menu
+            isVisible={displayMenu}
+            close={closeMenu}
+            english={english}
+            {...props}
+          ></Menu>
+
           <WerSindWir isVisible={displayWer} close={closeWer}></WerSindWir>
           <WasMachenWir isVisible={displayWas} close={closeWas}></WasMachenWir>
           <WomitHelfen
@@ -57,34 +64,24 @@ const LandingPage = (props) => {
 
           <Image
             source={require('../assets/StiftungFullLogo_transparent.png')}
-            style={{
-              maxWidth: windowWidth,
-              minHeight: 60,
-              maxHeight: 100,
-              resizeMode: 'contain',
-              position: 'absolute',
-              top: 40
-            }}
+            style={styles.logo}
           ></Image>
-          {!english && <LandingPageDeutsch></LandingPageDeutsch>}
-          {english && <LandingPageEnglish></LandingPageEnglish>}
-          <View
-            style={{
-              position: 'absolute',
-              bottom: 20,
-              left: 20
-            }}
-          >
+          {!english && (
+            <LandingPageDeutsch
+              setDisplayWer={() => setDisplayWer(true)}
+              setDisplayWas={() => setDisplayWas(true)}
+              setDisplayWomit={() => setDisplayWomit(true)}
+              setDisplayMenu={() => setDisplayMenu(true)}
+            ></LandingPageDeutsch>
+          )}
+          {english && (
+            <LandingPageEnglish
+              setDisplayMenu={() => setDisplayMenu(true)}
+            ></LandingPageEnglish>
+          )}
+          <View style={styles.langBtn}>
             <TouchableOpacity onPress={() => setEnglish(!english)}>
-              <Text
-                style={{
-                  color: colors.piePink,
-                  fontSize: 24,
-                  fontWeight: 'bold'
-                }}
-              >
-                {!english ? 'EN' : 'DE'}
-              </Text>
+              <Text style={styles.langBtnText}>{!english ? 'EN' : 'DE'}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -114,5 +111,23 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: 'contain'
+  },
+  logo: {
+    maxWidth: windowWidth,
+    minHeight: 60,
+    maxHeight: 100,
+    resizeMode: 'contain',
+    position: 'absolute',
+    top: 40
+  },
+  langBtn: {
+    position: 'absolute',
+    bottom: 20,
+    left: 20
+  },
+  langBtnText: {
+    color: colors.piePink,
+    fontSize: 24,
+    fontWeight: 'bold'
   }
 });

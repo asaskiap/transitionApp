@@ -11,13 +11,13 @@ const windowWidth = Dimensions.get('window').width;
 const LandingPageDeutsch = (props) => {
   return (
     <View style={styles.buttonContainer}>
-      <LandingPageButton onPress={() => setDisplayWer(true)}>
+      <LandingPageButton onPress={() => props.setDisplayWer()}>
         Wer sind wir?
       </LandingPageButton>
-      <LandingPageButton onPress={() => setDisplayWas(true)}>
+      <LandingPageButton onPress={() => props.setDisplayWas()}>
         Was machen wir?
       </LandingPageButton>
-      <LandingPageButton onPress={() => setDisplayWomit(true)}>
+      <LandingPageButton onPress={() => props.setDisplayWomit()}>
         Wobei können wir helfen?
       </LandingPageButton>
 
@@ -26,9 +26,10 @@ const LandingPageDeutsch = (props) => {
           backgroundColor: colors.primarySemiTransparent,
           paddingVertical: 3,
           paddingHorizontal: 20,
+          minWidth: '20%',
           alignSelf: 'center'
         }}
-        onPress={() => setDisplayMenu(true)}
+        onPress={() => props.setDisplayMenu()}
       >
         <Ionicons
           name="menu"
