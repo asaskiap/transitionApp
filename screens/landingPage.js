@@ -29,7 +29,6 @@ const LandingPage = (props) => {
 
   const closeMenu = () => {
     setDisplayMenu(false);
-    setDisplayMenuEng(false);
   };
   const closeWer = () => {
     setDisplayWer(false);

@@ -16,7 +16,9 @@ import ButtonSecondary from '../components/buttons/buttonSecondary';
 class Entscheidungsbaum extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Entscheidungsbaum',
+      headerTitle: navigation.state.params.eng
+        ? 'Decision Tree'
+        : 'Entscheidungsbaum',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -60,10 +62,19 @@ class Entscheidungsbaum extends React.Component {
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         />
-        <HeaderEB>Entscheidungsbaum</HeaderEB>
-        <SubheaderEB>Was brauche ich in meiner Situation?</SubheaderEB>
+        <HeaderEB>
+          {this.props.navigation.state.params.eng
+            ? 'Decision Tree'
+            : 'Entscheidungsbaum'}
+        </HeaderEB>
+        <SubheaderEB>
+          {this.props.navigation.state.params.eng
+            ? 'What do I need right now?'
+            : 'Was brauche ich in meiner Situation'}
+        </SubheaderEB>
 
         <ArticleImage
           image={require('./../assets/illustrations/entscheidungsbaumIllustrations/thinking.png')}
@@ -71,7 +82,7 @@ class Entscheidungsbaum extends React.Component {
         <ButtonSecondary
           onPress={() => this.props.navigation.navigate('EntscheidungsbaumGo')}
         >
-          Los Gehts!
+          {this.props.navigation.state.params.eng ? 'Start' : 'Los Gehts!'}
         </ButtonSecondary>
       </ScrollableScreenContainer>
     );

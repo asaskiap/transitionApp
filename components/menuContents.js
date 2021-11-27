@@ -4,7 +4,7 @@ import MenuPageButton from './buttons/menuPageButton';
 
 export const MenuContentsDe = (props) => {
   const navigateTo = (screen) => {
-    props.navigation.navigate(screen);
+    props.navigation.navigate(screen, {eng: false});
     props.close();
   };
 
@@ -46,7 +46,7 @@ export const MenuContentsDe = (props) => {
 
 export const MenuContentsEng = (props) => {
   const navigateTo = (screen) => {
-    props.navigation.navigate(screen);
+    props.navigation.navigate(screen, {eng: true});
     props.close();
   };
 

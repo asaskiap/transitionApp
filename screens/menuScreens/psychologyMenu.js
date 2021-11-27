@@ -23,7 +23,7 @@ const windowHeight = Dimensions.get('window').height;
 class psychologyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Psychologie',
+      headerTitle: navigation.state.params.eng ? 'Psychology' : 'Psychologie',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -67,67 +67,74 @@ class psychologyMenuScreen extends React.Component {
   render() {
     return (
       <ScrollableScreenContainer>
-        <View style={{alignItems: 'center'}}>
-          <Menu
-            isVisible={this.state.displayMenu}
-            close={this.closeMenu}
-            {...this.props}
-          ></Menu>
-          <Abschied
-            isVisible={this.state.abschied}
-            close={() => this.setState({abschied: false})}
-          />
-          <Veraenderung
-            isVisible={this.state.veraenderung}
-            close={() => this.setState({veraenderung: false})}
-          />
-          <Unsicherheiten
-            isVisible={this.state.unsicherheiten}
-            close={() => this.setState({unsicherheiten: false})}
-          />
-          <WerBindIch
-            isVisible={this.state.werBindIch}
-            close={() => this.setState({werBindIch: false})}
-          />
-
-          <ArticleHeader>Psychologische Aspekte der Transition</ArticleHeader>
-          <ArticleIllustration
-            image={require('../../assets/illustrations/psychologyIllustrations/earth.png')}
-          />
-
-          <MenuCard
-            onPress={() => this.setState({abschied: true})}
-            textSample={
-              'Das Leben eines Menschen ist geprägt von einer Reihe an Veränderungen, Abschieden und Neuanfängen. Sich von wichtigen Dingen, Menschen, Orten, Gewohnheiten zu trennen ist nicht leicht und kann ein ähnlich intensives Gefühl mit sich bringen wie ein körperlicher Schmerz. ...'
-            }
-          >
-            Abschied
-          </MenuCard>
-          <MenuCard
-            onPress={() => this.setState({veraenderung: true})}
-            textSample={
-              'Transition bedeutet definitionsgemäß „Übergang“. Es handelt sich dabei um einen Übergang von einer Phase in eine andere und geht unweigerlich mit Veränderung einher...'
-            }
-          >
-            Veränderung
-          </MenuCard>
-
-          <MenuCard
-            onPress={() => this.setState({unsicherheiten: true})}
-            textSample={
-              'Transition bedeutet Übergang, Wandel und Veränderung. Gerade im Kontext einer Tanzkarriere und deren Ende kann diese Veränderung sehr groß und weitreichend sein, da der Tanzberuf nicht nur einen Job darstellt, sondern vollkommene Leidenschaft und Hingabe bedeutet...'
-            }
-          >
-            Unsicherheiten
-          </MenuCard>
-
-          <MenuCard
-            onPress={() => this.setState({werBindIch: true})}
-            textSample={'Fragebogen mit individuellem Ergebnis..'}
-          >
-            Wer Bin Ich?
-          </MenuCard>
-        </View>
+        <Menu
+          isVisible={this.state.displayMenu}
+          close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
+          {...this.props}
+        ></Menu>
+        <Abschied
+          isVisible={this.state.abschied}
+          close={() => this.setState({abschied: false})}
+        />
+        <Veraenderung
+          isVisible={this.state.veraenderung}
+          close={() => this.setState({veraenderung: false})}
+        />
+        <Unsicherheiten
+          isVisible={this.state.unsicherheiten}
+          close={() => this.setState({unsicherheiten: false})}
+        />
+        <WerBindIch
+          isVisible={this.state.werBindIch}
+          close={() => this.setState({werBindIch: false})}
+        />
+        {!this.props.navigation.state.params.eng && (
+          <>
+            <ArticleHeader>Psychologische Aspekte der Transition</ArticleHeader>
+            <ArticleIllustration
+              image={require('../../assets/illustrations/psychologyIllustrations/earth.png')}
+            />
+            <MenuCard
+              onPress={() => this.setState({abschied: true})}
+              textSample={
+                'Das Leben eines Menschen ist geprägt von einer Reihe an Veränderungen, Abschieden und Neuanfängen. Sich von wichtigen Dingen, Menschen, Orten, Gewohnheiten zu trennen ist nicht leicht und kann ein ähnlich intensives Gefühl mit sich bringen wie ein körperlicher Schmerz. ...'
+              }
+            >
+              Abschied
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({veraenderung: true})}
+              textSample={
+                'Transition bedeutet definitionsgemäß „Übergang“. Es handelt sich dabei um einen Übergang von einer Phase in eine andere und geht unweigerlich mit Veränderung einher...'
+              }
+            >
+              Veränderung
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({unsicherheiten: true})}
+              textSample={
+                'Transition bedeutet Übergang, Wandel und Veränderung. Gerade im Kontext einer Tanzkarriere und deren Ende kann diese Veränderung sehr groß und weitreichend sein, da der Tanzberuf nicht nur einen Job darstellt, sondern vollkommene Leidenschaft und Hingabe bedeutet...'
+              }
+            >
+              Unsicherheiten
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({werBindIch: true})}
+              textSample={'Fragebogen mit individuellem Ergebnis..'}
+            >
+              Wer Bin Ich?
+            </MenuCard>
+          </>
+        )}
+        {this.props.navigation.state.params.eng && (
+          <>
+            <ArticleHeader>Psychological Aspects</ArticleHeader>
+            <ArticleIllustration
+              image={require('../../assets/illustrations/psychologyIllustrations/earth.png')}
+            />
+          </>
+        )}
       </ScrollableScreenContainer>
     );
   }

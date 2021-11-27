@@ -22,7 +22,9 @@ const windowWidth = Dimensions.get('window').width;
 class selfEmploymentMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Selbstständigkeit',
+      headerTitle: navigation.state.params.eng
+        ? 'Self Employment'
+        : 'Selbstständigkeit',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -65,25 +67,32 @@ class selfEmploymentMenuScreen extends React.Component {
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         ></Menu>
         <Existenzgruendung
           isVisible={this.state.existenzgruendung}
           close={() => this.setState({existenzgruendung: false})}
         />
-        <ArticleHeader>Selbstständigkeit</ArticleHeader>
+        <ArticleHeader>
+          {this.props.navigation.state.params.eng
+            ? 'Self Employment'
+            : 'Selbstständigkeit'}
+        </ArticleHeader>
         <ArticleIllustration
           imageContainerStyle={{marginBottom: -20}}
           image={require('../../assets/illustrations/selfemploymentIllustrations/Selbstständigkeit.png')}
         />
-        <MenuCard
-          onPress={() => this.setState({existenzgruendung: true})}
-          textSample={
-            'Einige TänzerInnen wollen nach ihrer Tanzkarriere als Selbständige arbeiten. Dies betrifft sowohl diejenigen, die vom Festengagement in die freie Szene wechseln als auch diejenigen, die in einem neuen Feld (z.B. als Tanzpädagoge oder Yogalehrer) freiberuflich arbeiten wollen.'
-          }
-        >
-          Existenzgründung
-        </MenuCard>
+        {!this.props.navigation.state.params.eng && (
+          <MenuCard
+            onPress={() => this.setState({existenzgruendung: true})}
+            textSample={
+              'Einige TänzerInnen wollen nach ihrer Tanzkarriere als Selbständige arbeiten. Dies betrifft sowohl diejenigen, die vom Festengagement in die freie Szene wechseln als auch diejenigen, die in einem neuen Feld (z.B. als Tanzpädagoge oder Yogalehrer) freiberuflich arbeiten wollen.'
+            }
+          >
+            Existenzgründung
+          </MenuCard>
+        )}
       </ScrollableScreenContainer>
     );
   }

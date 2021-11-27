@@ -29,7 +29,7 @@ const windowHeight = Dimensions.get('window').height;
 class financialMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Finanzierung',
+      headerTitle: navigation.state.params.eng ? 'Financial' : 'Finanzierung',
       headerStyle: {
         backgroundColor: Colors.psychology
       },
@@ -86,6 +86,7 @@ class financialMenuScreen extends React.Component {
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         ></Menu>
         <StipendiumStiftung
@@ -125,90 +126,98 @@ class financialMenuScreen extends React.Component {
           isVisible={this.state.nebenjobs}
           close={() => this.setState({nebenjobs: false})}
         />
-        <ArticleHeader>Finanzierung</ArticleHeader>
+        <ArticleHeader>
+          {this.props.navigation.state.params.eng
+            ? 'Financial'
+            : 'Finanzierung'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/images/financeColorful.png')}
         />
-        <MenuCard
-          onPress={() => this.setState({stipendiumStiftung: true})}
-          textSample={
-            'Die Stiftung TANZ vergibt Stipendien an Tanzschaffende im Übergang in einen neuen Beruf nach der aktiven Tanzkarriere. Jedes Jahr zum 30.3., 30.6. und 30.10. kann ein Antrag auf eine einmalige Förderung für z.B: Kurs- oder Studiengebühren, Fahrtkosten oder Kinderbetreuung während einer Ausbildung gestellt werden...'
-          }
-        >
-          Stipendium der Stiftung
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({bafoeg: true})}
-          textSample={
-            'Die staatliche Unterstützung für Studierende ist im Bundesausbildungs-Förderungsgesetz geregelt – besser bekannt unter dem Kürzel BAföG, womit auch die Förderung an sich bezeichnet wird...'
-          }
-        >
-          Bafög
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({aufstiegsstipendium: true})}
-          textSample={
-            'Das Aufstiegsstipendium unterstützt Berufserfahrene bei der Durchführung eines ersten akademischen Hochschulstudiums. Das Stipendium ist ein Programm der Begabtenförderung und unterstützt Menschen, die in Ausbildung und Beruf ihr besonderes Talent und Engagement bewiesen haben...'
-          }
-        >
-          Aufstiegsstipendium
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({bildungsgutschein: true})}
-          textSample={
-            'Wenn man sich beim Arbeitsamt als arbeitslos gemeldet hat und eine Weiterbildung zu einem anderen Beruf machen möchte, gibt es in manchen Fällen die Möglichkeit eines Bildungsgutscheins. Das bedeutet, dass das Arbeitsamt die Kosten für die Weiterbildung übernimmt.'
-          }
-        >
-          Bildungsgutschein
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({bildungskredit: true})}
-          textSample={
-            'Der Bildungskredit ist speziell für die Schlussphase des Studiums, für Praktika, Zusatz-, Ergänzungs- oder Aufbaustudiengänge gedacht. Er finanziert den Studierenden oder die Studierende bis zu zwei Jahre lang mit monatlich...'
-          }
-        >
-          Bildungskredit
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({arbeitslosengeld: true})}
-          textSample={
-            'In manchen Fällen kann für eine Weile das Arbeitslosengeld genutzt werden um die erste Zeit der Weiterbildung zu überbrücken. Im besten Fall hat man Anspruch auf 12 Monate Arbeitslosengeld (60% des vorherigen Nettogehalts) und kann diese Zeit nutzen um sich ggf. um weitere Finanzierungsmöglichkeiten zu kümmern. '
-          }
-        >
-          Arbeitslosengeld
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({bayrische: true})}
-          textSample={
-            'Es gibt die Möglichkeit sich die Beiträge die man in der BayerischenVersorgungskammer eingezahlt hat für seine Weiterbildung zu nutzen.'
-          }
-        >
-          Bayrische Versicherung
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({studienkredit: true})}
-          textSample={
-            'Bis zu 14 Semester lang können Studierende ihre Lebenshaltungskosten mit einem Studienkredit finanzieren. Die monatlichen Kreditbeträge können von 100,- bis zu 650,- Euro betragen, abhängig vom Wunsch des Kreditnehmers oder der Kreditnehmerin... '
-          }
-        >
-          Studienkredit
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({stipendien: true})}
-          textSample={
-            ' Es gibt eine Vielzahl von anderen Stipendienmöglichkeiten. Es lohnt sich auf jeden Fall sich genauer zu informieren und zu bewerben.'
-          }
-        >
-          Andere Stipendien
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({nebenjobs: true})}
-          textSample={
-            'Einige Studiengänge oder Weiterbildungsmaßnahmen sind so strukturiert, dass man auch durchaus neben dem Studium sein Geld mit einem Nebenjob verdienen kann. Das ist zwar manchmal eine Herausforderung, aber mit etwas Organisation und Strukturiertheit auch sehr gut zu bewältigen.'
-          }
-        >
-          Nebenjobs
-        </MenuCard>
+        {!this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              onPress={() => this.setState({stipendiumStiftung: true})}
+              textSample={
+                'Die Stiftung TANZ vergibt Stipendien an Tanzschaffende im Übergang in einen neuen Beruf nach der aktiven Tanzkarriere. Jedes Jahr zum 30.3., 30.6. und 30.10. kann ein Antrag auf eine einmalige Förderung für z.B: Kurs- oder Studiengebühren, Fahrtkosten oder Kinderbetreuung während einer Ausbildung gestellt werden...'
+              }
+            >
+              Stipendium der Stiftung
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bafoeg: true})}
+              textSample={
+                'Die staatliche Unterstützung für Studierende ist im Bundesausbildungs-Förderungsgesetz geregelt – besser bekannt unter dem Kürzel BAföG, womit auch die Förderung an sich bezeichnet wird...'
+              }
+            >
+              Bafög
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({aufstiegsstipendium: true})}
+              textSample={
+                'Das Aufstiegsstipendium unterstützt Berufserfahrene bei der Durchführung eines ersten akademischen Hochschulstudiums. Das Stipendium ist ein Programm der Begabtenförderung und unterstützt Menschen, die in Ausbildung und Beruf ihr besonderes Talent und Engagement bewiesen haben...'
+              }
+            >
+              Aufstiegsstipendium
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bildungsgutschein: true})}
+              textSample={
+                'Wenn man sich beim Arbeitsamt als arbeitslos gemeldet hat und eine Weiterbildung zu einem anderen Beruf machen möchte, gibt es in manchen Fällen die Möglichkeit eines Bildungsgutscheins. Das bedeutet, dass das Arbeitsamt die Kosten für die Weiterbildung übernimmt.'
+              }
+            >
+              Bildungsgutschein
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bildungskredit: true})}
+              textSample={
+                'Der Bildungskredit ist speziell für die Schlussphase des Studiums, für Praktika, Zusatz-, Ergänzungs- oder Aufbaustudiengänge gedacht. Er finanziert den Studierenden oder die Studierende bis zu zwei Jahre lang mit monatlich...'
+              }
+            >
+              Bildungskredit
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({arbeitslosengeld: true})}
+              textSample={
+                'In manchen Fällen kann für eine Weile das Arbeitslosengeld genutzt werden um die erste Zeit der Weiterbildung zu überbrücken. Im besten Fall hat man Anspruch auf 12 Monate Arbeitslosengeld (60% des vorherigen Nettogehalts) und kann diese Zeit nutzen um sich ggf. um weitere Finanzierungsmöglichkeiten zu kümmern. '
+              }
+            >
+              Arbeitslosengeld
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bayrische: true})}
+              textSample={
+                'Es gibt die Möglichkeit sich die Beiträge die man in der BayerischenVersorgungskammer eingezahlt hat für seine Weiterbildung zu nutzen.'
+              }
+            >
+              Bayrische Versicherung
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({studienkredit: true})}
+              textSample={
+                'Bis zu 14 Semester lang können Studierende ihre Lebenshaltungskosten mit einem Studienkredit finanzieren. Die monatlichen Kreditbeträge können von 100,- bis zu 650,- Euro betragen, abhängig vom Wunsch des Kreditnehmers oder der Kreditnehmerin... '
+              }
+            >
+              Studienkredit
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({stipendien: true})}
+              textSample={
+                ' Es gibt eine Vielzahl von anderen Stipendienmöglichkeiten. Es lohnt sich auf jeden Fall sich genauer zu informieren und zu bewerben.'
+              }
+            >
+              Andere Stipendien
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({nebenjobs: true})}
+              textSample={
+                'Einige Studiengänge oder Weiterbildungsmaßnahmen sind so strukturiert, dass man auch durchaus neben dem Studium sein Geld mit einem Nebenjob verdienen kann. Das ist zwar manchmal eine Herausforderung, aber mit etwas Organisation und Strukturiertheit auch sehr gut zu bewältigen.'
+              }
+            >
+              Nebenjobs
+            </MenuCard>
+          </>
+        )}
       </ScrollableScreenContainer>
     );
   }

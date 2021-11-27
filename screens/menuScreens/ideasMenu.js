@@ -21,7 +21,9 @@ const windowWidth = Dimensions.get('window').width;
 class ideasMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Berufsfindung',
+      headerTitle: navigation.state.params.eng
+        ? 'Carreer Ideas'
+        : 'Berufsfindung',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -31,7 +33,6 @@ class ideasMenuScreen extends React.Component {
           <Item
             title="Menu"
             iconName="menu"
-            //color={colors.primaryLight}
             onPress={navigation.getParam('toggleMenu')}
           />
         </HeaderButtons>
@@ -66,35 +67,46 @@ class ideasMenuScreen extends React.Component {
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         ></Menu>
         <Berufsportraits
           isVisible={this.state.berufsportraits}
           close={() => this.setState({berufsportraits: false})}
         />
-        <ArticleHeader>Ideen - Berufsfindung</ArticleHeader>
+        <ArticleHeader>
+          {this.props.navigation.state.params.eng
+            ? 'Career Ideas'
+            : 'Ideen - Berufsfindung'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/ideasIllustrations/baloon.png')}
         />
 
-        <MenuCard
-          textSample={'Test mit individuellem Ergebnis'}
-          onPress={() => this.props.navigation.navigate('Berufsfragebogen')}
-        >
-          Berufsinteressen Fragebogen
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({berufsportraits: true})}
-          textSample={'Eine Auflistung mit verschiedensten Berufen...'}
-        >
-          Berufsportraits
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.props.navigation.navigate('TransitionStories')}
-          textSample={'Wie haben andere Tänzer die Transition gemeistert?'}
-        >
-          Transition Stories
-        </MenuCard>
+        {!this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              textSample={'Test mit individuellem Ergebnis'}
+              onPress={() => this.props.navigation.navigate('Berufsfragebogen')}
+            >
+              Berufsinteressen Fragebogen
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({berufsportraits: true})}
+              textSample={'Eine Auflistung mit verschiedensten Berufen...'}
+            >
+              Berufsportraits
+            </MenuCard>
+            <MenuCard
+              onPress={() =>
+                this.props.navigation.navigate('TransitionStories')
+              }
+              textSample={'Wie haben andere Tänzer die Transition gemeistert?'}
+            >
+              Transition Stories
+            </MenuCard>
+          </>
+        )}
       </ScrollableScreenContainer>
     );
   }

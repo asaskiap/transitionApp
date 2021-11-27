@@ -21,7 +21,7 @@ import Deutschkurse from '../germanyScreens/deutschkurse';
 class germanyMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Deutschland',
+      headerTitle: navigation.state.params.eng ? 'Germany' : 'Deutschland',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -69,6 +69,7 @@ class germanyMenuScreen extends React.Component {
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         ></Menu>
         <Visum
@@ -87,40 +88,48 @@ class germanyMenuScreen extends React.Component {
           isVisible={this.state.deutschkurse}
           close={() => this.setState({deutschkurse: false})}
         />
-        <ArticleHeader>Leben und Arbeiten in Deutschland</ArticleHeader>
+        <ArticleHeader>
+          {this.props.navigation.state.params.eng
+            ? 'Life and Work in Germany'
+            : 'Leben und Arbeiten in Deutschland'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/globeColorful.png')}
         />
-        <MenuCard
-          onPress={() => this.setState({deutschkurse: true})}
-          textSample={
-            'Deutschkurse sind über verschiedene Anbieter zu finden...'
-          }
-        >
-          Deutschkurse
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({visum: true})}
-          textSample={'Aufenthalts- und Arbeitsgenehmigung in Deutschland'}
-        >
-          Visum
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({nachweise: true})}
-          textSample={
-            'Allgemeine Informationen zum Thema „Leben und Arbeiten in Deutschland” und damit verbundene Fragen... '
-          }
-        >
-          Nachweise
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({zeugnisse: true})}
-          textSample={
-            'In Deutschland verfügt jedes Bundesland über eine Zeugnisanerkennungsstelle, die für die Bewertung von Zeugnissen als Nachweis der Hochschulreife,der Fachhochschulreife, eines mittleren Schulabschlusses oder des erfolgreichen Hauptschulabschlusses zuständig ist.'
-          }
-        >
-          Anerkennen von ausländischen Zeugnissen
-        </MenuCard>
+        {!this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              onPress={() => this.setState({deutschkurse: true})}
+              textSample={
+                'Deutschkurse sind über verschiedene Anbieter zu finden...'
+              }
+            >
+              Deutschkurse
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({visum: true})}
+              textSample={'Aufenthalts- und Arbeitsgenehmigung in Deutschland'}
+            >
+              Visum
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({nachweise: true})}
+              textSample={
+                'Allgemeine Informationen zum Thema „Leben und Arbeiten in Deutschland” und damit verbundene Fragen... '
+              }
+            >
+              Nachweise
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({zeugnisse: true})}
+              textSample={
+                'In Deutschland verfügt jedes Bundesland über eine Zeugnisanerkennungsstelle, die für die Bewertung von Zeugnissen als Nachweis der Hochschulreife,der Fachhochschulreife, eines mittleren Schulabschlusses oder des erfolgreichen Hauptschulabschlusses zuständig ist.'
+              }
+            >
+              Anerkennen von ausländischen Zeugnissen
+            </MenuCard>
+          </>
+        )}
       </ScrollableScreenContainer>
     );
   }

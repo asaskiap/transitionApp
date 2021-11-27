@@ -24,7 +24,9 @@ const windowWidth = Dimensions.get('window').width;
 class UmsetzungMenu extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Ideen - Umsetzung',
+      headerTitle: navigation.state.params.eng
+        ? 'Ideas to Practice'
+        : 'Ideen - Umsetzung',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -71,6 +73,7 @@ class UmsetzungMenu extends React.Component {
         <Menu
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         ></Menu>
         <UniversitaetenListe
@@ -89,40 +92,50 @@ class UmsetzungMenu extends React.Component {
           isVisible={this.state.bewerbung}
           close={() => this.setState({bewerbung: false})}
         />
-        <ArticleHeader>Wie setze ich meine Ideen um?</ArticleHeader>
+        <ArticleHeader>
+          {this.props.navigation.state.params.eng
+            ? 'How do I put my ideas into practice?'
+            : 'Wie setze ich meine Ideen um?'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/businessPlan.png')}
         />
-        <MenuCard
-          onPress={() => this.setState({uniList: true})}
-          textSample={
-            'Es gibt ein paar gute Seiten im Netz, auf denen eine Auflistung aller Universitäten und deren Studiengänge zu finden sind...'
-          }
-        >
-          Liste mit Universitäten
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({studienplatz: true})}
-          textSample={'Wie gehe ich vor, wenn ich einen Studienplatz suche?'}
-        >
-          Studienplatzsuche
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({ausbildung: true})}
-          textSample={
-            'Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann sehr individuell und facettenreich sein, denn es gibt eine Vielzahl an verschiedensten Berufen und Bereichen in denen eine Berufsausbildung absolviert werden kann...'
-          }
-        >
-          Ausbildungsbetriebe
-        </MenuCard>
-        <MenuCard
-          onPress={() => this.setState({bewerbung: true})}
-          textSample={
-            'Für das Schreiben einer Bewerbung gibt es kein allgemeingültiges Rezept; hängt es doch stark von dem beruflichen Feld und der spezifischen Stellenbeschreibung, sowie der Person des Bewerbers ab...'
-          }
-        >
-          Bewerbungsprozess
-        </MenuCard>
+        {!this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              onPress={() => this.setState({uniList: true})}
+              textSample={
+                'Es gibt ein paar gute Seiten im Netz, auf denen eine Auflistung aller Universitäten und deren Studiengänge zu finden sind...'
+              }
+            >
+              Liste mit Universitäten
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({studienplatz: true})}
+              textSample={
+                'Wie gehe ich vor, wenn ich einen Studienplatz suche?'
+              }
+            >
+              Studienplatzsuche
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({ausbildung: true})}
+              textSample={
+                'Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann sehr individuell und facettenreich sein, denn es gibt eine Vielzahl an verschiedensten Berufen und Bereichen in denen eine Berufsausbildung absolviert werden kann...'
+              }
+            >
+              Ausbildungsbetriebe
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bewerbung: true})}
+              textSample={
+                'Für das Schreiben einer Bewerbung gibt es kein allgemeingültiges Rezept; hängt es doch stark von dem beruflichen Feld und der spezifischen Stellenbeschreibung, sowie der Person des Bewerbers ab...'
+              }
+            >
+              Bewerbungsprozess
+            </MenuCard>
+          </>
+        )}
       </ScrollableScreenContainer>
     );
   }
