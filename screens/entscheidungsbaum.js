@@ -28,7 +28,6 @@ class Entscheidungsbaum extends React.Component {
           <Item
             title="Menu"
             iconName="menu"
-            //color={colors.primaryLight}
             onPress={navigation.getParam('toggleMenu')}
           />
         </HeaderButtons>
@@ -79,8 +78,13 @@ class Entscheidungsbaum extends React.Component {
         <ArticleImage
           image={require('./../assets/illustrations/entscheidungsbaumIllustrations/thinking.png')}
         />
+        {/* Possibly Redo whole logic for Entscheidungsbaum and Berufsfindungstest for English version: navigate to different page depending on language settings, then passing language param will not be necessary */}
         <ButtonSecondary
-          onPress={() => this.props.navigation.navigate('EntscheidungsbaumGo')}
+          onPress={() =>
+            this.props.navigation.navigate('EntscheidungsbaumGo', {
+              eng: this.props.navigation.state.params.eng
+            })
+          }
         >
           {this.props.navigation.state.params.eng ? 'Start' : 'Los Gehts!'}
         </ButtonSecondary>
