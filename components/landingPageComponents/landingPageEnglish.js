@@ -10,13 +10,13 @@ const windowHeight = Dimensions.get('window').height;
 const LandingPageEnglish = (props) => {
   return (
     <View style={styles.buttonContainer}>
-      <LandingPageButton onPress={() => setDisplayWer(true)}>
+      <LandingPageButton onPress={() => props.setDisplayWer()}>
         Who we are
       </LandingPageButton>
-      <LandingPageButton onPress={() => setDisplayWas(true)}>
+      <LandingPageButton onPress={() => props.setDisplayWas()}>
         What we do
       </LandingPageButton>
-      <LandingPageButton onPress={() => setDisplayWomit(true)}>
+      <LandingPageButton onPress={() => props.setDisplayWomit()}>
         How we can help
       </LandingPageButton>
 

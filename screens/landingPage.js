@@ -54,11 +54,20 @@ const LandingPage = (props) => {
             {...props}
           ></Menu>
 
-          <WerSindWir isVisible={displayWer} close={closeWer}></WerSindWir>
-          <WasMachenWir isVisible={displayWas} close={closeWas}></WasMachenWir>
+          <WerSindWir
+            isVisible={displayWer}
+            close={closeWer}
+            english={english}
+          ></WerSindWir>
+          <WasMachenWir
+            isVisible={displayWas}
+            close={closeWas}
+            english={english}
+          ></WasMachenWir>
           <WomitHelfen
             isVisible={displayWomit}
             close={closeWomit}
+            english={english}
           ></WomitHelfen>
 
           <Image
@@ -75,6 +84,9 @@ const LandingPage = (props) => {
           )}
           {english && (
             <LandingPageEnglish
+              setDisplayWer={() => setDisplayWer(true)}
+              setDisplayWas={() => setDisplayWas(true)}
+              setDisplayWomit={() => setDisplayWomit(true)}
               setDisplayMenu={() => setDisplayMenu(true)}
             ></LandingPageEnglish>
           )}

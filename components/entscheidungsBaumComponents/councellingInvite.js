@@ -13,9 +13,9 @@ import ButtonPrimary from '../buttons/buttonPrimary';
 
 import {sendEmail} from '../../utilities/sendEmail';
 
-export const CouncellingInvite1 = (props) => {
+const SpeakToUs = (props) => {
   return (
-    <View style={styles.container}>
+    <>
       <ImageBackground
         source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
         style={{
@@ -25,9 +25,13 @@ export const CouncellingInvite1 = (props) => {
           marginVertical: 20
         }}
       ></ImageBackground>
-      <Text style={styles.header}>Sprich mit uns!</Text>
+      <Text style={styles.header}>
+        {props.eng ? 'Speak to us!' : 'Sprich mit uns!'}
+      </Text>
       <Text style={styles.text}>
-        Vereinbare gerne einen Beratungstermin unter
+        {props.eng
+          ? 'Book a councelling session under '
+          : 'Vereinbare gerne einen Beratungstermin unter'}
       </Text>
       <TouchableOpacity
         onPress={() => {
@@ -40,169 +44,136 @@ export const CouncellingInvite1 = (props) => {
       >
         <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
       </TouchableOpacity>
+    </>
+  );
+};
 
+const HomeButton = (props) => {
+  const eng = props.navigation.state.params.eng;
+  return (
+    <ButtonPrimary
+      onPress={() => props.navigation.navigate('Home', {eng: eng})}
+      backgroundStyle={{paddingHorizontal: 30}}
+    >
+      {eng ? 'Home' : 'Startseite'}
+    </ButtonPrimary>
+  );
+};
+
+export const CouncellingInvite1 = (props) => {
+  const eng = props.navigation.state.params.eng;
+  return (
+    <View style={styles.container}>
+      <SpeakToUs eng={eng}></SpeakToUs>
       <Text style={styles.text}>
-        Unsere Psychologen helfen dir beim Herausfinden von deinen verborgenen
-        Talenten, Interessen, Leidenschaften. Schau auch gerne unter:
+        {eng
+          ? 'Our psychologists will help you discover your hidden talents, interests and passions. Feel free to read more under:'
+          : 'Unsere Psychologen helfen dir beim Herausfinden von deinen verborgenen Talenten, Interessen, Leidenschaften. Schau auch gerne unter:'}
       </Text>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Ideas')}>
-        <Text style={styles.highlight}>Ideen- und Berufsfindung</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Psychology')}>
-        <Text style={styles.highlight}>Psychologische Aspekte</Text>
-      </TouchableOpacity>
-
-      <ButtonPrimary
-        onPress={() => props.navigation.navigate('Home')}
-        backgroundStyle={{paddingHorizontal: 30}}
+      <TouchableOpacity
+        onPress={() => props.navigation.navigate('Ideas', {eng: eng})}
       >
-        Startseite
-      </ButtonPrimary>
+        <Text style={styles.highlight}>
+          {eng
+            ? 'Ideas - Finding the right carreer for you'
+            : 'Ideen- und Berufsfindung'}
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => props.navigation.navigate('Psychology', {eng: eng})}
+      >
+        <Text style={styles.highlight}>
+          {eng ? 'Psychological aspects' : 'Psychologische Aspekte'}
+        </Text>
+      </TouchableOpacity>
+      <HomeButton {...props}></HomeButton>
     </View>
   );
 };
 
 export const CouncellingInvite2 = (props) => {
+  const eng = props.navigation.state.params.eng;
+
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
-        style={{
-          height: 250,
-          width: 250,
-          resizeMode: 'contain',
-          marginVertical: 20
-        }}
-      ></ImageBackground>
-      <Text style={styles.header}>Sprich mit uns!</Text>
+      <SpeakToUs eng={eng}></SpeakToUs>
       <Text style={styles.text}>
-        Vereinbare gerne einen Beratungstermin unter
+        {eng
+          ? 'Our psychologists will help you find a suitable education. For more information please consult:'
+          : 'Unsere Psychologen helfen dir beim Suchen einer geeigneten Ausbildung. Schau auch gerne unter:'}
       </Text>
       <TouchableOpacity
-        onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
-            () => {
-              console.log('Your message was successfully sent!');
-            }
-          );
-        }}
+        onPress={() => props.navigation.navigate('Umsetzung', {eng: eng})}
       >
-        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+        <Text style={styles.highlight}>
+          {eng
+            ? 'Putting ideas into practice'
+            : 'Wie setze ich meine Ideen um?'}
+        </Text>
       </TouchableOpacity>
-      <Text style={styles.text}>
-        Unsere Psychologen helfen dir beim Suchen einer geeigneten Ausbildung.
-        Schau auch gerne unter:
-      </Text>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Umsetzung')}>
-        <Text style={styles.highlight}>Wie setze ich meine Ideen um?</Text>
-      </TouchableOpacity>
-      <ButtonPrimary
-        onPress={() => props.navigation.navigate('Home')}
-        backgroundStyle={{paddingHorizontal: 30}}
-      >
-        Startseite
-      </ButtonPrimary>
+      <HomeButton {...props}></HomeButton>
     </View>
   );
 };
 
 export const CouncellingInvite3 = (props) => {
+  const eng = props.navigation.state.params.eng;
+
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
-        style={{
-          height: 250,
-          width: 250,
-          resizeMode: 'contain',
-          marginVertical: 20
-        }}
-      ></ImageBackground>
-      <Text style={styles.header}>Sprich mit uns!</Text>
+      <SpeakToUs eng={eng}></SpeakToUs>
       <Text style={styles.text}>
-        Vereinbare gerne einen Beratungstermin unter
+        {eng
+          ? 'Our psychologists will help you find financing options. You might even be eligable for one of our scholarships. Read more at: '
+          : 'Unsere Psychologen helfen dir beim Suchen einer Finanzierungsmöglichkeit. Evtl. kommt auch eines unserer Stipendien für dich in Frage. Schau auch gerne unter:'}
       </Text>
-
       <TouchableOpacity
-        onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
-            () => {
-              console.log('Your message was successfully sent!');
-            }
-          );
-        }}
+        onPress={() => props.navigation.navigate('Financial', {eng: eng})}
       >
-        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
-      </TouchableOpacity>
-      <Text style={styles.text}>
-        Unsere Psychologen helfen dir beim Suchen einer
-        Finanzierungsmöglichkeit. Evtl. kommt auch eines unserer Stipendien für
-        dich in Frage. Schau auch gerne unter:
-      </Text>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Financial')}>
-        <Text style={styles.highlight}>Finanzierungsmöglichkeiten</Text>
+        <Text style={styles.highlight}>
+          {eng ? 'Financing Options' : 'Finanzierungsmöglichkeiten'}
+        </Text>
       </TouchableOpacity>
 
-      <ButtonPrimary
-        onPress={() => props.navigation.navigate('Home')}
-        backgroundStyle={{paddingHorizontal: 30}}
-      >
-        Startseite
-      </ButtonPrimary>
+      <HomeButton {...props}></HomeButton>
     </View>
   );
 };
 
 export const FinalCouncellingInvite = (props) => {
+  const eng = props.navigation.state.params.eng;
+
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require('../../assets/illustrations/entscheidungsbaumIllustrations/contact.png')}
-        style={{
-          height: 250,
-          width: 250,
-          resizeMode: 'contain',
-          marginVertical: 20
-        }}
-      ></ImageBackground>
-
       <Text style={styles.text}>
-        Hast du noch eine andere Frage bezüglich deiner Transition (z.B.
-        Versicherung, Arbeitsamt, Visum, etc.)?
+        {eng
+          ? 'Do you still have questions concerning your transition process (for example concerning insurances, unemployment benifits, visa etc.)?'
+          : 'Hast du noch eine andere Frage bezüglich deiner Transition (z.B.Versicherung, Arbeitsamt, Visum, etc.)?'}
       </Text>
-      <Text style={styles.header}>Sprich mit uns!</Text>
+      <SpeakToUs eng={eng}></SpeakToUs>
       <Text style={styles.text}>
-        Vereinbare gerne einen Beratungstermin unter
+        {eng
+          ? 'Our psychologists will help you find answers for your questions. Please read more at: '
+          : 'Unsere Psychologen helfen dir beim Beantworten deiner Fragen. Schau auch gerne unter:'}
       </Text>
-
       <TouchableOpacity
-        onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
-            () => {
-              console.log('Your message was successfully sent!');
-            }
-          );
-        }}
+        onPress={() => props.navigation.navigate('Insurance', {eng: eng})}
       >
-        <Text style={styles.highlight}>info@stiftung-tanz.com</Text>
+        <Text style={styles.highlight}>
+          {eng ? 'Insurances' : 'Versicherungen'}
+        </Text>
       </TouchableOpacity>
-      <Text style={styles.text}>
-        Unsere Psychologen helfen dir beim Beantworten deiner Fragen. Schau auch
-        gerne unter:
-      </Text>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Insurance')}>
-        <Text style={styles.highlight}>Versicherungen</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => props.navigation.navigate('Germany')}>
-        <Text style={styles.highlight}>Leben und Arbeiten in Deutschland</Text>
+      <TouchableOpacity
+        onPress={() => props.navigation.navigate('Germany', {eng: eng})}
+      >
+        <Text style={styles.highlight}>
+          {eng
+            ? 'Life and Work in Germany'
+            : 'Leben und Arbeiten in Deutschland'}
+        </Text>
       </TouchableOpacity>
 
-      <ButtonPrimary
-        onPress={() => props.navigation.navigate('Home')}
-        backgroundStyle={{paddingHorizontal: 30}}
-      >
-        Startseite
-      </ButtonPrimary>
+      <HomeButton {...props}></HomeButton>
     </View>
   );
 };

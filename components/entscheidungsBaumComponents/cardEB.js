@@ -16,13 +16,13 @@ const cardEB = (props) => {
           handlePress={props.yes}
           style={{backgroundColor: props.backgroundYes}}
         >
-          JA
+          {props.eng ? 'Yes' : 'JA'}
         </CardBtn>
         <CardBtn
           handlePress={props.no}
           style={{backgroundColor: props.backgroundNo}}
         >
-          NEIN
+          {props.eng ? 'No' : 'NEIN'}
         </CardBtn>
       </View>
     </View>

@@ -30,28 +30,37 @@ const WomitHelfen = (props) => {
         }}
       >
         <Entypo name="light-bulb" size={28} color={colors.primaryDark} />
-        <Text style={textStyles.headerSecondary}>Wobei Können Wir helfen?</Text>
-        <Paragraph
-          style={{textAlign: 'center', fontSize: 20, marginBottom: -10}}
-        >
-          Die Stiftung TANZ bietet professionellen TänzernInnen:
-        </Paragraph>
-        <List>
-          <ListItem>
-            Informationen (alle wichtigen Informationen rund um den
-            Transitionprozess)
-          </ListItem>
-          <ListItem>
-            Bürokratische und praktische Unterstützung (beispielsweise in der
-            Form von Anschreiben an Institutionen wie dem Arbeitsamt)
-          </ListItem>
-          <ListItem>
-            Beratung (Coaching und psychologische Betreuung des
-            Transitionprozess)
-          </ListItem>
-          <ListItem>Workshops </ListItem>
-          <ListItem>Stipendium für die Weiterbildung</ListItem>
-        </List>
+        {props.english && (
+          <Text style={textStyles.headerSecondary}>How we can help</Text>
+        )}
+        {!props.english && (
+          <>
+            <Text style={textStyles.headerSecondary}>
+              Wobei Können Wir helfen?
+            </Text>
+            <Paragraph
+              style={{textAlign: 'center', fontSize: 20, marginBottom: -10}}
+            >
+              Die Stiftung TANZ bietet professionellen TänzernInnen:
+            </Paragraph>
+            <List>
+              <ListItem>
+                Informationen (alle wichtigen Informationen rund um den
+                Transitionprozess)
+              </ListItem>
+              <ListItem>
+                Bürokratische und praktische Unterstützung (beispielsweise in
+                der Form von Anschreiben an Institutionen wie dem Arbeitsamt)
+              </ListItem>
+              <ListItem>
+                Beratung (Coaching und psychologische Betreuung des
+                Transitionprozess)
+              </ListItem>
+              <ListItem>Workshops </ListItem>
+              <ListItem>Stipendium für die Weiterbildung</ListItem>
+            </List>
+          </>
+        )}
       </ScrollableScreenContainer>
       <CloseButton close={props.close}></CloseButton>
     </Modal>

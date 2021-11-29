@@ -78,9 +78,10 @@ class EntscheidungsbaumGoScreen extends React.Component {
   };
 
   render() {
+    const eng = this.props.navigation.state.params.eng;
     return (
       <ScrollableScreenContainer>
-        <HeaderEB>Entscheidungsbaum</HeaderEB>
+        <HeaderEB>{eng ? 'Decision Tree' : 'Entscheidungsbaum'}</HeaderEB>
 
         {/* image should only show up if no answer has been given yet: no next question or councelling invite is displayed */}
         {/* {!(this.state.q1 || this.state.displayCouncellingInvite1) && ( */}
@@ -103,9 +104,12 @@ class EntscheidungsbaumGoScreen extends React.Component {
               }
               yes={() => this.set_q1(true)}
               no={() => this.set_q1(false)}
+              eng={eng}
             >
-              Ich denke über das Ende meiner Karriere nach und weiß schon was
-              ich machen möchte
+              {eng
+                ? 'I am thinking about the end of my carreer and I already know what I want to do next'
+                : 'Ich denke über das Ende meiner Karriere nach und weiß schon was ich machen möchte'}
+              ''
             </CardEB>
           </>
         )}
@@ -133,8 +137,11 @@ class EntscheidungsbaumGoScreen extends React.Component {
             }
             yes={() => this.set_q2(true)}
             no={() => this.set_q2(false)}
+            eng={eng}
           >
-            Ich weiß auch wo und was ich studieren möchte
+            {eng
+              ? 'I also know where and what I want to study'
+              : 'Ich weiß auch wo und was ich studieren möchte'}
           </CardEB>
         )}
 
@@ -160,8 +167,11 @@ class EntscheidungsbaumGoScreen extends React.Component {
             }
             yes={() => this.set_q3(true)}
             no={() => this.set_q3(false)}
+            eng={eng}
           >
-            Ich habe bereits eine Finanzierungsmöglichkeit
+            {eng
+              ? 'I know how I will finance my studies'
+              : ' Ich habe bereits eine Finanzierungsmöglichkeit'}
           </CardEB>
         )}
 
@@ -172,7 +182,9 @@ class EntscheidungsbaumGoScreen extends React.Component {
           <CouncellingInvite3 {...this.props} />
         )}
 
-        {this.state.displayFinalCouncellingInvite && <FinalCouncellingInvite />}
+        {this.state.displayFinalCouncellingInvite && (
+          <FinalCouncellingInvite {...this.props} />
+        )}
       </ScrollableScreenContainer>
     );
   }

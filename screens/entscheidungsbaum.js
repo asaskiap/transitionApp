@@ -78,7 +78,7 @@ class Entscheidungsbaum extends React.Component {
         <ArticleImage
           image={require('./../assets/illustrations/entscheidungsbaumIllustrations/thinking.png')}
         />
-        {/* Possibly Redo whole logic for Entscheidungsbaum and Berufsfindungstest for English version: navigate to different page depending on language settings, then passing language param will not be necessary */}
+
         <ButtonSecondary
           onPress={() =>
             this.props.navigation.navigate('EntscheidungsbaumGo', {
