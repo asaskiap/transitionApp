@@ -55,7 +55,7 @@ const Studienplatzsuche = (props) => {
               The site www.hochschulkompass.de is a good way to start the
               search. There, one can find not only a lot of information about
               courses and universities, but also all about studying, including
-              requirements, application and financing.{' '}
+              requirements, application and financing.
             </Paragraph>
             <Paragraph>The site</Paragraph>
             <Link onPress={() => Linking.openURL('https://www.studienwahl.de')}>

@@ -13,23 +13,39 @@ const UniversitaetenListe = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <ArticleHeader>Liste mit Universitäten</ArticleHeader>
+        <ArticleHeader>
+          {props.english ? 'List of universities' : 'Liste mit Universitäten'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/spyglass.png')}
         />
         <Article>
-          <Paragraph style={{marginTop: -40}}>
-            Es gibt ein paar gute Seiten im Netz, auf denen eine Auflistung
-            aller Universitäten und deren Studiengänge zu finden sind. Dort sind
-            meist auch gleich nützliche Informationen mit angegeben, ob
-            beispielsweise mit einem NC zu rechnen ist, ob der Studiengang im
-            Winter- und Sommersemester angeboten wird, wie viele Studenten pro
-            Jahr zugelassen werden oder was die möglichen Berufsfelder wären in
-            denen man mit einem Abschluß in einem bestimmten Studienfach
-            arbeiten kann. Die folgenden Seiten bieten dazu eine nützliche
-            Übersicht, welche bei der ersten Orientierung oder
-            ideen-generierender Suche helfen kann:
-          </Paragraph>
+          {props.english ? (
+            <Paragraph>
+              There are a few good sites on the web where you can find a list of
+              all universities and their study programs. There you can find
+              useful information, e.g. if there is an NC, if the course of
+              studies is offered in winter and summer semester, how many
+              students are admitted per year or what the possible occupational
+              fields are in which you can work with a degree in a certain field
+              of study. The following pages offer a useful overview, which can
+              help with the first orientation or idea-generating search:
+            </Paragraph>
+          ) : (
+            <Paragraph>
+              Es gibt ein paar gute Seiten im Netz, auf denen eine Auflistung
+              aller Universitäten und deren Studiengänge zu finden sind. Dort
+              sind meist auch gleich nützliche Informationen mit angegeben, ob
+              beispielsweise mit einem NC zu rechnen ist, ob der Studiengang im
+              Winter- und Sommersemester angeboten wird, wie viele Studenten pro
+              Jahr zugelassen werden oder was die möglichen Berufsfelder wären
+              in denen man mit einem Abschluß in einem bestimmten Studienfach
+              arbeiten kann. Die folgenden Seiten bieten dazu eine nützliche
+              Übersicht, welche bei der ersten Orientierung oder
+              ideen-generierender Suche helfen kann:
+            </Paragraph>
+          )}
+
           <Link
             onPress={() =>
               Linking.openURL(

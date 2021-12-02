@@ -82,6 +82,7 @@ class financialMenuScreen extends React.Component {
         <Aufstiegsstipendium
           isVisible={this.state.aufstiegsstipendium}
           close={() => this.setState({aufstiegsstipendium: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Menu
           isVisible={this.state.displayMenu}
@@ -92,43 +93,52 @@ class financialMenuScreen extends React.Component {
         <StipendiumStiftung
           isVisible={this.state.stipendiumStiftung}
           close={() => this.setState({stipendiumStiftung: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Bafoeg
           isVisible={this.state.bafoeg}
           close={() => this.setState({bafoeg: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Bildungskredit
           isVisible={this.state.bildungskredit}
           close={() => this.setState({bildungskredit: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Studienkredit
           isVisible={this.state.studienkredit}
           close={() => this.setState({studienkredit: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Arbeitslosengeld
           isVisible={this.state.arbeitslosengeld}
           close={() => this.setState({arbeitslosengeld: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Bildungsgutschein
           isVisible={this.state.bildungsgutschein}
           close={() => this.setState({bildungsgutschein: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Bayrische
           isVisible={this.state.bayrische}
           close={() => this.setState({bayrische: false})}
+          english={this.props.navigation.state.params.eng}
           {...this.props}
         />
         <Stipendien
           isVisible={this.state.stipendien}
           close={() => this.setState({stipendien: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Nebenjobs
           isVisible={this.state.nebenjobs}
           close={() => this.setState({nebenjobs: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <ArticleHeader>
           {this.props.navigation.state.params.eng
-            ? 'Financial'
+            ? 'Funding Opportunities'
             : 'Finanzierung'}
         </ArticleHeader>
         <ArticleIllustration
@@ -221,6 +231,15 @@ class financialMenuScreen extends React.Component {
         {this.props.navigation.state.params.eng && (
           <>
             <MenuCard
+              onPress={() => this.setState({stipendiumStiftung: true})}
+              textSample={
+                'The Stiftung TANZ awards scholarships to dance professionals in transition to a new career after an active dance career.'
+              }
+              eng={true}
+            >
+              Stiftung TANZ Scholarship :
+            </MenuCard>
+            <MenuCard
               onPress={() => this.setState({bafoeg: true})}
               textSample={
                 'State support for students is regulated in the German Federal Law on Support in Education, otherwise known as BAföG, which also is the term used for the support itself.'
@@ -230,40 +249,65 @@ class financialMenuScreen extends React.Component {
               BAföG
             </MenuCard>
             <MenuCard
-              onPress={() => this.setState({aufstiegsstipendium: true})}
+              onPress={() => this.setState({arbeitslosengeld: true})}
               textSample={
-                'The AFBG is intended to offer for all occupation groups “measures of career advancement, financial […] support and means to […] encourage setting up new businesses […] and therefore [presents] an extensive supporting instrument for career advancement in fundamentally all occupations, irrespective of the terms of the advancement.'
+                'In some cases, unemployment benefits can be used for a while to bridge the initial period of further education. In the best case, one is entitled to 12 months of unemployment benefits (60% of the previous net salary) and can use this time to look for further financing possibilities if necessary.'
               }
               eng={true}
             >
-              Aufstiegs-Bafög (former ‘Meister-BaföG’)
+              Unemployment benefit
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bayrische: true})}
+              textSample={
+                'It is possible to use the contributions paid into the Bayerische Versorgungskammer for your further education.'
+              }
+              eng={true}
+            >
+              Bayerische Versorgungskammer
             </MenuCard>
             <MenuCard
               onPress={() => this.setState({aufstiegsstipendium: true})}
               textSample={
-                'The advancement scholarship supports those with career experience while they complete their first academic university degree. '
+                'The “Aufstiegsstipendium” applies to all those who have not yet graduated from university and now want to start a course of study. In this case you can get a grant from the state.'
               }
               eng={true}
             >
-              Advancement Scholarship
+              Aufstiegsstipendium
             </MenuCard>
             <MenuCard
-              onPress={() => this.setState({studienkredit: true})}
+              onPress={() => this.setState({bildungsgutschein: true})}
               textSample={
-                'Students can finance their living costs with a student loan for up to 14 semesters. The monthly credit amount can lie between 100 EUR and 650 EUR, depending on the borrower’s wish. '
+                'If you have registered with the employment office as unemployed and would like to do further training in a different profession, there is sometimes the possibility of an education voucher.  '
               }
               eng={true}
             >
-              Student loans
+              Education voucher
             </MenuCard>
             <MenuCard
               onPress={() => this.setState({bildungskredit: true})}
+              textSample={'Education loan - Student loan - BAföG bank loan'}
+              eng={true}
+            >
+              Loans
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({stipendien: true})}
               textSample={
-                'Educational credit is especially designed for the final phase of a course of study, for internships and additional, supplemental or qualifying courses of study. It finances students for up to two years with up to 300 EUR per month, assuming that the course of study occurs at an institution recognized by the BAföG.'
+                'There are a variety of other scholarship opportunities. It is definitely worthwhile to find out more and apply.'
               }
               eng={true}
             >
-              Educational credit
+              Other scholarships
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({nebenjobs: true})}
+              textSample={
+                'Some degree programs or continuing education programs are structured in such a way that it is quite possible to earn money with a part-time job while studying. '
+              }
+              eng={true}
+            >
+              Part-time jobs
             </MenuCard>
           </>
         )}

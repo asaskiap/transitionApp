@@ -73,7 +73,7 @@ export const MenuContentsEng = (props) => {
       </MenuPageButton>
 
       <MenuPageButton onPress={() => navigateTo('Financial')}>
-        Financial
+        Funding
       </MenuPageButton>
 
       <MenuPageButton onPress={() => navigateTo('Insurance')}>
