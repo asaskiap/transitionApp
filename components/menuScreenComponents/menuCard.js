@@ -26,7 +26,7 @@ const MenuCard = (props) => {
         <Text style={{fontSize: 14, lineHeight: 20, color: colors.text}}>
           {props.textSample}
         </Text>
-        <MoreButton onPress={props.onPress} />
+        <MoreButton onPress={props.onPress} eng={props.eng || false} />
       </Article>
     </Card>
   );

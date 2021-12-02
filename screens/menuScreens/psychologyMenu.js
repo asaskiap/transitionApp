@@ -76,18 +76,22 @@ class psychologyMenuScreen extends React.Component {
         <Abschied
           isVisible={this.state.abschied}
           close={() => this.setState({abschied: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Veraenderung
           isVisible={this.state.veraenderung}
           close={() => this.setState({veraenderung: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Unsicherheiten
           isVisible={this.state.unsicherheiten}
           close={() => this.setState({unsicherheiten: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <WerBindIch
           isVisible={this.state.werBindIch}
           close={() => this.setState({werBindIch: false})}
+          english={this.props.navigation.state.params.eng}
         />
         {!this.props.navigation.state.params.eng && (
           <>
@@ -129,10 +133,44 @@ class psychologyMenuScreen extends React.Component {
         )}
         {this.props.navigation.state.params.eng && (
           <>
-            <ArticleHeader>Psychological Aspects</ArticleHeader>
+            <ArticleHeader>Psychological Aspects of Transition</ArticleHeader>
             <ArticleIllustration
               image={require('../../assets/illustrations/psychologyIllustrations/earth.png')}
             />
+            <MenuCard
+              onPress={() => this.setState({abschied: true})}
+              textSample={
+                'A persons life is characterized by a series of changes, farewells and new beginnings. Parting with important things, people, places, habits is not easy and can bring a similar intense feeling as a physical pain.'
+              }
+              eng={true}
+            >
+              Farewell
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({veraenderung: true})}
+              textSample={
+                'Transition, by definition, means "transforming & change." It is a transition from one phase to another and is inevitably accompanied by change. Especially in a professional context, and especially when an active dance career comes to an end.'
+              }
+              eng={true}
+            >
+              Change
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({unsicherheiten: true})}
+              textSample={
+                'Transition means change and transformation. Especially in the context of a dance career and its end, this change can be very big and far-reaching, as the dance profession is not just a job, but means complete passion and dedication.'
+              }
+              eng={true}
+            >
+              Uncertainties
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({werBindIch: true})}
+              textSample={'Individual Questionnaire'}
+              eng={true}
+            >
+              Who am I?
+            </MenuCard>
           </>
         )}
       </ScrollableScreenContainer>

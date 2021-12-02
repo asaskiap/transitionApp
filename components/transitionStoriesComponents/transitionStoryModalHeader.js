@@ -1,8 +1,10 @@
 import React from 'react';
 
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
 
 import colors from '../../assets/colors';
+
+const windowWidth = Dimensions.get('window').width;
 
 const TransitionStoryModalHeader = (props) => {
   return (
@@ -19,7 +21,12 @@ const TransitionStoryModalHeader = (props) => {
 export default TransitionStoryModalHeader;
 
 const styles = StyleSheet.create({
-  container: {flexDirection: 'row', padding: 10, marginTop: 60},
+  container: {
+    flexDirection: 'row',
+    padding: 10,
+    marginTop: 60,
+    maxWidth: windowWidth
+  },
   image: {
     width: 140,
     height: 140,
@@ -27,7 +34,7 @@ const styles = StyleSheet.create({
     margin: 16,
     marginLeft: 20
   },
-  header: {marginRight: 20, maxWidth: '70%'},
+  header: {marginRight: 20, maxWidth: windowWidth * 0.4},
   headerText: {
     fontSize: 28,
     fontWeight: 'bold',
@@ -35,11 +42,10 @@ const styles = StyleSheet.create({
     color: colors.accentDark,
     borderBottomColor: colors.accentDark,
     borderBottomWidth: 2,
-    marginLeft: -60
+    marginLeft: -20
   },
   name: {
     color: colors.text,
-
     alignSelf: 'flex-end',
     padding: 20,
     fontSize: 16,

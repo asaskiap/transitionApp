@@ -24,11 +24,7 @@ const WasMachenWir = (props) => {
       >
         <View style={textStyles.fullScreenContainer}>
           <Octicons name="question" size={28} color={colors.primaryDark} />
-          {props.english && (
-            <>
-              <Text style={textStyles.headerSecondary}>What we do </Text>
-            </>
-          )}
+
           {!props.english && (
             <>
               <Text style={textStyles.headerSecondary}>Was Machen Wir? </Text>
@@ -50,6 +46,32 @@ const WasMachenWir = (props) => {
                 Transitionprozesses. Wir sind für alle BerufstänzerInnen offen,
                 ob festangestellt oder freiberuflich tätig, ob an städtischen
                 Bühnen, an Staatstheatern, beim Musical, Film oder Fernsehen.
+              </Text>
+            </>
+          )}
+          {props.english && (
+            <>
+              <Text style={textStyles.headerSecondary}>What we do </Text>
+              <Text style={textStyles.paragraph}>
+                Unlike other professionals, dancers need to reorient themselves
+                professionally (transition) after a relatively short active
+                stage career. Often at an age when other professions are just
+                starting out.
+              </Text>
+              <Text style={textStyles.paragraph}>
+                Thus, during and at the end of the career, doubts, insecurity,
+                great emptiness and many questions often determine the dancer's
+                life. What comes after? Who helps through the jungle of
+                institutions, paragraphs and guidelines? Where can we find
+                advice, support, guidance, awareness and sensitization for a
+                successful transition process?
+              </Text>
+              <Text style={textStyles.paragraph}>
+                We are companions and supporters from the beginning of training
+                through every stage of the career to the end of the transition
+                process. We are open to all professional dancers, whether
+                employed or freelance, working in municipal theaters, state
+                theaters, musicals, film or television.
               </Text>
             </>
           )}

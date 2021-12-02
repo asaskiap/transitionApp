@@ -18,7 +18,7 @@ export const TransitionStoryLuisa = (props) => {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={require('../../../assets/images/portrait3.jpg')}
+            source={require('../../../assets/images/LuisaEscanero.jpg')}
           />
           <View style={styles.header}>
             <Text style={styles.headerText}>Immer Auf der Suche</Text>
@@ -155,7 +155,7 @@ export const TransitionStoryMichal = (props) => {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={require('../../../assets/images/portrait.jpg')}
+            source={require('../../../assets/images/MichalFatura.jpg')}
           />
           <View style={styles.header}>
             <Text style={styles.headerText}>Ich will in Berlin bleiben</Text>
@@ -297,7 +297,7 @@ export const TransitionStoryLenhart = (props) => {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={require('../../../assets/images/portrait2.jpg')}
+            source={require('../../../assets/images/HGLenhart.jpg')}
           />
           <View style={styles.header}>
             <Text style={styles.headerText}>Versuchung</Text>

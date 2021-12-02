@@ -14,7 +14,7 @@ const TransitionStoryTobias = (props) => {
         <CloseButton close={props.close} />
         <TransitionStoryModalHeader
           title={'Medizin Studium'}
-          image={require('../../../assets/images/portrait1.jpg')}
+          image={require('../../../assets/images/TobiasAlmasi.jpg')}
         >
           Tobias Almasi
         </TransitionStoryModalHeader>

@@ -9,7 +9,9 @@ const MoreButton = (props) => {
       style={[styles.moreBtn, props.btnContainerStyle]}
       onPress={props.onPress}
     >
-      <Text style={styles.moreTxt}>Mehr lesen</Text>
+      <Text style={styles.moreTxt}>
+        {props.eng ? 'Read More' : 'Mehr lesen'}
+      </Text>
     </TouchableOpacity>
   );
 };

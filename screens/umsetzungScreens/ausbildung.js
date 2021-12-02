@@ -15,27 +15,51 @@ const Ausbildung = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <ArticleHeader>Ausbildungsbetriebe</ArticleHeader>
+        <ArticleHeader>
+          {props.english ? 'Vocational Training' : 'Ausbildungsbetriebe'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/umsetzungIllustrations/welcome_umsetzung.png')}
         />
+        {props.english && (
+          <Article>
+            <Paragraph>
+              The search for an apprenticeship and a training company can be
+              very individual and multifaceted, because there are a variety of
+              different professions and areas in which vocational training can
+              be completed. There are various ways to get an apprenticeship. For
+              example, you can contact the company of your choice directly or
+              seek advice first at training or job fairs or institutions such as
+              the Chamber of Industry and Commerce. An important contact is the
+              employment agency. Particularly in the context of a career change,
+              this agency can also provide additional help with possible
+              financing in the form of retraining or an education voucher. The
+              following websites also provide information about the
+              possibilities of vocational training:
+            </Paragraph>
+          </Article>
+        )}
+        {!props.english && (
+          <Article>
+            <Paragraph>
+              Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann
+              sehr individuell und facettenreich sein, denn es gibt eine
+              Vielzahl an verschiedensten Berufen und Bereichen in denen eine
+              Berufsausbildung absolviert werden kann. Es gibt verschiedene
+              Möglichkeiten um an einen Ausbildungsplatz zu kommen. So kann man
+              beispielsweise direkt mit dem Betrieb der Wahl Kontakt aufnehmen
+              oder sich zuerst bei Ausbildungs- oder Jobmessen oder
+              Institutionen wie der IHK beraten lassen. Ein wichtiger
+              Ansprechpartner ist dabei die Arbeitsagentur. Gerade im Rahmen
+              einer beruflichen Veränderung, kann hier auch noch zusätzlich bei
+              einer eventuellen Finanzierung in Form einer Umschulung oder eines
+              Bildungsgutscheins weiter geholfen werden. Unter den folgenden
+              Webseiten kann man sich auch über die Möglichkeiten einer
+              Berufsausbildung informieren:
+            </Paragraph>
+          </Article>
+        )}
         <Article>
-          <Paragraph>
-            Die Suche nach einer Ausbildung und einem Ausbildungsbetrieb kann
-            sehr individuell und facettenreich sein, denn es gibt eine Vielzahl
-            an verschiedensten Berufen und Bereichen in denen eine
-            Berufsausbildung absolviert werden kann. Es gibt verschiedene
-            Möglichkeiten um an einen Ausbildungsplatz zu kommen. So kann man
-            beispielsweise direkt mit dem Betrieb der Wahl Kontakt aufnehmen
-            oder sich zuerst bei Ausbildungs- oder Jobmessen oder Institutionen
-            wie der IHK beraten lassen. Ein wichtiger Ansprechpartner ist dabei
-            die Arbeitsagentur. Gerade im Rahmen einer beruflichen Veränderung,
-            kann hier auch noch zusätzlich bei einer eventuellen Finanzierung in
-            Form einer Umschulung oder eines Bildungsgutscheins weiter geholfen
-            werden. Unter den folgenden Webseiten kann man sich auch über die
-            Möglichkeiten einer Berufsausbildung informieren:
-          </Paragraph>
-
           <Link
             onPress={() =>
               Linking.openURL(

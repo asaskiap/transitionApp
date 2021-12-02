@@ -30,9 +30,7 @@ const WomitHelfen = (props) => {
         }}
       >
         <Entypo name="light-bulb" size={28} color={colors.primaryDark} />
-        {props.english && (
-          <Text style={textStyles.headerSecondary}>How we can help</Text>
-        )}
+
         {!props.english && (
           <>
             <Text style={textStyles.headerSecondary}>
@@ -58,6 +56,32 @@ const WomitHelfen = (props) => {
               </ListItem>
               <ListItem>Workshops </ListItem>
               <ListItem>Stipendium für die Weiterbildung</ListItem>
+            </List>
+          </>
+        )}
+        {props.english && (
+          <>
+            <Text style={textStyles.headerSecondary}>How we can help </Text>
+            <Paragraph
+              style={{textAlign: 'center', fontSize: 20, marginBottom: -10}}
+            >
+              The Stiftung TANZ offers professional dancers:
+            </Paragraph>
+            <List>
+              <ListItem>
+                Information (all important information about the transition
+                process)
+              </ListItem>
+              <ListItem>
+                Bureaucratic and practical support (for example in the form of
+                letters to institutions such as the employment office)
+              </ListItem>
+              <ListItem>
+                Counseling (coaching and psychological support of the transition
+                process)
+              </ListItem>
+              <ListItem>workshops</ListItem>
+              <ListItem>Scholarship for further education</ListItem>
             </List>
           </>
         )}

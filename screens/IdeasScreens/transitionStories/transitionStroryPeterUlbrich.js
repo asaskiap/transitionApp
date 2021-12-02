@@ -14,8 +14,8 @@ const TransitionStoryPeter = (props) => {
       <ScrollableScreenContainer>
         <CloseButton close={props.close} />
         <TransitionStoryModalHeader
-          image={require('../../../assets/images/portrait9.jpg')}
-          title={'Aufnahmeleiter'}
+          image={require('../../../assets/images/PeterUlbrich.jpg')}
+          title={'Aufnahme- Leiter'}
         >
           Peter Ulbrich
         </TransitionStoryModalHeader>

@@ -16,7 +16,7 @@ const TransitionStoryPeterBoch = (props) => {
         <CloseButton close={props.close} />
         <TransitionStoryModalHeader
           image={require('../../../assets/images/peterBoch.jpg')}
-          title={'Ober- Bürgermeiser'}
+          title={'Ober- Bürger- Meister'}
         >
           Peter Boch
         </TransitionStoryModalHeader>

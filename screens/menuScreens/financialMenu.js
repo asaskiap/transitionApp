@@ -218,6 +218,55 @@ class financialMenuScreen extends React.Component {
             </MenuCard>
           </>
         )}
+        {this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              onPress={() => this.setState({bafoeg: true})}
+              textSample={
+                'State support for students is regulated in the German Federal Law on Support in Education, otherwise known as BAföG, which also is the term used for the support itself.'
+              }
+              eng={true}
+            >
+              BAföG
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({aufstiegsstipendium: true})}
+              textSample={
+                'The AFBG is intended to offer for all occupation groups “measures of career advancement, financial […] support and means to […] encourage setting up new businesses […] and therefore [presents] an extensive supporting instrument for career advancement in fundamentally all occupations, irrespective of the terms of the advancement.'
+              }
+              eng={true}
+            >
+              Aufstiegs-Bafög (former ‘Meister-BaföG’)
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({aufstiegsstipendium: true})}
+              textSample={
+                'The advancement scholarship supports those with career experience while they complete their first academic university degree. '
+              }
+              eng={true}
+            >
+              Advancement Scholarship
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({studienkredit: true})}
+              textSample={
+                'Students can finance their living costs with a student loan for up to 14 semesters. The monthly credit amount can lie between 100 EUR and 650 EUR, depending on the borrower’s wish. '
+              }
+              eng={true}
+            >
+              Student loans
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bildungskredit: true})}
+              textSample={
+                'Educational credit is especially designed for the final phase of a course of study, for internships and additional, supplemental or qualifying courses of study. It finances students for up to two years with up to 300 EUR per month, assuming that the course of study occurs at an institution recognized by the BAföG.'
+              }
+              eng={true}
+            >
+              Educational credit
+            </MenuCard>
+          </>
+        )}
       </ScrollableScreenContainer>
     );
   }

@@ -113,15 +113,13 @@ class TransitionStories extends React.Component {
             this.setState({storyLenhart: false});
           }}
         />
-        <ArticleHeader textStyle={{letterSpacing: 2}}>
-          Transition Stories
-        </ArticleHeader>
+        <ArticleHeader>Transition Stories</ArticleHeader>
 
         <SingleStory
           quote={
-            '... Elisabeth Exner-Grave, eine Tanzmedizinerin. Sie ist Mitschuld daran, dass er nun selbst Mediziner werden will. '
+            '... Elisabeth Exner-Grave, eine Tanzmedizinerin... ist Mitschuld daran, dass er nun selbst Mediziner werden will. '
           }
-          image={require('../../assets/images/avatarMale.jpg')}
+          image={require('../../assets/images/TobiasAlmasi.jpg')}
           title={'Medizin Studium'}
           name={'Tobias Almasi'}
           onPress={() => this.setState({storyTobias: true})}
@@ -138,7 +136,9 @@ class TransitionStories extends React.Component {
         ></SingleStory>
 
         <SingleStory
-          quote={'lernen zu dürfen ohne sich selbst dabei eine Blöße zu geben'}
+          quote={
+            '...lernen zu dürfen ohne sich selbst dabei eine Blöße zu geben'
+          }
           image={require('../../assets/images/cynthiaBarcomi.jpg')}
           title={'Konditorin'}
           name={'Cynthia Barcomi'}
@@ -154,9 +154,7 @@ class TransitionStories extends React.Component {
           onPress={() => this.setState({storyPeterBoch: true})}
         ></SingleStory>
         <SingleStory
-          quote={
-            'Aus dem schüchternen Mädchen von einst ist eine selbstbewusste Frau mit ansteckend fröhlichem Lachen geworden, eine zweifache Mutter mit intakter Familie. Was beweist: Es gibt auch ein erfülltes Leben nach dem Tanz.'
-          }
+          quote={'Es gibt auch ein erfülltes Leben nach dem Tanz.'}
           image={require('../../assets/images/brittFolk.jpeg')}
           title={'Physiotherapeutin'}
           name={'Britt Folk'}
@@ -172,10 +170,8 @@ class TransitionStories extends React.Component {
           onPress={() => this.setState({storyYan: true})}
         ></SingleStory>
         <SingleStory
-          quote={
-            ' Offen, neugierig zu sein, rät er jungen Tänzern. Inzwischen sammelt er Kunst, Fotos, Malerei, Objekte, Collagen - und bleibt selbst neugierig, was die Zukunft noch so bringen mag.'
-          }
-          image={require('../../assets/images/avatarMale.jpg')}
+          quote={' Offen, neugierig zu sein, rät er jungen Tänzern. '}
+          image={require('../../assets/images/PeterUlbrich.jpg')}
           title={'Aufnahmeleiter'}
           name={'Peter Ulbrich'}
           onPress={() => this.setState({storyPeterUlbrich: true})}
@@ -184,7 +180,7 @@ class TransitionStories extends React.Component {
           quote={
             '„Ich kann nur jeden Tänzer und jede Tänzerin ermutigen, entspannt und erhobenen Hauptes in die nächste Berufswelt hineinzugehen“ '
           }
-          image={require('../../assets/images/avatarMale.jpg')}
+          image={require('../../assets/images/SörenSwart.jpg')}
           title={'Lehrer'}
           name={'Sören Swart'}
           onPress={() => this.setState({storySoeren: true})}
@@ -193,7 +189,7 @@ class TransitionStories extends React.Component {
           quote={
             '"Ich wende sie an wie eine Choreografie, kann sie fließend verbinden" '
           }
-          image={require('../../assets/images/avatarFemale.jpg')}
+          image={require('../../assets/images/AlexandraPost.png')}
           title={'Kosmetikerin'}
           name={'Alexandra Post'}
           onPress={() => this.setState({storyAlexandra: true})}
@@ -203,7 +199,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "In eine Rolle zu steigen, das hilft bei der Interpretation. Und bei der Kreativität" '
           }
-          image={require('../../assets/images/avatarMale.jpg')}
+          image={require('../../assets/images/MichalFatura.jpg')}
           title={'Ich will in Berlin bleiben'}
           name={'Michael Fatura'}
           onPress={() => this.setState({storyMichal: true})}
@@ -212,7 +208,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "Das hält einen am Leben, sich selber neuen Situationen auszusetzen" '
           }
-          image={require('../../assets/images/avatarFemale.jpg')}
+          image={require('../../assets/images/LuisaEscanero.jpg')}
           title={'Immer auf der Suche'}
           name={'Luisa Sancho Escanero'}
           onPress={() => this.setState({storyLuisa: true})}
@@ -221,7 +217,7 @@ class TransitionStories extends React.Component {
           quote={
             ' "Ein Osteopath ist nicht alleine, er hat immer ein Gegenüber" '
           }
-          image={require('../../assets/images/avatarMale.jpg')}
+          image={require('../../assets/images/HGLenhart.jpg')}
           title={'Versuchung'}
           name={'Hans-Georg Lenhart'}
           onPress={() => this.setState({storyLenhart: true})}

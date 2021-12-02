@@ -25,7 +25,7 @@ class UmsetzungMenu extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
       headerTitle: navigation.state.params.eng
-        ? 'Ideas to Practice'
+        ? 'Implementation'
         : 'Ideen - Umsetzung',
       headerStyle: {
         backgroundColor: colors.psychology
@@ -79,22 +79,26 @@ class UmsetzungMenu extends React.Component {
         <UniversitaetenListe
           isVisible={this.state.uniList}
           close={() => this.setState({uniList: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Studienplatzsuche
           isVisible={this.state.studienplatz}
           close={() => this.setState({studienplatz: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Ausbildungsbetriebe
           isVisible={this.state.ausbildung}
           close={() => this.setState({ausbildung: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Bewerbungsprozess
           isVisible={this.state.bewerbung}
           close={() => this.setState({bewerbung: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <ArticleHeader>
           {this.props.navigation.state.params.eng
-            ? 'How do I put my ideas into practice?'
+            ? 'How do I implement my ideas?'
             : 'Wie setze ich meine Ideen um?'}
         </ArticleHeader>
         <ArticleIllustration
@@ -133,6 +137,45 @@ class UmsetzungMenu extends React.Component {
               }
             >
               Bewerbungsprozess
+            </MenuCard>
+          </>
+        )}
+
+        {this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              onPress={() => this.setState({uniList: true})}
+              textSample={
+                'There are a few good sites on the web where you can find a list of all universities and their study programs.'
+              }
+              eng={true}
+            >
+              List of universities
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({studienplatz: true})}
+              textSample={'How do I go about looking for a place to study?'}
+              eng={true}
+            >
+              Searching for a study place
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({ausbildung: true})}
+              textSample={
+                'The search for an apprenticeship and a training company can be very individual and multifaceted, because there are a variety of different professions and areas in which vocational training can be completed. There are various ways to get an apprenticeship.'
+              }
+              eng={true}
+            >
+              Vocational Training
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bewerbung: true})}
+              textSample={
+                'There is no universal recipe for writing an application; it depends on the professional field and the specific job description, as well as the person of the applicant.'
+              }
+              eng={true}
+            >
+              Application process
             </MenuCard>
           </>
         )}

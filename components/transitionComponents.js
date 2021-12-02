@@ -47,7 +47,32 @@ export const Transition_EN = (props) => {
       <ArticleSubHeader>
         What does it mean to be in transition?
       </ArticleSubHeader>
-      <Paragraph>English version of Transition text.</Paragraph>
+      <Paragraph>
+        Our understanding of transition is that everyone goes through different
+        moments of change in life. Transition means the phase in which we move
+        from one state in our life to the next. In some cases this takes a very
+        short time, in other moments it takes a longer time. However, it is
+        always a process of change, development and personal growth.
+      </Paragraph>
+      <Paragraph>
+        For dancers, however, the process of transitioning from dancing to a new
+        profession is a very special challenge, as dancing usually encompasses
+        not just one part, but all areas of one's previous life. Therefore, this
+        particular process of change usually involves a wide variety of feelings
+        and emotional states, and it usually takes a lot of time and space to
+        first be ready for this process, and then it takes time again to find an
+        orientation and direction.
+      </Paragraph>
+      <Paragraph>
+        In the best case, there are already during the training and career as a
+        dancer moments and time of orientation to know yourself, your interests
+        and skills well, to be sure in the moment of the decision for a new path
+        that this is the right path for you. If this process has not already
+        taken place during the active career, it must be gone through at the end
+        of the career - which is usually accompanied by more uncertainties,
+        fears and sadness. We as the Stiftung TANZ help in all these moments; be
+        it during training, career or at the end of being a dancer.
+      </Paragraph>
     </>
   );
 };
@@ -80,7 +105,15 @@ export const Vision_EN = (props) => {
       <TouchableOpacity onPress={() => props.close()}>
         <ArticleSubHeader>Vision △</ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph> Vision English version...</Paragraph>
+      <Paragraph>
+        To develop a vision for one's life and future career, an analysis of
+        one's needs, interests, skills and values can be useful. Since usually
+        from the combination of these 4 factors already a picture emerges which
+        professional field fits best to one. Sometimes this can be very obvious
+        and quickly shows where it should go, but sometimes the discovery and
+        formulation of these areas takes its time and place. For this, the
+        Stiftung TANZ offers a place where it is possible to define them.
+      </Paragraph>
     </>
   );
 };
@@ -117,7 +150,20 @@ export const Needs_EN = (props) => {
       <TouchableOpacity onPress={() => props.close()}>
         <ArticleSubHeader>Needs △</ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>Needs english version...</Paragraph>
+      <Paragraph>
+        At a certain point in life, you discover that you have changed yourself,
+        and you are identifying new needs for yourself. For example, in the life
+        of a dancer, this can be the moment when you realize that you love
+        dancing very much, but you also want more time, more security, more
+        space for your private life or a meaningful task. This is usually the
+        moment when your needs start to go more and more in different directions
+        and you start to doubt whether life on stage will make you happy in the
+        long run. Mostly the first stone of change starts to roll and you start
+        to think about alternative possibilities and life models. This process
+        is very important and it takes time, calmness and self-reflection to
+        deal with these needs and desires intensively; because they tell you
+        what you need to lead a fulfilled and happy life in the long run.
+      </Paragraph>
     </>
   );
 };
@@ -149,7 +195,17 @@ export const Interests_EN = (props) => {
       <TouchableOpacity onPress={() => props.close()}>
         <ArticleSubHeader>Interests △</ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>Interests english verion.. </Paragraph>
+      <Paragraph>
+        Knowing one's own interests is usually not as easy as it may seem at
+        first. And yet they are one of the fundamental elements in finding a new
+        career path. Therefore, one should give oneself the opportunity to
+        think, try out, explore and reflect. To do this, one can reflect on
+        questions such as "what really interests me?", "what can give
+        fulfillment to my life?" or "where can I best self-actualize?". Most of
+        the time, in figuring out your interests, you learn a whole lot of
+        important things about yourself. This is a very special process of
+        spending time with and with yourself.
+      </Paragraph>
     </>
   );
 };
@@ -180,7 +236,16 @@ export const Skills_EN = (props) => {
       <TouchableOpacity onPress={() => props.close()}>
         <ArticleSubHeader>Skills △</ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>Skills English verion... </Paragraph>
+      <Paragraph>
+        Dancers already bring many skills with them that can be applied well to
+        other areas or are even required in them. Dancers have important
+        qualities such as creativity, flexibility, accuracy, physical
+        perception, sensitivity to the people around you, languages or
+        intercultural interaction. These are all important qualities that are in
+        high demand in many professional fields. An analysis of one's own skills
+        and strengths, can therefore bring good insights and knowledge, which
+        professional area well.
+      </Paragraph>
     </>
   );
 };
@@ -217,7 +282,20 @@ export const Values_EN = (props) => {
       <TouchableOpacity onPress={() => props.close()}>
         <ArticleSubHeader>Values △</ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>Values English version</Paragraph>
+      <Paragraph>
+        The fulfillment we experience in an activity is usually strongly related
+        to the personal values we associate with that activity. Our personal
+        values define and distinguish us from others. Finding an activity where
+        it is possible to actively live and practice one's values correlates
+        strongly with happiness and fulfillment. One way to access one's values
+        is to analyze the value that dance has for one. Is it the artistic
+        activity? Is it working in the theater? Is it the aesthetics? Is it
+        making other people happy? Is it working with your own body? Is it the
+        work in a team? Is it the appearance and the attention you get? Etc. An
+        exact examination of one's own values usually quickly opens up new
+        perspectives on other fields of activity in which these values can be
+        lived in a different, but similarly fulfilling way.
+      </Paragraph>
     </>
   );
 };
