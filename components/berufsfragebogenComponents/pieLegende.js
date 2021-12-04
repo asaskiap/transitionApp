@@ -19,19 +19,25 @@ const PieLegende = (props) => {
           <View
             style={[styles.colorBox, {backgroundColor: colors.pieBlue}]}
           ></View>
-          <Text style={styles.colorText}>Handwerklich</Text>
+          <Text style={styles.colorText}>
+            {props.eng ? 'Crafty' : 'Handwerklich'}
+          </Text>
         </View>
         <View style={styles.colorInfo}>
           <View
             style={[styles.colorBox, {backgroundColor: colors.pieGreen}]}
           ></View>
-          <Text style={styles.colorText}>Forschend</Text>
+          <Text style={styles.colorText}>
+            {props.eng ? 'Inquiring' : 'Forschend'}
+          </Text>
         </View>
         <View style={styles.colorInfo}>
           <View
             style={[styles.colorBox, {backgroundColor: colors.pieDarkBlue}]}
           ></View>
-          <Text style={styles.colorText}>Künstlerisch</Text>
+          <Text style={styles.colorText}>
+            {props.eng ? 'Artistic' : 'Künstlerisch'}
+          </Text>
         </View>
       </View>
       <View>
@@ -39,19 +45,25 @@ const PieLegende = (props) => {
           <View
             style={[styles.colorBox, {backgroundColor: colors.pieOrange}]}
           ></View>
-          <Text style={styles.colorText}>Sozial</Text>
+          <Text style={styles.colorText}>
+            {props.eng ? 'Social' : 'Sozial'}
+          </Text>
         </View>
         <View style={styles.colorInfo}>
           <View
             style={[styles.colorBox, {backgroundColor: colors.pieYellow}]}
           ></View>
-          <Text style={styles.colorText}>Wirtschaftlich</Text>
+          <Text style={styles.colorText}>
+            {props.eng ? 'Economic' : 'Wirtschaftlich'}
+          </Text>
         </View>
         <View style={styles.colorInfo}>
           <View
             style={[styles.colorBox, {backgroundColor: colors.piePink}]}
           ></View>
-          <Text style={styles.colorText}>Verwaltend</Text>
+          <Text style={styles.colorText}>
+            {props.eng ? 'Administrative' : 'Verwaltend'}
+          </Text>
         </View>
       </View>
     </View>

@@ -34,7 +34,9 @@ class Question extends React.Component {
               color: colors.primary
             }}
           >
-            1: trifft gar nicht zu
+            {this.props.eng
+              ? '1: Completely disagree'
+              : ' 1: trifft gar nicht zu'}
           </Text>
           <Text
             style={{
@@ -43,7 +45,9 @@ class Question extends React.Component {
               alignSelf: 'flex-end'
             }}
           >
-            5: trifft voll und ganz zu
+            {this.props.eng
+              ? '5: Completely agree'
+              : '5: trifft voll und ganz zu'}
           </Text>
         </View>
 
@@ -78,7 +82,7 @@ class Question extends React.Component {
           backgroundStyle={{backgroundColor: colors.accentDark}}
           textStyle={{color: colors.textLight}}
         >
-          WEITER
+          {this.props.eng ? 'NEXT' : 'WEITER'}
         </ButtonPrimary>
         <ProgressBar>{this.props.progress}</ProgressBar>
       </View>
