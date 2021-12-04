@@ -75,18 +75,22 @@ class germanyMenuScreen extends React.Component {
         <Visum
           isVisible={this.state.visum}
           close={() => this.setState({visum: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Nachweise
           isVisible={this.state.nachweise}
           close={() => this.setState({nachweise: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Zeugnisse
           isVisible={this.state.zeugnisse}
           close={() => this.setState({zeugnisse: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Deutschkurse
           isVisible={this.state.deutschkurse}
           close={() => this.setState({deutschkurse: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <ArticleHeader>
           {this.props.navigation.state.params.eng
@@ -127,6 +131,46 @@ class germanyMenuScreen extends React.Component {
               }
             >
               Anerkennen von ausländischen Zeugnissen
+            </MenuCard>
+          </>
+        )}
+        {this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              onPress={() => this.setState({deutschkurse: true})}
+              textSample={
+                'German courses can be found through various providers.'
+              }
+              eng={true}
+            >
+              German courses
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({visum: true})}
+              textSample={
+                'Foreigners from non-EU countries require a visa for entry and a residence permit for a longer stay in Germany. The visa for entry into the Federal Republic must be applied for at the German Embassy in the country of origin and is valid for up to 3 months.'
+              }
+              eng={true}
+            >
+              Visa / Residence Permit
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({nachweise: true})}
+              textSample={
+                'General information on the subject of "Living and Working in Germany" and related issues such as the recognition of degrees, employment opportunities and social security, etc. can be found on the Internet platform of the Foreign Placement Office of the Federal Employment Agency.'
+              }
+              eng={true}
+            >
+              Proofs
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({zeugnisse: true})}
+              textSample={
+                'In Germany, each federal state has a "Zeugnisanerkennungsstelle" (certificate recognition office), which is responsible for evaluating certificates as proof of university entrance qualification.'
+              }
+              eng={true}
+            >
+              Recognition of foreign certificates
             </MenuCard>
           </>
         )}

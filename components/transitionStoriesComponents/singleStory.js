@@ -22,6 +22,7 @@ const SingleStory = (props) => {
         <MoreButton
           onPress={props.onPress}
           btnContainerStyle={{alignSelf: 'center'}}
+          eng={props.eng}
         />
       </View>
     </View>
@@ -90,7 +91,6 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     //backgroundColor: 'lightgrey',
     margin: 16,
-    marginRight: 3,
-    marginTop: -10
+    marginRight: 3
   }
 });

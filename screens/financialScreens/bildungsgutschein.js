@@ -17,7 +17,9 @@ const Bildungsgutschein = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <ArticleHeader>Bildungsgutschein</ArticleHeader>
+        <ArticleHeader>
+          {props.english ? 'Education Voucher' : 'Bildungsgutschein'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/financialIllustrations/Bildungsgutschein.png')}
         />

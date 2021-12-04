@@ -73,18 +73,22 @@ class insuranceMenuScreen extends React.Component {
         <Bayerische
           isVisible={this.state.bayrische}
           close={() => this.setState({bayrische: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <KünstlerSozialVersicherung
           isVisible={this.state.ksk}
           close={() => this.setState({ksk: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Arbeitslosversicherung
           isVisible={this.state.arbeitslos}
           close={() => this.setState({arbeitslos: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <Unfallversicherung
           isVisible={this.state.unfall}
           close={() => this.setState({unfall: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <ArticleHeader>
           {this.props.navigation.state.params.eng
@@ -138,6 +142,56 @@ class insuranceMenuScreen extends React.Component {
               }
             >
               Berufsunfähigkeits- und Unfallversicherung
+            </MenuCard>
+          </>
+        )}
+        {this.props.navigation.state.params.eng && (
+          <>
+            <MenuCard
+              textSample={'Link provided here'}
+              onPress={() =>
+                Linking.openURL(
+                  'https://stiftung-tanz.com/wordpress/wp-content/uploads/2013/02/Fl_Blallett_Leitfaden_18.pdf'
+                )
+              }
+            >
+              Our flyer on employment agency and Co
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({bayrische: true})}
+              textSample={
+                "The Versorgungsanstalt der deutschen Bühnen is a compulsory professional pension institution. Its purpose is to provide additional retirement, disability and survivors' benefits to stage employees of German theaters by means of mandatory insurance."
+              }
+              eng={true}
+            >
+              Bayerische Versorgungskammer
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({ksk: true})}
+              textSample={
+                'Since 1983, self-employed artists and publicists have been included in the protection of statutory social insurance through the Künstlersozialversicherung (KSK). A special feature is that artists and publicists only have to pay half of their contributions and are thus in a similarly favorable position as employees. '
+              }
+              eng={true}
+            >
+              Künstlersozialversicherung /KSK (Artists' Social Insurance)
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({arbeitslos: true})}
+              textSample={
+                'Voluntary continued insurance in unemployment insurance. Since February 1, 2006, the Employment Agency has offered compulsory application insurance in unemployment insurance...'
+              }
+              eng={true}
+            >
+              Unemployment insurance
+            </MenuCard>
+            <MenuCard
+              onPress={() => this.setState({unfall: true})}
+              textSample={
+                'What to do if I give up my job for health reasons? Prerequisites for receiving benefits for participation in working life (LTA) such as retraining, measures for further qualification or integration assistance ...'
+              }
+              eng={true}
+            >
+              Occupational disability and accident insurance
             </MenuCard>
           </>
         )}

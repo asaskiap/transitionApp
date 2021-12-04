@@ -73,6 +73,7 @@ class selfEmploymentMenuScreen extends React.Component {
         <Existenzgruendung
           isVisible={this.state.existenzgruendung}
           close={() => this.setState({existenzgruendung: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <ArticleHeader>
           {this.props.navigation.state.params.eng
@@ -83,7 +84,17 @@ class selfEmploymentMenuScreen extends React.Component {
           imageContainerStyle={{marginBottom: -20}}
           image={require('../../assets/illustrations/selfemploymentIllustrations/Selbstständigkeit.png')}
         />
-        {!this.props.navigation.state.params.eng && (
+        {this.props.navigation.state.params.eng ? (
+          <MenuCard
+            onPress={() => this.setState({existenzgruendung: true})}
+            textSample={
+              'Some dancers want to work as self-employed after their dance career. This applies both to those who move from permanent to freelance work and to those who want to work freelance in a new field (e.g. as a dance teacher or yoga instructor)...'
+            }
+            eng={true}
+          >
+            Starting a business
+          </MenuCard>
+        ) : (
           <MenuCard
             onPress={() => this.setState({existenzgruendung: true})}
             textSample={

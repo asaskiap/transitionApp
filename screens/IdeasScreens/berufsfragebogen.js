@@ -188,6 +188,7 @@ class Berufsfragebogen extends React.Component {
   };
 
   render() {
+    const eng = this.props.navigation.state.params.eng;
     return (
       <ScrollView
         style={{padding: 16}}
@@ -209,6 +210,7 @@ class Berufsfragebogen extends React.Component {
             setF={(val) => this.setState({currF: val})}
             handleSubmit={this.handleSubmit1}
             progress={1}
+            eng={eng}
           />
         )}
 
@@ -228,6 +230,7 @@ class Berufsfragebogen extends React.Component {
             setF={(val) => this.setState({currC: val})}
             handleSubmit={this.handleSubmit2}
             progress={2}
+            eng={eng}
           />
         )}
 
@@ -247,6 +250,7 @@ class Berufsfragebogen extends React.Component {
             setF={(val) => this.setState({currD: val})}
             handleSubmit={this.handleSubmit3}
             progress={3}
+            eng={eng}
           />
         )}
 
@@ -266,6 +270,7 @@ class Berufsfragebogen extends React.Component {
             setF={(val) => this.setState({currB: val})}
             handleSubmit={this.handleSubmit4}
             progress={4}
+            eng={eng}
           />
         )}
         {this.state.displayQ5 && (
@@ -284,6 +289,7 @@ class Berufsfragebogen extends React.Component {
             setF={(val) => this.setState({currA: val})}
             handleSubmit={this.handleSubmit5}
             progress={5}
+            eng={eng}
           />
         )}
         {this.state.displayQ6 && (
@@ -302,6 +308,7 @@ class Berufsfragebogen extends React.Component {
             setF={(val) => this.setState({currE: val})}
             handleSubmit={this.handleSubmit6}
             progress={6}
+            eng={eng}
           />
         )}
 
@@ -313,46 +320,50 @@ class Berufsfragebogen extends React.Component {
                 marginBottom: 10
               }}
             >
-              Mein Ergebnis
+              {eng ? 'My Result' : ' Mein Ergebnis'}
             </ArticleHeader>
 
             <PieChart style={{height: 200}} data={this.state.pieData} />
-            <PieLegende />
+            <PieLegende eng={eng} />
 
             {this.state.handwerklich >= this.state.forschend &&
               this.state.handwerklich >= this.state.künstlerisch &&
               this.state.handwerklich >= this.state.sozial &&
               this.state.handwerklich >= this.state.wirtschaftlich &&
               this.state.handwerklich >= this.state.verwaltend && (
-                <Handwerklich />
+                <Handwerklich eng={eng} />
               )}
 
             {this.state.forschend >= this.state.handwerklich &&
               this.state.forschend >= this.state.künstlerisch &&
               this.state.forschend >= this.state.sozial &&
               this.state.forschend >= this.state.wirtschaftlich &&
-              this.state.forschend >= this.state.verwaltend && <Forschend />}
+              this.state.forschend >= this.state.verwaltend && (
+                <Forschend eng={eng} />
+              )}
 
             {this.state.künstlerisch >= this.state.handwerklich &&
               this.state.künstlerisch >= this.state.forschend &&
               this.state.künstlerisch >= this.state.sozial &&
               this.state.künstlerisch >= this.state.wirtschaftlich &&
               this.state.künstlerisch >= this.state.verwaltend && (
-                <Künstlerisch />
+                <Künstlerisch eng={eng} />
               )}
 
             {this.state.sozial >= this.state.handwerklich &&
               this.state.sozial >= this.state.forschend &&
               this.state.sozial >= this.state.künstlerisch &&
               this.state.sozial >= this.state.wirtschaftlich &&
-              this.state.sozial >= this.state.verwaltend && <Sozial />}
+              this.state.sozial >= this.state.verwaltend && (
+                <Sozial eng={eng} />
+              )}
 
             {this.state.wirtschaftlich >= this.state.handwerklich &&
               this.state.wirtschaftlich >= this.state.forschend &&
               this.state.wirtschaftlich >= this.state.sozial &&
               this.state.wirtschaftlich >= this.state.künstlerisch &&
               this.state.wirtschaftlich >= this.state.verwaltend && (
-                <Wirtschaftlich />
+                <Wirtschaftlich eng={eng} />
               )}
 
             {this.state.verwaltend >= this.state.handwerklich &&
@@ -360,7 +371,7 @@ class Berufsfragebogen extends React.Component {
               this.state.verwaltend >= this.state.sozial &&
               this.state.verwaltend >= this.state.wirtschaftlich &&
               this.state.verwaltend >= this.state.künstlerisch && (
-                <Verwaltend />
+                <Verwaltend eng={eng} />
               )}
 
             <ButtonPrimary
@@ -368,13 +379,13 @@ class Berufsfragebogen extends React.Component {
               backgroundStyle={{backgroundColor: colors.accentDark}}
               textStyle={{color: colors.textLight}}
             >
-              Test neu starten
+              {eng ? 'Start over' : 'Test neu starten'}
             </ButtonPrimary>
 
             <ButtonPrimary
               onPress={() => this.props.navigation.navigate('Home')}
             >
-              Startseite
+              {eng ? 'Home' : 'Startseite'}
             </ButtonPrimary>
           </View>
         )}

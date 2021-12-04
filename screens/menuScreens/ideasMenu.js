@@ -73,6 +73,7 @@ class ideasMenuScreen extends React.Component {
         <Berufsportraits
           isVisible={this.state.berufsportraits}
           close={() => this.setState({berufsportraits: false})}
+          english={this.props.navigation.state.params.eng}
         />
         <ArticleHeader>
           {this.props.navigation.state.params.eng
@@ -83,11 +84,46 @@ class ideasMenuScreen extends React.Component {
           image={require('../../assets/illustrations/ideasIllustrations/baloon.png')}
         />
 
-        {!this.props.navigation.state.params.eng && (
+        {this.props.navigation.state.params.eng ? (
+          <>
+            <MenuCard
+              textSample={
+                'A test to help you define your skills and interests.'
+              }
+              onPress={() =>
+                this.props.navigation.navigate('Berufsfragebogen', {eng: true})
+              }
+              eng={true}
+            >
+              Job Interest Questionnaire
+            </MenuCard>
+            <MenuCard
+              textSample={'Introductions to various jobs.'}
+              onPress={() => this.setState({berufsportraits: true})}
+              eng={true}
+            >
+              Job portraits
+            </MenuCard>
+            <MenuCard
+              textSample={'Read how other dancers mastered their transition.'}
+              onPress={() =>
+                this.props.navigation.navigate('TransitionStories', {eng: true})
+              }
+              eng={true}
+            >
+              Transition Stories
+            </MenuCard>
+          </>
+        ) : (
           <>
             <MenuCard
               textSample={'Test mit individuellem Ergebnis'}
-              onPress={() => this.props.navigation.navigate('Berufsfragebogen')}
+              onPress={() =>
+                this.props.navigation.navigate(
+                  'Berufsfragebogen',
+                  (eng = this.props.navigation.state.params.eng)
+                )
+              }
             >
               Berufsinteressen Fragebogen
             </MenuCard>

@@ -1,14 +1,16 @@
 ### TO DO
 
-- add proper photos for transition stories
+# IMPORTANT before Upload
 
-- look up how to add news updates
+- change email addresses in send email
+
+- how to give proper name to back button on ios
+
+- credits for illustrations
 
 - check on other devices!
 
 - check all links (presentation and functionality)
-
-- pixelated illustrations?
 
 ## reminder: Links need to have https:// before ! in order to work!!
 

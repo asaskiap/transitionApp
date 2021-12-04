@@ -56,6 +56,7 @@ class BerufsfragebogenIntro extends React.Component {
     });
   };
   render() {
+    const eng = this.props.navigation.state.params.eng;
     return (
       <ScrollableScreenContainer>
         <Menu
@@ -64,9 +65,13 @@ class BerufsfragebogenIntro extends React.Component {
           {...this.props}
         ></Menu>
         <HeaderEB textStyle={{textAlign: 'center'}}>
-          Berufsinteressen Fragebogen
+          {eng ? 'Job Interest Questionnaire' : 'Berufsinteressen Fragebogen'}
         </HeaderEB>
-        <SubheaderEB>Fragebogen mit individuellem Ergebnis</SubheaderEB>
+        <SubheaderEB>
+          {eng
+            ? 'An individual assessment'
+            : 'Fragebogen mit individuellem Ergebnis'}
+        </SubheaderEB>
         <ArticleIllustration
           imageContainerStyle={{marginVertical: -50}}
           imageStyle={{height: '70%'}}
@@ -75,9 +80,11 @@ class BerufsfragebogenIntro extends React.Component {
         <ButtonPrimary
           backgroundStyle={{backgroundColor: colors.accentDark, marginTop: -30}}
           textStyle={{color: colors.textLight}}
-          onPress={() => this.props.navigation.navigate('BerufsfragebogenGo')}
+          onPress={() =>
+            this.props.navigation.navigate('BerufsfragebogenGo', {eng: eng})
+          }
         >
-          Test Starten
+          {eng ? 'Start Test' : 'Test Starten'}
         </ButtonPrimary>
       </ScrollableScreenContainer>
     );

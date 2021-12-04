@@ -23,6 +23,7 @@ import Stipendien from '../financialScreens/stipendien';
 import Bayrische from '../financialScreens/bayrische';
 import Nebenjobs from '../financialScreens/nebenjobs';
 import Bildungsgutschein from '../financialScreens/bildungsgutschein';
+import Loans from '../financialScreens/loans';
 
 const windowHeight = Dimensions.get('window').height;
 
@@ -61,7 +62,8 @@ class financialMenuScreen extends React.Component {
     stipendien: false,
     bayrische: false,
     nebenjobs: false,
-    bildungsgutschein: false
+    bildungsgutschein: false,
+    loans: false
   };
 
   toggleMenu = () => {
@@ -79,6 +81,11 @@ class financialMenuScreen extends React.Component {
   render() {
     return (
       <ScrollableScreenContainer>
+        <Loans
+          isVisible={this.state.loans}
+          close={() => this.setState({loans: false})}
+          english={this.props.navigation.state.params.eng}
+        />
         <Aufstiegsstipendium
           isVisible={this.state.aufstiegsstipendium}
           close={() => this.setState({aufstiegsstipendium: false})}
@@ -285,7 +292,7 @@ class financialMenuScreen extends React.Component {
               Education voucher
             </MenuCard>
             <MenuCard
-              onPress={() => this.setState({bildungskredit: true})}
+              onPress={() => this.setState({loans: true})}
               textSample={'Education loan - Student loan - BAföG bank loan'}
               eng={true}
             >
