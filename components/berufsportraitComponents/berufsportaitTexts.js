@@ -6,56 +6,83 @@ import {List, ListItem} from '../articleComponents/list';
 import ArticleSubHeader from '../articleComponents/articleSubHeader';
 import Quote from '../../components/articleComponents/quote';
 
+import {
+  AutomotiveEnglish,
+  BiologistEnglish,
+  BlindPedagogueEnglish,
+  BookBinderEnglish,
+  CivilServantEnglish,
+  ClothingTechnicianEnglish,
+  ClownEnglish,
+  CorporateHealthManagerEnglish,
+  CruiseManagerEnglish,
+  EducatorEnglish,
+  EurythmistEnglish,
+  LeisureScientistEnglish,
+  NutritionalCouncellingEnglish,
+  OpticianEnglish
+} from './berufsportraitsEnglishTexts';
+
 import {sendEmail} from '../../utilities/sendEmail';
+import Article from '../articleComponents/article';
 
 export const Augenoptiker = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>AugenoptikerIn △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Optician △' : 'AugenoptikerIn △'}
+        </ArticleSubHeader>
       </TouchableOpacity>
-
-      <Paragraph>
-        Moderne Brillen sind schon lange nicht mehr nur Sehhilfen, sie sind
-        Accessoires, die den Typ ihrer Träger unterstreichen und gut zu deren
-        Stil und Lebensweise passen sollen. Entscheidend hierbei ist nicht nur
-        das Gestell, sondern auch die Art der Gläser. Diese werden z.B.
-        entspiegelt, damit keine Lichtreflexe beim Sehen stören und das
-        Gegenüber dem Brillenträger ohne Spiegelungen in die Augen blicken kann.
-        Brillengläser können außerdem getönt oder beschichtet sein.
-        Gleitsichtgläser weisen sogar unterschiedliche Stärken innerhalb des
-        Glases auf: Durch den oberen Bereich der Gläser kann man in die Ferne
-        blicken, mithilfe des unteren Teils lesen.
-      </Paragraph>
-      <Paragraph>
-        AugenoptikerInnen kennen die geeignete Sehhilfe für jeden Anlass, ob für
-        den Sport, als Sonnenschutz oder für den Computer-Arbeitsplatz. Im
-        Optikfachgeschäft stehen sie den Kunden beratend zur Seite und helfen,
-        die geeigneten Gläser und Brillengestelle auszuwählen. Fachwissen allein
-        genügt hier nicht: AugenoptikerInnen benötigen auch ein Gespür für Stil
-        und aktuelle Modetrends. Auch bei großem Kundenandrang behalten sie
-        stets den Überblick. Ein Kunde braucht z.B. eine Lesebrille, ein anderer
-        möchte sich über die Vor- und Nachteile von Kunststoffgläsern
-        informieren. Eine dritte Kundin benötigt eine Brille mit einer anderen
-        Glasstärke als ihre bisherige. Falls noch keine Untersuchungsergebnisse
-        eines Augenarztes/einer Augenärztin vorliegen, wird der Korrekturbedarf
-        im Optikfachgeschäft ermittelt. Auf Wunsch führen AugenoptikerInnen auch
-        Führerschein-Sehtests durch. Mehr und mehr Fachgeschäfte für Optik
-        bieten mittlerweile auch Dienstleistungen im Bereich Hörgeräteakustik
-        an. Hierbei sind die AugenoptikerInnen insbesondere beratend tätig und
-        müssen sich daher auch mit Hörgeräten auskennen.
-      </Paragraph>
-      <Paragraph>
-        Der Beruf der AugenoptikerIn ist also sehr vielfältig und hat viel mit
-        Stil und Präzisionsarbeit zu tun. Die Ausbildung ist dual, findet also
-        in einem Betrieb und der Berufsschule statt, sie dauert 3 Jahre. Nach
-        einigen Jahren Berufserfahrung kann man die Meisterprüfung anstreben und
-        dann einen eigenen Optikerladen eröffnen.
-      </Paragraph>
-      <Paragraph>
-        In der Jobbörse der Arbeitsagentur finden sich aktuell 200 offene
-        Stellen für Augenoptiker bundesweit.
-      </Paragraph>
+      {props.eng ? (
+        <OpticianEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Moderne Brillen sind schon lange nicht mehr nur Sehhilfen, sie sind
+            Accessoires, die den Typ ihrer Träger unterstreichen und gut zu
+            deren Stil und Lebensweise passen sollen. Entscheidend hierbei ist
+            nicht nur das Gestell, sondern auch die Art der Gläser. Diese werden
+            z.B. entspiegelt, damit keine Lichtreflexe beim Sehen stören und das
+            Gegenüber dem Brillenträger ohne Spiegelungen in die Augen blicken
+            kann. Brillengläser können außerdem getönt oder beschichtet sein.
+            Gleitsichtgläser weisen sogar unterschiedliche Stärken innerhalb des
+            Glases auf: Durch den oberen Bereich der Gläser kann man in die
+            Ferne blicken, mithilfe des unteren Teils lesen.
+          </Paragraph>
+          <Paragraph>
+            AugenoptikerInnen kennen die geeignete Sehhilfe für jeden Anlass, ob
+            für den Sport, als Sonnenschutz oder für den Computer-Arbeitsplatz.
+            Im Optikfachgeschäft stehen sie den Kunden beratend zur Seite und
+            helfen, die geeigneten Gläser und Brillengestelle auszuwählen.
+            Fachwissen allein genügt hier nicht: AugenoptikerInnen benötigen
+            auch ein Gespür für Stil und aktuelle Modetrends. Auch bei großem
+            Kundenandrang behalten sie stets den Überblick. Ein Kunde braucht
+            z.B. eine Lesebrille, ein anderer möchte sich über die Vor- und
+            Nachteile von Kunststoffgläsern informieren. Eine dritte Kundin
+            benötigt eine Brille mit einer anderen Glasstärke als ihre
+            bisherige. Falls noch keine Untersuchungsergebnisse eines
+            Augenarztes/einer Augenärztin vorliegen, wird der Korrekturbedarf im
+            Optikfachgeschäft ermittelt. Auf Wunsch führen AugenoptikerInnen
+            auch Führerschein-Sehtests durch. Mehr und mehr Fachgeschäfte für
+            Optik bieten mittlerweile auch Dienstleistungen im Bereich
+            Hörgeräteakustik an. Hierbei sind die AugenoptikerInnen insbesondere
+            beratend tätig und müssen sich daher auch mit Hörgeräten auskennen.
+          </Paragraph>
+          <Paragraph>
+            Der Beruf der AugenoptikerIn ist also sehr vielfältig und hat viel
+            mit Stil und Präzisionsarbeit zu tun. Die Ausbildung ist dual,
+            findet also in einem Betrieb und der Berufsschule statt, sie dauert
+            3 Jahre. Nach einigen Jahren Berufserfahrung kann man die
+            Meisterprüfung anstreben und dann einen eigenen Optikerladen
+            eröffnen.
+          </Paragraph>
+          <Paragraph>
+            In der Jobbörse der Arbeitsagentur finden sich aktuell 200 offene
+            Stellen für Augenoptiker bundesweit.
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -64,97 +91,109 @@ export const Automobilverkäufer = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Automobilverkäufer*In △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Automotive salesperson △' : 'Automobilverkäufer*In △'}
+        </ArticleSubHeader>
       </TouchableOpacity>
-
-      <Paragraph>
-        Berufliche Zukunft im Vertrieb (z.B. in der Automobilindustrie)
-      </Paragraph>
-      <Paragraph>
-        Die Produktvielfalt in unserer modernen Gesellschaft ist enorm groß, so
-        dass Käufer und Hersteller nicht mehr ohne weiteres zielsicher
-        zusammenfinden. Ausgefeilte Marketingstrategien, die Produkte und
-        potenzielle Käufer/iInnen erfolgreich zusammenbringen, sind heute ein
-        wichtiger globaler Absatzgarant und zudem Imagefaktor für Unternehmen.
-      </Paragraph>
-      <Paragraph>
-        Normalerweise ist die Ausbildung zur/m Automobilverkäufer/in dreijährig.
-        Bei einigen Unternehmen, wie z.B. Mercedes Benz kann man sich aber
-        innerhalb eines Jahres zur/m zertifizierten Automobilverkäufer/in
-        qualifizieren. Voraussetzung für diese fundierte unternehmensorientierte
-        Kompaktausbildung in den unter anderen Bereichen Kaufmännisches,
-        Marketing, Psychologie ist, dass man dann auch tatsächlich im Vertrieb
-        des Unternehmens tätig wird. Das bedeutet, dass bei
-        Qualifizierungsbeginn ein Vertrag mit Einstellungsoption eingegangen
-        wird, der nicht nur eine aussichtsreiche berufliche Perspektive in den
-        einzelnen Vertriebssparten eröffnet, sondern auch finanzielle Sicherheit
-        bietet. Bereits während der Ausbildung ist man angestellt und kann sich
-        so für Vertriebsaufgaben innerhalb des Unternehmens gut empfehlen.
-        Bewerbungen mit dem Verweis “Einjährige Kompaktausbildung
-        Automobilverkäufer/in” sind jederzeit möglich. Gern beraten wir bei
-        Interesse und Fragen zur Bewerbung.
-      </Paragraph>
-      <Paragraph>
-        Tänzer*innen bringen für den Vertrieb vieles mit, das in diesem
-        vielseitigen und anspruchsvollen Berufsfeld wichtig, aber trotzdem nicht
-        selbstverständlich ist: Ausstrahlung und Stil, ästhetisches Empfinden,
-        Feingefühl, Flexibilität, Mehrsprachigkeit, interkulturelle Kompetenz,
-        Flexibilität. Die weltweit sehr erfolgreiche deutsche Automobilindustrie
-        sucht stetig Talente für den Vertrieb und bietet sehr gute
-        Entwicklungsmöglichkeiten. Dies auch unter dem Gesichtspunkt, dass sich
-        die Branche aufgrund moderner Technologien wie Elektromobilität und
-        Navigationstechnik sehr stark bewegt und sehr innovativ ist. Infos mit
-        dem Stichwort Automobilverkäufer*in sind bei der IHK des jeweiligen
-        Wohnortes bzw. den Unternehmen zu finden, wie beispielsweise bei:
-      </Paragraph>
-      <Link onPress={() => Linking.openURL('https://www.volkswagen.de')}>
-        www.volkswagen.de
-      </Link>
-      <Link onPress={() => Linking.openURL('https://www.mercedes-benz.de')}>
-        www.mercedes-benz.de
-      </Link>
-      <Link onPress={() => Linking.openURL('https://www.bmw.de')}>
-        www.bmw.de
-      </Link>
-      <Link onPress={() => Linking.openURL('https://www.porsche.de')}>
-        www.porsche.de
-      </Link>
-      <Paragraph>
-        Normalerweise dauert die Ausbildung zur*m Automobilverkäufer*in drei
-        Jahre.
-      </Paragraph>
-      <Paragraph>
-        Bei einigen Unternehmen, wie z.B. Mercedes Benz, kann man sich aber
-        innerhalb eines Jahres zum*r zertifizierten Automobilverkäufer*in
-        qualifizieren. Voraussetzung für diese fundierte unternehmensorientierte
-        Kompaktausbildung in den exemplarisch genannten Bereichen:
-        Kaufmännisches, Marketing und Psychologie ist, dass man dann auch
-        tatsächlich im Vertrieb des Unternehmens tätig wird.
-      </Paragraph>
-      <Paragraph>
-        Das bedeutet, dass bei Qualifizierungsbeginn ein Vertrag mit
-        Einstellungsoption eingegangen wird, der nicht nur eine aussichtsreiche
-        berufliche Perspektive in den einzelnen Vertriebssparten eröffnet,
-        sondern auch finanzielle Sicherheit bietet. Bereits während der
-        Ausbildung ist man angestellt und kann sich so sehr fokussiert für
-        Vertriebsaufgaben innerhalb des Unternehmens empfehlen. Bewerbungen mit
-        dem Verweis „Einjährige Kompaktausbildung Automobilverkäufer*in“ sind
-        jederzeit möglich. Gern beraten die bundesweiten Niederlassungen bei
-        Interesse und Fragen zur Bewerbung.
-      </Paragraph>
-      <Paragraph>
-        Ausführliche Infos zur einjährigen Kompaktausbildung z.B. bei Mercedes
-        Benz Berlin unter:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.mercedes-benz-berlin.de/de/desktop/passenger-cars/about-us/career/vacancies/nachwuchsverkauf-pkw.html'
-          )
-        }
-      >
-        www.mercedes-benz-berlin.de/de/desktop/passenger-cars/about-us/career/vacancies/nachwuchsverkauf-pkw.html
-      </Link>
+      {props.eng ? (
+        <AutomotiveEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Berufliche Zukunft im Vertrieb (z.B. in der Automobilindustrie)
+          </Paragraph>
+          <Paragraph>
+            Die Produktvielfalt in unserer modernen Gesellschaft ist enorm groß,
+            so dass Käufer und Hersteller nicht mehr ohne weiteres zielsicher
+            zusammenfinden. Ausgefeilte Marketingstrategien, die Produkte und
+            potenzielle Käufer/iInnen erfolgreich zusammenbringen, sind heute
+            ein wichtiger globaler Absatzgarant und zudem Imagefaktor für
+            Unternehmen.
+          </Paragraph>
+          <Paragraph>
+            Normalerweise ist die Ausbildung zur/m Automobilverkäufer/in
+            dreijährig. Bei einigen Unternehmen, wie z.B. Mercedes Benz kann man
+            sich aber innerhalb eines Jahres zur/m zertifizierten
+            Automobilverkäufer/in qualifizieren. Voraussetzung für diese
+            fundierte unternehmensorientierte Kompaktausbildung in den unter
+            anderen Bereichen Kaufmännisches, Marketing, Psychologie ist, dass
+            man dann auch tatsächlich im Vertrieb des Unternehmens tätig wird.
+            Das bedeutet, dass bei Qualifizierungsbeginn ein Vertrag mit
+            Einstellungsoption eingegangen wird, der nicht nur eine
+            aussichtsreiche berufliche Perspektive in den einzelnen
+            Vertriebssparten eröffnet, sondern auch finanzielle Sicherheit
+            bietet. Bereits während der Ausbildung ist man angestellt und kann
+            sich so für Vertriebsaufgaben innerhalb des Unternehmens gut
+            empfehlen. Bewerbungen mit dem Verweis “Einjährige Kompaktausbildung
+            Automobilverkäufer/in” sind jederzeit möglich. Gern beraten wir bei
+            Interesse und Fragen zur Bewerbung.
+          </Paragraph>
+          <Paragraph>
+            Tänzer*innen bringen für den Vertrieb vieles mit, das in diesem
+            vielseitigen und anspruchsvollen Berufsfeld wichtig, aber trotzdem
+            nicht selbstverständlich ist: Ausstrahlung und Stil, ästhetisches
+            Empfinden, Feingefühl, Flexibilität, Mehrsprachigkeit,
+            interkulturelle Kompetenz, Flexibilität. Die weltweit sehr
+            erfolgreiche deutsche Automobilindustrie sucht stetig Talente für
+            den Vertrieb und bietet sehr gute Entwicklungsmöglichkeiten. Dies
+            auch unter dem Gesichtspunkt, dass sich die Branche aufgrund
+            moderner Technologien wie Elektromobilität und Navigationstechnik
+            sehr stark bewegt und sehr innovativ ist. Infos mit dem Stichwort
+            Automobilverkäufer*in sind bei der IHK des jeweiligen Wohnortes bzw.
+            den Unternehmen zu finden, wie beispielsweise bei:
+          </Paragraph>
+          <Link onPress={() => Linking.openURL('https://www.volkswagen.de')}>
+            www.volkswagen.de
+          </Link>
+          <Link onPress={() => Linking.openURL('https://www.mercedes-benz.de')}>
+            www.mercedes-benz.de
+          </Link>
+          <Link onPress={() => Linking.openURL('https://www.bmw.de')}>
+            www.bmw.de
+          </Link>
+          <Link onPress={() => Linking.openURL('https://www.porsche.de')}>
+            www.porsche.de
+          </Link>
+          <Paragraph>
+            Normalerweise dauert die Ausbildung zur*m Automobilverkäufer*in drei
+            Jahre.
+          </Paragraph>
+          <Paragraph>
+            Bei einigen Unternehmen, wie z.B. Mercedes Benz, kann man sich aber
+            innerhalb eines Jahres zum*r zertifizierten Automobilverkäufer*in
+            qualifizieren. Voraussetzung für diese fundierte
+            unternehmensorientierte Kompaktausbildung in den exemplarisch
+            genannten Bereichen: Kaufmännisches, Marketing und Psychologie ist,
+            dass man dann auch tatsächlich im Vertrieb des Unternehmens tätig
+            wird.
+          </Paragraph>
+          <Paragraph>
+            Das bedeutet, dass bei Qualifizierungsbeginn ein Vertrag mit
+            Einstellungsoption eingegangen wird, der nicht nur eine
+            aussichtsreiche berufliche Perspektive in den einzelnen
+            Vertriebssparten eröffnet, sondern auch finanzielle Sicherheit
+            bietet. Bereits während der Ausbildung ist man angestellt und kann
+            sich so sehr fokussiert für Vertriebsaufgaben innerhalb des
+            Unternehmens empfehlen. Bewerbungen mit dem Verweis „Einjährige
+            Kompaktausbildung Automobilverkäufer*in“ sind jederzeit möglich.
+            Gern beraten die bundesweiten Niederlassungen bei Interesse und
+            Fragen zur Bewerbung.
+          </Paragraph>
+          <Paragraph>
+            Ausführliche Infos zur einjährigen Kompaktausbildung z.B. bei
+            Mercedes Benz Berlin unter:
+          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'http://www.mercedes-benz-berlin.de/de/desktop/passenger-cars/about-us/career/vacancies/nachwuchsverkauf-pkw.html'
+              )
+            }
+          >
+            www.mercedes-benz-berlin.de/de/desktop/passenger-cars/about-us/career/vacancies/nachwuchsverkauf-pkw.html
+          </Link>
+        </Article>
+      )}
     </>
   );
 };
@@ -164,55 +203,70 @@ export const AuswertigesAmt = (props) => {
     <>
       <TouchableOpacity onPress={props.close}>
         <ArticleSubHeader>
-          Beamte*r im Mittleren Dienst des Auswärtigen Amtes △
+          {props.eng
+            ? 'Civil servant in the intermediate service of the Federal Foreign Office'
+            : 'Beamte*r im Mittleren Dienst des Auswärtigen Amtes '}
+          △
         </ArticleSubHeader>
       </TouchableOpacity>
-
-      <Paragraph>
-        Für alle Tänzer*innen in Transition eine Option, die:
-      </Paragraph>
-      <List>
-        <ListItem>es abwechslungsreich und auch herausfordernd mögen</ListItem>
-        <ListItem>kosmopolitisch denken</ListItem>
-        <ListItem>sich mit Deutschland/EUropa identifizieren</ListItem>
-        <ListItem>offen für fremde Sprachen und Kulturen sind</ListItem>
-        <ListItem>
-          mit oder ohne Familie im Ausland leben möchten/können
-        </ListItem>
-        <ListItem>und kein Problem damit haben, verbeamtet zu sein.</ListItem>
-      </List>
-      <Paragraph>
-        (deutsche Staatsbürgerschaft und fließende Deutschkenntnisse
-        Voraussetzung, wobei eine zweite Muttersprache wie z.B. Russisch,
-        Türkisch, Arabisch von Vorteil ist)
-      </Paragraph>
-      <Paragraph>
-        Der diplomatische Dienst des Auswärtigen Amtes sucht
-        Beamt*innenanwärter*innen für den Mittleren Dienst! Vereinfacht gesagt,
-        sind das die Menschen, die nach intensiver Ausbildung in den
-        verschiedenen Abteilungen der deutschen Auslandsvertretungen, also in
-        den Botschaften, arbeiten, z.B. als Kulturattaché. Wichtig zu wissen,
-        dass man stets alle Abteilungen einer Auslandsvertretung durchläuft,
-        also beispielsweise auch die Visa-Abteilung. Interesse an Verwaltung,
-        Recht und Projektmanagement wird deshalb vorausgesetzt.
-      </Paragraph>
-      <Paragraph>
-        Die Auslandseinsätze nach erfolgreicher Ausbildung erfolgen im
-        sogenannten weltweiten Rotationsprinzip, d.h. man wechselt nach ca. vier
-        bis sechs Jahren den Einsatzort. Das Auswärtige Amt bemüht sich bei der
-        Einsatzplanung private Belange zu berücksichtigen. Mitreisende Kinder
-        und Jugendliche besuchen in der Regel die internationalen Deutschen
-        Schulen im Gastland. Dort werden überwiegend nach dem thüringischen
-        Lehrplan deutsche Schulabschlüsse erworben, die selbstverständlich in
-        Deutschland und der EU anerkannt sind.
-      </Paragraph>
-      <Paragraph>
-        Die 24-monatige, bezahlte, praxisorientierte Vollzeit-Ausbildung mit
-        intensiven Fremdsprachenmodulen an der Akademie des Auswärtigen Dienstes
-        in Berlin (Tegel) hat einen exzellenten Ruf. Praktika in der Zentrale
-        des Auswärtigen Amtes sowie an einer der weltweiten Auslandsvertretungen
-        sind selbstverständlicher Bestandteil dieser Ausbildung.
-      </Paragraph>
+      {props.eng ? (
+        <CivilServantEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Für alle Tänzer*innen in Transition eine Option, die:
+          </Paragraph>
+          <List>
+            <ListItem>
+              es abwechslungsreich und auch herausfordernd mögen
+            </ListItem>
+            <ListItem>kosmopolitisch denken</ListItem>
+            <ListItem>sich mit Deutschland/EUropa identifizieren</ListItem>
+            <ListItem>offen für fremde Sprachen und Kulturen sind</ListItem>
+            <ListItem>
+              mit oder ohne Familie im Ausland leben möchten/können
+            </ListItem>
+            <ListItem>
+              und kein Problem damit haben, verbeamtet zu sein.
+            </ListItem>
+          </List>
+          <Paragraph>
+            (deutsche Staatsbürgerschaft und fließende Deutschkenntnisse
+            Voraussetzung, wobei eine zweite Muttersprache wie z.B. Russisch,
+            Türkisch, Arabisch von Vorteil ist)
+          </Paragraph>
+          <Paragraph>
+            Der diplomatische Dienst des Auswärtigen Amtes sucht
+            Beamt*innenanwärter*innen für den Mittleren Dienst! Vereinfacht
+            gesagt, sind das die Menschen, die nach intensiver Ausbildung in den
+            verschiedenen Abteilungen der deutschen Auslandsvertretungen, also
+            in den Botschaften, arbeiten, z.B. als Kulturattaché. Wichtig zu
+            wissen, dass man stets alle Abteilungen einer Auslandsvertretung
+            durchläuft, also beispielsweise auch die Visa-Abteilung. Interesse
+            an Verwaltung, Recht und Projektmanagement wird deshalb
+            vorausgesetzt.
+          </Paragraph>
+          <Paragraph>
+            Die Auslandseinsätze nach erfolgreicher Ausbildung erfolgen im
+            sogenannten weltweiten Rotationsprinzip, d.h. man wechselt nach ca.
+            vier bis sechs Jahren den Einsatzort. Das Auswärtige Amt bemüht sich
+            bei der Einsatzplanung private Belange zu berücksichtigen.
+            Mitreisende Kinder und Jugendliche besuchen in der Regel die
+            internationalen Deutschen Schulen im Gastland. Dort werden
+            überwiegend nach dem thüringischen Lehrplan deutsche Schulabschlüsse
+            erworben, die selbstverständlich in Deutschland und der EU anerkannt
+            sind.
+          </Paragraph>
+          <Paragraph>
+            Die 24-monatige, bezahlte, praxisorientierte Vollzeit-Ausbildung mit
+            intensiven Fremdsprachenmodulen an der Akademie des Auswärtigen
+            Dienstes in Berlin (Tegel) hat einen exzellenten Ruf. Praktika in
+            der Zentrale des Auswärtigen Amtes sowie an einer der weltweiten
+            Auslandsvertretungen sind selbstverständlicher Bestandteil dieser
+            Ausbildung.
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -221,72 +275,86 @@ export const Bekleidungstechniker = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>BekleidungstechnikerIn (BA) △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng
+            ? 'Clothing technician (BA)'
+            : 'BekleidungstechnikerIn (BA)'}
+          △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Das Bachelor-Studium Bekleidungstechnik/Konfektion gehört als sehr
-        interdisziplinär ausgerichtetes Fach zu den Ingenieurwissenschaften. Der
-        starke Praxisbezug ist dabei unübersehbar, denn Verarbeitungstechnik,
-        textile Werkstofftechnik oder maschinentechnische Grundlagen sind
-        wesentliche Bestandteile des Lehrplans, die bei laufender Produktion
-        erprobt werden müssen.
-      </Paragraph>
-      <Paragraph>
-        Vermittelt werden neben den mathematisch- technischen Grundlagen der
-        Textil- und Bekleidungsproduktion ebenso chemisch-physikalische
-        Wissensbausteine, indem zum Beispiel – meist in Kooperation mit
-        entsprechenden Unternehmen – die große Vielfalt unterschiedlicher
-        Materialien und Textilien analysiert und einsetzbar gemacht werden. Der
-        sich stark entwickelnde Markt der „Smart Textiles“ spielt dabei eine
-        große Rolle: Gewebe mit beispielsweise wasserdichten und/oder
-        feuerfesten Eigenschaften, die bei der Berufsbekleidung bestimmter
-        Berufsgruppen oder der Innenausstattung verschiedenster Transportmittel
-        zum Einsatz kommt.
-      </Paragraph>
-      <Paragraph>
-        Neben diesen vor allem technisch-naturwissenschaftlichen Kompetenzen
-        geht es in der Bekleidungstechnik fachlich auch um die textile
-        Produktion an sich sowie betriebswirtschaftliches Knowhow, zum Beispiel
-        im Bereich Unternehmensführung, denn der weltweite Bekleidungsmarkt ist
-        hart umkämpft. Ein wichtiges Schlagwort an dieser Stelle, das den Bogen
-        zu den bereits erwähnten immer wichtiger werdenden „Smart Textiles“
-        schlägt, ist Innovation bzw. Innovationsmanagment. Ebenso wichtig sind
-        in diesem Zusammenhang die Fächer Marketing und Logistik.
-      </Paragraph>
-      <Paragraph>
-        Neben all dem werden selbstverständlich die Grundlagen des Designs, wie
-        Farbenlehre bzw. der Umgang mit Farben vermittelt. Wahlfächer erlauben
-        die Spezialisierung in beispielsweise Design und Material, Marketing und
-        Wirtschaftswissenschaften oder der bereits erwähnten textilen
-        Materialwissenschaft.
-      </Paragraph>
-      <Paragraph>
-        TextilingenieurInnen sind nach ihrem vielseitigen Studium meistens in
-        der Textil- und Bekleidungsindustrie tätig. Sie organisieren und
-        überwachen dort die industrielle Fertigung von Textilien. Außerdem sind
-        sie gemeinsam mit DesignerInnen für die Gestaltung neuer Textilprodukte
-        verantwortlich und forschen an neuen Fertigungstechniken. Da sich die
-        Herstellung von Textilien mit Hilfe neuer Technologien immer wieder
-        verändert, handelt es sich hierbei um einen sehr spannenden und
-        abwechslungsreichen Tätigkeitsbereich, der auch internationale
-        Perspektiven eröffnet. Oft sind Textilingenieure nämlich auch in der
-        Automobil-, Luftfahrt- oder Raumfahrtindustrie tätig. Dort arbeiten sie
-        an der Herstellung von Raumanzügen, Autositzen oder Airbags.
-      </Paragraph>
-      <Paragraph>
-        Viele AbsolventInnen der Bekleidungstechnik übernehmen im Laufe ihrer
-        beruflichen Karriere auch erfolgreich Managementaufgaben, etwa im
-        Vertrieb.
-      </Paragraph>
-      <Paragraph>Weitere Infos zum Studiengang hier:</Paragraph>
-      <List>
-        <ListItem>
-          HTW Berlin: BA Bekleidungstechnik, Zugang auch ohne Abitur möglich
-        </ListItem>
-        <ListItem>Hochschule Niederrhein Mönchengladbach</ListItem>
-        <ListItem>Carl von Ossietzky Universität Oldenburg</ListItem>
-        <ListItem>Hochschule Albstadt-Sigmaringen</ListItem>
-      </List>
+
+      {props.eng ? (
+        <ClothingTechnicianEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Das Bachelor-Studium Bekleidungstechnik/Konfektion gehört als sehr
+            interdisziplinär ausgerichtetes Fach zu den Ingenieurwissenschaften.
+            Der starke Praxisbezug ist dabei unübersehbar, denn
+            Verarbeitungstechnik, textile Werkstofftechnik oder
+            maschinentechnische Grundlagen sind wesentliche Bestandteile des
+            Lehrplans, die bei laufender Produktion erprobt werden müssen.
+          </Paragraph>
+          <Paragraph>
+            Vermittelt werden neben den mathematisch- technischen Grundlagen der
+            Textil- und Bekleidungsproduktion ebenso chemisch-physikalische
+            Wissensbausteine, indem zum Beispiel – meist in Kooperation mit
+            entsprechenden Unternehmen – die große Vielfalt unterschiedlicher
+            Materialien und Textilien analysiert und einsetzbar gemacht werden.
+            Der sich stark entwickelnde Markt der „Smart Textiles“ spielt dabei
+            eine große Rolle: Gewebe mit beispielsweise wasserdichten und/oder
+            feuerfesten Eigenschaften, die bei der Berufsbekleidung bestimmter
+            Berufsgruppen oder der Innenausstattung verschiedenster
+            Transportmittel zum Einsatz kommt.
+          </Paragraph>
+          <Paragraph>
+            Neben diesen vor allem technisch-naturwissenschaftlichen Kompetenzen
+            geht es in der Bekleidungstechnik fachlich auch um die textile
+            Produktion an sich sowie betriebswirtschaftliches Knowhow, zum
+            Beispiel im Bereich Unternehmensführung, denn der weltweite
+            Bekleidungsmarkt ist hart umkämpft. Ein wichtiges Schlagwort an
+            dieser Stelle, das den Bogen zu den bereits erwähnten immer
+            wichtiger werdenden „Smart Textiles“ schlägt, ist Innovation bzw.
+            Innovationsmanagment. Ebenso wichtig sind in diesem Zusammenhang die
+            Fächer Marketing und Logistik.
+          </Paragraph>
+          <Paragraph>
+            Neben all dem werden selbstverständlich die Grundlagen des Designs,
+            wie Farbenlehre bzw. der Umgang mit Farben vermittelt. Wahlfächer
+            erlauben die Spezialisierung in beispielsweise Design und Material,
+            Marketing und Wirtschaftswissenschaften oder der bereits erwähnten
+            textilen Materialwissenschaft.
+          </Paragraph>
+          <Paragraph>
+            TextilingenieurInnen sind nach ihrem vielseitigen Studium meistens
+            in der Textil- und Bekleidungsindustrie tätig. Sie organisieren und
+            überwachen dort die industrielle Fertigung von Textilien. Außerdem
+            sind sie gemeinsam mit DesignerInnen für die Gestaltung neuer
+            Textilprodukte verantwortlich und forschen an neuen
+            Fertigungstechniken. Da sich die Herstellung von Textilien mit Hilfe
+            neuer Technologien immer wieder verändert, handelt es sich hierbei
+            um einen sehr spannenden und abwechslungsreichen Tätigkeitsbereich,
+            der auch internationale Perspektiven eröffnet. Oft sind
+            Textilingenieure nämlich auch in der Automobil-, Luftfahrt- oder
+            Raumfahrtindustrie tätig. Dort arbeiten sie an der Herstellung von
+            Raumanzügen, Autositzen oder Airbags.
+          </Paragraph>
+          <Paragraph>
+            Viele AbsolventInnen der Bekleidungstechnik übernehmen im Laufe
+            ihrer beruflichen Karriere auch erfolgreich Managementaufgaben, etwa
+            im Vertrieb.
+          </Paragraph>
+          <Paragraph>Weitere Infos zum Studiengang hier:</Paragraph>
+          <List>
+            <ListItem>
+              HTW Berlin: BA Bekleidungstechnik, Zugang auch ohne Abitur möglich
+            </ListItem>
+            <ListItem>Hochschule Niederrhein Mönchengladbach</ListItem>
+            <ListItem>Carl von Ossietzky Universität Oldenburg</ListItem>
+            <ListItem>Hochschule Albstadt-Sigmaringen</ListItem>
+          </List>
+        </Article>
+      )}
     </>
   );
 };
@@ -296,104 +364,116 @@ export const Gesundheitsmanager = (props) => {
     <>
       <TouchableOpacity onPress={props.close}>
         <ArticleSubHeader>
-          Betriebliche/r Gesundheits- manager/in △
+          {props.eng
+            ? 'Corporate health manager'
+            : 'Betriebliche/r Gesundheits- manager/in'}{' '}
+          △
         </ArticleSubHeader>
       </TouchableOpacity>
-
-      <Paragraph>
-        Der Bedarf an Fachkräften für Gesundheitsmanagement und Prävention
-        steigt. So verwundert auch nicht, dass es bundesweit immer mehr
-        Weiterbildungsangebote im Bereich Gesundheitsmanagement gibt. Allerdings
-        variieren sie enorm in Qualität, Preis und der Art des
-        Qualifikationsnachweises.
-      </Paragraph>
-      <Paragraph>
-        Beschäftigungsmöglichkeiten im betrieblichen Gesundheitsmanagement
-      </Paragraph>
-      <Paragraph>
-        „Im Durchschnitt sitzt jeder Erwachsene 11,5 Stunden täglich, bei
-        Grundschulkindern sind es rund neun Stunden am Tag.“ (Zitat:
-        Wirtschaftswoche online vom 09.07.2014). Die stundenlange einseitige
-        Belastung des Stütz- und Bewegungsapparates ist vor allem deshalb rapide
-        gestiegen, weil heutzutage bei der Arbeit und Ausbildung überwiegend nur
-        noch gesessen wird. Langfristig schädigt das den Körper und kann auch
-        die seelische Balance bzw. allgemeine Zufriedenheit von
-        ArbeitnehmerInnen und damit ihren Erfolg und den des Unternehmens
-        negativ beeinflussen. Das ist von Nachteil für jede/n Betroffene/n,
-        eröffnet ehemaligen TänzerInnen gleichzeitig aber berufliche Optionen,
-        bei entsprechender Transition als Trainerin, Beraterin, Coach im
-        betrieblichen Gesundheitsmanagement tätig sein zu können. Weitere
-        Auskünfte für sinnvolle Transitionmaßnahmen über:
-      </Paragraph>
-      <TouchableOpacity
-        onPress={() =>
-          sendEmail('alannapfeiffer@gmail.com', 'Transition Anfrage', '').then(
-            () => {
-              console.log('Your message was successfully sent!');
+      {props.eng ? (
+        <CorporateHealthManagerEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Der Bedarf an Fachkräften für Gesundheitsmanagement und Prävention
+            steigt. So verwundert auch nicht, dass es bundesweit immer mehr
+            Weiterbildungsangebote im Bereich Gesundheitsmanagement gibt.
+            Allerdings variieren sie enorm in Qualität, Preis und der Art des
+            Qualifikationsnachweises.
+          </Paragraph>
+          <Paragraph>
+            Beschäftigungsmöglichkeiten im betrieblichen Gesundheitsmanagement
+          </Paragraph>
+          <Paragraph>
+            „Im Durchschnitt sitzt jeder Erwachsene 11,5 Stunden täglich, bei
+            Grundschulkindern sind es rund neun Stunden am Tag.“ (Zitat:
+            Wirtschaftswoche online vom 09.07.2014). Die stundenlange einseitige
+            Belastung des Stütz- und Bewegungsapparates ist vor allem deshalb
+            rapide gestiegen, weil heutzutage bei der Arbeit und Ausbildung
+            überwiegend nur noch gesessen wird. Langfristig schädigt das den
+            Körper und kann auch die seelische Balance bzw. allgemeine
+            Zufriedenheit von ArbeitnehmerInnen und damit ihren Erfolg und den
+            des Unternehmens negativ beeinflussen. Das ist von Nachteil für
+            jede/n Betroffene/n, eröffnet ehemaligen TänzerInnen gleichzeitig
+            aber berufliche Optionen, bei entsprechender Transition als
+            Trainerin, Beraterin, Coach im betrieblichen Gesundheitsmanagement
+            tätig sein zu können. Weitere Auskünfte für sinnvolle
+            Transitionmaßnahmen über:
+          </Paragraph>
+          <TouchableOpacity
+            onPress={() =>
+              sendEmail(
+                'alannapfeiffer@gmail.com',
+                'Transition Anfrage',
+                ''
+              ).then(() => {
+                console.log('Your message was successfully sent!');
+              })
             }
-          )
-        }
-      >
-        <ArticleSubHeader textStyle={{fontWeight: 'bold', fontSize: 14}}>
-          info@stiftung-tanz.com.
-        </ArticleSubHeader>
-      </TouchableOpacity>
-      <Paragraph>
-        Die Gesundheit ihrer MitarbeiterInnen zu erhalten und vielfältig zu
-        fördern, ist bei vielen vor allem größeren Firmen mittlerweile wichtiger
-        Bestandteil der Personalarbeit. BASF, Nike, SIEMENS oder auch Nokia
-        haben beispielsweise verschiedenste Programme bzw. Kursangebote in den
-        Firmen selbst oder bei KooperationspartnerInnen, wie Pilates-Studios,
-        Fitness-Studios usw. Angebote sind unter anderem: Stressbewältigung,
-        diverse Bewegungsprogramme, Vorsorge oder auch Ernährung. Die
-        MitarbeiterInnen haben während der Arbeitszeit oder auch danach die
-        Möglichkeit, sich bei Yoga zu entspannen, spezielles Rückentraining zu
-        absolvieren oder wichtige Ernährungstipps zu bekommen. Die gesetzlichen
-        Krankenkassen bzw. Betriebskrankenkassen fördern dieses spezielle
-        betriebliche Gesundheitsmanagement unter anderem durch entsprechende
-        Boni-Systeme und auch das Finanzamt erkennt entsprechende Ausgaben für
-        die individuelle Gesundheitsförderung an. Zertifizierte TrainerInnen
-        haben gute freiberufliche bzw. auch festangestellte Perspektiven in den
-        Firmen direkt oder bei deren KooperationspartnerInnen.
-      </Paragraph>
-      <Paragraph>
-        Orientierung hinsichtlich verlässlicher Standards für die Ausbildung,
-        insbesondere für Weiterbildungsangebote im Betrieblichen
-        Gesundheitsmanagement (BGM), bieten die „Empfehlungen zur Ausbildung im
-        Bereich Gesundheitsmanagement“ vom unabhängigen Bundesverband für
-        Betriebliches Gesundheitsmanagement (BBGM), die Anfang 2016 auf der
-        Webseite des Verbandes publiziert wurden:
-      </Paragraph>
-      <Paragraph>
-        Zu den Mitgliedern des BBGM, die den o.g. Ausbildungsempfehlungen
-        folgen, gehören neben Wirtschaftsunternehmen auch verschiedene
-        Weiterbildungsanbieter, wie beispielsweise die staatlich anerkannte
-        Hochschule für Prävention und Gesundheitsmanagement, an der man sowohl
-        den gleichnamigen BA als auch den MA erwerben kann (mtl. Studiengebühr
-        BA = 330,00 € / MA= 390,00 €)
-      </Paragraph>
-      <Paragraph>
-        Soll kein zeitaufwändiges Studium an einer Hochschule oder Universität
-        Transition-Ziel sein, sondern eine kompakte und zertifizierte
-        Weiterbildung absolviert werden, ist diese z.B. an der BSA Akademie für
-        Prävention, Fitness und Gesundheit möglich. Dort werden folgende
-        Lehrgänge im BGM angeboten:
-      </Paragraph>
-      <Paragraph>
-        Fachkraft für BGM (IHK, 1.290,00 €) / Berater/in für Firmenfitness
-        (249,00 €) / Betriebliche/r Gesundheitsmanager/in (1.298,00 €)/
-        Gesundheitsmanager im Betrieb (998,00 €) / Gesundheitsexperte für KMU*
-        (2.598,00 €)
-      </Paragraph>
-      <Paragraph>
-        Infos zum Bundesverband für Betriebliches Gesundheitsmanagement:
-      </Paragraph>
-      <Link onPress={() => Linking.openURL('http://www.bgm-bv.de/')}>
-        www.bgm-bv.de
-      </Link>
-      <Paragraph style={{fontSize: 11}}>
-        * kleine und mittelständische Unternehmen
-      </Paragraph>
+          >
+            <ArticleSubHeader textStyle={{fontWeight: 'bold', fontSize: 14}}>
+              info@stiftung-tanz.com.
+            </ArticleSubHeader>
+          </TouchableOpacity>
+          <Paragraph>
+            Die Gesundheit ihrer MitarbeiterInnen zu erhalten und vielfältig zu
+            fördern, ist bei vielen vor allem größeren Firmen mittlerweile
+            wichtiger Bestandteil der Personalarbeit. BASF, Nike, SIEMENS oder
+            auch Nokia haben beispielsweise verschiedenste Programme bzw.
+            Kursangebote in den Firmen selbst oder bei KooperationspartnerInnen,
+            wie Pilates-Studios, Fitness-Studios usw. Angebote sind unter
+            anderem: Stressbewältigung, diverse Bewegungsprogramme, Vorsorge
+            oder auch Ernährung. Die MitarbeiterInnen haben während der
+            Arbeitszeit oder auch danach die Möglichkeit, sich bei Yoga zu
+            entspannen, spezielles Rückentraining zu absolvieren oder wichtige
+            Ernährungstipps zu bekommen. Die gesetzlichen Krankenkassen bzw.
+            Betriebskrankenkassen fördern dieses spezielle betriebliche
+            Gesundheitsmanagement unter anderem durch entsprechende Boni-Systeme
+            und auch das Finanzamt erkennt entsprechende Ausgaben für die
+            individuelle Gesundheitsförderung an. Zertifizierte TrainerInnen
+            haben gute freiberufliche bzw. auch festangestellte Perspektiven in
+            den Firmen direkt oder bei deren KooperationspartnerInnen.
+          </Paragraph>
+          <Paragraph>
+            Orientierung hinsichtlich verlässlicher Standards für die
+            Ausbildung, insbesondere für Weiterbildungsangebote im Betrieblichen
+            Gesundheitsmanagement (BGM), bieten die „Empfehlungen zur Ausbildung
+            im Bereich Gesundheitsmanagement“ vom unabhängigen Bundesverband für
+            Betriebliches Gesundheitsmanagement (BBGM), die Anfang 2016 auf der
+            Webseite des Verbandes publiziert wurden:
+          </Paragraph>
+          <Paragraph>
+            Zu den Mitgliedern des BBGM, die den o.g. Ausbildungsempfehlungen
+            folgen, gehören neben Wirtschaftsunternehmen auch verschiedene
+            Weiterbildungsanbieter, wie beispielsweise die staatlich anerkannte
+            Hochschule für Prävention und Gesundheitsmanagement, an der man
+            sowohl den gleichnamigen BA als auch den MA erwerben kann (mtl.
+            Studiengebühr BA = 330,00 € / MA= 390,00 €)
+          </Paragraph>
+          <Paragraph>
+            Soll kein zeitaufwändiges Studium an einer Hochschule oder
+            Universität Transition-Ziel sein, sondern eine kompakte und
+            zertifizierte Weiterbildung absolviert werden, ist diese z.B. an der
+            BSA Akademie für Prävention, Fitness und Gesundheit möglich. Dort
+            werden folgende Lehrgänge im BGM angeboten:
+          </Paragraph>
+          <Paragraph>
+            Fachkraft für BGM (IHK, 1.290,00 €) / Berater/in für Firmenfitness
+            (249,00 €) / Betriebliche/r Gesundheitsmanager/in (1.298,00 €)/
+            Gesundheitsmanager im Betrieb (998,00 €) / Gesundheitsexperte für
+            KMU* (2.598,00 €)
+          </Paragraph>
+          <Paragraph>
+            Infos zum Bundesverband für Betriebliches Gesundheitsmanagement:
+          </Paragraph>
+          <Link onPress={() => Linking.openURL('http://www.bgm-bv.de/')}>
+            www.bgm-bv.de
+          </Link>
+          <Paragraph style={{fontSize: 11}}>
+            * kleine und mittelständische Unternehmen
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -402,71 +482,83 @@ export const Biologie = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Biologe/in M.Sc. △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Biologist M.Sc.' : 'Biologe/in M.Sc.'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph style={{fontWeight: 'bold'}}>Berufsbild:</Paragraph>
-      <Paragraph>
-        Den klassischen Biologen gibt es so eigentlich gar nicht. Viel mehr
-        arbeiten die meisten Biologen/innen in verschiedenen Bereichen: in
-        Forschung, Lehre oder Umweltschutz. Dabei befasst man sich mit der
-        Erforschung von Strukturen und Vorgängen bei Menschen (z.B. Erforschung
-        von Krankheiten), Tieren (z.B. Entstehung von verschiedenen Arten),
-        Pflanzen (z.B. Entwicklung von ertragsreicheren Pflanzen) und
-        Mikroorganismen (z.B. Entwicklung von Biotreibstoffen). Anwendung finden
-        die erzielten Forschungsergebnisse unter anderem in den Bereichen
-        Umweltschutz, Pharma und Medizin.
-      </Paragraph>
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Voraussetzungen um als Biologe arbeiten zu können:
-      </Paragraph>
-      <Paragraph>
-        Voraussetzung, um als Biologe/in arbeiten zu können, ist mindestens ein
-        abgeschlossenes Bachelor-Studium der Biologie. In der Regel kann man
-        Biologie an einer Universität studieren, es gibt aber auch spezielle
-        Studiengänge, zum Beispiel Biotechnologie, welche man an einer
-        Fachhochschule studieren kann. In den meisten Bereichen werden
-        allerdings ein Masterabschluss und häufig auch eine Promotion
-        vorausgesetzt. Das ergibt eine Regelstudienzeit von 10 Semestern
-        (Bachelor + Master) mit anschließender Promotion, welche auch noch
-        einmal drei bis fünf Jahre in Anspruch nimmt, das Gute dabei ist
-        allerdings, dass man angestellt ist und ein geregeltes Einkommen
-        bezieht.
-      </Paragraph>
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Wie ist das Studium aufgebaut?
-      </Paragraph>
-      <Paragraph>
-        Im Bachelor-Studium lernt man die verschiedenen Bereiche der Biologie
-        kennen und verschafft sich einen groben Überblick über diese, dazu
-        gehören: Botanik, Zoologie, Mikrobiologie, Genetik, Zellbiologie,
-        Bioinformatik und Anthropologie. Das Bachelorstudium besteht etwa zur
-        Hälfte aus Vorlesungen und zur anderen Hälfte aus verschiedenen
-        Praktika, in denen man lernt, wie man ein Experiment plant, durchführt
-        und am Ende auswertet. Im anschließenden Master-Studium vertieft und
-        spezialisiert man sich auf ein Teilgebiet der Biologie. Die Verteilung
-        ist auch hier ungefähr 50:50 zwischen Praxis und Theorie. Wer sich
-        danach entscheidet eine Promotion anzuschließen beschäftigt sich über
-        einen längeren Zeitraum mit einer ganz bestimmten Fragestellung.
-      </Paragraph>
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Nach dem Studium/der Promotion:
-      </Paragraph>
-      <Paragraph>
-        Nach dem erfolgreichen Studium oder der Promotion stehen einem
-        verschiedene Karrieremöglichkeiten in der Industrie und der Wissenschaft
-        offen, aber auch im öffentlichen Dienst sind Biologen/innen beschäftigt.
-      </Paragraph>
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Gibt es auch einen anderen Weg, um in der Forschung arbeiten zu können?
-      </Paragraph>
-      <Paragraph>
-        Wer nicht unbedingt Biologie studieren möchte kann als
-        Biologielaborant/in oder als technische/r Assistent/in im Labor
-        arbeiten. Die Ausbildung hierfür dauert drei Jahre.
-      </Paragraph>
-      <Paragraph style={{fontSize: 11, fontStyle: 'italic'}}>
-        geschrieben von Jonas Schwickert, Biologe M.Sc.
-      </Paragraph>
+      {props.eng ? (
+        <BiologistEnglish />
+      ) : (
+        <Article>
+          <Paragraph style={{fontWeight: 'bold'}}>Berufsbild:</Paragraph>
+          <Paragraph>
+            Den klassischen Biologen gibt es so eigentlich gar nicht. Viel mehr
+            arbeiten die meisten Biologen/innen in verschiedenen Bereichen: in
+            Forschung, Lehre oder Umweltschutz. Dabei befasst man sich mit der
+            Erforschung von Strukturen und Vorgängen bei Menschen (z.B.
+            Erforschung von Krankheiten), Tieren (z.B. Entstehung von
+            verschiedenen Arten), Pflanzen (z.B. Entwicklung von
+            ertragsreicheren Pflanzen) und Mikroorganismen (z.B. Entwicklung von
+            Biotreibstoffen). Anwendung finden die erzielten
+            Forschungsergebnisse unter anderem in den Bereichen Umweltschutz,
+            Pharma und Medizin.
+          </Paragraph>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Voraussetzungen um als Biologe arbeiten zu können:
+          </Paragraph>
+          <Paragraph>
+            Voraussetzung, um als Biologe/in arbeiten zu können, ist mindestens
+            ein abgeschlossenes Bachelor-Studium der Biologie. In der Regel kann
+            man Biologie an einer Universität studieren, es gibt aber auch
+            spezielle Studiengänge, zum Beispiel Biotechnologie, welche man an
+            einer Fachhochschule studieren kann. In den meisten Bereichen werden
+            allerdings ein Masterabschluss und häufig auch eine Promotion
+            vorausgesetzt. Das ergibt eine Regelstudienzeit von 10 Semestern
+            (Bachelor + Master) mit anschließender Promotion, welche auch noch
+            einmal drei bis fünf Jahre in Anspruch nimmt, das Gute dabei ist
+            allerdings, dass man angestellt ist und ein geregeltes Einkommen
+            bezieht.
+          </Paragraph>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Wie ist das Studium aufgebaut?
+          </Paragraph>
+          <Paragraph>
+            Im Bachelor-Studium lernt man die verschiedenen Bereiche der
+            Biologie kennen und verschafft sich einen groben Überblick über
+            diese, dazu gehören: Botanik, Zoologie, Mikrobiologie, Genetik,
+            Zellbiologie, Bioinformatik und Anthropologie. Das Bachelorstudium
+            besteht etwa zur Hälfte aus Vorlesungen und zur anderen Hälfte aus
+            verschiedenen Praktika, in denen man lernt, wie man ein Experiment
+            plant, durchführt und am Ende auswertet. Im anschließenden
+            Master-Studium vertieft und spezialisiert man sich auf ein
+            Teilgebiet der Biologie. Die Verteilung ist auch hier ungefähr 50:50
+            zwischen Praxis und Theorie. Wer sich danach entscheidet eine
+            Promotion anzuschließen beschäftigt sich über einen längeren
+            Zeitraum mit einer ganz bestimmten Fragestellung.
+          </Paragraph>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Nach dem Studium/der Promotion:
+          </Paragraph>
+          <Paragraph>
+            Nach dem erfolgreichen Studium oder der Promotion stehen einem
+            verschiedene Karrieremöglichkeiten in der Industrie und der
+            Wissenschaft offen, aber auch im öffentlichen Dienst sind
+            Biologen/innen beschäftigt.
+          </Paragraph>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Gibt es auch einen anderen Weg, um in der Forschung arbeiten zu
+            können?
+          </Paragraph>
+          <Paragraph>
+            Wer nicht unbedingt Biologie studieren möchte kann als
+            Biologielaborant/in oder als technische/r Assistent/in im Labor
+            arbeiten. Die Ausbildung hierfür dauert drei Jahre.
+          </Paragraph>
+          <Paragraph style={{fontSize: 11, fontStyle: 'italic'}}>
+            geschrieben von Jonas Schwickert, Biologe M.Sc.
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -475,97 +567,100 @@ export const Blindenpädagoge = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Blindenpädagog*in △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Pedagogue for the blind' : 'Blindenpädagog*in'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Blindenpädagog*innen sind spezialisiert auf das Einschränkungsbild
-        sehbehinderter und blinder Menschen aller Altersgruppen. Ihr Einsatzfeld
-        ist vielfältig. Sie können bei Alltagsaufgaben aller Art assistieren, in
-        allen Institutionen und Einrichtungen für Sehschwache und Blinde
-        arbeiten, im öffentlichen Dienst tätig sein (z.B. als
-        Sozialoberionspektor*in) oder sich auch als Fachberater*in für die
-        spezielle Gruppe der Sehschwachen und Blinden selbständig machen.
-      </Paragraph>
-      <Paragraph>
-        “Neben philosophischen Fragestellungen über das Thema der Wahrnehmung
-        und Wirklichkeitskonstruktion von Blinden beinhaltet der
-        [Ausbildungs-]plan Aspekte wie Orientierung und Mobilität,
-        Frühförderung, alltagspraktische Fertigkeiten, moderne
-        Kommunikationstechnologien, die Brailleschrift und Augenheilkunde.”
-        Blindenpädagogik kann in Deutschland an der Universität entweder als BA
-        oder MA studiert werden, z.B.: Universität Marburg, Humboldt-Universität
-        Berlin, Pädagogische Hochschule Heidelberg, Universität Dortmund und
-        Universität Hamburg. An allen genannten Universitäten gilt für das Fach
-        der Blindenpädagogik ein N.C., was den Mangel an Blindenpädagog*innen
-        verstärkt. Selbstverständlich kann man sich aber auch als
-        Sonderpädagog*in, Heilpädagog*in, Behindertenpädagog*in,
-        Rehabilitationspädagog*in oder an Berufsfachschulen als
-        Heilerziehungspfleger*in ausbilden lassen und sich dann
-        blindenpädagogisch weiterbilden.
-      </Paragraph>
-      <Paragraph>
-        Auch für Tanzpädagog*innen ist die blindenpädagogische Weiterbildung
-        durch Zertifikatskurse bzw. Aufbaustudium möglich!
-      </Paragraph>
-      <Paragraph>
-        Schon vor über zehn Jahren prognostizierte der Vorsitzende des Blinden-
-        und Sehschwachenverbandes Deutschland e.V., Eberhard Fuchs den Mangel an
-        Blindenpädagog*innen. Und bereits damals war “[d]er Arbeitsmarkt [für
-        Blindenpädagog*innen] hervorragend.” Bestätigt wurde dies für 2017 und
-        Zukunft von Mitarbeiter*innen des Deutschen Blinden-Museums e.V., mit
-        denen wir im Rahmen der Recherche für diesen Text am 22.6.2017
-        persönlich sprachen.
-      </Paragraph>
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Master Blinden- und Sehbehindertenpädagogik:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.uni-marburg.de/fb21/studium/studiengaenge/wb-bsp'
-          )
-        }
-      >
-        www.uni-marburg.de/fb21/studium/studiengaenge/wb-bsp
-      </Link>
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Zertifikatskurs „Grundlagen inklusiver Bildung bei Blindheit und
-        Sehbehinderung“:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.uni-marburg.de/fb21/studium/studiengaenge/grip-bs'
-          )
-        }
-      >
-        www.uni-marburg.de/fb21/studium/studiengaenge/grip-bs
-      </Link>
+      {props.eng ? (
+        <BlindPedagogueEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Blindenpädagog*innen sind spezialisiert auf das Einschränkungsbild
+            sehbehinderter und blinder Menschen aller Altersgruppen. Ihr
+            Einsatzfeld ist vielfältig. Sie können bei Alltagsaufgaben aller Art
+            assistieren, in allen Institutionen und Einrichtungen für
+            Sehschwache und Blinde arbeiten, im öffentlichen Dienst tätig sein
+            (z.B. als Sozialoberionspektor*in) oder sich auch als Fachberater*in
+            für die spezielle Gruppe der Sehschwachen und Blinden selbständig
+            machen.
+          </Paragraph>
+          <Paragraph>
+            “Neben philosophischen Fragestellungen über das Thema der
+            Wahrnehmung und Wirklichkeitskonstruktion von Blinden beinhaltet der
+            [Ausbildungs-]plan Aspekte wie Orientierung und Mobilität,
+            Frühförderung, alltagspraktische Fertigkeiten, moderne
+            Kommunikationstechnologien, die Brailleschrift und Augenheilkunde.”
+            Blindenpädagogik kann in Deutschland an der Universität entweder als
+            BA oder MA studiert werden, z.B.: Universität Marburg,
+            Humboldt-Universität Berlin, Pädagogische Hochschule Heidelberg,
+            Universität Dortmund und Universität Hamburg. An allen genannten
+            Universitäten gilt für das Fach der Blindenpädagogik ein N.C., was
+            den Mangel an Blindenpädagog*innen verstärkt. Selbstverständlich
+            kann man sich aber auch als Sonderpädagog*in, Heilpädagog*in,
+            Behindertenpädagog*in, Rehabilitationspädagog*in oder an
+            Berufsfachschulen als Heilerziehungspfleger*in ausbilden lassen und
+            sich dann blindenpädagogisch weiterbilden.
+          </Paragraph>
+          <Paragraph>
+            Auch für Tanzpädagog*innen ist die blindenpädagogische Weiterbildung
+            durch Zertifikatskurse bzw. Aufbaustudium möglich!
+          </Paragraph>
+          <Paragraph>
+            Schon vor über zehn Jahren prognostizierte der Vorsitzende des
+            Blinden- und Sehschwachenverbandes Deutschland e.V., Eberhard Fuchs
+            den Mangel an Blindenpädagog*innen. Und bereits damals war “[d]er
+            Arbeitsmarkt [für Blindenpädagog*innen] hervorragend.” Bestätigt
+            wurde dies für 2017 und Zukunft von Mitarbeiter*innen des Deutschen
+            Blinden-Museums e.V., mit denen wir im Rahmen der Recherche für
+            diesen Text am 22.6.2017 persönlich sprachen.
+          </Paragraph>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Master Blinden- und Sehbehindertenpädagogik:
+          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'http://www.uni-marburg.de/fb21/studium/studiengaenge/wb-bsp'
+              )
+            }
+          >
+            www.uni-marburg.de/fb21/studium/studiengaenge/wb-bsp
+          </Link>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Zertifikatskurs „Grundlagen inklusiver Bildung bei Blindheit und
+            Sehbehinderung“:
+          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'http://www.uni-marburg.de/fb21/studium/studiengaenge/grip-bs'
+              )
+            }
+          >
+            www.uni-marburg.de/fb21/studium/studiengaenge/grip-bs
+          </Link>
 
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Integrative Lerntherapie an der Universität Hamburg:
-      </Paragraph>
+          <Paragraph style={{fontWeight: 'bold'}}>
+            Infos zum Deutschen Blinden-Museum e.V. in Berlin unter:
+          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL('http:// www.blindenmuseum-berlin.de/')
+            }
+          >
+            www.blindenmuseum-berlin.de/
+          </Link>
 
-      <Paragraph>
-        Blindenpädagogik innerhalb der Sonderpädagogik an der HU Berlin
-      </Paragraph>
-
-      <Paragraph style={{fontWeight: 'bold'}}>
-        Infos zum Deutschen Blinden-Museum e.V. in Berlin unter:
-      </Paragraph>
-      <Link
-        onPress={() => Linking.openURL('http:// www.blindenmuseum-berlin.de/')}
-      >
-        www.blindenmuseum-berlin.de/
-      </Link>
-
-      <Paragraph>
-        Wir danken dem Deutschen Blinden-Museum für alle Auskünfte!
-      </Paragraph>
-      <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
-        Indirekt zitierte Quelle: Herr Hentschel vom Blinden-Museum e.V. Berlin
-        am 22.6.2017
-      </Paragraph>
+          <Paragraph>
+            Wir danken dem Deutschen Blinden-Museum für alle Auskünfte!
+          </Paragraph>
+          <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
+            Indirekt zitierte Quelle: Herr Hentschel vom Blinden-Museum e.V.
+            Berlin am 22.6.2017
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -574,67 +669,80 @@ export const Buchbinder = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Buchbinder*in △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Book binder' : 'Buchbinder*in'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Dieser Handwerksberuf reicht zurück bis in die Antike, konnte aber trotz
-        Digitalisierung überleben. Buchbinder*innen fertigen Einzel- sowie
-        Sonderstücke in Handarbeit und produzieren je nach Auftragslage bzw.
-        Ausstattung auch maschinell, z.B. Blankoprodukte, Bucheinbände,
-        Buchveredelungen- und Reparaturen, besondere Verpackungen
-        Bilderrahmungen (u.a. hochwertige Passepartouts).
-      </Paragraph>
-      <Paragraph>
-        „Für ein Buch muss man mindestens drei Tage rechnen. Eine Woche bis zehn
-        Werktage sind Standard.“, meint Paul Ebsen von der Arbeitsagentur.
-        Vielleicht ist das der Grund, warum bundesweit pro Jahr gerade mal rund
-        50 Azubis die Lehre zum*r Buchbinder*in beginnen, wie die Behörde
-        informiert.
-      </Paragraph>
-      <Paragraph>
-        Die dreijährige Ausbildung ist dual, besteht also aus Theorie und Praxis
-        im jeweiligen Ausbildungsbetrieb. Das sind meistens kleine
-        Handwerksbetriebe. Welcher Betrieb ausbildet, ist bei den lokalen
-        Buchbinder-Innungen zu erfahren. Formelle Zugangsvoraussetzung für eine
-        Ausbildung als Buchbinder*in ist die mittlere Reife.
-      </Paragraph>
-      <Paragraph>
-        Um in diesem traditionsreichen Handwerksberuf Zufriedenheit finden zu
-        können, braucht es u.a.:
-      </Paragraph>
-      <List>
-        <ListItem>Interesse an Büchern</ListItem>
-        <ListItem>
-          Geschick, Freude und Kreativität im Umgang mit verschiedensten
-          Materialien
-        </ListItem>
-        <ListItem>
-          räumliches Vorstellungsvermögen und Liebe zum Detail
-        </ListItem>
-        <ListItem>
-          solide mathematische Kenntnisse, vor allem für Materialkunde
-        </ListItem>
-        <ListItem>
-          gute Haltung und robuste Gesundheit, da überwiegend im Stehen
-          gearbeitet wird
-        </ListItem>
-        <ListItem>keine Allergien</ListItem>
-      </List>
-      <Quote>
-        „Die Restaurierung historischer Bucheinbände hat an Bedeutung gewonnen.
-        Es wird wieder mehr Wert auf die Wiederherstellung der Originale gelegt.
-        Daher ist die handwerkliche Ausbildung zum Buchbinder nicht selten die
-        Grundlage für eine [Weiterqualifizierung] zum Restaurator.“
-      </Quote>
-      <Paragraph>Weitere INFOS zum Beruf:</Paragraph>
-      <Link onPress={() => Linking.openURL('http://www.zfamedien.de/berufe/')}>
-        www.zfamedien.de/berufe/
-      </Link>
-      <Link
-        onPress={() => Linking.openURL('http://www.bdbi.org/startseite.html')}
-      >
-        www.bdbi.org/startseite.html
-      </Link>
+      {props.eng ? (
+        <BookBinderEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Dieser Handwerksberuf reicht zurück bis in die Antike, konnte aber
+            trotz Digitalisierung überleben. Buchbinder*innen fertigen Einzel-
+            sowie Sonderstücke in Handarbeit und produzieren je nach
+            Auftragslage bzw. Ausstattung auch maschinell, z.B. Blankoprodukte,
+            Bucheinbände, Buchveredelungen- und Reparaturen, besondere
+            Verpackungen Bilderrahmungen (u.a. hochwertige Passepartouts).
+          </Paragraph>
+          <Paragraph>
+            „Für ein Buch muss man mindestens drei Tage rechnen. Eine Woche bis
+            zehn Werktage sind Standard.“, meint Paul Ebsen von der
+            Arbeitsagentur. Vielleicht ist das der Grund, warum bundesweit pro
+            Jahr gerade mal rund 50 Azubis die Lehre zum*r Buchbinder*in
+            beginnen, wie die Behörde informiert.
+          </Paragraph>
+          <Paragraph>
+            Die dreijährige Ausbildung ist dual, besteht also aus Theorie und
+            Praxis im jeweiligen Ausbildungsbetrieb. Das sind meistens kleine
+            Handwerksbetriebe. Welcher Betrieb ausbildet, ist bei den lokalen
+            Buchbinder-Innungen zu erfahren. Formelle Zugangsvoraussetzung für
+            eine Ausbildung als Buchbinder*in ist die mittlere Reife.
+          </Paragraph>
+          <Paragraph>
+            Um in diesem traditionsreichen Handwerksberuf Zufriedenheit finden
+            zu können, braucht es u.a.:
+          </Paragraph>
+          <List>
+            <ListItem>Interesse an Büchern</ListItem>
+            <ListItem>
+              Geschick, Freude und Kreativität im Umgang mit verschiedensten
+              Materialien
+            </ListItem>
+            <ListItem>
+              räumliches Vorstellungsvermögen und Liebe zum Detail
+            </ListItem>
+            <ListItem>
+              solide mathematische Kenntnisse, vor allem für Materialkunde
+            </ListItem>
+            <ListItem>
+              gute Haltung und robuste Gesundheit, da überwiegend im Stehen
+              gearbeitet wird
+            </ListItem>
+            <ListItem>keine Allergien</ListItem>
+          </List>
+          <Quote>
+            „Die Restaurierung historischer Bucheinbände hat an Bedeutung
+            gewonnen. Es wird wieder mehr Wert auf die Wiederherstellung der
+            Originale gelegt. Daher ist die handwerkliche Ausbildung zum
+            Buchbinder nicht selten die Grundlage für eine
+            [Weiterqualifizierung] zum Restaurator.“
+          </Quote>
+          <Paragraph>Weitere INFOS zum Beruf:</Paragraph>
+          <Link
+            onPress={() => Linking.openURL('http://www.zfamedien.de/berufe/')}
+          >
+            www.zfamedien.de/berufe/
+          </Link>
+          <Link
+            onPress={() =>
+              Linking.openURL('http://www.bdbi.org/startseite.html')
+            }
+          >
+            www.bdbi.org/startseite.html
+          </Link>
+        </Article>
+      )}
     </>
   );
 };
@@ -645,49 +753,57 @@ export const Clown = (props) => {
       <TouchableOpacity onPress={props.close}>
         <ArticleSubHeader>Clown △</ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Die Methoden der künstlerischen Darstellung eines Clowns eignen sich
-        sehr gut für:
-      </Paragraph>
-      <List>
-        <Paragraph>
-          - Trainings im Personalbereich (Motivationstraining, Gruppenbildung,
-          Problembewältigung, Entscheidungsfindung, Kreativitätsförderung usw.)
-        </Paragraph>
-        <Paragraph>
-          - für die Arbeit mit Kindern und Jugendlichen
-          (Anti-Aggressionstraining, szenisches Spiel in einer anderen Sprache,
-          Trauma-Bearbeitung usw.)
-        </Paragraph>
-        <Paragraph>
-          - für die Unterstützung bei therapeutischer Pflege von kranken und
-          alten Menschen
-        </Paragraph>
-      </List>
-
-      <Paragraph>
-        So bietet die Internationale Schule für Clown, Humor und Kommunikation
-        in Konstanz eine Spezialisierung zum Gesundheit!Clown®. Die Ausbildung
-        dauert drei Jahre und kann berufsbegleitend absolviert werden. Sie ist
-        europaweit die erste umfassende Ausbildung, um qualifiziert als Clown in
-        Kliniken, Altenpflegeheimen sowie Einrichtungen für geistig und
-        körperlich behinderte Menschen zu arbeiten. Das Regierungspräsidium
-        Freiburg hat bereits 2007 den Gesundheit!Clown und die Bezeichnung
-        Schauspieler für Clown und Comedy als neues Berufsbild anerkannt. Die
-        Anerkennung als Fachschule durch das Ministerium in Stuttgart wurde
-        beantragt und ermöglicht damit, Bafög oder Bildungsstipendien zu
-        erhalten.
-      </Paragraph>
-      <Paragraph>
-        Wer sich zum Gesundheit!Clown® ausbilden lassen möchte, kann sich im
-        Rahmen der sogenannten Werkstatt-Aufführungen des Diplomstudiengangs
-        Clown und Comedy informieren: Samstag, 5.3.2016, 20 Uhr, Tamara Center,
-        78467 Konstanz, Fritz-Arnold-Str. 23 (Industriegebiet)
-      </Paragraph>
-      <Paragraph>Weitere Infos unter: </Paragraph>
-      <Link onPress={() => Linking.openURL('http://www.clownlabor.de')}>
-        www.clownlabor.de
-      </Link>
+      {props.eng ? (
+        <ClownEnglish />
+      ) : (
+        <Article>
+          {' '}
+          <Paragraph>
+            Die Methoden der künstlerischen Darstellung eines Clowns eignen sich
+            sehr gut für:
+          </Paragraph>
+          <List>
+            <Paragraph>
+              - Trainings im Personalbereich (Motivationstraining,
+              Gruppenbildung, Problembewältigung, Entscheidungsfindung,
+              Kreativitätsförderung usw.)
+            </Paragraph>
+            <Paragraph>
+              - für die Arbeit mit Kindern und Jugendlichen
+              (Anti-Aggressionstraining, szenisches Spiel in einer anderen
+              Sprache, Trauma-Bearbeitung usw.)
+            </Paragraph>
+            <Paragraph>
+              - für die Unterstützung bei therapeutischer Pflege von kranken und
+              alten Menschen
+            </Paragraph>
+          </List>
+          <Paragraph>
+            So bietet die Internationale Schule für Clown, Humor und
+            Kommunikation in Konstanz eine Spezialisierung zum
+            Gesundheit!Clown®. Die Ausbildung dauert drei Jahre und kann
+            berufsbegleitend absolviert werden. Sie ist europaweit die erste
+            umfassende Ausbildung, um qualifiziert als Clown in Kliniken,
+            Altenpflegeheimen sowie Einrichtungen für geistig und körperlich
+            behinderte Menschen zu arbeiten. Das Regierungspräsidium Freiburg
+            hat bereits 2007 den Gesundheit!Clown und die Bezeichnung
+            Schauspieler für Clown und Comedy als neues Berufsbild anerkannt.
+            Die Anerkennung als Fachschule durch das Ministerium in Stuttgart
+            wurde beantragt und ermöglicht damit, Bafög oder Bildungsstipendien
+            zu erhalten.
+          </Paragraph>
+          <Paragraph>
+            Wer sich zum Gesundheit!Clown® ausbilden lassen möchte, kann sich im
+            Rahmen der sogenannten Werkstatt-Aufführungen des Diplomstudiengangs
+            Clown und Comedy informieren: Samstag, 5.3.2016, 20 Uhr, Tamara
+            Center, 78467 Konstanz, Fritz-Arnold-Str. 23 (Industriegebiet)
+          </Paragraph>
+          <Paragraph>Weitere Infos unter: </Paragraph>
+          <Link onPress={() => Linking.openURL('http://www.clownlabor.de')}>
+            www.clownlabor.de
+          </Link>
+        </Article>
+      )}
     </>
   );
 };
@@ -696,54 +812,66 @@ export const Cruise = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Cruise Tourism Manager*in △</ArticleSubHeader>
+        <ArticleSubHeader>
+          Cruise Tourism Manager{props.eng ? '' : '*in'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        “Urlaubsreisen haben als Wirtschaftsfaktor weltweit eine herausragende
-        Bedeutung erlangt. Über die letzten zwanzig Jahre hat sich dabei eine
-        spezielle Art von Urlaubsreise als besonders wachstumsstark,
-        krisenresistent und innovativ erwiesen: die Kreuzfahrt.” (6) Solch eine
-        Schiffsreise soll nicht nur abwechslungsreich, erholsam und möglichst
-        preiswert für die Passagiere sein, sondern auch profitabel für die
-        Anbieter. Für diese Balance sind Cruise Tourism Manager*innen (CTM) da.
-      </Paragraph>
-      <Paragraph>
-        An der Hochschule Bremerhaven ist CTM ein betriebswirtschaftlicher,
-        überwiegend englischsprachiger 4-jähriger Bachelor-Studiengang (240
-        ECTS). Abgeschlossen wird dieses Studium mit einem Bachelor of Arts
-        (BA), der auch in den USA anerkannt ist. Zukünftige Arbeitgeber im
-        Tourismus und in der Kreuzfahrtbranche könnten zum Beispiel
-        Reiseanbieter und Reedereien sein. Die Aufgaben eines/r CTM sind
-        vielfältig: Marketing und Sales, Produktmanagement und
-        Veranstaltungsmanagement, Einkauf usw.
-      </Paragraph>
-      <Paragraph>
-        Studiert werden daher “Fächer wie Betriebswirtschaftslehre,
-        Volkswirtschaftslehre, Tourismus und Kreuzfahrt, Hotelmanagement sowie
-        andere ergänzende Fächer. [Außerdem] sind Fremdsprachen, Mathematik,
-        Recht und sogenannte Soft Skills ein wichtiger Bestandteil des Studiums.
-        [Hinzu kommt] ein einjähriges Auslandspraktikum, das mit einem
-        Auslandssemester kombiniert werden kann.” (7)
-      </Paragraph>
-      <Paragraph>Weitere Infos zum CTM-Studienangebot hier:</Paragraph>
-      <Link onPress={() => Linking.openURL('http://www.hs-bremerhaven.de/')}>
-        www.hs-bremerhaven.de
-      </Link>
-      <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
-        Zitierte Info-Quelle (6 und 7): ebenda
-      </Paragraph>
-      <Paragraph>
-        Wem 4 Jahre zu lang und zu teuer sind, der kann sich an der
-        EBC-Hochschule Hamburg zum CTM weiterbilden: In 5 Blockveranstaltungen
-        für jeweils 300,00 € pro Block (ohne Anreise und Übernachtung) werden ab
-        Herbst 2017 Kenntnisse in Produktmanagement, Personalmanagement,
-        Innovationsmanagement und im Marketing für Kreuzfahrtschiffsunternehmen
-        vermittelt. Innerhalb von vier Monaten erwirbt man das EBC-Zertifikat
-        “Cruise Management” (8).
-      </Paragraph>
-      <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
-        Adaptierte und zitierte Info-Quelle (8): ebenda
-      </Paragraph>
+      {props.eng ? (
+        <CruiseManagerEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            “Urlaubsreisen haben als Wirtschaftsfaktor weltweit eine
+            herausragende Bedeutung erlangt. Über die letzten zwanzig Jahre hat
+            sich dabei eine spezielle Art von Urlaubsreise als besonders
+            wachstumsstark, krisenresistent und innovativ erwiesen: die
+            Kreuzfahrt.” (6) Solch eine Schiffsreise soll nicht nur
+            abwechslungsreich, erholsam und möglichst preiswert für die
+            Passagiere sein, sondern auch profitabel für die Anbieter. Für diese
+            Balance sind Cruise Tourism Manager*innen (CTM) da.
+          </Paragraph>
+          <Paragraph>
+            An der Hochschule Bremerhaven ist CTM ein betriebswirtschaftlicher,
+            überwiegend englischsprachiger 4-jähriger Bachelor-Studiengang (240
+            ECTS). Abgeschlossen wird dieses Studium mit einem Bachelor of Arts
+            (BA), der auch in den USA anerkannt ist. Zukünftige Arbeitgeber im
+            Tourismus und in der Kreuzfahrtbranche könnten zum Beispiel
+            Reiseanbieter und Reedereien sein. Die Aufgaben eines/r CTM sind
+            vielfältig: Marketing und Sales, Produktmanagement und
+            Veranstaltungsmanagement, Einkauf usw.
+          </Paragraph>
+          <Paragraph>
+            Studiert werden daher “Fächer wie Betriebswirtschaftslehre,
+            Volkswirtschaftslehre, Tourismus und Kreuzfahrt, Hotelmanagement
+            sowie andere ergänzende Fächer. [Außerdem] sind Fremdsprachen,
+            Mathematik, Recht und sogenannte Soft Skills ein wichtiger
+            Bestandteil des Studiums. [Hinzu kommt] ein einjähriges
+            Auslandspraktikum, das mit einem Auslandssemester kombiniert werden
+            kann.” (7)
+          </Paragraph>
+          <Paragraph>Weitere Infos zum CTM-Studienangebot hier:</Paragraph>
+          <Link
+            onPress={() => Linking.openURL('http://www.hs-bremerhaven.de/')}
+          >
+            www.hs-bremerhaven.de
+          </Link>
+          <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
+            Zitierte Info-Quelle (6 und 7): ebenda
+          </Paragraph>
+          <Paragraph>
+            Wem 4 Jahre zu lang und zu teuer sind, der kann sich an der
+            EBC-Hochschule Hamburg zum CTM weiterbilden: In 5
+            Blockveranstaltungen für jeweils 300,00 € pro Block (ohne Anreise
+            und Übernachtung) werden ab Herbst 2017 Kenntnisse in
+            Produktmanagement, Personalmanagement, Innovationsmanagement und im
+            Marketing für Kreuzfahrtschiffsunternehmen vermittelt. Innerhalb von
+            vier Monaten erwirbt man das EBC-Zertifikat “Cruise Management” (8).
+          </Paragraph>
+          <Paragraph style={{fontStyle: 'italic', fontSize: 11}}>
+            Adaptierte und zitierte Info-Quelle (8): ebenda
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -752,53 +880,63 @@ export const Ernaehrungsberatung = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Ernährungsberatung △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Nutritional counseling' : 'Ernährungsberatung'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Der Beruf „Ernährungsberater/in“ ist in Deutschland keine gesetzlich
-        geschützte Berufsbezeichnung. Theoretisch benötigen Sie daher keine
-        Ausbildung, um sich Ernährungsberater zu nennen. Es empfiehlt sich
-        allerdings sehr, eine entsprechende Ausbildung zu absolvieren, um die
-        benötigten Kenntnisse zu erwerben und gegenüber Klienten eine fundierte
-        Qualifikation vorweisen zu können. Zahlreiche private Bildungsinstitute
-        bieten die Ernährungsberater Ausbildung an. Meist finden diese Kurse
-        berufsbegleitend in Form eines Fernstudiums oder als Abend- und
-        Wochenendlehrgang statt. Aber Vorsicht! Diese Kurse sind häufig viel zu
-        kurz, um die Basis für einen neuen Beruf zu bilden. Um nach Abschluss
-        der Weiterbildung eine Tätigkeit als Ernährungsberater/in im Auftrag der
-        gesetzlichen Krankenkassen im Sinne der primärpräventiven
-        Ernährungsberatung auszuüben, sind vor Beginn der Weiterbildung eine
-        abgeschlossene Ausbildung als Diätassistent/in oder der Abschluss eines
-        einschlägigen Studiums, z.B. der Ökotrophologie oder der
-        Ernährungswissenschaften, und/oder einschlägige Berufspraxis
-        nachzuweisen.
-      </Paragraph>
-      <Paragraph>
-        Eine anerkannte Ausbildung, ist die Ausbildung zum/ zur
-        Diätassistent/in. Diätassistenten und -assistentinnen erarbeiten Diät-
-        und Ernährungspläne für Personen, die sich gesund ernähren wollen oder
-        eine bestimmte Diät einhalten müssen. Sie setzen ärztliche
-        Diätverordnungen um, konzipieren individuelle Diättherapien, bereiten
-        spezielle Diätkostformen zu und beraten bzw. schulen in
-        Ernährungsfragen. Diätassistenten und Diätassistentinnen finden
-        Beschäftigung in Krankenhäusern, in Rehabilitationskliniken, in
-        ambulanten Schwerpunktpraxen, als Selbstständige in einer eigenen
-        Praxis. Diätassistent/in ist eine bundesweit einheitlich geregelte
-        3-jährige schulische Ausbildung an Berufsfachschulen .
-      </Paragraph>
-      <Paragraph>
-        Eine noch intensivere Ausbildung bietet ein Studium: Das grundständige
-        Studienfach Ernährungswissenschaft (=Ökotrophologie) vermittelt
-        wissenschaftliches Grundlagenwissen in Ernährungswissenschaft,
-        Lebensmittellehre und Lebensmitteltechnologie. Das Studium hat einen
-        hohen Anteil an chemischen und biologischen Lerninhalten. Fundierte
-        Kenntnisse, z.B. aus einem Grund- oder Leistungskurs, sind daher eine
-        gute Voraussetzung. Benötigt werden außerdem gute Kenntnisse in Physik
-        und anwendungsbezogener Mathematik. Beherrschen muss man z.B. die
-        Differenzial-, Integral-, Infinitesimal- und Vektorrechnung sowie die
-        lineare Algebra. Ein sicherer Umgang mit statistischen Methoden ist
-        ebenfalls nützlich.
-      </Paragraph>
+
+      {props.eng ? (
+        <NutritionalCouncellingEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Der Beruf „Ernährungsberater/in“ ist in Deutschland keine gesetzlich
+            geschützte Berufsbezeichnung. Theoretisch benötigen Sie daher keine
+            Ausbildung, um sich Ernährungsberater zu nennen. Es empfiehlt sich
+            allerdings sehr, eine entsprechende Ausbildung zu absolvieren, um
+            die benötigten Kenntnisse zu erwerben und gegenüber Klienten eine
+            fundierte Qualifikation vorweisen zu können. Zahlreiche private
+            Bildungsinstitute bieten die Ernährungsberater Ausbildung an. Meist
+            finden diese Kurse berufsbegleitend in Form eines Fernstudiums oder
+            als Abend- und Wochenendlehrgang statt. Aber Vorsicht! Diese Kurse
+            sind häufig viel zu kurz, um die Basis für einen neuen Beruf zu
+            bilden. Um nach Abschluss der Weiterbildung eine Tätigkeit als
+            Ernährungsberater/in im Auftrag der gesetzlichen Krankenkassen im
+            Sinne der primärpräventiven Ernährungsberatung auszuüben, sind vor
+            Beginn der Weiterbildung eine abgeschlossene Ausbildung als
+            Diätassistent/in oder der Abschluss eines einschlägigen Studiums,
+            z.B. der Ökotrophologie oder der Ernährungswissenschaften, und/oder
+            einschlägige Berufspraxis nachzuweisen.
+          </Paragraph>
+          <Paragraph>
+            Eine anerkannte Ausbildung, ist die Ausbildung zum/ zur
+            Diätassistent/in. Diätassistenten und -assistentinnen erarbeiten
+            Diät- und Ernährungspläne für Personen, die sich gesund ernähren
+            wollen oder eine bestimmte Diät einhalten müssen. Sie setzen
+            ärztliche Diätverordnungen um, konzipieren individuelle
+            Diättherapien, bereiten spezielle Diätkostformen zu und beraten bzw.
+            schulen in Ernährungsfragen. Diätassistenten und Diätassistentinnen
+            finden Beschäftigung in Krankenhäusern, in Rehabilitationskliniken,
+            in ambulanten Schwerpunktpraxen, als Selbstständige in einer eigenen
+            Praxis. Diätassistent/in ist eine bundesweit einheitlich geregelte
+            3-jährige schulische Ausbildung an Berufsfachschulen .
+          </Paragraph>
+          <Paragraph>
+            Eine noch intensivere Ausbildung bietet ein Studium: Das
+            grundständige Studienfach Ernährungswissenschaft (=Ökotrophologie)
+            vermittelt wissenschaftliches Grundlagenwissen in
+            Ernährungswissenschaft, Lebensmittellehre und
+            Lebensmitteltechnologie. Das Studium hat einen hohen Anteil an
+            chemischen und biologischen Lerninhalten. Fundierte Kenntnisse, z.B.
+            aus einem Grund- oder Leistungskurs, sind daher eine gute
+            Voraussetzung. Benötigt werden außerdem gute Kenntnisse in Physik
+            und anwendungsbezogener Mathematik. Beherrschen muss man z.B. die
+            Differenzial-, Integral-, Infinitesimal- und Vektorrechnung sowie
+            die lineare Algebra. Ein sicherer Umgang mit statistischen Methoden
+            ist ebenfalls nützlich.
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -807,36 +945,59 @@ export const Eurythmist = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>EurythmistIn △</ArticleSubHeader>
+        <ArticleSubHeader>
+          Eurythmist{props.eng ? '' : '*In'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Weil die öffentlich geförderte Kinderbetreuung bundesweit ausgebaut
-        wurde, kam es zwischen 2006 und 2016 zu einem Personalanstieg bei
-        Erzieher*innen um 61 % (2006: 415.000/ 2016: 666.000). Pädagogischer
-        Nachwuchs wird weiterhin händeringend gesucht!
-      </Paragraph>
-      <Paragraph>
-        Dies gilt insbesondere für Erzieher*innen, die in Kindergärten, Horten,
-        als pädagogische Hilfen im Unterricht an Grundschulen und allen
-        Einrichtungen der Jugendhilfe eingesetzt werden. Nachzulesen im
-        Fachkräftebarometer „Frühe Bildung“ des Deutschen Jugendinstitutes e.V.
-        München (2017, S. 4) unter:
-      </Paragraph>
-      <Link
-        onPress={() => Linking.openURL('http://www.fachkraeftebarometer.de')}
-      >
-        www.fachkraeftebarometer.de
-      </Link>
-      <Paragraph>
-        Das Einsatzfeld ist breit, schließt eine Spezialisierung allerdings
-        nicht aus. Ganz im Gegenteil! Unsere Gesellschaft wird immer bunter!
-        Kinder und Jugendliche mit Migrationshintergrund sowie Kinder und
-        Jugendliche mit geistiger oder körperlicher Einschränkung bereichern
-        dank moderner Integrations- und Inklusionsprinzipien zunehmend alle
-        pädagogischen Einrichtungen der Bundesländer und Kommunen. Gleichzeitig
-        kommt es beim Personal zum Generationswechsel, weil viele Pädagog*innen
-        in den nächsten Jahren in Pension gehen.
-      </Paragraph>
+      {props.eng ? (
+        <EurythmistEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Als EurythmistIn geht es vor allem darum, über den Körper als
+            Darstellungsmedium Innerlichkeiten eines Menschen oder einer Gruppe
+            nach außen zu befördern, Seelisch-Geistiges in Fluss zu bringen und
+            Gemeinsamkeit bzw. die Einheit zum Ganzen zu ermöglichen. Eurythmie
+            fördert die Körperwahrnehmung, innere Zufriedenheit und das
+            Zusammengehörigkeitsgefühl mehrerer Menschen, die sich gemeinsam –
+            vergleichsweise schonend – bewegen. Darüber hinaus kann mit Hilfe
+            des eurythmischen Tanzens auch eine interpretatorische Brücke
+            zwischen verschiedenen Künsten hergestellt werden, indem man zum
+            Beispiel ganze Texte (unter anderem Lyrik) tanzt.
+          </Paragraph>
+          <Paragraph>
+            Der Begriff dieser expressiven Tanzform ist vom altgr. εὖ (= gut,
+            richtig, schön) abgeleitet. Eurythmie entstand in Deutschland und in
+            der Schweiz zwischen 1908 und 1925 auf Anregung von Rudolf Steiner,
+            dem Begründer der Anthroposophie. Sie wird seit dem als
+            eigenständige Darstellende Kunst betrieben. (1) So eignet sie sich
+            sehr gut für die Gesundheitsförderung bei im Grunde allen Menschen,
+            die sich (schon bzw. noch) bewegen können. Aus unserer Sicht reichen
+            die beruflichen Einsatzmöglichkeiten als Eurythmistin deshalb über
+            die vor allem in Deutschland verbreitete Option an Waldorf-Schulen
+            weit hinaus. Parkinson-Tanzen, Trauma-Bewältigung, Entspannungs-
+            bzw. Deeskalationstechnik seien an dieser Stelle als beispielhafte
+            Einsatzvarianten der Eurythmie genannt.
+          </Paragraph>
+          <Paragraph>
+            Aus- bzw. Weiterbildungen in Eurythmie sind in ganz Europa möglich,
+            wie die Übersicht des Berufsverbandes der Eurythmisten in
+            Deutschland e.V. zeigt: siehe unten stehender Link.
+          </Paragraph>
+          <Paragraph>
+            Eurythmie bzw. Eurythmie-Pädagogik kann man als BA und MA an
+            privaten Hochschulen studieren (durchschnittliche Studiengebühren:
+            1.900,00 € pro Semester). Fundierte Eurythmie-Kenntnisse sind
+            allerdings ebenso in nebenberuflichen, weniger kostenintensiven und
+            kompakteren Zertifikatsweiterbildungen möglich.
+          </Paragraph>
+          <Link
+            onPress={() => Linking.openURL('http://www.eurythmie-info.de/')}
+          >
+            www.eurythmie-info.de/
+          </Link>
+        </Article>
+      )}
     </>
   );
 };
@@ -845,62 +1006,69 @@ export const Erzieher = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Erzieher*in sowie Facherzieher*in △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Educator' : 'Erzieher*in sowie Facherzieher*in'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>
-        Der hohe Bedarf an professioneller Betreuung und pädagogischer
-        Begleitung hält an. An mittlerweile fast 600 Fachschulen für
-        Sozialpädagogik bzw. Soziale Arbeit kann man sich deshalb als
-        Facherzieher*in in Voll- oder berufsbegleitender Teilzeit ausbilden
-        lassen für:
-      </Paragraph>
-      <List>
-        <Paragraph>– Integration – Kita und Schule</Paragraph>
-        <Paragraph>– Sprachbildung und Sprachförderung</Paragraph>
-        <Paragraph>– Musik und Rhythmik</Paragraph>
-        <Paragraph>– Psychomotorik</Paragraph>
-        <Paragraph>– Mediation in Kita, Hort und Schule</Paragraph>
-      </List>
-      <Paragraph>
-        “Wer den [Erzieher*innen-Beruf] ergreifen möchte, sollte sich
-        grundsätzlich gerne mit Menschen beschäftigen. Erzieherinnen und
-        Erzieher arbeiten zwar hauptsächlich mit Kindern oder Jugendlichen,
-        müssen sich aber auch mit Eltern, Institutionen und Behörden
-        auseinandersetzen. Die “Arbeit am Kind” ist ein wichtiger Aspekt, aber
-        längst nicht der Einzige. […] Neben sozialer Kompetenz, Teamfähigkeit
-        und Einfühlungsvermögen müssen Interessent*innen Reflexionsfähigkeit
-        mitbringen. Das eigene Handeln reflektieren und hinterfragen zu können
-        bzw. zu wollen ist nicht nur eine wichtige Kompetenz, die während der
-        Ausbildung gefragt ist.” Sehr wichtig für eine erfüllende Berufsausübung
-        als Erzieher*in sind neben Empathie und Freude an der Arbeit mit Kindern
-        und Jugendlichen, die stetige Bereitschaft zur Weiterbildung sowie
-        Belastbarkeit und Resilienz.
-      </Paragraph>
-      <Paragraph>
-        Bildung ist Ländersache, so dass sich die Erzieher*innen-Ausbildung in
-        den jeweiligen Bundesländern sehr unterscheiden können. Dies gilt auch
-        für die Voraussetzungen zur Berufsausbildung (in der Regel Abitur,
-        Fachabitur und/oder mindestens einjährige pädagogische Praxis). Sehr
-        hilfreiche Informationen je Bundesland unter:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.erzieherin-ausbildung.de/content/erzieherausbildung'
-          )
-        }
-      >
-        www.erzieherin-ausbildung.de/content/erzieherausbildung
-      </Link>
-      <Paragraph>
-        Prinzipiell lässt sich sagen, dass die Erzieher*innen-Ausbildung
-        mindestens drei Jahre an einer pädagogischen Fachschule in Teilzeit oder
-        Vollzeit absolviert werden kann und sehr praxisorientiert abläuft.
-        WICHTIG für Tänzer*innen in Transition: Die Erzieher*innen-Ausbildung
-        wird unseres wissens mittlerweile bundesweit von den Arbeitsagenturen
-        als berufliche Weiterbildungs- bzw. Umorientierungsmaßnahme finanziert,
-        wenn sie in Vollzeit erfolgt.
-      </Paragraph>
+      {props.eng ? (
+        <EducatorEnglish />
+      ) : (
+        <Article>
+          <Paragraph>
+            Der hohe Bedarf an professioneller Betreuung und pädagogischer
+            Begleitung hält an. An mittlerweile fast 600 Fachschulen für
+            Sozialpädagogik bzw. Soziale Arbeit kann man sich deshalb als
+            Facherzieher*in in Voll- oder berufsbegleitender Teilzeit ausbilden
+            lassen für:
+          </Paragraph>
+          <List>
+            <Paragraph>– Integration – Kita und Schule</Paragraph>
+            <Paragraph>– Sprachbildung und Sprachförderung</Paragraph>
+            <Paragraph>– Musik und Rhythmik</Paragraph>
+            <Paragraph>– Psychomotorik</Paragraph>
+            <Paragraph>– Mediation in Kita, Hort und Schule</Paragraph>
+          </List>
+          <Paragraph>
+            “Wer den [Erzieher*innen-Beruf] ergreifen möchte, sollte sich
+            grundsätzlich gerne mit Menschen beschäftigen. Erzieherinnen und
+            Erzieher arbeiten zwar hauptsächlich mit Kindern oder Jugendlichen,
+            müssen sich aber auch mit Eltern, Institutionen und Behörden
+            auseinandersetzen. Die “Arbeit am Kind” ist ein wichtiger Aspekt,
+            aber längst nicht der Einzige. […] Neben sozialer Kompetenz,
+            Teamfähigkeit und Einfühlungsvermögen müssen Interessent*innen
+            Reflexionsfähigkeit mitbringen. Das eigene Handeln reflektieren und
+            hinterfragen zu können bzw. zu wollen ist nicht nur eine wichtige
+            Kompetenz, die während der Ausbildung gefragt ist.” Sehr wichtig für
+            eine erfüllende Berufsausübung als Erzieher*in sind neben Empathie
+            und Freude an der Arbeit mit Kindern und Jugendlichen, die stetige
+            Bereitschaft zur Weiterbildung sowie Belastbarkeit und Resilienz.
+          </Paragraph>
+          <Paragraph>
+            Bildung ist Ländersache, so dass sich die Erzieher*innen-Ausbildung
+            in den jeweiligen Bundesländern sehr unterscheiden können. Dies gilt
+            auch für die Voraussetzungen zur Berufsausbildung (in der Regel
+            Abitur, Fachabitur und/oder mindestens einjährige pädagogische
+            Praxis). Sehr hilfreiche Informationen je Bundesland unter:
+          </Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL('http://www.erzieherin-ausbildung.de/')
+            }
+          >
+            www.erzieherin-ausbildung.de/content/erzieherausbildung
+          </Link>
+          <Paragraph>
+            Prinzipiell lässt sich sagen, dass die Erzieher*innen-Ausbildung
+            mindestens drei Jahre an einer pädagogischen Fachschule in Teilzeit
+            oder Vollzeit absolviert werden kann und sehr praxisorientiert
+            abläuft. WICHTIG für Tänzer*innen in Transition: Die
+            Erzieher*innen-Ausbildung wird unseres wissens mittlerweile
+            bundesweit von den Arbeitsagenturen als berufliche Weiterbildungs-
+            bzw. Umorientierungsmaßnahme finanziert, wenn sie in Vollzeit
+            erfolgt.
+          </Paragraph>
+        </Article>
+      )}
     </>
   );
 };
@@ -945,65 +1113,63 @@ export const Freizeit = (props) => {
   return (
     <>
       <TouchableOpacity onPress={props.close}>
-        <ArticleSubHeader>Freizeitwissenschaftler*in △</ArticleSubHeader>
+        <ArticleSubHeader>
+          {props.eng ? 'Leisure Scientist' : 'Freizeitwissenschaftler*in'} △
+        </ArticleSubHeader>
       </TouchableOpacity>
-      <Paragraph>Hochschule Bremen</Paragraph>
-      <Paragraph>
-        Freizeit bietet vielfältige Gelegenheiten zur Erholung und Unterhaltung,
-        ohne zu etwas verpflichtet zu sein. Sie ist für jede*n von uns mit
-        verschiedensten Aktivitäten verbunden, die uns Freude bereiten und uns
-        entspannen (sollen). Welche das sind, hängt von den jeweiligen
-        Bedürfnissen ab, die mit diversen - auch und zunehmenden kommerziellen -
-        Freizeitangeboten und daran gekoppelter Erlebniskultur gestillt werden
-        können. Weil der Bedarf an professionell gestalteter Freizeit wächst,
-        braucht es entsprechende Fachleute, auch international. „Die
-        Freizeitwirtschaft ist mit über sechs Millionen Beschäftigten einer der
-        größten Arbeitgeber in Deutschland. Unsere Lebenszeit ist immer mehr von
-        Freizeit geprägt – der Großteil unseres Lebens ist nicht Arbeit, sondern
-        Freizeit, die auch geplant werden muss.“, meint Renate Freericks. Sie
-        leitet den BA-Studiengang der Angewandten Freizeitwissenschaften an der
-        Hochschule Bremen, der der bisher einzige seiner Art in Deutschland ist.
-      </Paragraph>
-      <Paragraph>
-        Das 7-semestrige Studium der „Angewandten Freizeitwissenschaften“ mit
-        Abschluss BA ist, wie die Bezeichnung des Studienfaches sagt,
-        praxisorientiert und zudem international ausgerichtet.
-        Zulassungsvoraussetzung ist die allgemeine Hochschulreife (Abitur) oder
-        die Fachhochschulreife oder eine Einstufungsprüfung/Sonderzulassung.
-        Außerdem ein mindestens 8-wöchiges betriebliches Praktika in der
-        Freizeit-, Wellness- und Tourismusbranche vor Studienbeginn. WICHTIG für
-        Tänzer*innen in Transition: Eine abgeschlossene Berufsausbildung oder
-        eine mindestens einjährige Tätigkeit in einem einschlägigen Berufsfeld
-        ersetzen das Praktikum. Da viele Lehrveranstaltungen in Englisch
-        angeboten werden, sind zertifizierte Englischkenntnisse mit mindestens
-        B1.2-Niveau (Europäischer Referenzrahmen) eine weitere zwingende
-        Zulassungsvoraussetzung für das BA-Studium „Angewandte
-        Freizeitwissenschaften“.
-      </Paragraph>
-      <Paragraph>Bewerbungsfrist für das WS 2018: 1.6. bis 15.7.2018</Paragraph>
-      <Paragraph>Weitere DETAILS hier:</Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.hs-bremen.de/internet/de/studium/stg/isaf/'
-          )
-        }
-      >
-        www.hs-bremen.de/internet/de/studium/stg/isaf/
-      </Link>
-      <Paragraph>
-        Kurze 3sat-Reportage zu Studium und Berufsfeld "Freizeitwissenschaften",
-        abgerufen am 16.4.2018 um 21:30:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.3sat.de/page/?source=/nano/gesellschaft/193302/index.html'
-          )
-        }
-      >
-        www.3sat.de/page/?source=/nano/gesellschaft/193302/index.htm
-      </Link>
+
+      {props.eng ? (
+        <LeisureScientistEnglish />
+      ) : (
+        <Article>
+          <Paragraph>Hochschule Bremen</Paragraph>
+          <Paragraph>
+            Freizeit bietet vielfältige Gelegenheiten zur Erholung und
+            Unterhaltung, ohne zu etwas verpflichtet zu sein. Sie ist für jede*n
+            von uns mit verschiedensten Aktivitäten verbunden, die uns Freude
+            bereiten und uns entspannen (sollen). Welche das sind, hängt von den
+            jeweiligen Bedürfnissen ab, die mit diversen - auch und zunehmenden
+            kommerziellen - Freizeitangeboten und daran gekoppelter
+            Erlebniskultur gestillt werden können. Weil der Bedarf an
+            professionell gestalteter Freizeit wächst, braucht es entsprechende
+            Fachleute, auch international. „Die Freizeitwirtschaft ist mit über
+            sechs Millionen Beschäftigten einer der größten Arbeitgeber in
+            Deutschland. Unsere Lebenszeit ist immer mehr von Freizeit geprägt –
+            der Großteil unseres Lebens ist nicht Arbeit, sondern Freizeit, die
+            auch geplant werden muss.“, meint Renate Freericks. Sie leitet den
+            BA-Studiengang der Angewandten Freizeitwissenschaften an der
+            Hochschule Bremen, der der bisher einzige seiner Art in Deutschland
+            ist.
+          </Paragraph>
+          <Paragraph>
+            Das 7-semestrige Studium der „Angewandten Freizeitwissenschaften“
+            mit Abschluss BA ist, wie die Bezeichnung des Studienfaches sagt,
+            praxisorientiert und zudem international ausgerichtet.
+            Zulassungsvoraussetzung ist die allgemeine Hochschulreife (Abitur)
+            oder die Fachhochschulreife oder eine
+            Einstufungsprüfung/Sonderzulassung. Außerdem ein mindestens
+            8-wöchiges betriebliches Praktika in der Freizeit-, Wellness- und
+            Tourismusbranche vor Studienbeginn. WICHTIG für Tänzer*innen in
+            Transition: Eine abgeschlossene Berufsausbildung oder eine
+            mindestens einjährige Tätigkeit in einem einschlägigen Berufsfeld
+            ersetzen das Praktikum. Da viele Lehrveranstaltungen in Englisch
+            angeboten werden, sind zertifizierte Englischkenntnisse mit
+            mindestens B1.2-Niveau (Europäischer Referenzrahmen) eine weitere
+            zwingende Zulassungsvoraussetzung für das BA-Studium „Angewandte
+            Freizeitwissenschaften“.
+          </Paragraph>
+          <Paragraph>Weitere DETAILS hier:</Paragraph>
+          <Link
+            onPress={() =>
+              Linking.openURL(
+                'http://www.hs-bremen.de/internet/de/studium/stg/isaf/'
+              )
+            }
+          >
+            www.hs-bremen.de/internet/de/studium/stg/isaf/
+          </Link>
+        </Article>
+      )}
     </>
   );
 };

@@ -20,7 +20,7 @@ const PieLegende = (props) => {
             style={[styles.colorBox, {backgroundColor: colors.pieBlue}]}
           ></View>
           <Text style={styles.colorText}>
-            {props.eng ? 'Crafty' : 'Handwerklich'}
+            {props.eng ? 'Manual- Technical' : 'Handwerklich'}
           </Text>
         </View>
         <View style={styles.colorInfo}>
@@ -28,7 +28,7 @@ const PieLegende = (props) => {
             style={[styles.colorBox, {backgroundColor: colors.pieGreen}]}
           ></View>
           <Text style={styles.colorText}>
-            {props.eng ? 'Inquiring' : 'Forschend'}
+            {props.eng ? 'Researching' : 'Forschend'}
           </Text>
         </View>
         <View style={styles.colorInfo}>
@@ -54,7 +54,7 @@ const PieLegende = (props) => {
             style={[styles.colorBox, {backgroundColor: colors.pieYellow}]}
           ></View>
           <Text style={styles.colorText}>
-            {props.eng ? 'Economic' : 'Wirtschaftlich'}
+            {props.eng ? 'Entrepreneurial' : 'Wirtschaftlich'}
           </Text>
         </View>
         <View style={styles.colorInfo}>
@@ -62,7 +62,7 @@ const PieLegende = (props) => {
             style={[styles.colorBox, {backgroundColor: colors.piePink}]}
           ></View>
           <Text style={styles.colorText}>
-            {props.eng ? 'Administrative' : 'Verwaltend'}
+            {props.eng ? 'Administrating' : 'Verwaltend'}
           </Text>
         </View>
       </View>

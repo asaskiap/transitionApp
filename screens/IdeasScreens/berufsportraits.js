@@ -98,7 +98,9 @@ const Berufsportraits = (props) => {
   return (
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
-        <ArticleHeader>Berufsportraits</ArticleHeader>
+        <ArticleHeader>
+          {props.english ? 'Job Portraits' : 'Berufsportraits'}
+        </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/ideasIllustrations/PictureFrame.png')}
         />
@@ -111,8 +113,9 @@ const Berufsportraits = (props) => {
             marginVertical: 8
           }}
         >
-          Eine Auflistung mit den verschiedensten Berufen gibt es auf folgenden
-          Webseiten:
+          {props.english
+            ? 'You can find lists of various jobs at the following links: '
+            : 'Eine Auflistung mit den verschiedensten Berufen gibt es auf folgenden Webseiten:'}
         </Paragraph>
         <View style={{alignItems: 'flex-start'}}>
           <Link
@@ -156,28 +159,38 @@ const Berufsportraits = (props) => {
               marginTop: 40
             }}
           >
-            Ein Paar Berufe im Portrait:
+            {props.english
+              ? 'Portraits of a few jobs'
+              : 'Ein Paar Berufe im Portrait:'}
           </Paragraph>
 
           <Article>
             <TouchableOpacity onPress={() => setAugenoptikerIn(true)}>
               {!augenoptikerIn && (
-                <ArticleSubHeader>AugenoptikerIn ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Optician ▽' : 'AugenoptikerIn ▽'}
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {augenoptikerIn && (
               <Augenoptiker
                 close={() => setAugenoptikerIn(false)}
+                eng={props.english}
               ></Augenoptiker>
             )}
 
             <TouchableOpacity onPress={() => setAutomobilverkäuferin(true)}>
               {!automobilverkäuferIn && (
-                <ArticleSubHeader>Automobilverkäufer*In ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Automotive Salesperson ▽'
+                    : 'Automobilverkäufer*In ▽'}
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {automobilverkäuferIn && (
               <Automobilverkäufer
+                eng={props.english}
                 close={() => setAutomobilverkäuferin(false)}
               />
             )}
@@ -185,23 +198,32 @@ const Berufsportraits = (props) => {
             <TouchableOpacity onPress={() => setAuswertigesAmt(true)}>
               {!auswertigesAmt && (
                 <ArticleSubHeader>
-                  Beamte*r im Mittleren Dienst des Auswärtigen Amtes ▽
+                  {props.english
+                    ? 'Civil servant in the intermediate service of the Federal Foreign Office ▽'
+                    : 'Beamte*r im Mittleren Dienst des Auswärtigen Amtes ▽'}
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {auswertigesAmt && (
-              <AuswertigesAmt close={() => setAuswertigesAmt(false)} />
+              <AuswertigesAmt
+                close={() => setAuswertigesAmt(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setBekleidungstechniker(true)}>
               {!bekleidungstechniker && (
                 <ArticleSubHeader>
-                  BekleidungstechnikerIn (BA) ▽
+                  {props.english
+                    ? 'Clothing Technician (BA)'
+                    : 'BekleidungstechnikerIn (BA)'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {bekleidungstechniker && (
               <Bekleidungstechniker
+                eng={props.english}
                 close={() => setBekleidungstechniker(false)}
               />
             )}
@@ -209,73 +231,124 @@ const Berufsportraits = (props) => {
             <TouchableOpacity onPress={() => setGesundheitsmanager(true)}>
               {!gesundheitsmanager && (
                 <ArticleSubHeader>
-                  Betriebliche/r Gesundheits- manager/in ▽
+                  {props.english
+                    ? 'Corporate Health Manager'
+                    : 'Betriebliche/r Gesundheits- manager/in'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {gesundheitsmanager && (
-              <Gesundheitsmanager close={() => setGesundheitsmanager(false)} />
+              <Gesundheitsmanager
+                close={() => setGesundheitsmanager(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setBiologe(true)}>
               {!biologe && (
-                <ArticleSubHeader>Biologe/in M.Sc. ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Biologist M.Sc.' : 'Biologe/in M.Sc.'} ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {biologe && <Biologie close={() => setBiologe(false)} />}
+            {biologe && (
+              <Biologie close={() => setBiologe(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setBlingenpaedagoge(true)}>
               {!blindenpaedagoge && (
-                <ArticleSubHeader>Blindenpädagog*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Pedagogue for the blind'
+                    : 'Blindenpädagog*in'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {blindenpaedagoge && (
-              <Blindenpädagoge close={() => setBlingenpaedagoge(false)} />
+              <Blindenpädagoge
+                close={() => setBlingenpaedagoge(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setBuchbinder(true)}>
               {!buchbinder && (
-                <ArticleSubHeader>Buchbinder*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Book binder' : 'Buchbinder*in'} ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {buchbinder && <Buchbinder close={() => setBuchbinder(false)} />}
+            {buchbinder && (
+              <Buchbinder
+                close={() => setBuchbinder(false)}
+                eng={props.english}
+              />
+            )}
 
             <TouchableOpacity onPress={() => setClown(true)}>
               {!clown && <ArticleSubHeader>Clown ▽</ArticleSubHeader>}
             </TouchableOpacity>
-            {clown && <Clown close={() => setClown(false)} />}
+            {clown && (
+              <Clown close={() => setClown(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setCruise(true)}>
               {!cruise && (
-                <ArticleSubHeader>Cruise Tourism Manager*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  Cruise Tourism Manager{props.english ? '' : '*in'} ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {cruise && <Cruise close={() => setCruise(false)} />}
+            {cruise && (
+              <Cruise close={() => setCruise(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setErnaehrung(true)}>
               {!ernaehrung && (
-                <ArticleSubHeader>Ernährungsberatung ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Nutritional counseling'
+                    : 'Ernährungsberatung'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {ernaehrung && (
-              <Ernaehrungsberatung close={() => setErnaehrung(false)} />
+              <Ernaehrungsberatung
+                close={() => setErnaehrung(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setEurythmist(true)}>
-              {eurythmist && (
-                <ArticleSubHeader>EurythmistIn ▽</ArticleSubHeader>
+              {!eurythmist && (
+                <ArticleSubHeader>
+                  Eurythmist{props.english ? '' : '*In'} ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {eurythmist && <Eurythmist close={() => setEurythmist(false)} />}
+            {eurythmist && (
+              <Eurythmist
+                close={() => setEurythmist(false)}
+                eng={props.english}
+              />
+            )}
 
             <TouchableOpacity onPress={() => setErzieher(true)}>
               {!erzieher && (
                 <ArticleSubHeader>
-                  Erzieher*in sowie Facherzieher*in ▽
+                  {props.english
+                    ? 'Educator'
+                    : 'Erzieher*in sowie Facherzieher*in'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {erzieher && <Erzieher close={() => setErzieher(false)} />}
+            {erzieher && (
+              <Erzieher close={() => setErzieher(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setGoethe(true)}>
               {!goethe && (
@@ -284,160 +357,267 @@ const Berufsportraits = (props) => {
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {goethe && <Goethe close={() => setGoethe(false)} />}
+            {goethe && (
+              <Goethe close={() => setGoethe(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setFreizeit(true)}>
               {!freizeit && (
                 <ArticleSubHeader>
-                  Freizeitwissenschaftler*in ▽
+                  {props.english
+                    ? 'Leisure Scientist'
+                    : 'Freizeitwissenschaftler*in'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {freizeit && <Freizeit close={() => setFreizeit(false)} />}
+            {freizeit && (
+              <Freizeit close={() => setFreizeit(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setGesundheitsfoerderung(true)}>
               {!gesundheitsfoerderung && (
                 <ArticleSubHeader>
-                  Berufe in der Gesundheitsförderung ▽
+                  {props.english
+                    ? 'Professions in health promotion'
+                    : 'Berufe in der Gesundheitsförderung'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {gesundheitsfoerderung && (
               <Gesundheitsfoerderung
                 close={() => setGesundheitsfoerderung(false)}
+                eng={props.english}
               />
             )}
 
             <TouchableOpacity onPress={() => setHoerakustiker(true)}>
               {!hoerakustiker && (
-                <ArticleSubHeader>Hörakustiker*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Hearing Care Professional'
+                    : 'Hörakustiker*in'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {hoerakustiker && (
-              <Hoerakustiker close={() => setHoerakustiker(false)} />
+              <Hoerakustiker
+                close={() => setHoerakustiker(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setHoergeraeteakustiker(true)}>
               {!hoergeraeteaktustiker && (
-                <ArticleSubHeader>Hörgeräteakustiker*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Hearing aid acoustician'
+                    : 'Hörgeräteakustiker*in'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {hoergeraeteaktustiker && (
               <Hoergeraeteaktustiker
                 close={() => setHoergeraeteakustiker(false)}
+                eng={props.english}
               />
             )}
 
             <TouchableOpacity onPress={() => setKosmetik(true)}>
               {!kosmetik && (
                 <ArticleSubHeader>
-                  Kosmetik, Maskenbild, Tätowierer*in ▽
+                  {props.english
+                    ? 'Cosmetics, make-up artist, tattoo artist'
+                    : 'Kosmetik, Maskenbild, Tätowierer*in '}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {kosmetik && <Kosmetik close={() => setKosmetik(false)} />}
+            {kosmetik && (
+              <Kosmetik close={() => setKosmetik(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setKulturvermittler(true)}>
               {!kulturvermittler && (
                 <ArticleSubHeader>
-                  Kultur- und Kunstvermittler*in ▽
+                  {props.english
+                    ? 'Culture and art mediator'
+                    : 'Kultur- und Kunstvermittler*in'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {kulturvermittler && (
-              <Kulturvermittler close={() => setKulturvermittler(false)} />
+              <Kulturvermittler
+                close={() => setKulturvermittler(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setKunstgeragoge(true)}>
               {!kunstgeragoge && (
-                <ArticleSubHeader>Kunstgeragog*Innen ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Art Geragogues' : 'Kunstgeragog*Innen'}▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {kunstgeragoge && (
-              <Kunstgeragoge close={() => setKunstgeragoge(false)} />
+              <Kunstgeragoge
+                close={() => setKunstgeragoge(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setLehrer(true)}>
               {!lehrer && (
                 <ArticleSubHeader>
-                  Lehrer*in an staatlichen Schulen ▽
+                  {props.english
+                    ? 'Teacher at state schools'
+                    : 'Lehrer*in an staatlichen Schulen'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {lehrer && <Lehrer close={() => setLehrer(false)} />}
+            {lehrer && (
+              <Lehrer close={() => setLehrer(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setLogopaede(true)}>
-              {!logopaede && <ArticleSubHeader>Logopäde*in ▽</ArticleSubHeader>}
+              {!logopaede && (
+                <ArticleSubHeader>
+                  {props.english ? 'Speech therapist' : 'Logopäde*in'}▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {logopaede && <Logopaede close={() => setLogopaede(false)} />}
+            {logopaede && (
+              <Logopaede
+                close={() => setLogopaede(false)}
+                eng={props.english}
+              />
+            )}
 
             <TouchableOpacity onPress={() => setLuftverkehr(true)}>
               {luftverkehr && (
-                <ArticleSubHeader>Luftverkehrskaufleute ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Air transport specialists'
+                    : 'Luftverkehrskaufleute'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {luftverkehr && <Luftverkehr close={() => setLuftverkehr(false)} />}
+            {luftverkehr && (
+              <Luftverkehr
+                close={() => setLuftverkehr(false)}
+                eng={props.english}
+              />
+            )}
 
             <TouchableOpacity onPress={() => setMediengestalter(true)}>
               {!mediengestalter && (
                 <ArticleSubHeader>
-                  Mediengestalter_in digital und print bzw. Webdesign ▽
+                  {props.english
+                    ? 'Media designer digital & print or web design'
+                    : 'Mediengestalter_in digital und print bzw. Webdesign'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {mediengestalter && (
-              <Mediengestalter close={() => setMediengestalter(false)} />
+              <Mediengestalter
+                close={() => setMediengestalter(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setOsteopathie(true)}>
               {!osteopathie && (
-                <ArticleSubHeader>Osteopathie ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Ostheopathy' : 'Osteopathie'}▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {osteopathie && <Osteopathie close={() => setOsteopathie(false)} />}
+            {osteopathie && (
+              <Osteopathie
+                close={() => setOsteopathie(false)}
+                eng={props.english}
+              />
+            )}
 
             <TouchableOpacity onPress={() => setPTA(true)}>
               {!pta && (
                 <ArticleSubHeader>
-                  Pharmazeutisch-technischen Assistentin (PTA) ▽
+                  {props.english
+                    ? 'Pharmaceutical Technical Assistant (PTA)'
+                    : 'Pharmazeutisch-technischen Assistentin (PTA)'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {pta && <PTA close={() => setPTA(false)} />}
+            {pta && <PTA close={() => setPTA(false)} eng={props.english} />}
 
             <TouchableOpacity onPress={() => setRaumausstatter(true)}>
               {!raumausstatter && (
-                <ArticleSubHeader>Raumausstatter*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Interior decorator' : 'Raumausstatter*in'}▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {raumausstatter && (
-              <Raumausstatter close={() => setRaumausstatter(true)} />
+              <Raumausstatter
+                close={() => setRaumausstatter(true)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setReiseleiter(true)}>
               {!reiseleiter && (
-                <ArticleSubHeader>Reiseleiter*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Tour guide' : 'Reiseleiter*in'}▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
-            {reiseleiter && <Reiseleiter close={() => setReiseleiter(false)} />}
+            {reiseleiter && (
+              <Reiseleiter
+                close={() => setReiseleiter(false)}
+                eng={props.english}
+              />
+            )}
 
             <TouchableOpacity onPress={() => setSozialeArbeitBA(true)}>
               {!sozialeArbeitBA && (
-                <ArticleSubHeader>Soziale Arbeit BA ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Social Work vocational training'
+                    : 'Soziale Arbeit BA '}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {sozialeArbeitBA && (
-              <SozialeArbeitBA close={() => setSozialeArbeitBA(false)} />
+              <SozialeArbeitBA
+                close={() => setSozialeArbeitBA(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setSozialeArbeitStudium(true)}>
               {!sozialeArbeitStudium && (
-                <ArticleSubHeader>Studium Soziale Arbeit ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Social work studies'
+                    : 'Studium Soziale Arbeit'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {sozialeArbeitStudium && (
               <SozialeArbeitStudium
                 close={() => setSozialeArbeitStudium(false)}
+                eng={props.english}
               />
             )}
 
@@ -446,77 +626,118 @@ const Berufsportraits = (props) => {
             >
               {!sozialversicherungsangestellter && (
                 <ArticleSubHeader>
-                  Sozialversicherungs- fachangestellte*r ▽
+                  {props.english
+                    ? 'Social insurance clerk'
+                    : 'Sozialversicherungs- fachangestellte*r '}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {sozialversicherungsangestellter && (
               <Sozialversicherungsangestellter
                 close={() => setSozialversicherungsangestellter(false)}
+                eng={props.english}
               />
             )}
 
             <TouchableOpacity onPress={() => setSportkaufmann(true)}>
               {!sportkaufmann && (
                 <ArticleSubHeader>
-                  Sport- und Fitnesskaufmann/Sport- und Fitnesskauffrau ▽
+                  {props.english
+                    ? 'Sports and fitness management assistant'
+                    : 'Sport- und Fitnesskaufmann/Sport- und Fitnesskauffrau'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {sportkaufmann && (
-              <Sportkaufmann close={() => setSportkaufmann(false)} />
+              <Sportkaufmann
+                close={() => setSportkaufmann(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setVeranstaltungstechnik(true)}>
               {!veranstaltungstechnik && (
                 <ArticleSubHeader>
-                  Theater- bzw. Veranstaltungstechnik ▽
+                  {props.english
+                    ? 'Theater or event technician'
+                    : 'Theater- bzw. Veranstaltungstechnik'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {veranstaltungstechnik && (
               <Veranstaltungstechnik
                 close={() => setVeranstaltungstechnik(false)}
+                eng={props.english}
               />
             )}
 
             <TouchableOpacity onPress={() => setTierphysiotherapie(true)}>
               {!tierphysiotherapie && (
-                <ArticleSubHeader>Tierphysiotherapie ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Animal physiotherapy '
+                    : 'Tierphysiotherapie'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {tierphysiotherapie && (
-              <Tierphysiotherapie close={() => setTierphysiotherapie(false)} />
+              <Tierphysiotherapie
+                close={() => setTierphysiotherapie(false)}
+                eng={props.english}
+              />
             )}
 
             <TouchableOpacity onPress={() => setTierwirt(true)}>
-              {!tierwirt && <ArticleSubHeader>Tierwirt*in ▽</ArticleSubHeader>}
+              {!tierwirt && (
+                <ArticleSubHeader>
+                  {props.english ? 'Animal farmer' : 'Tierwirt*in'}▽
+                </ArticleSubHeader>
+              )}
             </TouchableOpacity>
-            {tierwirt && <Tierwirt close={() => setTierwirt(false)} />}
+            {tierwirt && (
+              <Tierwirt close={() => setTierwirt(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setTrainee(true)}>
               {!trainee && <ArticleSubHeader>Trainee ▽</ArticleSubHeader>}
             </TouchableOpacity>
-            {trainee && <Trainee close={() => setTrainee(false)} />}
+            {trainee && (
+              <Trainee close={() => setTrainee(false)} eng={props.english} />
+            )}
 
             <TouchableOpacity onPress={() => setVersicherungsmakler(true)}>
               {!versicherungsmakler && (
-                <ArticleSubHeader>Versicherungsmakler*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english
+                    ? 'Insurance broker'
+                    : 'Versicherungsmakler*in'}
+                  ▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {versicherungsmakler && (
               <Versicherungsmakler
                 close={() => setVersicherungsmakler(false)}
+                eng={props.english}
               />
             )}
 
             <TouchableOpacity onPress={() => setZirkuspaedagoge(true)}>
               {!zirkuspaedagoge && (
-                <ArticleSubHeader>Zirkuspädagog*in ▽</ArticleSubHeader>
+                <ArticleSubHeader>
+                  {props.english ? 'Circus educator' : 'Zirkuspädagog*in'}▽
+                </ArticleSubHeader>
               )}
             </TouchableOpacity>
             {zirkuspaedagoge && (
-              <Zirkuspaedagoge close={() => setZirkuspaedagoge(false)} />
+              <Zirkuspaedagoge
+                close={() => setZirkuspaedagoge(false)}
+                eng={props.english}
+              />
             )}
           </Article>
         </View>

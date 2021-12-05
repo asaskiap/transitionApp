@@ -18,7 +18,9 @@ import colors from '../../assets/colors';
 class BerufsfragebogenIntro extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
-      headerTitle: 'Berufsinteressen',
+      headerTitle: navigation.state.params.eng
+        ? 'Job Interests'
+        : 'Berufsinteressen',
       headerStyle: {
         backgroundColor: colors.psychology
       },
@@ -63,6 +65,7 @@ class BerufsfragebogenIntro extends React.Component {
           isVisible={this.state.displayMenu}
           close={this.closeMenu}
           {...this.props}
+          english={eng}
         ></Menu>
         <HeaderEB textStyle={{textAlign: 'center'}}>
           {eng ? 'Job Interest Questionnaire' : 'Berufsinteressen Fragebogen'}

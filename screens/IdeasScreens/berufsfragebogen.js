@@ -25,6 +25,8 @@ import {
   Wirtschaftlich
 } from '../../components/berufsfragebogenComponents/textAboutYou';
 import {ScrollView} from 'react-native';
+import ArticleSubHeader from '../../components/articleComponents/articleSubHeader';
+import Paragraph from '../../components/articleComponents/paragraph';
 
 class Berufsfragebogen extends React.Component {
   state = {
@@ -195,23 +197,30 @@ class Berufsfragebogen extends React.Component {
         ref={(scrollRef) => (this.scrollRef = scrollRef)}
       >
         {this.state.displayQ1 && (
-          <Question1
-            a={this.state.currA}
-            b={this.state.currC}
-            c={this.state.currD}
-            d={this.state.currB}
-            e={this.state.currE}
-            f={this.state.currF}
-            setA={(val) => this.setState({currA: val})}
-            setB={(val) => this.setState({currC: val})}
-            setC={(val) => this.setState({currD: val})}
-            setD={(val) => this.setState({currB: val})}
-            setE={(val) => this.setState({currE: val})}
-            setF={(val) => this.setState({currF: val})}
-            handleSubmit={this.handleSubmit1}
-            progress={1}
-            eng={eng}
-          />
+          <>
+            <Paragraph style={{color: colors.primaryDark}}>
+              {eng
+                ? 'Please read through the individual activities at your leisure and consider whether you enjoy doing them. It is not important whether you like to do it in your free time or whether you can imagine doing it as a job in the future. What matters is your basic interest in it.'
+                : 'German version here'}
+            </Paragraph>
+            <Question1
+              a={this.state.currA}
+              b={this.state.currC}
+              c={this.state.currD}
+              d={this.state.currB}
+              e={this.state.currE}
+              f={this.state.currF}
+              setA={(val) => this.setState({currA: val})}
+              setB={(val) => this.setState({currC: val})}
+              setC={(val) => this.setState({currD: val})}
+              setD={(val) => this.setState({currB: val})}
+              setE={(val) => this.setState({currE: val})}
+              setF={(val) => this.setState({currF: val})}
+              handleSubmit={this.handleSubmit1}
+              progress={1}
+              eng={eng}
+            />
+          </>
         )}
 
         {this.state.displayQ2 && (
@@ -398,7 +407,7 @@ Berufsfragebogen.navigationOptions = {
     backgroundColor: colors.accentPale
   },
   headerTintColor: colors.accentDark,
-  title: 'Fragebogen'
+  title: 'Test'
 };
 
 export default Berufsfragebogen;
