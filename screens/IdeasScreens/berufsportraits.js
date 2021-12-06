@@ -353,7 +353,10 @@ const Berufsportraits = (props) => {
             <TouchableOpacity onPress={() => setGoethe(true)}>
               {!goethe && (
                 <ArticleSubHeader>
-                  Fach- und Führungskraft beim Goethe-Institut ▽
+                  {props.english
+                    ? 'Professional and managerial staff at the Goethe-Institut'
+                    : 'Fach- und Führungskraft beim Goethe-Institut'}
+                  ▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>
@@ -568,7 +571,7 @@ const Berufsportraits = (props) => {
             </TouchableOpacity>
             {raumausstatter && (
               <Raumausstatter
-                close={() => setRaumausstatter(true)}
+                close={() => setRaumausstatter(false)}
                 eng={props.english}
               />
             )}
@@ -590,10 +593,7 @@ const Berufsportraits = (props) => {
             <TouchableOpacity onPress={() => setSozialeArbeitBA(true)}>
               {!sozialeArbeitBA && (
                 <ArticleSubHeader>
-                  {props.english
-                    ? 'Social Work vocational training'
-                    : 'Soziale Arbeit BA '}
-                  ▽
+                  {props.english ? 'Social Work BA' : 'Soziale Arbeit BA '}▽
                 </ArticleSubHeader>
               )}
             </TouchableOpacity>

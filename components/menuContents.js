@@ -66,7 +66,9 @@ export const MenuContentsEng = (props) => {
         Psychological aspects
       </MenuPageButton>
 
-      <MenuPageButton onPress={() => navigateTo('Ideas')}>Ideas</MenuPageButton>
+      <MenuPageButton onPress={() => navigateTo('Ideas')}>
+        Carreer Ideas
+      </MenuPageButton>
 
       <MenuPageButton onPress={() => navigateTo('Umsetzung')}>
         How do I implement my ideas?

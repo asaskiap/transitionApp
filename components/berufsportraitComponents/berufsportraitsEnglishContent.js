@@ -243,22 +243,206 @@ export const ArtGeragogue = {
   ]
 };
 
-export const HearingCareProfessional = {
-  paragraphs: []
+export const Goethe = {
+  paragraphs: [
+    "The Goethe-Institut is a globally operating and equally recognized institution of Germany's foreign language and cultural policy. It not only brings German culture and language closer to other regions, but also mediates between cultures through a wide variety of programs and projects.",
+    'As a permanent specialist and manager with a focus on culture, you can be employed at the institutes abroad, but also at the Munich headquarters. The special and challenging thing is that you rotate every five to six years, i.e. you change your place of living and working. This then also applies to the accompanying families, but the Goethe-Institut supports this in a variety of ways.',
+    'Prerequisites to be able to work as a specialist and manager with a focus on culture include a university degree, several years of experience in cultural mediation - dance is definitely one of them - a sound knowledge of the German and European cultural scene, (international) project experience and intercultural competence, as well as very good German language skills. Not to forget: Media competence and further language skills.'
+  ]
 };
 
-export const HearingCareProfessional = {
-  paragraphs: []
+export const Teacher = {
+  paragraphs: [
+    'In the meantime, teachers are in short supply. This applies to all types of schools, i.e.',
+    '- elementary schools,',
+    '- secondary schools, grammar schools, vocational schools and',
+    '- special schools',
+    'and for most subjects. The search is no longer limited to the STEM subjects (as was the case exclusively a few years ago), but there are now also shortages in music, art education and sports, as well as in German and foreign languages (including German as a foreign language/second language) and at vocational schools for social work, e.g. in the area of nursing.',
+    'School education is the responsibility of the individual federal states. Therefore, the framework conditions vary, e.g. in terms of salaries/salaries, the respective number of teaching hours per week, the option of civil service employment or even the possibility of part-time employment.',
+    'As far as training is concerned, however, it can be said in principle that state teacher training is two-tiered. It consists first of a long academic training at a pedagogical college or university with the result of the first state examination. This is followed more or less fluently by the practical two-year training phase, the Referendariat. This is concluded with the II. state examination. This qualifies the student to teach at the primary or secondary level I or II, or even at the vocational school or special needs school. ONLY teachers with a second state examination are considered to be "Studienräte" and are then paid accordingly (usually TVÖD 13/A 12), either automatically or on application. This is not insignificant e.g. for the later pension regulation.',
+    'Due to the great shortage of teachers, almost all federal states have been recruiting so-called lateral entrants for some time now. This means that graduates with an MA in Education or an MA in a subject that is part of the range of subjects taught at state schools (e.g. mathematics, geography, German studies, sports science, etc.) can apply for the teaching profession. In the case of probationary employment, the traineeship is then completed part-time parallel to a part-time teaching position within one or two years (depending on the federal state). Until the full teaching qualification, i.e. the successful II. state examination (!, because there are also "only" certificate courses), the remuneration is therefore reduced (usually TVÖD 11).',
+    'For graduates with a BA degree, employment as a teacher in the state school service is excluded for the time being, as far as we know.',
+    'EU citizens with the above qualifications AND sufficient German language skills (from C1 level) can also apply for the teaching profession!',
+    'Detailed information for e.g. Saxony, Berlin, MeckPom, Bavaria, Hessen see links below:',
+
+    'Otherwise, enter "teacher in ..." in the search engine and go to one of the official sites (Ministry of Education, Ministry of Culture).'
+  ]
 };
 
-export const HearingCareProfessional = {
-  paragraphs: []
+export const SpeechTherapist = {
+  paragraphs: [
+    '"Those who cannot fully develop their speech ability or lose it are at risk of being excluded: From the circle of friends, from society, from the profession. Children whose speech development is not supported enough get problems. Or people who stutter. People who have had a stroke. People whose voice is not up to the demands of their job.',
+    'The restriction of the ability to communicate in children and adults can relate to "speech", "speaking", "voice" and "swallowing". If more than one area is affected, it is a complex (communication) disorder. Such complex disorders occur in both children and adults. They are often consequences of congenital (e.g., disabilities) or acquired (e.g., stroke) disorders.',
+    '[State-certified speech therapists are non-medical professionals and] represent the health profession working in the areas of prevention, early detection, early intervention, rehabilitation, where they are responsible for consultation, diagnosis and therapy. Speech therapists are also in independent practice. The prescription of speech, language and voice therapy is based on the Heilmittelrichtlinien (HMR)."',
+    'Speech therapy training in Germany is differentiated into:',
+    '- vocational school training and',
+    '- since 2009 also in BA and MA studies with the usual duration of study.',
+    'The vocational training in speech therapy is usually a three-year full-time training with theory and practice. The entry requirement for this training is a Realschulabschluss, another equivalent training or a vocational training of at least two years completed after Hauptschulabschluss. Applications are made directly to the vocational schools, which charge tuition fees depending on the school regulations for independent sponsorship.',
+    'Since 2009, it has been possible to study speech therapy at universities (BA and MA). The prerequisite for this is the general university entrance qualification, the Abitur, or the subject-related university entrance qualification or the Fachhochschulreife. Depending on the university, those who have a vocational school speech therapy exam can also begin a speech therapy degree program without a high school diploma.',
+    'In order to receive scholarship support for a transition to a speech therapist, it is advisable to combine vocational training AND BA or MA studies.',
+    'This dual model is possible, for example, at the Akademie für Gesundheitsberufe Heidelberg. Further training and study institutions for speech therapy can be found at: see second link below',
+    'is The professional and trade association of freelance and employed speech therapists as well as members of other speech therapy professions is the Deutsche Bundesverband für Logopädie e.V. (German Federal Association for Speech Therapy), founded in 1964. (dbl) with a very informative website at:'
+  ]
 };
 
-export const HearingCareProfessional = {
-  paragraphs: []
+export const AirTransport = {
+  paragraphs: [
+    'Our mobility is increasing. For example, the average global growth in air traffic based on passenger kilometers (RPK) is estimated by the German government to be "around 4.7% annually" over the next 20 years or so (German Federal Ministry for Economic Affairs and Energy (ed.): Die Luftfahrtstrategie der Bundesregierung. 2014, S. 5). Logistically, this economic potential of the next decades can only be exploited with well-trained employees on the ground and in the air. Air traffic clerks are definitely one of them!',
+    'From the ground, you will be responsible for all operations related to the transportation of passengers and cargo, such as: Scheduling crew assignments, compiling route documents, advising on fares and flight connections, calculating airfares and rates, booking and reserving flights, planning cargo capacity and preparing freight documents, coordinating promotional activities, and working in finance, accounting, human resources, or general organization. Sense of responsibility, flexibility, accuracy, sovereign and positive charisma, physical fitness and attractiveness, multilingualism, collegiality with simultaneous independence as well as the ability to work under pressure are prerequisites for this versatile, international profession with a bright future in the logistics and transport industry (airlines, airport companies, travel agencies, freight forwarders, handling companies).',
+    'The full-time and - due to the great demand - part-time training is a recognized training occupation of the Chamber of Industry and Commerce (IHK), which is financed by the employment agency after a case-by-case examination.',
+    'Interesting info on training and career prospects in a study by the Federal Institute for Vocational Education and Training (BIB) from March 2014, pt. 5.4.1, p.31:'
+  ]
 };
 
-export const HearingCareProfessional = {
-  paragraphs: []
+export const MediaDesigner = {
+  paragraphs: [
+    'Johannes Gutenberg, who revolutionized letterpress printing in 1455 by using movable and reusable type, is considered the forefather of this profession. Digital and print media designers develop concepts for the design of digital or printed information media in consultation with their customers and implement them. They design and create media products.',
+    'Media designer digital and print is a 3-year recognized apprenticeship. Training is available in the following specializations:',
+    'Media designers digital and print of the specialization consulting and planning care for and advise customers and create offers for media products. They plan projects, process orders and present the results. Digital and print media designers specializing in design and technology design media products and plan production processes. They combine media elements, prepare data for digital use and compile it for the respective purpose. They visualization analyze target groups and create media concepts. They present drafts to customers and prepare them for further media processing. Digital and print media designers of all disciplines find employment in advertising agencies or advertising departments and in companies in the print and media industry. Media designers for web design develop and design websites, which they can both design and program after their training. They can also create databases and web banners, etc.',
+    'Type of training: dual (vocational school and company), Responsible body: IHK, HWK',
+    'Duration: 3 years, shortening to 2-2.5 years possible'
+  ]
+};
+
+export const Osteopathy = {
+  paragraphs: [
+    'Ostheopathy is a method of treatment for physical ailments. The approach of osteopathy is simple: life shows itself in the form of movement. Where movement is prevented, illness spreads. Osteopathy knows all small and large movements of the human body. It helps to detect and solve movement restrictions. Compared to conventional medicine, osteopathy offers a whole range of additional possibilities for the benefit of the patient. For example, osteopathy always considers the patient as a whole. Also, osteopathy does not deal with the treatment of individual symptoms, but always wants to track down and treat the causes of complaints.',
+    'In Germany, training to become an osteopath takes place primarily at private osteopathic schools.',
+
+    'Most of these schools offer their training on a part-time basis. The in-service training is aimed at doctors, alternative practitioners, physiotherapists.',
+    'Since osteopathy is considered a medical science in Germany, it may only be practiced independently by physicians or alternative practitioners. Other professionals must obtain the Heilpraktikerschein during or after their training. Those who are not physicians or non-medical practitioners (e.g. physiotherapists) may only work osteopathically on the orders of a physician or non-medical practitioner "within the limits of their basic profession".',
+    'The in-service training lasts at least four years and takes place in weekend seminars. Students must complete a total of at least 1,350 hours of instruction. Instruction is divided into theory and practice and includes basic medical subjects such as anatomy and physiology as well as learning the various osteopathic techniques. A thesis and final examination conclude the training.',
+    'Osteopathy is also offered as a five-year full-time training. This offer is primarily aimed at high school graduates. During their training, they are prepared for the examination to obtain the title of Heilpraktiker, without which they are not allowed to practice osteopathy independently.',
+
+    'Full-time graduates have learned osteopathy in a five-year full-time training with over 5000 teaching units at a full-time school. In order to be legally allowed to work in the field of osteopathy in Germany without any restrictions, they have passed the Heilpraktiker examination. The full-time training is currently the most profound osteopathic training.',
+    "The training of at least four years is necessary, on the one hand, to learn the many areas of osteopathy as an independent and effective form of medicine and, on the other hand, to train one's own hands to become sensitive instruments.",
+    'Association of Osteopaths Germany e.V.'
+  ]
+};
+
+export const PharmaceuticalTechnicalAssistant = {
+  paragraphs: [
+    '"Whether prescription or over-the-counter medications, pharmaceutical technical assistants help pharmacists check doctors\' prescriptions and deliver medicine to customers." They advise customers, produce or further develop medicines, are responsible for quality control (e.g. by analyzing purity and dosage in accordance with legal requirements), perform administrative tasks and carry out various services, such as measuring blood pressure. The healthcare sector is one of the fastest growing markets. That\'s why PTAs are sought-after professionals in pharmacies, hospitals, senior residences, in the pharmaceutical industry, and for corporate health management in a wide variety of companies. Both family-friendly part-time and, due to the high demand, full-time employment are available.',
+    'The dual training at one of the approximately 80 private (with tuition) or state (without tuition) technical colleges nationwide lasts 2.5 years full-time and includes at least one internship of several months. Theoretical fundamentals of the training include pharmacology, chemistry and technical arithmetic. Practical subjects include botany, nutrition and dietetics, and drug science. The prerequisite for training is a good intermediate school leaving certificate or a (technical) high school leaving certificate. An interest in science and mathematics, a love of people, thoroughness and diligence are required. The training to become a PTA is subsidized by the employment agencies upon application!',
+    'Further DETAILS here:'
+  ]
+};
+
+export const InteriorDecorator = {
+  paragraphs: [
+    'If you like to design and are creative, if beautiful things are important to you, if you like to work and calculate things at the same time, and if you are interested in different materials and want to please others with your work, interior decorating can be a satisfying occupation for you. "Interior decorators design residential and commercial spaces and advise on design and choice of materials. They plan and prepare room furnishings according to the customer\'s wishes. They determine costs and, after completing the order, obtain the necessary materials with which to design the premises. [If required, [they] prepare subfloors, lay floor coverings, line walls and ceilings with fabrics and wallpaper, install privacy and sun protection systems, and decorate rooms. In addition, they reupholster upholstered furniture. ... " ',
+    'A very versatile occupational field, which of course offers employment opportunities at theaters and venues, for example, as a prop master (specific advertisement below). In addition, interior decorators very often accompany freelance real estate owners or also commissioned architectural offices in the interior design of premises. German craftsmen enjoy a very good reputation abroad, so that interior decorators can basically make a living wherever there is residential property to be designed and are happy to be paid appropriately for this service. In this context it is important to know that there is an EU mobility program for trainees or professionals in skilled trades with SINDBAD, with which important professional experience can be gained abroad. More about this in the next newsletter.',
+    "The profession of interior decorator requires on the one hand a high degree of design creativity in dealing with shapes, colors and different materials, but on the other hand also good social and communication skills. The customer's wishes are always at the center of attention, so you have to enjoy putting your own creative skills at the service of others. Nevertheless, with increasing professional experience, one can of course develop one's own style, which is also recommended in order to stand out on the job market.",
+    'Training to become an interior decorator takes a total of three years and is considered a recognized craft occupation. The contents and conditions of training are laid down in the German Crafts Code. You can complete a classic dual training, i.e. you are employed by a training company and also receive a salary regulated by collective agreements. In addition to working in the company, students attend vocational school several times a week or in blocks. Those who are unable to find a training position in a company can complete a purely school-based training program. This is basically equivalent, although experience shows that practical experience is always a plus when looking for a job later on. In this case, of course, you will not receive an apprenticeship salary, but you may be eligible for BaföG assistance.',
+    'In principle, anyone can apply for training as an interior decorator. No specific school-leaving qualification is required. Both the training companies and the vocational schools have their own criteria for selecting their applicants. At least an intermediate school leaving certificate is recommended. You can also increase your chances by doing internships and the like.',
+    'It is interesting to note that for the three-year dual training program (i.e. theory modules at a vocational school/practical modules in the training company) as an interior decorator, no specific school education is required, but a good secondary school leaving certificate predominates as an entry requirement. The training company can of course also be a theater. For dancers in transition who are interested in this profession, it is worth asking specifically.      '
+  ]
+};
+
+export const TourGuide = {
+  paragraphs: [
+    'Germany and Europe are becoming increasingly attractive as travel destinations for non-Europeans. Numerous tour operators (including Education First, Globus, Insight, Trafalgar) are therefore looking for tour guides for groups traveling through Europe (several days or weeks). This is a challenging role where you can incorporate language skills (English 2nd European language is mandatory) and international experience. Strong communication skills, organizational and improvisational skills should be present, some knowledge of history and art is an advantage. Then you can combine your own love of travel with earning money. As a tour guide, one often works freelance and rather seasonally, which makes this job suitable for financing the transition period, or for combining it with another project-oriented occupation. Cross-entry into this job is possible. Also a further qualification in the tourism sector is conceivable.'
+  ]
+};
+
+export const SocialWorkBA = {
+  paragraphs: [
+    'The Bachelor\'s degree program "Social Work" integrates the two fields of social work and social pedagogy. In terms of content, the program aims to provide universal qualifications for professional practice in the broad field of social work. Social work can be studied mainly at universities such as the Alice Salomon University of Applied Sciences in Berlin. However, the course is also available at a few universities or private colleges.',
+    'Prerequisites for studying social work',
+    'Basically, the general or subject-specific university entrance qualification or the advanced technical college entrance qualification is required to start the study program. At some universities, however, it is possible to obtain the qualification for studying social work even without a university entrance qualification and, for example, by taking an aptitude test after completing an apprenticeship and gaining several years of professional experience in recognized social fields. Since in recent years there have been significantly more prospective students applying than there are places available, many universities have additional selection criteria. These can include, for example, the average grade or previous experience in the social sector such as voluntary work, federal voluntary service or internships.',
+    'How is the study program structured?',
+    'The standard period of study is usually 6 or 7 semesters, depending on the university. In principle, the course of study is very practice-oriented. Internships are integrated into the studies and many universities cooperate with social institutions within the framework of the courses and seminars. The lecturers are also often active in practice themselves in addition to their teaching activities. Many universities also offer the option of choosing a specialization in the final part of the program to gain a more specific qualification. Many universities also offer subsequent masters degree courses.',
+    'And after graduation?',
+    'The fields of work for social workers are almost limitless. Classic fields of work include child and youth work, child protection and youth welfare, probationary services, general social services (e.g. youth welfare offices), refugee and migration aid, street work or addiction aid. However, social workers are also employed in schools or kindergartens or work in hospitals, psychiatric institutions, in the field of senior citizen work and in workshops for impaired people.',
+    'Written by Lena Diel (social pedagogue/social worker, B.A.)',
+    ''
+  ]
+};
+
+export const SocialWorkStudies = {
+  paragraphs: [
+    'Anyone who enjoys being around people and has a heart for disadvantaged people can find great satisfaction in the social sector. Social work is particularly practically oriented. Social workers support people of all ages in need of help with very concrete assistance. The three-year bachelor\'s degree program in "Social Work" includes content in social psychiatry, family and school counseling, and clinical social work and developmental rehabilitation. Depending on the university, the courses are made up of a varying number of modules and include practical modules and a bachelor\'s thesis in addition to the courses. The latter is to be completed towards the end of the course. Practical phases are completed at cultural and social work institutions.',
+    'Modules are for example: Counseling in family and school, history, basic concepts, fields of work of social work, acting in administration/organization; childhood, youth, adults, old age and social work; people and organization; precarious living situations; legal foundations for social work; social inequality; social psychiatry; social policy.',
+    'The orientation or emphasis of social work programs may vary from college to college.',
+    "Following a bachelor's degree in social work, direct entry into professional life is possible in various fields of activity such as social counseling, social work or educational work (without teaching). The step into self-employment is also conceivable, e.g. as a youth counselor or as a rehabilitation pedagogue. For management positions, the completion of an approximately 2-year master's degree is generally expected. If the admission requirements of the respective university are met, after completing a bachelor's degree in social work, students can continue their studies in a more advanced field of study and earn a master's degree, e.g. in social work, social sciences or social management."
+  ]
+};
+
+export const SocialInsuranceClerk = {
+  paragraphs: [
+    'The profession of social insurance clerk is demanding and has a high reputation. As one of the first and most important points of contact, the social insurance clerk is the linchpin between insurance providers and insured persons. They are specialists in dealing with the Social Security Code (SGB V), which has been an essential pillar of the German social security system since 1881 (!).',
+    'The three years of training are very varied in terms of content or communication and are paid above average compared to other training professions. Until the end of the training, several theoretical areas are completed, in which the focus is on social insurance law, administration and also communication science. Several practical modules at insurance companies such as health insurance companies, statutory pension and long-term care insurance companies and accident insurance companies are a guaranteed part of the training. The career prospects are very good!',
+    'Entry into training is possible with a high school diploma or at least a very good secondary school diploma. Pleasure in dealing with people, analytical thinking and a systematic approach as well as independence are important prerequisites for a fulfilling job in this professional field.'
+  ]
+};
+
+export const SportsManager = {
+  paragraphs: [
+    'If you are a sports enthusiast and also enjoy organizing, planning and calculating, then training as a sports and fitness merchant is definitely a dream job that offers a lot of variety and fun. Not only do you advise and look after customers, but you are also responsible for planning administrative processes and coordinating sports operations. But the development of various programs for different target groups (from young to old, from sports beginners to professionals) are also part of the usual range of tasks. These range in content from training or fitness plans and sports programs, to nutrition plans or general information events or prevention programs.',
+    'This colorful field of activity naturally demands a range of skills. In addition to the obvious enthusiasm for sports and athleticism, you should definitely enjoy working with people, but organizational and economic-mathematical skills as well as a high degree of commitment and personal responsibility are also required. Since you perform your job to a large extent while other people are spending their free time, you have to be prepared for working hours in the evenings and on weekends. The job opportunities are wide-ranging and the job market offers many opportunities and possibilities. Another big plus is that you can turn your hobby into a profession to some extent. In any case, I have never regretted my career choice!',
+    'It is a classic dual training course that lasts three years and ends with an examination by the IHK (Chamber of Industry and Commerce). An MSA (intermediate school leaving certificate) is recommended as an entry requirement.',
+    'written by Samir E., Sports and Fitness Management Assistant'
+  ]
+};
+
+export const TheaterEventTechnician = {
+  paragraphs: [
+    'In every theater many technicians work on different levels. Stagehands are sometimes lateral entrants from other trades or the artistic field. In most cases, training as an event technology specialist is now expected in the technical departments (in stage construction, in the sound department and in lighting). This 3-year apprenticeship has a dual structure. The theater is the training company, while the trainee attends vocational school 1 day per week.',
+    "Event technology specialists plan and supervise the technical process of events and are involved in their implementation. In the main area of construction and implementation, they first prepare the selection and use of technical equipment: They set up and set up lighting, projection and sound systems. During a performance or concert, they operate mixing consoles or fog machines. In the focus area of construction and organization, they design trade show booths or exhibition spaces. On site, they coordinate the various work processes and areas: For example, they ensure that the carpenters who set up the furnishings and the skilled workers who take care of the electrics are available on time. They also set up technical equipment such as lighting and sound systems. The higher positions of technical management in theaters are usually filled by engineers. This goal can be specifically pursued with the BA and MA studies in theater technology at the Beuth University of Applied Sciences Berlin. The bachelor's program lasts three years, and the master's program builds on it for another 2 years."
+  ]
+};
+
+export const AnimalPhysiotherapy = {
+  paragraphs: [
+    'When you think of physiotherapy, you probably first think of people who might need it. However, the fact that there is also physiotherapy for animals, such as horses, dogs and small animals, is perhaps new to some.',
+    'Dancers in transition who like animals, have a medical-anatomical interest and can imagine working as an animal physiotherapist should take a closer look at this professional field. It offers a wide variety of employment opportunities. However, as is usually the case, this relatively young profession does not work without specific training, which is possible throughout Germany.',
+    'At this point a first training example: At any time one can begin at the ATM academy for veterinary medicine a 24-monatige training as the animal Physiotherapeuten/in. According to information on the ATM website, two training aspects are essential:',
+    '- a state-approved distance learning course in anatomy, physiology and the theory of disease,',
+    'accompanied by seminars and e-learning offers',
+    '- a specific physiotherapeutic course consisting of theory and practice for the',
+    'special training of manual skills of the prospective therapists',
+    'The cost of this training is about 4.580,00 to 5.980,00 €. The practical training is completed in Bad Bramstedt, the theoretical training runs nationwide at various locations, one of which can be chosen.',
+    'This training is certified by the IHK.',
+    'Whether funding through the employment agency would be possible, should be asked directly (pay attention to the measure number of the employment agency, see in newsletter 02/2016).',
+    'Further info:'
+  ]
+};
+
+export const AnimalFarmer = {
+  paragraphs: [
+    'Specialization in beekeeping. A love of animals, an interest in biology and ecology, enjoyment of outdoor activities that involve a lot of movement, a sense of responsibility, the ability to work under pressure, and an independent and committed approach to work are some of the most important prerequisites for being an animal farmer in general. If you are particularly interested in bees, you can specialize in beekeeping. They work, among other things, in apiaries, in queen breeding and pollination operations or are in demand as partners in organic agriculture. The number of beekeepers is about 120,000, with most of the new generation coming from Bavaria. Beekeeping is becoming increasingly popular, especially in cities. Urban beekeeping is therefore often very enthusiastically practiced there, but mostly as a hobby, which is associated with great risks for the sensitive bee colonies due to a lack of expertise. The professionalization of urban beekeeping by specialized animal farmers, who can also be self-employed or work part-time, would therefore be very desirable.',
+    'After all, 80% of all cultivated plants must be pollinated by honey bees in order to bear fruit "Beekeepers [thus] make a major ecological contribution to the pollination of flowering plants and at the same time produce a high-quality food. To do this, they feed and care for the bee colonies, maintain the bee shelters, and determine a suitable location for their animals. Once the honeycombs are filled, they remove them and spin them in the extractor room. In the process, they pay attention to hygiene and quality standards."',
+    'The dual training program to become an animal farmer usually lasts three years nationwide and can be shortened to two years if the trainee has already completed vocational training or has passed the Abitur (high school diploma). A recognized state training facility in beekeeping is, for example, the Lower Saxony Institute of Apiculture in Celle: ',
+    'DETAILS for training as an animal farmer, specializing in beekeeping at the Chamber of Agriculture, Descriptive DETAILS about the profession and about "beekeeping on trial" and Info about the trend of urban beekeeping as well as Info source, retrieved 11/29/2017 can be found in links below '
+  ]
+};
+
+export const TraineeContent = {
+  paragraphs: [
+    'In our counseling work we notice again and again that many dancers in transition know little or nothing about the possibilities of gaining new professional practical experience for a limited period of time. For example as a trainee!',
+    'Trainees are usually university graduates who receive practical training in all or important departments within a company and are thus intensively prepared for a later job. Trainee programs usually run for a minimum of one year and a maximum of two years, mostly full-time, and are paid accordingly. They are therefore not comparable with internships in terms of content, employment law or financially.',
+    'Companies, but also more and more public authorities, offer corresponding entry programs for graduates, in which one develops into a high potential with leadership responsibility or a specialist in a field. At the same time, you make important contacts and build up an extensive network. Exceptions confirm the rule! Most of the time, it is graduates who take the plunge with a trainee program, but it is also possible to be hired as a trainee with professional experience or as a career changer. At the Federal Employment Agency, for example, a trainee program prepares you for managerial tasks, see link below.',
+    'DETAILS on trainee programs in general at:'
+  ]
+};
+
+export const InsuranceBroker = {
+  paragraphs: [
+    'We had stated in our last newsletter that a trustworthy and competent insurance broker should be of high relevance for dancers and dancers in transition, because they should definitely be well insured due to the very specific dancer profession with diverse risks. Today, as announced, we inform about the very versatile and demanding profession of insurance brokers:',
+    'Insurance brokers are NOT insurance agents, because they are merchants. Unlike insurance agents, insurance brokers are not tied to any particular insurance company. "Thus [they are ] an absolutely independent partner. He is therefore also called a "fiduciary trustee" [of] insurance interests." If the broker comes from the artistic branch, perhaps was even a dancer himself, this should be of great advantage, because a lot of important background knowledge about the dance profession itself and the conditions of the dance-artistic professional practice is available, which outsiders can hardly present in this profound way. In addition, dancers in transition already have a very high level of intercultural competence, including multilingualism. This is a great advantage because the profession of insurance broker is becoming increasingly internationalized.',
+    'The following tasks belong to the profession: risk analysis/optimization and determination of requirements contract design documentation support and administration (including support in the event of damage)',
+    'The profession of insurance broker has been subject to licensing and registration in Germany since 2007 due to the so-called EU Insurance Mediation Directive. In order to be able to work as an insurance broker, you have to meet certain requirements. These include, in any case, a certificate of expertise, which can be acquired, for example, by passing an examination at the Chamber of Industry and Commerce (IHK) to become an insurance specialist. This is accompanied by registration with the local Chamber of Industry and Commerce, which is binding for every broker practicing his or her trade and can be checked. Other qualifications are also recognized as proof of expertise, as can be read at the Verband deutscher Versicherungsmakler e.V. (VDVM). (VDVM). ',
+    'You can find out where you can currently do the relevant training and under what conditions, for example, from your local Chamber of Industry and Commerce (see the Chamber of Industry and Commerce article in this newsletter). Important information about the profession can also be obtained from the so-called regional circles of the VDVM.'
+  ]
+};
+
+export const CircusEducator = {
+  paragraphs: [
+    'On the occasion of the foundation of the Circus Academy Berlin (CAB) at the end of 2017, which we reported on above, we would like to draw your attention to the versatile field of activity "circus pedagogy".',
+    'The circus disciplines of acrobatics, trapeze, juggling, balance, diabolo, clowning, as de facto forms of play, in combination with music, dance and performance, promote diverse creative body work, better body awareness as well as conceptual thinking. In addition: reflection, self-knowledge and satisfaction through activity and joy in exchange with others. Since circus promotes age-independent cooperation, i.e. community, in a resource- and competence-oriented manner, circus pedagogy also has a very favorable effect on social behavior and thus on diverse group structures. Circus pedagogic offers are generally possible in social work with children, young people, seniors, people with limitations (for example autistic people), for preventive courses in corporate health management (such as for posture problems, stress management strategies), in the rehabilitation of accident victims (balance, strength, responsiveness, etc.) in corporate human resources work (including team building measures, leadership training, conflict resolution, etc.) as well as in the work with traumatized people (e.g. escape, sexual violence, death experience). Circus pedagogy not only enriches dance and theater pedagogical concepts, but can also be combined with other disciplines (e.g. social pedagogy, rehabilitation pedagogy, medicine, curative education, human resources). Therefore, both permanent and freelance employment is conceivable, whereby freelancing probably predominates if the educational background is exclusively circus pedagogy.           ',
+    'The CAB offers a full-time continuing education course that lasts nine months, comprises 1,200 hours and, according to the CAB, is currently the only full-time continuing education course in circus pedagogy in Germany with the certificate "Certified Circus Pedagogue". It is by no means only aimed at (former) circus artists and dancers, but also at (dance) teachers, curative education nurses, teachers, educators, social workers and all those seriously interested in the art and performance form of circus/variety. The following knowledge is important for future circus educators and will be taught at CAB: ',
+    'Circus pedagogical practice: didactics and methodology in training and lesson structure, games and game forms for circus training / Communication: basics of communication, age-appropriate work, developmental communication / Artistic-aesthetic work processes: History of artistry, working out circus acts with children, presentation of a show, make-up, basic knowledge of light and sound / Self-employed as a circus pedagogue: legal basics of self-employment, self-organization / Training science: training theory, physiology, anatomy, biomechanics.',
+    'Costs: 8.500 € + DETAILS: see links below',
+    'See alos Circus pedagogic further education offers in Austria and Switzerland '
+  ]
 };

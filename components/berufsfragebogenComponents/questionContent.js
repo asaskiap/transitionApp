@@ -123,7 +123,7 @@ export const Question3 = (props) => {
       }
       element6={
         props.eng
-          ? 'Supporting seniors in their day to day lifeprops.eng ? '
+          ? 'Supporting seniors in their day to day life ? '
           : 'Ältere Menschen in ihrem Alltag unterstützen'
       }
       a={props.a}

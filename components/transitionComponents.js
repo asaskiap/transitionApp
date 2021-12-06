@@ -92,7 +92,7 @@ export const Vision_DE = (props) => {
         berufliche Bereich am besten zu einem passt. Mal kann dies sehr
         offensichtlich sein und zeigt sich schnell wohin es gehen soll, manchmal
         braucht aber auch das Entdecken und Formulieren dieser Bereiche seine
-        Zeit und seinen Ort. Hierfür bietet die Stiftung Tanz einen Ort in dem
+        Zeit und seinen Ort. Hierfür bietet die Stiftung TANZ einen Ort in dem
         die Möglichkeit besteht diese zu definieren.
       </Paragraph>
     </>

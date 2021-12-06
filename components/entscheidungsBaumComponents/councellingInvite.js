@@ -107,7 +107,7 @@ export const CouncellingInvite2 = (props) => {
       >
         <Text style={styles.highlight}>
           {eng
-            ? 'Putting ideas into practice'
+            ? 'How do I implement my ideas?'
             : 'Wie setze ich meine Ideen um?'}
         </Text>
       </TouchableOpacity>

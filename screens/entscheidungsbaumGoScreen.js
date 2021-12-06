@@ -107,7 +107,7 @@ class EntscheidungsbaumGoScreen extends React.Component {
               eng={eng}
             >
               {eng
-                ? 'I am thinking about the end of my carreer and I already know what I want to do next'
+                ? 'I am thinking about the end of my carreer and I already know what I want to do next '
                 : 'Ich denke über das Ende meiner Karriere nach und weiß schon was ich machen möchte'}
               ''
             </CardEB>

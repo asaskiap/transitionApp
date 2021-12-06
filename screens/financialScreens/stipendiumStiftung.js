@@ -17,7 +17,7 @@ import Link from '../../components/articleComponents/link';
 const StipendiumStiftung_DE = (props) => {
   return (
     <Article>
-      <ArticleSubHeader>Die Stiftung Tanz vergibt Stipendien</ArticleSubHeader>
+      <ArticleSubHeader>Die Stiftung TANZ vergibt Stipendien</ArticleSubHeader>
       <Paragraph>
         an Tanzschaffende im Übergang in einen neuen Beruf nach der aktiven
         Tanzkarriere. Jedes Jahr zum 30.3., 30.6. und 30.10. kann ein Antrag auf

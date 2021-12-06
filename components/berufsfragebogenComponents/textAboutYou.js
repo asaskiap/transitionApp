@@ -53,7 +53,7 @@ export const Forschend = (props) => {
             individual topics intensive
           </Paragraph>
           <Paragraph style={{color: colors.accentDark}}>
-            Occupational fields: Science, rese
+            Occupational fields: Science, research
           </Paragraph>
         </>
       ) : (

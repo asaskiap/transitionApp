@@ -28,8 +28,28 @@ import {
   HearingCareProfessional,
   HearingAidAccustitcian,
   MakeUpArtist,
-  CultureMediator
+  CultureMediator,
+  Goethe,
+  Teacher,
+  SpeechTherapist,
+  AirTransport,
+  MediaDesigner,
+  Osteopathy,
+  PharmaceuticalTechnicalAssistant,
+  InteriorDecorator,
+  TourGuide,
+  SocialWorkBA,
+  SocialWorkStudies,
+  SocialInsuranceClerk,
+  SportsManager,
+  TheaterEventTechnician,
+  AnimalPhysiotherapy,
+  AnimalFarmer,
+  TraineeContent,
+  InsuranceBroker,
+  CircusEducator
 } from './berufsportraitsEnglishContent';
+import {exp} from 'react-native-reanimated';
 
 export const OpticianEnglish = (props) => {
   return (
@@ -258,11 +278,20 @@ export const EducatorEnglish = (props) => {
   );
 };
 
+export const GoetheEnglish = (props) => {
+  return (
+    <Article>
+      {Goethe.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
 export const LeisureScientistEnglish = (props) => {
   return (
     <Article>
       {LeisureScientist.paragraphs.map((contents) => (
-        <Paragraph key={Math.random() * 100}>{contents}</Paragraph>
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
       <Link
         onPress={() =>
@@ -302,6 +331,21 @@ export const HearingCareProfessionalEnglish = (props) => {
   );
 };
 
+export const CultureMediatorEnglish = (props) => {
+  return (
+    <Article>
+      {CultureMediator.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link
+        onPress={() => Linking.openURL('http://www.berufkunstvermittlung.de')}
+      >
+        www.berufkunstvermittlung.de
+      </Link>
+    </Article>
+  );
+};
+
 export const HearingAidAccustitcianEnglish = (props) => {
   return (
     <Article>
@@ -335,6 +379,287 @@ export const ArtGeragogueEnglish = (props) => {
       ))}
       <Link onPress={() => Linking.openURL('http://www.kunstgeragogik.net/')}>
         www.kunstgeragogik.net/
+      </Link>
+    </Article>
+  );
+};
+
+export const TeacherEnglish = (props) => {
+  return (
+    <Article>
+      {Teacher.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link
+        onPress={() => Linking.openURL('www.lehrerbildung.sachsen.de/214…')}
+      >
+        www.lehrerbildung.sachsen.de/214…
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.berlin.de/sen…')}>
+        www.berlin.de
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.lehrer-in-mv.de/')}>
+        www.lehrer-in-mv.de
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.km.bayern.de/')}>
+        www.km.bayern.de
+      </Link>
+    </Article>
+  );
+};
+
+export const SpeechTherapistEnglish = (props) => {
+  return (
+    <Article>
+      {SpeechTherapist.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link onPress={() => Linking.openURL('http://www.dbl-ev.de/')}>
+        www.dbl-ev.de
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.logo-ausbildung.de')}>
+        www.logo-ausbildung.de
+      </Link>
+    </Article>
+  );
+};
+
+export const AirTransportEnglish = (props) => {
+  return (
+    <Article>
+      {AirTransport.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const MediaDesignerEnglish = (props) => {
+  return (
+    <Article>
+      {MediaDesigner.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+export const PharmaceuticalTechnicalAssistantEnglish = (props) => {
+  return (
+    <Article>
+      {PharmaceuticalTechnicalAssistant.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link
+        onPress={() => Linking.openURL('https://www.ausbildung.de/berufe/pta/')}
+      >
+        www.ausbildung.de/berufe/pta/
+      </Link>
+    </Article>
+  );
+};
+
+export const OsteopathyEnglish = (props) => {
+  return (
+    <Article>
+      {Osteopathy.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link onPress={() => Linking.openURL('http://www.osteopathie.de')}>
+        www.osteopathie.de
+      </Link>
+    </Article>
+  );
+};
+
+export const InteriorDecoratorEnglish = (props) => {
+  return (
+    <Article>
+      {InteriorDecorator.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const TourGuideEnglish = (props) => {
+  return (
+    <Article>
+      {TourGuide.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const SocialWorkBAEnglish = (props) => {
+  return (
+    <Article>
+      {SocialWorkBA.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const SocialWorkStudiesEnglish = (props) => {
+  return (
+    <Article>
+      {SocialWorkStudies.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link
+        onPress={() => Linking.openURL('http://berufenet.arbeitsagentur.de')}
+      >
+        berufenet.arbeitsagentur.de
+      </Link>
+    </Article>
+  );
+};
+
+export const SocialInsuranceClerkEnglish = (props) => {
+  return (
+    <Article>
+      {SocialInsuranceClerk.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const SportsManagerEnglish = (props) => {
+  return (
+    <Article>
+      {SportsManager.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const TheaterEventTechnicianEnglish = (props) => {
+  return (
+    <Article>
+      {TheaterEventTechnician.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+    </Article>
+  );
+};
+
+export const AnimalPhysiotherapyEnglish = (props) => {
+  return (
+    <Article>
+      {AnimalPhysiotherapy.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+
+      <Link onPress={() => Linking.openURL('http://www.tiergestuetzte.org')}>
+        www.tiergestuetzte.org
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.atm.de/')}>
+        www.atm.de
+      </Link>
+      <Link onPress={() => Linking.openURL('http://www.atm.de/studiengang')}>
+        www.atm.de/studiengang
+      </Link>
+    </Article>
+  );
+};
+
+export const AnimalFarmerEnglish = (props) => {
+  return (
+    <Article>
+      {AnimalFarmer.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link
+        onPress={() =>
+          Linking.openURL(
+            'http://www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/'
+          )
+        }
+      >
+        www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/
+      </Link>
+      <Link
+        onPress={() =>
+          Linking.openURL(
+            'https://www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html'
+          )
+        }
+      >
+        www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html
+      </Link>
+    </Article>
+  );
+};
+
+export const TraineeEnglish = (props) => {
+  return (
+    <Article>
+      {TraineeContent.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link
+        onPress={() =>
+          Linking.openURL(
+            'https://www.arbeitsagentur.de/ba-karriere/trainee-programm'
+          )
+        }
+      >
+        www.arbeitsagentur.de/ba-karriere/trainee-programm
+      </Link>
+      <Link
+        onPress={() =>
+          Linking.openURL('https://www.trainee.de/ratgeber/trainee/')
+        }
+      >
+        www.trainee.de/ratgeber/trainee/
+      </Link>
+      <Link
+        onPress={() => Linking.openURL('https://www.berufsstart.de/trainee/')}
+      >
+        www.berufsstart.de/trainee/
+      </Link>
+      <Link onPress={() => Linking.openURL('https://www.connecticum.de/')}>
+        www.connecticum.de/
+      </Link>
+    </Article>
+  );
+};
+
+export const InsuranceBrokerEnglish = (props) => {
+  return (
+    <Article>
+      {InsuranceBroker.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link onPress={() => Linking.openURL('http://www.vdvm.de/')}>
+        www.vdvm.de
+      </Link>
+    </Article>
+  );
+};
+
+export const CircusEducatorEnglish = (props) => {
+  return (
+    <Article>
+      {CircusEducator.paragraphs.map((contents) => (
+        <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
+      ))}
+      <Link onPress={() => Linking.openURL('http://circusakademie.de/')}>
+        circusakademie.de/
+      </Link>
+
+      <Link onPress={() => Linking.openURL('https://www.zirkusakademie.ac.at')}>
+        www.zirkusakademie.ac.at
+      </Link>
+      <Link
+        onPress={() =>
+          Linking.openURL('http://www.zirkuspaedagogik.ch/akademie/index.php')
+        }
+      >
+        www.zirkuspaedagogik.ch/akademie/index.php
       </Link>
     </Article>
   );
