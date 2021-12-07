@@ -153,7 +153,7 @@ export const Question4 = (props) => {
       element1={props.eng ? 'Drawing or painting' : 'Zeichnen oder malen'}
       element2={
         props.eng
-          ? 'Guyding others in their work'
+          ? 'Guiding others in their work'
           : 'Andere in der Arbeit anleiten'
       }
       element3={
@@ -262,7 +262,9 @@ export const Question6 = (props) => {
           ? 'Working at a councelling center'
           : 'In einer Beratungsstelle arbeiten'
       }
-      element5={props.eng ? 'Working by hand' : 'Handwerklich arbeiten'}
+      element5={
+        props.eng ? 'Doing manual labor/craft' : 'Handwerklich arbeiten'
+      }
       element6={props.eng ? 'Selling a product' : 'Ein Produkt verkaufen'}
       a={props.a}
       b={props.b}

@@ -64,14 +64,15 @@ export const Transition_EN = (props) => {
         orientation and direction.
       </Paragraph>
       <Paragraph>
-        In the best case, there are already during the training and career as a
-        dancer moments and time of orientation to know yourself, your interests
-        and skills well, to be sure in the moment of the decision for a new path
-        that this is the right path for you. If this process has not already
-        taken place during the active career, it must be gone through at the end
-        of the career - which is usually accompanied by more uncertainties,
-        fears and sadness. We as the Stiftung TANZ help in all these moments; be
-        it during training, career or at the end of being a dancer.
+        Ideally, during the training for and career as a dancer, there will have
+        been moments and time to get to know oneself and find a possible
+        orientation. To explore your interests and skills, so that you are sure
+        in the moment of the decision that this is the right path for you. If
+        this process has not already taken place during the active career, it
+        must be gone through at the end of the career - which is usually
+        accompanied by more uncertainties, fears and sadness. We as the Stiftung
+        TANZ help in all these moments; be it during training, career or at the
+        end of being a dancer.
       </Paragraph>
     </>
   );
@@ -107,12 +108,12 @@ export const Vision_EN = (props) => {
       </TouchableOpacity>
       <Paragraph>
         To develop a vision for one's life and future career, an analysis of
-        one's needs, interests, skills and values can be useful. Since usually
-        from the combination of these 4 factors already a picture emerges which
-        professional field fits best to one. Sometimes this can be very obvious
-        and quickly shows where it should go, but sometimes the discovery and
-        formulation of these areas takes its time and place. For this, the
-        Stiftung TANZ offers a place where it is possible to define them.
+        one's needs, interests, skills and values can be useful. Usually one can
+        get a general picture of which professional field might be a good fit by
+        analysing one's needs, interests, skills and values. Sometimes this can
+        be very obvious, but sometimes the discovery and forming of these ideas
+        takes time. For this, the Stiftung TANZ offers a place where it is
+        possible to define them.
       </Paragraph>
     </>
   );
@@ -200,11 +201,10 @@ export const Interests_EN = (props) => {
         first. And yet they are one of the fundamental elements in finding a new
         career path. Therefore, one should give oneself the opportunity to
         think, try out, explore and reflect. To do this, one can reflect on
-        questions such as "what really interests me?", "what can give
-        fulfillment to my life?" or "where can I best self-actualize?". Most of
-        the time, in figuring out your interests, you learn a whole lot of
-        important things about yourself. This is a very special process of
-        spending time with and with yourself.
+        questions such as "what really interests me?", "what can give me
+        fulfillment?" or "where can I best be who I want to be?". Most of the
+        time, in figuring out your interests, you learn a whole lot of important
+        things about yourself. This is a very special process.
       </Paragraph>
     </>
   );
@@ -240,11 +240,10 @@ export const Skills_EN = (props) => {
         Dancers already bring many skills with them that can be applied well to
         other areas or are even required in them. Dancers have important
         qualities such as creativity, flexibility, accuracy, physical
-        perception, sensitivity to the people around you, languages or
+        perception, sensitivity to the people around them, languages or
         intercultural interaction. These are all important qualities that are in
         high demand in many professional fields. An analysis of one's own skills
-        and strengths, can therefore bring good insights and knowledge, which
-        professional area well.
+        and strengths can therefore bring good insights.
       </Paragraph>
     </>
   );

@@ -63,8 +63,8 @@ const WasMachenWir = (props) => {
                 great emptiness and many questions often determine the dancer's
                 life. What comes after? Who helps through the jungle of
                 institutions, paragraphs and guidelines? Where can we find
-                advice, support, guidance, awareness and sensitization for a
-                successful transition process?
+                advice, support, guidance and awareness for a successful
+                transition process?
               </Text>
               <Text style={textStyles.paragraph}>
                 We are companions and supporters from the beginning of training

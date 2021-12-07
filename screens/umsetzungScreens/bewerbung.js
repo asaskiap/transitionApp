@@ -27,18 +27,18 @@ const Bewerbungsprozess = (props) => {
               depends on the professional field and the specific job
               description, as well as the person of the applicant. On the
               Internet, there are many different templates on how an application
-              should look like. The exact choice of the respective form depends
+              should look. The exact choice of the respective form depends
               mostly on the applicant and can be designed individually:
             </Paragraph>
             <Paragraph>
-              What is essential, however, is a clear, tabular resume in which
-              the important information for the employer and the advertised
-              position are clearly summarized. This includes educational
-              background, work experience and, if applicable, personal
-              experience or knowledge (for example, languages or volunteer work)
-              that may be of interest to the employer and can set you apart from
-              the other competitors. The letter of application should include
-              the following information:
+              What is essential, however, is a clear, tabular CV in which the
+              important information for the employer and the advertised position
+              are clearly summarized. This includes educational background, work
+              experience and, if applicable, personal experience or knowledge
+              (for example, languages or volunteer work) that may be of interest
+              to the employer and can set you apart from the other competitors.
+              The letter of application should include the following
+              information:
             </Paragraph>
             <List>
               <ListItem>What am I applying for?</ListItem>
@@ -62,11 +62,11 @@ const Bewerbungsprozess = (props) => {
               </ListItem>
             </List>
             <Paragraph>
-              All this information must of course be selected selectively and
-              adapted to the advertised position. A short, concise text is
-              usually more catchy than long explanations about previous
-              activities. A personal touch can sometimes make you stand out
-              among the competitors and arouse the interest of the HR
+              All this information must of course be well selected and adapted
+              to the advertised position. A short, concise text is usually more
+              catchy than long explanations about previous activities. A
+              personal touch can sometimes make you stand out among the
+              competitors and arouse the interest of the HR (Human Ressources)
               department.
             </Paragraph>
           </Article>

@@ -140,7 +140,7 @@ class psychologyMenuScreen extends React.Component {
             <MenuCard
               onPress={() => this.setState({abschied: true})}
               textSample={
-                'A persons life is characterized by a series of changes, farewells and new beginnings. Parting with important things, people, places, habits is not easy and can bring a similar intense feeling as a physical pain.'
+                'A persons life is characterized by a series of changes, farewells and new beginnings. Parting with important things, people, places, habits is not easy and can bring on a an intense feeling, similar to physical pain.'
               }
               eng={true}
             >

@@ -77,8 +77,8 @@ const WomitHelfen = (props) => {
                 letters to institutions such as the employment office)
               </ListItem>
               <ListItem>
-                Counseling (coaching and psychological support of the transition
-                process)
+                Counseling (coaching and psychological support for the
+                transition process)
               </ListItem>
               <ListItem>workshops</ListItem>
               <ListItem>Scholarship for further education</ListItem>

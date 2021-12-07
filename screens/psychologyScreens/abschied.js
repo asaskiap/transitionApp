@@ -95,14 +95,14 @@ const Abschied = (props) => {
             <Paragraph>
               A person's life is characterized by a series of changes, farewells
               and new beginnings. Parting with important things, people, places,
-              habits is not easy and can bring a similar intense feeling as a
-              physical pain. Letting go is something we have to learn from
+              habits is not easy and can bring on a an intense feeling, similar
+              to physical pain. Letting go is something we have to learn from
               childhood, we give up dear friendships, have to leave places,
               change our size and appearance, yet we grow and develop precisely
               because of constant change. Every change is a new beginning, every
               new stage of life brings new opportunities, new hopes and new
               experiences. However, change is a difficult process for us, it
-              means that we are disoriented and ignorant and have to process
+              means that we are disoriented and insecure while we are processing
               many new impressions. This requires time and rest. During this
               time we are confronted with vital questions; How should my life go
               on? What will happen to me now? What meaning does the loss have
@@ -111,32 +111,31 @@ const Abschied = (props) => {
             </Paragraph>
             <Paragraph>
               Something comes to an end, but something new begins. Every parting
-              is a new beginning. For only when something has come to an end can
-              the new apppear. We can usually only see this when our attention
-              is no longer on the loss and we no longer focus on what we have
-              lost. We have to leave behind what we have left behind to be able
-              to see the future and its possibilities. To be free of this
-              requires a process of saying goodbye and learning to live with the
-              loss. If we can do that, what happens every time we go through a
-              change in our lives happens; we grow, we develop and we discover
-              the possibilities that the future holds for us. Then we are ready
-              for the new beginning.
+              is a new beginning. For only when comes to an end can something
+              new apppear. We can usually only see this when our attention is no
+              longer on the loss and we no longer focus on what we have lost. We
+              have to leave the past behind to be able to see the future and its
+              possibilities. To be free of this requires a process of saying
+              goodbye and learning to live with the loss. If we can do that,
+              then every time we go through a change in our lives, we grow, we
+              develop and we discover the possibilities that the future holds
+              for us. Then we are ready for the new beginning.
             </Paragraph>
             <ArticleSubHeader>
               Farewell and new beginning in the life of a dancer
             </ArticleSubHeader>
             <Paragraph>
-              A transition in a life from one phase to another is never easy.
-              But for a dancer, it can raise big, existential questions of
-              meaning: Who am I if I'm not dancing? Can I do anything other than
-              dance? Is there anything that can fill me as much as dancing? Will
-              I still be part of the dance community? How will I be able to say
-              goodbye to the stage? How will I deal with the sadness that my
-              path as a dancer will eventually be over? Will I always be able to
-              remain a dancer? Since it is essential to deal with these
-              questions in order to be open to the transition process, these
-              questions are addressed first in the conversation with the
-              dancers. In order to have a clear head for something new,
+              Transition in life from one phase to another is never easy. But
+              for a dancer, it can raise big, existential questions: Who am I if
+              I'm not dancing? Can I do anything other than dance? Is there
+              anything that can fulfill me as much as dancing? Will I still be
+              part of the dance community? How will I be able to say goodbye to
+              the stage? How will I deal with the sadness brought about by the
+              realization that my career as a dancer will eventually be over?
+              Will I always be able to remain a dancer? Since it is essential to
+              deal with these questions in order to be open to the transition
+              process, these questions are addressed first in the conversation
+              with the dancers. In order to have a clear head for something new,
               something different, something unknown, the process of saying
               goodbye and coming to terms with one's own (dancer) identity is
               very important. For only when one has been able to mentally say
