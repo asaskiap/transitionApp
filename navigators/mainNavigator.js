@@ -16,6 +16,7 @@ import BerufsfragebogenGo from '../screens/IdeasScreens/berufsfragebogen';
 import TransitionStories from '../screens/IdeasScreens/transitionStories';
 import UmsetzungMenuScreen from '../screens/menuScreens/umsetzungMenu';
 import Transition from '../screens/transition';
+import Impressum from '../screens/impressum';
 
 const mainNavigator = createStackNavigator({
   Home: LandingPage,
@@ -32,7 +33,8 @@ const mainNavigator = createStackNavigator({
   Berufsfragebogen: BerufsfragebogenIntro,
   BerufsfragebogenGo: BerufsfragebogenGo,
   TransitionStories: TransitionStories,
-  Transition: Transition
+  Transition: Transition,
+  Impressum: Impressum
 });
 
 export default createAppContainer(mainNavigator);

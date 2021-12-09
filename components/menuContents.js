@@ -40,6 +40,9 @@ export const MenuContentsDe = (props) => {
       <MenuPageButton onPress={() => navigateTo('Selfemployment')}>
         Selbstständigkeit
       </MenuPageButton>
+      <MenuPageButton onPress={() => navigateTo('Impressum')}>
+        Impressum
+      </MenuPageButton>
     </>
   );
 };
@@ -88,6 +91,10 @@ export const MenuContentsEng = (props) => {
 
       <MenuPageButton onPress={() => navigateTo('Selfemployment')}>
         Self employment
+      </MenuPageButton>
+
+      <MenuPageButton onPress={() => navigateTo('Impressum')}>
+        Imprint
       </MenuPageButton>
     </>
   );

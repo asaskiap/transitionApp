@@ -105,7 +105,8 @@ LandingPage.navigationOptions = {
   headerStyle: {
     backgroundColor: '#171717'
   },
-  headerBackTitle: '',
+  headerBackTitleVisible: false,
+  headerTitle: 'Start',
   headerTintColor: colors.textLight,
   headerShown: false
 };

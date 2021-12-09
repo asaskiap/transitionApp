@@ -4,7 +4,7 @@
 
 - change email addresses in send email
 
-- how to give proper name to back button on ios
+- how to give proper name to back button on ios ✅
   const SomeNavigator = StackNavigator({
   Main: { screen: Main },
   Login: {
@@ -19,7 +19,7 @@
 
 - check on other devices!
 
-- check all links (presentation and functionality)
+- check all links (presentation and functionality) ✅
 
 ## reminder: Links need to have https:// before ! in order to work!!
 
