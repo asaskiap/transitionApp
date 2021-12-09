@@ -25,10 +25,10 @@ const Bewerbungsprozess = (props) => {
             <Paragraph>
               There is no universal recipe for writing an application; it
               depends on the professional field and the specific job
-              description, as well as the person of the applicant. On the
-              Internet, there are many different templates on how an application
-              should look. The exact choice of the respective form depends
-              mostly on the applicant and can be designed individually:
+              description, as well as the applicant. On the Internet, there are
+              many different templates on how an application should look. The
+              exact choice of form depends mostly on the applicant and can be
+              designed individually:
             </Paragraph>
             <Paragraph>
               What is essential, however, is a clear, tabular CV in which the

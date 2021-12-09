@@ -5,6 +5,15 @@
 - change email addresses in send email
 
 - how to give proper name to back button on ios
+  const SomeNavigator = StackNavigator({
+  Main: { screen: Main },
+  Login: {
+  screen: Login,
+  navigationOptions: {
+  headerBackTitle: 'some label'
+  }
+  }
+  });
 
 - credits for illustrations
 

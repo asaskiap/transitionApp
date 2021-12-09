@@ -141,7 +141,7 @@ const Aufstiegsstipendium_EN = (props) => {
         The “Aufstiegsstipendium” applies to all those who have not yet
         graduated from university and now want to start a course of study. In
         this case you can get a grant from the state. It is only valid for the
-        first studies of people who can only show a professional training with
+        first studies for people who have had a professional training with
         subsequent professional activity, and includes 800€ per month.
       </Paragraph>
       <ArticleSubHeader>
@@ -157,7 +157,7 @@ const Aufstiegsstipendium_EN = (props) => {
         Training) is commissioned by the Federal Ministry of Education and
         Research to select the scholarship holders and to support them during
         their studies. More than 1,000 scholarship holders can be accepted each
-        year. There is no age limit. Based on initial inquiry by the, Stiftung
+        year. There is no age limit. Based on initial inquiry by the Stiftung
         TANZ the advancement scholarship should be accessible to dancers who
         have completed their training at a vocational school.
       </Paragraph>

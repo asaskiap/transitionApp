@@ -131,27 +131,7 @@ const Bildungsgutschein_DE = (props) => {
         Raumgestaltung/Innenarchitektur, Steuerfachwirt/in, Web-Master,
         Web-Designer, Werbeberater/in, Werbegrafik und Design.
       </Paragraph>
-      <Paragraph>
-        Liste der staatlich anerkannten Ausbildungsberufe, Stand 01.08.2011: 
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL('http://www2.bibb.de/tools/aab/aabberufeliste.php')
-        }
-      >
-        www2.bibb.de/tools/aab/aabberufeliste.php
-      </Link>
-      <Paragraph>
-        Informationen über zugelassene Maßnahmen enthält auch das Portal für
-        Aus- und Weiterbildung KURSNET:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL('https://www.kursnet-finden.arbeitsagentur.de/kurs')
-        }
-      >
-        www.kursnet-finden.arbeitsagentur.de/kurs
-      </Link>
+
       <ArticleSubHeader>
         Was tun, wenn das Arbeitsamt den Beruf, in den ich mich umschulen lassen
         will, nicht bezahlt?
@@ -363,27 +343,6 @@ const Bildungsgutschein_EN = (props) => {
       </Paragraph>
       <Link onPress={() => Linking.openURL('http://www.bildungspraemie.info')}>
         www.bildungspraemie.info
-      </Link>
-      <Paragraph>
-        List of state-recognized training occupations, as of 01.08.2011:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL('http://www2.bibb.de/tools/aab/aabberufeliste.php')
-        }
-      >
-        www2.bibb.de/tools/aab/aabberufeliste.php
-      </Link>
-      <Paragraph>
-        Information on approved measures can also be found on the portal for
-        training and further education KURSNET:
-      </Paragraph>
-      <Link
-        onPress={() =>
-          Linking.openURL('https://www.kursnet-finden.arbeitsagentur.de/kurs')
-        }
-      >
-        www.kursnet-finden.arbeitsagentur.de/kurs
       </Link>
     </Article>
   );

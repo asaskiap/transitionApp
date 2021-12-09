@@ -68,15 +68,6 @@ export const AutomotiveEnglish = (props) => {
         <Paragraph key={Math.random() * 100}>{contents}</Paragraph>
       ))}
 
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.mercedes-benz-berlin.de/de/desktop/passenger-cars/about-us/career/vacancies/nachwuchsverkauf-pkw.html'
-          )
-        }
-      >
-        www.mercedes-benz-berlin.de/de/desktop/passenger-cars/about-us/career/vacancies/nachwuchsverkauf-pkw.html
-      </Link>
       <Link onPress={() => Linking.openURL('https://www.volkswagen.de')}>
         www.volkswagen.de
       </Link>
@@ -177,7 +168,7 @@ export const BlindPedagogueEnglish = (props) => {
         www.uni-marburg.de/fb21/studium/studiengaenge/grip-bs
       </Link>
       <Link
-        onPress={() => Linking.openURL('http:// www.blindenmuseum-berlin.de/')}
+        onPress={() => Linking.openURL('http://www.blindenmuseum-berlin.de/')}
       >
         www.blindenmuseum-berlin.de/
       </Link>
@@ -216,7 +207,7 @@ export const ClownEnglish = (props) => {
       {Clown.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 100}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.clownlabor.de')}>
+      <Link onPress={() => Linking.openURL('https://www.clownlabor.de')}>
         www.clownlabor.de
       </Link>
     </Article>
@@ -229,7 +220,7 @@ export const CruiseManagerEnglish = (props) => {
       {CruiseManager.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 100}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.hs-bremerhaven.de/')}>
+      <Link onPress={() => Linking.openURL('https://www.hs-bremerhaven.de/')}>
         www.hs-bremerhaven.de
       </Link>
     </Article>
@@ -252,7 +243,7 @@ export const EurythmistEnglish = (props) => {
       {Eurythmist.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 100}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.eurythmie-info.de/')}>
+      <Link onPress={() => Linking.openURL('https://www.eurythmie-info.de/')}>
         www.eurythmie-info.de/
       </Link>
     </Article>
@@ -296,7 +287,7 @@ export const LeisureScientistEnglish = (props) => {
       <Link
         onPress={() =>
           Linking.openURL(
-            'http://www.hs-bremen.de/internet/de/studium/stg/isaf/'
+            'https://www.hs-bremen.de/internet/de/studium/stg/isaf/'
           )
         }
       >
@@ -363,7 +354,7 @@ export const MakeUpArtistEnglish = (props) => {
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
       <Link
-        onPress={() => Linking.openURL('http://www.maskenbildner-werden.info')}
+        onPress={() => Linking.openURL('https://www.maskenbildner-werden.info')}
       >
         www.maskenbildner-werden.info
       </Link>
@@ -377,7 +368,7 @@ export const ArtGeragogueEnglish = (props) => {
       {CultureMediator.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.kunstgeragogik.net/')}>
+      <Link onPress={() => Linking.openURL('https://www.kunstgeragogik.net/')}>
         www.kunstgeragogik.net/
       </Link>
     </Article>
@@ -391,17 +382,17 @@ export const TeacherEnglish = (props) => {
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
       <Link
-        onPress={() => Linking.openURL('www.lehrerbildung.sachsen.de/214…')}
+        onPress={() => Linking.openURL('https://www.lehrerbildung.sachsen.de/')}
       >
         www.lehrerbildung.sachsen.de/214…
       </Link>
-      <Link onPress={() => Linking.openURL('http://www.berlin.de/sen…')}>
+      <Link onPress={() => Linking.openURL('https://www.berlin.de/')}>
         www.berlin.de
       </Link>
-      <Link onPress={() => Linking.openURL('http://www.lehrer-in-mv.de/')}>
+      <Link onPress={() => Linking.openURL('https://www.lehrer-in-mv.de/')}>
         www.lehrer-in-mv.de
       </Link>
-      <Link onPress={() => Linking.openURL('http://www.km.bayern.de/')}>
+      <Link onPress={() => Linking.openURL('https://www.km.bayern.de/')}>
         www.km.bayern.de
       </Link>
     </Article>
@@ -414,10 +405,10 @@ export const SpeechTherapistEnglish = (props) => {
       {SpeechTherapist.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.dbl-ev.de/')}>
+      <Link onPress={() => Linking.openURL('https://www.dbl-ev.de/')}>
         www.dbl-ev.de
       </Link>
-      <Link onPress={() => Linking.openURL('http://www.logo-ausbildung.de')}>
+      <Link onPress={() => Linking.openURL('https://www.logo-ausbildung.de')}>
         www.logo-ausbildung.de
       </Link>
     </Article>
@@ -464,7 +455,7 @@ export const OsteopathyEnglish = (props) => {
       {Osteopathy.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.osteopathie.de')}>
+      <Link onPress={() => Linking.openURL('https://www.osteopathie.de')}>
         www.osteopathie.de
       </Link>
     </Article>
@@ -508,7 +499,7 @@ export const SocialWorkStudiesEnglish = (props) => {
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
       <Link
-        onPress={() => Linking.openURL('http://berufenet.arbeitsagentur.de')}
+        onPress={() => Linking.openURL('https://berufenet.arbeitsagentur.de')}
       >
         berufenet.arbeitsagentur.de
       </Link>
@@ -553,13 +544,13 @@ export const AnimalPhysiotherapyEnglish = (props) => {
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
 
-      <Link onPress={() => Linking.openURL('http://www.tiergestuetzte.org')}>
+      <Link onPress={() => Linking.openURL('https://www.tiergestuetzte.org')}>
         www.tiergestuetzte.org
       </Link>
-      <Link onPress={() => Linking.openURL('http://www.atm.de/')}>
+      <Link onPress={() => Linking.openURL('https://www.atm.de/')}>
         www.atm.de
       </Link>
-      <Link onPress={() => Linking.openURL('http://www.atm.de/studiengang')}>
+      <Link onPress={() => Linking.openURL('https://www.atm.de/studiengang')}>
         www.atm.de/studiengang
       </Link>
     </Article>
@@ -575,20 +566,11 @@ export const AnimalFarmerEnglish = (props) => {
       <Link
         onPress={() =>
           Linking.openURL(
-            'http://www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/'
+            'https://www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/'
           )
         }
       >
         www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/
-      </Link>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'https://www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html'
-          )
-        }
-      >
-        www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html
       </Link>
     </Article>
   );
@@ -634,8 +616,8 @@ export const InsuranceBrokerEnglish = (props) => {
       {InsuranceBroker.paragraphs.map((contents) => (
         <Paragraph key={Math.random() * 1000}>{contents}</Paragraph>
       ))}
-      <Link onPress={() => Linking.openURL('http://www.vdvm.de/')}>
-        www.vdvm.de
+      <Link onPress={() => Linking.openURL('https://bdvm.de/en/')}>
+        www.bdvm.de
       </Link>
     </Article>
   );

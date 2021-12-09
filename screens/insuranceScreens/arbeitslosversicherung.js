@@ -64,18 +64,6 @@ const Arbeitslosversicherung_DE = (props) => {
         Beschäftigung berücksichtigt, d.h. sie sind anwartschafts-begründend für
         das Arbeitslosengeld.
       </Paragraph>
-      <ArticleSubHeader textStyle={{color: colors.accentDark}}>
-        Antragsvordrucke
-      </ArticleSubHeader>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.arbeitsagentur.de/web/content/DE/Formulare/'
-          )
-        }
-      >
-        www.arbeitsagentur.de/web/content/DE/Formulare/
-      </Link>
     </Article>
   );
 };
@@ -131,19 +119,6 @@ const Arbeitslosversicherung_EN = (props) => {
         subject to compulsory insurance, i.e. they constitute a qualifying
         period for unemployment benefits.
       </Paragraph>
-
-      <ArticleSubHeader textStyle={{color: colors.accentDark}}>
-        Application Forms at:
-      </ArticleSubHeader>
-      <Link
-        onPress={() =>
-          Linking.openURL(
-            'http://www.arbeitsagentur.de/web/content/DE/Formulare/'
-          )
-        }
-      >
-        www.arbeitsagentur.de/web/content/DE/Formulare/
-      </Link>
     </Article>
   );
 };

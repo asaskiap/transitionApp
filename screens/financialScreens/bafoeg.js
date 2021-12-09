@@ -125,8 +125,14 @@ const Bafoeg = (props) => {
               einzulegen.
             </Paragraph>
             <Paragraph>Mehr unter: </Paragraph>
-            <Link onPress={() => Linking.openURL('http://www.bafoeg.bmbf.de')}>
-              www.bafoeg.bmbf.de
+            <Link
+              onPress={() =>
+                Linking.openURL(
+                  'https://www.xn--bafg-7qa.de/bafoeg/de/home/home_node.html'
+                )
+              }
+            >
+              www.bafög.de
             </Link>
           </Article>
         )}

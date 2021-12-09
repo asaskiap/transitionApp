@@ -139,11 +139,11 @@ const Abschied = (props) => {
               something different, something unknown, the process of saying
               goodbye and coming to terms with one's own (dancer) identity is
               very important. For only when one has been able to mentally say
-              goodbye to an old love and to come to an emotional closure with
-              it, only then do the possibilities for a new love, for a new path,
-              for a new stage of life open up in one's own field of vision.
-              Therefore, in the beginning it is mostly about saying goodbye,
-              mourning, detachment and being able to open up for something new.
+              goodbye to an old love and have found emotional closure do the
+              possibilities for a new love, for a new path, for a new stage of
+              life become apparent. Therefore, in the beginning it is mostly
+              about saying goodbye, mourning, detachment and allowing yourself
+              to open up for something new.
             </Paragraph>
           </Article>
         )}

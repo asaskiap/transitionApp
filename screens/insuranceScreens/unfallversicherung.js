@@ -129,8 +129,8 @@ const Unfallversicherung_DE = (props) => {
       <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
         04421/407-407
       </Paragraph>
-      <Link onPress={() => Linking.openURL('http://www.uk-bund.de')}>
-        www.uk-bund.de
+      <Link onPress={() => Linking.openURL('https://www.uv-bund-bahn.de/')}>
+        www.uv-bund-bahn.de
       </Link>
       <ArticleSubHeader textStyle={{color: colors.accentDark}}>
         Unfallkasse Berlin
@@ -267,8 +267,8 @@ const Unfallversicherung_EN = (props) => {
       <Paragraph style={{fontWeight: 'bold', color: colors.primary}}>
         04421/407-407
       </Paragraph>
-      <Link onPress={() => Linking.openURL('http://www.uk-bund.de')}>
-        www.uk-bund.de
+      <Link onPress={() => Linking.openURL('https://www.uv-bund-bahn.de/')}>
+        www.uv-bund-bahn.de
       </Link>
       <ArticleSubHeader textStyle={{color: colors.accentDark}}>
         Unfallkasse Berlin

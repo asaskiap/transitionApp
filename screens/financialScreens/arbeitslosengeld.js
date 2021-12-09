@@ -169,19 +169,17 @@ const Arbeitslosengeld_EN = (props) => {
         make it easier to register as a job seeker, this can be done online in
         the JOBBÖRSE at www.arbeitsagentur.de, for example, or by calling the
         toll-free service number 08004555500 to make an appointment for a
-        personal consultation. However, the job application only becomes
-        effective when the agreed appointment with the Employment Agency is
-        kept.
+        personal consultation.
       </Paragraph>
       <Paragraph>
         In order to be entitled to unemployment benefits, it is mandatory to
-        register for work. It serves to secure financial entitlements and to
-        find a new job. It is an indispensable prerequisite for receiving
+        register as unemployed. It serves to secure financial entitlements and
+        to find a new job. It is an indispensable prerequisite for receiving
         unemployment benefits and must be made in person at the employment
         agency responsible for the place of residence no later than the first
         day of unemployment (at the earliest three months before). In order to
         be able to receive unemployment benefits, the following prerequisites
-        must be fulfilled together:
+        must be fulfilled:
       </Paragraph>
       <List>
         <ListItem>You must be unemployed.</ListItem>
@@ -201,7 +199,7 @@ const Arbeitslosengeld_EN = (props) => {
       </Paragraph>
       <List>
         <ListItem>
-          the claimant has been in a compulsory insurance relationship for at
+          the person has been in a compulsory insurance relationship for at
           least 6 months in the last two years before registering as unemployed
           and the start of unemployment (qualifying period), and
         </ListItem>
@@ -240,7 +238,7 @@ const Arbeitslosengeld_EN = (props) => {
         notice that the intended end of the fixed-term employment relationship
         will be observed. It is not a termination, the law on protection against
         dismissal does not apply. A fixed-term employment relationship ends.
-        (This can lead to a suspension of employment).
+        (This can lead to a suspension of unemployment money).
       </Paragraph>
       <Paragraph>
         The situation is different in the case of a termination agreement by

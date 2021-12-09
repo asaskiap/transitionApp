@@ -136,7 +136,7 @@ const Bayerische_DE = (props) => {
         und der beitragsfreien Versicherung können – auch auf Englisch – unter{' '}
       </Paragraph>
       <Link
-        onPress={() => Linking.openURL(' https://www.buehnenversorgung.de ')}
+        onPress={() => Linking.openURL('https://www.buehnenversorgung.de/')}
       >
         www.buehnenversorgung.de 
       </Link>

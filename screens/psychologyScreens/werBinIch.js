@@ -192,45 +192,41 @@ const WerBindIch = (props) => {
               who I actually am and what I have inside of me that I may not have
               even known about before. Getting to know myself in a new way,
               rethinking and trying out my own self. In a life in which dance
-              has always been in the first place, all the other sides of someone
-              have usually faded into the background, if not lost sight of.
-              Therefore it is important to take the necessary time to find out
-              what other worlds are still slumbering in someone, what hidden
-              dreams, ideas, passions there are. Because every person has
-              something that drives him, something that knows more than just a
-              form, a way of expression, and usually someone comes through paths
-              not yet taken to discover what he still wants, can and dreams,
-              what defines someone as an individual person, what his own life
-              should stand for and what can fill someone at the end of the day
-              with satisfaction and meaning. On the path of change, essential
-              questions usually arise such as: What do I want? Where do I want
-              to go? How do I imagine a fulfilled life? Where are my other
-              hidden talents? Why do I choose this path? What part of myself is
-              behind it? What meaning do I give to my existence? Will I be able
-              to build something completely new for myself? What are my
-              possibilities?
+              has always been the main focus, all the other sides of the person
+              have usually faded into the background, or have been lost from
+              sight. Therefore it is important to take the necessary time to
+              find out what other worlds are still slumbering inside, what
+              hidden dreams, ideas, passions there are. Because every person has
+              something that drives them, a way of expression, something that
+              defines them as an individual person, what their own life should
+              stand for and what can give them satisfaction and meaning. On the
+              path of change, the questions that naturally come up are: What do
+              I want? Where do I want to go? How do I imagine a fulfilled life?
+              Where are my other hidden talents? Why do I choose this path? What
+              part of myself is behind it? What meaning do I give to my
+              existence? Will I be able to build something completely new for
+              myself? What are my possibilities?
             </Paragraph>
             <ArticleSubHeader>Walking the new path</ArticleSubHeader>
             <Paragraph>
               Once you have gone through this important process and found what
               drives you and what path you want to take, you will find the
               strength and confidence within yourself to take this new path in
-              life. Because the will to let this "other me" become reality
-              carries someone through these difficulties that every change
-              brings with it. And that is the most important thing a dancer can
-              achieve in the transition process, that he or she develops his or
-              her own vision for oneself and one's own life, a vision of what
-              life should look like and what will make one happy. Because the
-              wonderful thing about each dancer is that they already have this
-              will to achieve something and the necessary discipline to go even
-              a difficult way for it, because these were the qualities that they
-              have already carried on their way to become a dancer, and which
-              they will also carry this time.
+              life. Because the will to let this "other me" become a reality can
+              carry you through the difficulties that change brings. And that is
+              the most important thing a dancer can achieve in the transition
+              process, that he or she develops his or her own vision for
+              themself and their own life, a vision of what life should look
+              like and what will make them happy. Because the wonderful thing
+              about each dancer is that they already have this will to achieve
+              something and the necessary discipline to take even a difficult
+              path for it, because these were the qualities that they have
+              already needed to become a dancer.
             </Paragraph>
             <Paragraph style={{color: colors.accentDark}}>
               To find out who you are and what suits you well, the following
-              test might be helpful. It is divided into 3 sections. Fill out all
-              the questions and see if you see a pattern. found at:
+              test might be helpful. It is divided into 3 sections. Answer all
+              the questions for yourself and see if you see a pattern. found at:
             </Paragraph>
 
             <Link
@@ -260,9 +256,7 @@ const WerBindIch = (props) => {
             </List>
             <ArticleSubHeader>Section 2: Who are you?</ArticleSubHeader>
             <List>
-              <ListItem>
-                What makes you happy just because you can do it?
-              </ListItem>
+              <ListItem>What makes you happy just by doing it?</ListItem>
               <ListItem>
                 In what activity do you find the doing itself more fulfilling
                 than the result?

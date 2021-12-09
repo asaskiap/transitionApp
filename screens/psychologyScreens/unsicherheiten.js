@@ -95,60 +95,59 @@ const Unsicherheiten = (props) => {
           <Article>
             <Paragraph>
               Transition means change and transformation. Especially in the
-              context of a dance career and its end, this change can be very big
-              and far-reaching, as the dance profession is not just a job, but
-              means complete passion and dedication. Dancers are not only torn
-              from their familiar environment. They are also confronted with
-              having to give up the profession they have loved so much for many
-              years - often even decades. Since the focus during this time is
-              often solely on dancing, there is little time to think about how
-              to continue afterwards. For this reason, such a change is often
-              accompanied by uncertainty and great doubt. How can I go on? Who
-              am I if I don't dance? How can I find something new for myself?
-              These are just a few questions of many that can arise during the
-              phase of transition, and answering them is often a great
-              challenge.{' '}
+              context of a dance career coming to an end, this change can be
+              very big and far-reaching, as the dance profession is not just a
+              job, but something you have poured all your passion and dedication
+              into. Dancers are not only torn from their familiar environment,
+              they are also confronted with having to give up the profession
+              they have loved so much for many years - often even decades. Since
+              the focus during this time is often solely on dancing, there is
+              little time to think about how to continue afterwards. For this
+              reason, such a change is often accompanied by uncertainty and
+              great doubt. How can I go on? Who am I if I don't dance? How can I
+              find something new for myself? These are just a few questions of
+              many that can arise during this phase of transition, and answering
+              them is often a challenge.
             </Paragraph>
             <Paragraph>
-              However, uncertainty also means having a choice. It gives one the
-              chance to try something new, to get to know oneself, and also to
-              discover life from a different perspective. Even though the dance
-              profession can also be accompanied by great uncertainty -
-              especially in the independent scene - it is often characterized by
-              strict guidelines and little flexibility. During the season with
-              fixed training sessions and performances, there is little room to
-              devote oneself to other things. At the same time, this tight
-              framework provides security. Security that disappears when one
-              decides to leave this framework and end one's active career. At
-              the same time, it means no longer being tied to it and being able
-              to decide for yourself what to do next. And even if this decision
-              is not an easy one and can be associated with fear, uncertainty
-              and doubt, it is a valuable freedom to have. A freedom to look
-              forward to.
+              However, uncertainty also means that you have a choice. It gives
+              one the chance to try something new, to get to know oneself, and
+              also to discover life from a different perspective. Even though
+              the dance profession can also be accompanied by great uncertainty
+              - especially in the independent scene - it is often characterized
+              by strict guidelines and not a lot of flexibility. During the
+              season with fixed training sessions and performances, there is
+              little room to devote oneself to other things. At the same time,
+              this tight framework provides security. Security that disappears
+              when one decides to leave this framework and end one's active
+              career. At the same time, it means no longer being tied to it and
+              being able to decide for yourself what to do next. And even if
+              this decision is not an easy one and can be associated with fear,
+              uncertainty and doubt, it is a valuable freedom to have. A freedom
+              to look forward to.
             </Paragraph>
             <ArticleSubHeader>Dealing with doubts</ArticleSubHeader>
             <Paragraph>
               Most of the time, the beginning of a new path is paired with
-              burgeoning doubts and uncertainties; whether I will make it and
-              whether it is really the right path. This is a normal, if not
-              necessary, emotional step in a major life change. This often goes
-              coupled with self-doubt; am I capable of seeing this through to
-              the end? What if I'm not good at it at all and fail? What if I
-              don't like it at all? What if I'm not happy with it? These
-              important questions are also part of the change process. Having
-              the courage to enter unknown territory is an enormous achievement.
-              It is quite understandable that, after the hustle and bustle of
-              change and finding a way have settled down and the first calm has
-              returned, doubts set in and you deal with these questions. And
-              that is also a good thing. Because we then unconsciously begin to
-              test the new path for its suitability, and to approach it
+              doubts and uncertainties; whether one will make it and whether it
+              is really the right path. This is a normal, if not necessary,
+              emotional step in a major life change. This often goes coupled
+              with self-doubt; am I capable of seeing this through to the end?
+              What if I'm not good at it at all and fail? What if I don't like
+              it at all? What if I'm not happy with it? These important
+              questions are also part of the change process. Having the courage
+              to enter unknown territory is an enormous achievement. It is quite
+              understandable that after the first excitement of change has
+              passed, doubts set in and you have to deal with these questions.
+              And that is also a good thing. Because we then unconsciously begin
+              to test the new path for its suitability, and to approach it
               emotionally and thus step by step and make it our own. The process
               of doubting is an important process. By questioning something
               well, we unconsciously check this new way to see if it really fits
               us and is right for us. With every doubt that comes up, a part of
               us comes up that adapts to the new. And therefore the process of
               doubt is an essential process, because it helps to make the new
-              way to the own way.{' '}
+              way to our own way.
             </Paragraph>
           </Article>
         )}

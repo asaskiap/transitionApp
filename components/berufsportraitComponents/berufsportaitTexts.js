@@ -1712,11 +1712,13 @@ export const Lehrer = (props) => {
             unter:
           </Paragraph>
           <Link
-            onPress={() => Linking.openURL('www.lehrerbildung.sachsen.de/214…')}
+            onPress={() =>
+              Linking.openURL('https://www.lehrerbildung.sachsen.de/')
+            }
           >
             www.lehrerbildung.sachsen.de/214…
           </Link>
-          <Link onPress={() => Linking.openURL('http://www.berlin.de/sen…')}>
+          <Link onPress={() => Linking.openURL('https://www.berlin.de/')}>
             www.berlin.de
           </Link>
           <Link onPress={() => Linking.openURL('http://www.lehrer-in-mv.de/')}>
@@ -1883,17 +1885,17 @@ export const Luftverkehr = (props) => {
             in einer Studie des Bundesinstituts für Berufsbildung (BIB) von März
             2014, Pkt. 5.4.1, S.31:
           </Paragraph>
-          <Link onPress={() => Linking.openURL('http://www2.bibb.de')}>
+          <Link onPress={() => Linking.openURL('https://www2.bibb.de')}>
             www2.bibb.de
           </Link>
           <Paragraph>Allgemeine Infos zum Berufsbild:</Paragraph>
-          <Link onPress={() => Linking.openURL('http://www.berlinonline.de/')}>
+          <Link onPress={() => Linking.openURL('https://www.berlinonline.de/')}>
             www.berlinonline.de
           </Link>
           <Paragraph>
             Info-Veranstaltung zu Berufsperspektiven in der Luftfahrt:
           </Paragraph>
-          <Link onPress={() => Linking.openURL('http://www.trainico.de/')}>
+          <Link onPress={() => Linking.openURL('https://www.trainico.de/')}>
             www.trainico.de
           </Link>
         </Article>
@@ -2590,7 +2592,7 @@ export const Tierphysiotherapie = (props) => {
               finden sich hier:
             </Paragraph>
             <Link
-              onPress={() => Linking.openURL('http://www.tiergestuetzte.org')}
+              onPress={() => Linking.openURL('https://www.tiergestuetzte.org')}
             >
               www.tiergestuetzte.org
             </Link>
@@ -2670,7 +2672,6 @@ export const Tierwirt = (props) => {
         <AnimalFarmerEnglish />
       ) : (
         <Article>
-          {' '}
           <Paragraph>
             Fachrichtung Imkerei. Tierliebe, Interesse an Biologie und Ökologie,
             Freude an bewegungsintensiven Tätigkeiten im Freien,
@@ -2715,26 +2716,11 @@ export const Tierwirt = (props) => {
           <Link
             onPress={() =>
               Linking.openURL(
-                'http://www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/'
+                'https://www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/'
               )
             }
           >
             www.landwirtschaftskammer.de/bildung/tierwirt/einsteiger/
-          </Link>
-          <Paragraph>
-            Mit „Imkern auf Probe“ bzw. „Mietbienen“ im gesamten Bundesgebiet
-            möchten viele Imker*innen-Vereine Nachwuchs für die Bienenzucht
-            gewinnen. Anschauliche DETAILS zum Beruf und zum „Imkern auf Probe“
-            unter:
-          </Paragraph>
-          <Link
-            onPress={() =>
-              Linking.openURL(
-                'https://www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html'
-              )
-            }
-          >
-            www.zdf.de/nachrichten/drehscheibe/drehscheibe-mietbienen-100.html
           </Link>
         </Article>
       )}
@@ -2875,10 +2861,10 @@ export const Versicherungsmakler = (props) => {
             Wo man aktuell eine entsprechende Ausbildung zu welchen Konditionen
             machen kann, erfährt man beispielsweise bei der örtlichen IHK (siehe
             dazu IHK-Artikel in diesem Newsletter). Wichtige Infos zum Beruf
-            bekommt man auch bei den sogenannten Regionalkreisen des VDVM:
+            bekommt man auch bei den sogenannten Regionalkreisen des BDVM:
           </Paragraph>
-          <Link onPress={() => Linking.openURL('http://www.vdvm.de/')}>
-            www.vdvm.de
+          <Link onPress={() => Linking.openURL('https://bdvm.de/en/')}>
+            www.bdvm.de
           </Link>
         </Article>
       )}

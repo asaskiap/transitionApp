@@ -38,9 +38,13 @@ const Bildungskredit = (props) => {
           </Paragraph>
           <Paragraph>Mehr unter: </Paragraph>
           <Link
-            onPress={() => Linking.openURL('https://www.bildungskredit.de')}
+            onPress={() =>
+              Linking.openURL(
+                'https://www.bva.bund.de/DE/Services/Buerger/Schule-Ausbildung-Studium/Bildungskredit/bildungskredit_node.html'
+              )
+            }
           >
-            www.bildungskredit.de
+            www.bva.bund.de/
           </Link>
         </Article>
       </ScrollableScreenContainer>

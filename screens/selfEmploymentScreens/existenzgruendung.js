@@ -204,7 +204,6 @@ const Existenzgruendung = (props) => {
       <CloseButton close={props.close} />
     </Modal>
   );
-  vv;
 };
 
 export default Existenzgruendung;

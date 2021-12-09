@@ -65,8 +65,8 @@ const Veraenderung = (props) => {
         {props.english && (
           <Article>
             <Paragraph>
-              Transition, by definition, means "transforming and change." It is
-              a transition from one phase to another and is inevitably
+              Transition, by definition, means "transformation and change." It
+              is a transition from one phase to another and is inevitably
               accompanied by change. Especially in a professional context, and
               especially when an active dance career comes to an end. In most
               cases, dancing has defined one's entire life - or at least most of
@@ -78,18 +78,18 @@ const Veraenderung = (props) => {
               very young age. Transitions that have all already been mastered.
             </Paragraph>
             <Paragraph>
-              If you look for typical associations that arise with the word
-              "change," you quickly come across "drastic," "dramatic,"
-              "profound," and "radical." These terms can be off-putting.
-              However, if one looks at the transition process of dancers, they
-              are also applicable in most cases. At the same time, one also
-              comes across words like "necessary," "positive," and "shaping."
-              Since an active dance career cannot last forever, a process of
-              change is absolutely necessary. However, a special focus should be
-              on the last two terms. Such a change can be accompanied by many
-              positive aspects on which attention should be focused. Moreover,
-              it is not something that has to be endured, but something that can
-              be actively shaped. And that is especially important. Many feel
+              If you look for typical associations with the word "change," you
+              quickly come across "drastic," "dramatic," "profound," and
+              "radical." These terms can be off-putting. However, if one looks
+              at the transition process of dancers, they are also applicable in
+              most cases. At the same time, one also comes across words like
+              "necessary," "positive," and "shaping." Since an active dance
+              career cannot last forever, a process of change is absolutely
+              necessary. However, a special focus should be on the last two
+              terms. Such a change can be accompanied by many positive aspects
+              on which attention should be focused. Moreover, it is not
+              something that has to be endured, but something that can be
+              actively shaped. And that is especially important. Many feel
               helpless and overwhelmed, often pressured by the change that lies
               ahead, forgetting that it is in their own hands. Change, and
               therefore transition, requires time and courage, as many
