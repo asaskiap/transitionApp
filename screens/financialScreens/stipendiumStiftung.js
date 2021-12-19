@@ -43,7 +43,7 @@ const StipendiumStiftung_DE = (props) => {
       </Paragraph>
       <TouchableOpacity
         onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Stipendien Anfrage', '').then(
+          sendEmail('info@stiftung-tanz.com', 'Stipendien Anfrage', '').then(
             () => {
               console.log('Your message was successfully sent!');
             }
@@ -128,7 +128,7 @@ const StipendiumStiftung_EN = (props) => {
       </Paragraph>
       <TouchableOpacity
         onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Stipendien Anfrage', '').then(
+          sendEmail('info@stiftung-tanz.com', 'Stipendien Anfrage', '').then(
             () => {
               console.log('Your message was successfully sent!');
             }

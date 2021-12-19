@@ -25,6 +25,7 @@ class insuranceMenuScreen extends React.Component {
         backgroundColor: colors.psychology
       },
       headerTintColor: colors.textLight,
+      headerBackTitleVisible: false,
       headerRight: () => (
         <HeaderButtons HeaderButtonComponent={MyHeaderButton}>
           <Item

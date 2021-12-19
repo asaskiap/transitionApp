@@ -27,6 +27,7 @@ class ideasMenuScreen extends React.Component {
       headerStyle: {
         backgroundColor: colors.psychology
       },
+      headerBackTitleVisible: false,
       headerTintColor: colors.textLight,
       headerRight: () => (
         <HeaderButtons HeaderButtonComponent={MyHeaderButton}>
@@ -119,10 +120,7 @@ class ideasMenuScreen extends React.Component {
             <MenuCard
               textSample={'Test mit individuellem Ergebnis'}
               onPress={() =>
-                this.props.navigation.navigate(
-                  'Berufsfragebogen',
-                  (eng = this.props.navigation.state.params.eng)
-                )
+                this.props.navigation.navigate('Berufsfragebogen', {eng: false})
               }
             >
               Berufsinteressen Fragebogen
@@ -135,7 +133,9 @@ class ideasMenuScreen extends React.Component {
             </MenuCard>
             <MenuCard
               onPress={() =>
-                this.props.navigation.navigate('TransitionStories')
+                this.props.navigation.navigate('TransitionStories', {
+                  eng: false
+                })
               }
               textSample={'Wie haben andere Tänzer die Transition gemeistert?'}
             >

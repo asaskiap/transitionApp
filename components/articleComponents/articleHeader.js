@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   text: {
-    fontSize: windowHeight > 600 ? 36 : 30,
+    fontSize: windowHeight > 600 ? 32 : 30,
     fontWeight: 'bold',
     textAlign: 'center',
     color: Colors.primaryDark

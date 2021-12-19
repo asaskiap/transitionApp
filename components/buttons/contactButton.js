@@ -12,7 +12,7 @@ export const contactButton = (props) => {
     <TouchableOpacity
       style={props.style}
       onPress={() =>
-        sendEmail('alannapfeiffer@gmail.com', 'Anfrage', '').then(() => {
+        sendEmail('info@stiftung-tanz.com', 'Anfrage', '').then(() => {
           console.log('Your message was successfully sent!');
         })
       }

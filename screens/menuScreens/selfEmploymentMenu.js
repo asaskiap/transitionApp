@@ -28,6 +28,7 @@ class selfEmploymentMenuScreen extends React.Component {
       headerStyle: {
         backgroundColor: colors.psychology
       },
+      headerBackTitleVisible: false,
       headerTintColor: colors.textLight,
       headerRight: () => (
         <HeaderButtons HeaderButtonComponent={MyHeaderButton}>

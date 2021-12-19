@@ -68,11 +68,13 @@ const Zeugnisse_DE = (props) => {
       <Paragraph>E-Mail:</Paragraph>
       <TouchableOpacity
         onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Vermittlungsanfrage', '').then(
-            () => {
-              console.log('Your message was successfully sent!');
-            }
-          );
+          sendEmail(
+            'zav-auslandsvermittlung@arbeitsagentur.de',
+            'Vermittlungsanfrage',
+            ''
+          ).then(() => {
+            console.log('Your message was successfully sent!');
+          });
         }}
       >
         <Text

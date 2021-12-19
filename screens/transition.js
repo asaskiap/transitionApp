@@ -38,6 +38,7 @@ class Transition extends React.Component {
       headerStyle: {
         backgroundColor: Colors.pieOrange
       },
+      headerBackTitleVisible: false,
       headerTintColor: Colors.textLight,
       headerRight: () => (
         <HeaderButtons HeaderButtonComponent={MyHeaderButton}>

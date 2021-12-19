@@ -15,6 +15,18 @@ import {
 import colors from './../assets/colors';
 
 class EntscheidungsbaumGoScreen extends React.Component {
+  static navigationOptions = ({navigation}) => {
+    return {
+      headerTitle: navigation.state.params.eng
+        ? 'Decision Tree'
+        : 'Entscheidungsbaum',
+      headerStyle: {
+        backgroundColor: colors.pieDarkBlue
+      },
+      headerBackTitleVisible: false,
+      headerTintColor: colors.textLight
+    };
+  };
   state = {
     displayImage: true,
     display_q1: true,
@@ -190,11 +202,12 @@ class EntscheidungsbaumGoScreen extends React.Component {
   }
 }
 
-EntscheidungsbaumGoScreen.navigationOptions = {
-  headerStyle: {
-    backgroundColor: Colors.accentPale
-  },
-  headerTintColor: colors.accentDark,
-  title: 'Entscheidungsbaum'
-};
+// EntscheidungsbaumGoScreen.navigationOptions = {
+//   headerStyle: {
+//     backgroundColor: Colors.accentPale
+//   },
+//   headerTintColor: colors.accentDark,
+//   title: '',
+//   headerBackTitleVisible: false
+// };
 export default EntscheidungsbaumGoScreen;

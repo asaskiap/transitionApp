@@ -35,7 +35,7 @@ const SpeakToUs = (props) => {
       </Text>
       <TouchableOpacity
         onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Coaching Anfrage', '').then(
+          sendEmail('info@stiftung-tanz.com', 'Coaching Anfrage', '').then(
             () => {
               console.log('Your message was successfully sent!');
             }

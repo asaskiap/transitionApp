@@ -285,7 +285,8 @@ TransitionStories.navigationOptions = {
     backgroundColor: colors.accentPale
   },
   headerTintColor: colors.text,
-  title: 'Transition Stories'
+  title: 'Transition Stories',
+  headerBackTitleVisible: false
 };
 
 export default TransitionStories;

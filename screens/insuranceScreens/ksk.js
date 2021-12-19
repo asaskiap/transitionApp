@@ -156,11 +156,13 @@ const KünstlerSozialVersicherung_DE = (props) => {
       </Text>
       <TouchableOpacity
         onPress={() => {
-          sendEmail('alannapfeiffer@gmail.com', 'Auskunft Anfrage', '').then(
-            () => {
-              console.log('Your message was successfully sent!');
-            }
-          );
+          sendEmail(
+            'auskunft@kuenstlersozialkasse.de',
+            'Auskunft Anfrage',
+            ''
+          ).then(() => {
+            console.log('Your message was successfully sent!');
+          });
         }}
       >
         <Text

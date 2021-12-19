@@ -407,7 +407,8 @@ Berufsfragebogen.navigationOptions = {
     backgroundColor: colors.accentPale
   },
   headerTintColor: colors.accentDark,
-  title: 'Test'
+  title: 'Test',
+  headerBackTitleVisible: false
 };
 
 export default Berufsfragebogen;

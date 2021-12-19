@@ -27,6 +27,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "Some link and language corrections"
+    "description": "Fixed small bugs"
   }
 }
