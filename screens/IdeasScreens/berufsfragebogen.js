@@ -404,9 +404,9 @@ class Berufsfragebogen extends React.Component {
 }
 Berufsfragebogen.navigationOptions = {
   headerStyle: {
-    backgroundColor: colors.accentPale
+    backgroundColor: colors.pieDarkBlue
   },
-  headerTintColor: colors.accentDark,
+  headerTintColor: colors.textLight,
   title: 'Test',
   headerBackTitleVisible: false
 };

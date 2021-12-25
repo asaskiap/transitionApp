@@ -2,9 +2,9 @@
   "expo": {
     "name": "TanzTransitionApp",
     "slug": "tanz-transition-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/appLogo.png",
+    "icon": "./assets/appLogoAdaptive.png",
     "splash": {
       "image": "./assets/AppSplash_theFall3.png",
       "resizeMode": "cover",
@@ -13,20 +13,26 @@
     "updates": {
       "fallbackToCacheTimeout": 5000
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
+      "icon": "./assets/appLogo.png",
+      "bundleIdentifier": "com.stiftung-tanz.tanz-transition",
+      "buildNumber": "1.0.1",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.stiftungTANZ.tanzTransition",
+      "versionCode": 2,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/AppLogoTransparent.png"
-      }
+        "foregroundImage": "./assets/appLogoAdaptive.png",
+        "backgroundColor": "#121e2a"
+      },
+      "permissions": []
     },
+
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/appLogoAdaptive.png"
     },
-    "description": "Fixed small bugs"
+    "description": "updated logo"
   }
 }

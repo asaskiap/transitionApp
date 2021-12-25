@@ -92,8 +92,7 @@ class Transition extends React.Component {
             : 'Die Transition'}
         </ArticleHeader>
         <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 350}}
-          image={require('../assets/illustrations/transitionIllustrations/transitionHeader.png')}
+          image={require('../assets/images/stiftungLogoCollage.png')}
         />
         {!this.props.navigation.state.params.eng ? (
           <Transition_DE></Transition_DE>
@@ -112,10 +111,6 @@ class Transition extends React.Component {
             ? 'Developing a vision for life after dance'
             : 'Entwicklung einer Vision für ein Leben nach dem Tanz'}
         </ArticleHeader>
-        <ArticleIllustration
-          imageStyle={{maxHeight: windowHeight > 600 ? 400 : 370}}
-          image={require('../assets/illustrations/transitionIllustrations/transitionVision.png')}
-        ></ArticleIllustration>
 
         {!this.state.vision && (
           <TouchableOpacity onPress={() => this.setState({vision: true})}>

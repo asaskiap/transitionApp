@@ -95,6 +95,11 @@ class Impressum extends React.Component {
               <Paragraph>Photos: © Dieter Wuschanski</Paragraph>
               <Paragraph>Illustrations: © TreeeTop</Paragraph>
               <Paragraph>
+                Graphic design: Steffen Klaiber | www.grafikagentur.com
+              </Paragraph>
+              <Paragraph>UI design: Tarah Pfeiffer</Paragraph>
+              <Paragraph>App development: Alanna Miliauskiene</Paragraph>
+              <Paragraph>
                 Please note: Despite careful control of contents, we accept no
                 liability for the contents of external links. The contents of
                 linked sites are the sole responsibility of the publishers of
@@ -127,12 +132,17 @@ class Impressum extends React.Component {
                 worden.
               </Paragraph>
               <Paragraph>Deutsche Bank</Paragraph>
-              <Paragraph>Account number 0649780</Paragraph>
+              <Paragraph>Kto Nr 0649780</Paragraph>
               <Paragraph>BLZ 100 700 00</Paragraph>
-              <Paragraph>Income tax number 27/605/58691</Paragraph>
+              <Paragraph>Steuernummer: 27/605/58691</Paragraph>
               <Paragraph>Redaktion: Eilika Leibold, Sabrina Sadowska</Paragraph>
+              <Paragraph>
+                Grafik Design: Steffen Klaiber | www.grafikagentur.com
+              </Paragraph>
               <Paragraph>Fotos: © Dieter Wuschanski</Paragraph>
               <Paragraph>Illustrationen: © TreeeTop</Paragraph>
+              <Paragraph>UI Design: Tarah Pfeiffer</Paragraph>
+              <Paragraph>App Entwicklung: Alanna Miliauskiene</Paragraph>
               <Paragraph>
                 Hinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen
                 wir keine Haftung für Inhalte externer Links. Für den Inhalt der

@@ -22,7 +22,7 @@ class ideasMenuScreen extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
       headerTitle: navigation.state.params.eng
-        ? 'Carreer Ideas'
+        ? 'Career Ideas'
         : 'Berufsfindung',
       headerStyle: {
         backgroundColor: colors.psychology

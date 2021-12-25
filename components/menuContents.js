@@ -70,7 +70,7 @@ export const MenuContentsEng = (props) => {
       </MenuPageButton>
 
       <MenuPageButton onPress={() => navigateTo('Ideas')}>
-        Carreer Ideas
+        Career Ideas
       </MenuPageButton>
 
       <MenuPageButton onPress={() => navigateTo('Umsetzung')}>

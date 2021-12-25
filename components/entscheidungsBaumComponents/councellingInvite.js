@@ -75,7 +75,7 @@ export const CouncellingInvite1 = (props) => {
       >
         <Text style={styles.highlight}>
           {eng
-            ? 'Ideas - Finding the right carreer for you'
+            ? 'Ideas - Finding the right career for you'
             : 'Ideen- und Berufsfindung'}
         </Text>
       </TouchableOpacity>

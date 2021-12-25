@@ -282,9 +282,9 @@ class TransitionStories extends React.Component {
 
 TransitionStories.navigationOptions = {
   headerStyle: {
-    backgroundColor: colors.accentPale
+    backgroundColor: colors.pieDarkBlue
   },
-  headerTintColor: colors.text,
+  headerTintColor: colors.textLight,
   title: 'Transition Stories',
   headerBackTitleVisible: false
 };
