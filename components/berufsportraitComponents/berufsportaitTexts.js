@@ -783,7 +783,6 @@ export const Clown = (props) => {
         <ClownEnglish />
       ) : (
         <Article>
-          {' '}
           <Paragraph>
             Die Methoden der künstlerischen Darstellung eines Clowns eignen sich
             sehr gut für:
@@ -1115,7 +1114,6 @@ export const Goethe = (props) => {
         <GoetheEnglish />
       ) : (
         <Article>
-          {' '}
           <Paragraph>
             Das Goethe-Institut ist eine weltweit arbeitende und ebenso
             anerkannte Institution der Auswärtigen Sprach- und Kulturpolitik
@@ -1750,7 +1748,6 @@ export const Logopaede = (props) => {
         <SpeechTherapistEnglish />
       ) : (
         <Article>
-          {' '}
           <Paragraph>
             “Wer seine Sprachfähigkeit nicht voll entwickeln kann oder verliert,
             ist gefährdet, ausgeschlossen zu werden: Aus dem Freundeskreis, aus
@@ -2147,7 +2144,6 @@ export const Raumausstatter = (props) => {
         <InteriorDecoratorEnglish />
       ) : (
         <Article>
-          {' '}
           <Paragraph>
             Wer gern gestaltet und kreativ ist, wem Schönes wichtig ist, wer
             gleichzeitig gern werkelt und Dinge berechnet sowie sich für
@@ -2579,7 +2575,6 @@ export const Tierphysiotherapie = (props) => {
           <AnimalPhysiotherapyEnglish />
         ) : (
           <Article>
-            {' '}
             <Paragraph>
               Bei Physiotherapie denkt man zuerst wahrscheinlich vor allem an
               Menschen, die daran Bedarf haben könnten. Dass es aber auch

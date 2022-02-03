@@ -2,37 +2,37 @@
   "expo": {
     "name": "TanzTransitionApp",
     "slug": "tanz-transition-app",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "orientation": "portrait",
-    "icon": "./assets/appLogoAdaptive.png",
+    "icon": "./assets/stiftungTANZ-logo.png",
     "splash": {
       "image": "./assets/AppSplash_theFall3.png",
       "resizeMode": "cover",
-      "backgroundColor": "#121e2a"
+      "backgroundColor": "#121f2c"
     },
     "updates": {
       "fallbackToCacheTimeout": 5000
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "icon": "./assets/appLogo.png",
       "bundleIdentifier": "com.stiftung-tanz.tanz-transition",
-      "buildNumber": "1.0.1",
+      "buildNumber": "1.0.3",
       "supportsTablet": true
     },
     "android": {
       "package": "com.stiftungTANZ.tanzTransition",
-      "versionCode": 2,
+      "versionCode": 4,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/appLogoAdaptive.png",
-        "backgroundColor": "#121e2a"
+        "foregroundImage": "./assets/stiftungTANZ-logo-adaptive.png",
+        "backgroundColor": "#121f2c"
       },
       "permissions": []
     },
-
     "web": {
-      "favicon": "./assets/appLogoAdaptive.png"
+      "favicon": "./assets/stiftungTANZ-logo-adaptive.png"
     },
-    "description": "updated logo"
+    "description": ""
   }
 }

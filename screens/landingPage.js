@@ -41,11 +41,12 @@ const LandingPage = (props) => {
   };
 
   return (
-    <ScrollView>
-      <ImageBackground
-        source={require('./../assets/landingPageBackground.png')}
-        style={styles.backgroundImage}
-      >
+    <ImageBackground
+      source={require('./../assets/landingPageBackground.png')}
+      style={styles.backgroundImage}
+      resizeMode="cover"
+    >
+      <ScrollView style={{flex: 1, minHeight: windowHeight}}>
         <View style={styles.fullScreenContainer}>
           <Menu
             isVisible={displayMenu}
@@ -96,8 +97,8 @@ const LandingPage = (props) => {
             </TouchableOpacity>
           </View>
         </View>
-      </ImageBackground>
-    </ScrollView>
+      </ScrollView>
+    </ImageBackground>
   );
 };
 
@@ -117,13 +118,13 @@ const styles = StyleSheet.create({
   fullScreenContainer: {
     flex: 1,
     minHeight: windowHeight,
-    // paddingBottom: 70,
     justifyContent: 'center',
     alignItems: 'center'
   },
   backgroundImage: {
     flex: 1,
-    resizeMode: 'contain'
+    minHeight: windowHeight,
+    resizeMode: 'cover'
   },
   logo: {
     maxWidth: windowWidth,

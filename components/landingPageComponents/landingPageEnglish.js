@@ -7,6 +7,8 @@ import LandingPageButton from '../buttons/landingPageButton';
 import colors from '../../assets/colors';
 const windowHeight = Dimensions.get('window').height;
 
+const windowWidth = Dimensions.get('window').width;
+
 const LandingPageEnglish = (props) => {
   return (
     <View style={styles.buttonContainer}>

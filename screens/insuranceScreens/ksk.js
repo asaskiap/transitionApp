@@ -364,7 +364,7 @@ const KünstlerSozialVersicherung = (props) => {
         <ArticleHeader>
           {props.english
             ? "KSK (Artists' Social Insurance)"
-            : 'Die Künstlersozial- Versicherung}'}
+            : 'Die Künstlersozial- Versicherung'}
         </ArticleHeader>
         <ArticleIllustration
           image={require('../../assets/illustrations/insuranceIllustrations/Sax.png')}
