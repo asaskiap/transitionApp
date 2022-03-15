@@ -238,7 +238,7 @@ const TransitionStorySoeren = (props) => {
     <Modal visible={props.isVisible} animationType={'slide'}>
       <ScrollableScreenContainer>
         <TransitionStoryModalHeader
-          image={require('../../../assets/images/SörenSwart.jpg')}
+          image={require('../../../assets/images/SoerenSwart.jpg')}
           title={props.eng ? 'Teacher' : 'Lehrer'}
         >
           Sören Swart

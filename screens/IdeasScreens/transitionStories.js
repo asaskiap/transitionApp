@@ -220,7 +220,7 @@ class TransitionStories extends React.Component {
               ? '"I can only encourage every dancer to enter the next professional world relaxed and with their heads held high"'
               : '„Ich kann nur jeden Tänzer und jede Tänzerin ermutigen, entspannt und erhobenen Hauptes in die nächste Berufswelt hineinzugehen“ '
           }
-          image={require('../../assets/images/SörenSwart.jpg')}
+          image={require('../../assets/images/SoerenSwart.jpg')}
           title={eng ? 'Teacher' : 'Lehrer'}
           name={'Sören Swart'}
           onPress={() => this.setState({storySoeren: true})}

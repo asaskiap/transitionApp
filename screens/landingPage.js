@@ -13,7 +13,7 @@ import {
 import Menu from '../components/menu';
 import WerSindWir from '../components/landingPageComponents/WerSindWir';
 import WasMachenWir from '../components/landingPageComponents/WasMachenWir';
-import WomitHelfen from '../components/landingPageComponents/WomitKönnenWirHelfen';
+import WomitHelfen from '../components/landingPageComponents/WomitKoennenWirHelfen';
 import colors from '../assets/colors';
 import LandingPageDeutsch from '../components/landingPageComponents/landingPageDeutsch';
 import LandingPageEnglish from '../components/landingPageComponents/landingPageEnglish';

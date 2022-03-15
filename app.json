@@ -13,13 +13,11 @@
     "updates": {
       "fallbackToCacheTimeout": 5000
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "bundleIdentifier": "com.stiftung-tanz.tanz-transition",
-      "buildNumber": "1.0.3",
-      "supportsTablet": true
+      "bundleIdentifier": "com.stiftungTANZ.tanz-transition",
+      "buildNumber": "1.0.2",
+      "supportsTablet": false
     },
     "android": {
       "package": "com.stiftungTANZ.tanzTransition",

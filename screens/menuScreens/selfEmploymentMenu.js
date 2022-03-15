@@ -83,7 +83,7 @@ class selfEmploymentMenuScreen extends React.Component {
         </ArticleHeader>
         <ArticleIllustration
           imageContainerStyle={{marginBottom: -20}}
-          image={require('../../assets/illustrations/selfemploymentIllustrations/Selbstständigkeit.png')}
+          image={require('../../assets/illustrations/selfemploymentIllustrations/Selbststaendigkeit.png')}
         />
         {this.props.navigation.state.params.eng ? (
           <MenuCard
